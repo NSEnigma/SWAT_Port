@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Preload>
+<Actor id="SwatElectricCorner2x2" Variations="0"/>
+<Actor id="SwatWallElectric7x2" Variations="2"/>
+<Actor id="SYSTEM_ActorConfig"/>
+<Actor id="SwatWallStraight3x14"/>
+<Actor id="SwatWallElectric2x7" Variations="0,1,4"/>
+<Actor id="SwatWallElectric2x4" Variations="0,3"/>
+<Actor id="SwatWallElectric6x2" Variations="4"/>
+<Actor id="SwatWallElectric2x6" Variations="0,3"/>
+<Terrain id="Tarsonis"/>
+<Unit id="Marine"/>
+<Unit id="Carrier"/>
+<Unit id="SwatGraveyardDoor"/>
+<Unit id="SecurityGateStraightVerticalLFLowered"/>
+</Preload>

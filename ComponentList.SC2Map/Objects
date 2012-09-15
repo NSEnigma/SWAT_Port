@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacedObjects Version="27">
+    <ObjectUnit Id="46" Position="7.7895,242.8227,0" Rotation="1.102" Scale="1,1,1" UnitType="Carrier" Player="1"/>
+    <ObjectUnit Id="10" Position="12.8505,238.3408,0" Rotation="5.7536" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="11" Position="11.8024,236.8837,0" Rotation="4.092" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="12" Position="10.1584,236.422,0" Rotation="4.268" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="13" Position="9.3032,237.2287,0" Rotation="6.078" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="14" Position="10.2746,239.8103,0" Rotation="2.9172" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="15" Position="11.5981,239.9028,0" Rotation="2.6491" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="16" Position="12.7236,239.4416,0" Rotation="2.18" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="17" Position="11.5888,239.0185,0" Rotation="6.116" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="18" Position="9.627,239.1105,0" Rotation="1.6223" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="19" Position="8.913,238.414,0" Rotation="0.7302" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="20" Position="10.2888,237.8564,0" Rotation="4.2961" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="21" Position="11.4895,238.0847,0" Rotation="1.0422" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="22" Position="9.5815,235.8984,0" Rotation="0.8203" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="23" Position="8.3493,236.404,0" Rotation="5.5781" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="24" Position="7.8293,237.247,0" Rotation="0.6618" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="25" Position="7.6274,237.9936,0" Rotation="0.892" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="26" Position="8.1416,239.2214,0" Rotation="3.9636" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="27" Position="8.861,239.672,0" Rotation="1.612" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="28" Position="10.8244,237.1376,0" Rotation="1.4067" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="29" Position="10.7531,238.597,0" Rotation="2.4084" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="30" Position="11.9375,240.5817,0" Rotation="2.0671" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="31" Position="11.037,240.5817,0" Rotation="2.0524" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="32" Position="10.2221,240.6875,0" Rotation="0.843" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="33" Position="9.2326,240.705,0" Rotation="1.4548" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="34" Position="7.9492,240.2653,0" Rotation="3.7312" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="35" Position="7.2187,239.7482,0" Rotation="3.059" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="36" Position="6.648,239.1022,0" Rotation="1.0383" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="37" Position="6.914,238.285,0" Rotation="5.4421" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="38" Position="6.7197,237.541,0" Rotation="0.8637" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="39" Position="6.7436,236.123,0" Rotation="3.2465" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="40" Position="7.2844,235.4313,0" Rotation="1.8642" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="41" Position="8.7626,235.1081,0" Rotation="4.1906" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="42" Position="10.078,235.2016,0" Rotation="1.841" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="43" Position="11.2158,235.5422,0" Rotation="6.2233" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="44" Position="33,230,0" Rotation="4.7443" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="45" Position="13.6042,238.6928,0" Rotation="4.7773" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="184" Position="124,220.5,0" Rotation="1.5468" Scale="1,1,1" UnitType="Marine" Player="1"/>
+    <ObjectUnit Id="169" Position="128,215.5,0" Rotation="3.1413" Scale="1.75,1.75,1.75" UnitType="SecurityGateStraightVerticalLFLowered"/>
+    <ObjectUnit Id="170" Position="166,209.5,0" Rotation="3.1413" Scale="1.75,1.75,1.75" UnitType="SecurityGateStraightVerticalLFLowered"/>
+    <ObjectUnit Id="171" Position="132,215,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectUnit Id="172" Position="130.5,216,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectUnit Id="173" Position="130.5,215,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectUnit Id="174" Position="129.5,216.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectUnit Id="175" Position="125,213.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectUnit Id="176" Position="133.5,213.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectUnit Id="177" Position="135,212.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectUnit Id="178" Position="135,215.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectUnit Id="179" Position="127,214.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectDoodad Id="187" Position="128,235,7.9982" Rotation="4.7121" Scale="1,1,1.75" Type="SwatElectricCorner2x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="188" Position="128,185,7.9982" Scale="1,1,1.75" Type="SwatElectricCorner2x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="195" Position="166,185,7.9982" Rotation="1.5705" Scale="1,1,1.75" Type="SwatElectricCorner2x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="206" Position="166,235,7.9982" Rotation="3.1413" Scale="1,1,1.75" Type="SwatElectricCorner2x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="186" Position="128,232,7.9982" Rotation="4.7121" Scale="1,1,1" Type="SwatWallElectric2x4">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="198" Variation="3" Position="166,231.5,7.9982" Rotation="1.5705" Scale="1,1,1" Type="SwatWallElectric2x4">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="207" Variation="3" Position="166,221,7.9982" Rotation="1.5705" Scale="1,1,1" Type="SwatWallElectric2x4">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="180" Variation="3" Position="128,221,7.9982" Rotation="4.7121" Scale="1,1,1" Type="SwatWallElectric2x6">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="181" Variation="3" Position="128,227,7.9982" Rotation="4.7121" Scale="1,1,1" Type="SwatWallElectric2x6">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="196" Position="128,189,7.9982" Rotation="4.7121" Scale="1,1,1" Type="SwatWallElectric2x6">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="182" Position="128,209.5,7.9982" Rotation="4.7121" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="183" Position="128,202.5,7.9982" Rotation="4.7121" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="185" Variation="4" Position="128,195.5,7.9982" Rotation="4.7121" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="197" Variation="1" Position="166,226.5,7.9982" Rotation="1.5705" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="205" Variation="1" Position="166,215.5,7.9982" Rotation="1.5705" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="208" Variation="4" Position="166,203.5,7.9982" Rotation="1.5705" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="209" Variation="4" Position="166,196.5,7.9982" Rotation="1.5705" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="210" Variation="4" Position="166,189.5,7.9982" Rotation="1.5705" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="189" Variation="4" Position="132,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="190" Variation="4" Position="138,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="191" Variation="4" Position="144,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="192" Variation="4" Position="150,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="193" Variation="4" Position="156,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="194" Variation="4" Position="162,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="199" Variation="4" Position="132,235,7.9982" Rotation="3.1413" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="200" Variation="4" Position="138,235,7.9982" Rotation="3.1413" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="201" Variation="4" Position="143.5,235,7.9982" Rotation="3.1413" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="202" Variation="4" Position="149,235,7.9982" Rotation="3.1413" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="203" Variation="4" Position="155,235,7.9982" Rotation="3.1413" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="204" Variation="2" Position="161.5,235,7.9982" Rotation="3.1413" Scale="1.75,1.75,1.75" Type="SwatWallElectric7x2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1" Position="14.5,229,7.9987" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="2" Position="64.5,233,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="3" Position="64.5,205,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="4" Position="41.5,229,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="5" Position="75.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="6" Position="64.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="7" Position="94.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="8" Position="27.5,229,7.9987" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="9" Position="108.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="47" Position="105.5,227,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="48" Position="64.5,248,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="49" Position="91.5,248,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="50" Position="14.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="51" Position="14.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="52" Position="41.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="53" Position="41.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="54" Position="14.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="55" Position="14.5,132,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="56" Position="26.5,116,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="57" Position="14.5,116,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="58" Position="41.5,116,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="59" Position="79.5,140,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="60" Position="64.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="61" Position="5.5,77,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="62" Position="20.5,77,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="63" Position="60.5,77,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="64" Position="137.5,60,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="65" Position="114.5,37,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="66" Position="114.5,22,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="67" Position="99.5,22,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="68" Position="102.5,37,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="69" Position="87.5,22,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="70" Position="64.5,22,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="71" Position="22.5,19,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="72" Position="7.5,19,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="73" Position="5.5,42,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="74" Position="20.5,42,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="75" Position="45.5,37,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="76" Position="64.5,60,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="77" Position="45.5,60,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="78" Position="87.5,60,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="79" Position="137.5,5,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="80" Position="154.5,9,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="81" Position="154.5,23,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="82" Position="154.5,37,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="83" Position="178.5,6,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="84" Position="197.5,6,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="85" Position="154.5,77,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="86" Position="137.5,117,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="87" Position="194.5,140,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="88" Position="194.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="89" Position="177.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="90" Position="154.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="91" Position="128.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="92" Position="122.5,140,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="93" Position="194.5,229.5,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="94" Position="233.5,229,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="95" Position="217.5,207,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="96" Position="217.5,221,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="97" Position="217.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="98" Position="234,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="99" Position="217.5,140,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="100" Position="177.5,154,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="101" Position="230.5,100,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="102" Position="217.5,100,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="103" Position="193.5,198,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="104" Position="177.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="105" Position="193.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="106" Position="209.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="107" Position="225.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="108" Position="146.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="109" Position="128.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="110" Position="24.5,229,7.9987" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="111" Position="38.5,229,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="112" Position="29.5,214,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="113" Position="38.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="114" Position="25.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="115" Position="25.5,168,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="116" Position="52.5,168,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="117" Position="75.5,168,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="118" Position="75.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="119" Position="90.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="120" Position="115.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="121" Position="115.5,168,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="122" Position="115.5,154,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="123" Position="150.5,5,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="124" Position="150.5,20,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="125" Position="110.5,22,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="126" Position="111.5,37,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="127" Position="125.5,37,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="128" Position="98.5,37,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="129" Position="96.5,22,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="130" Position="60.5,22,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="131" Position="56.5,37,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="132" Position="18.5,19,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="133" Position="16.5,42,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="134" Position="16.5,77,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="135" Position="56.5,77,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="136" Position="75.5,77,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="137" Position="100.5,77,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="138" Position="98.5,100,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="139" Position="107.5,117,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="140" Position="75.5,125,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="141" Position="38.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="142" Position="37.5,116,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="143" Position="25.5,100,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="144" Position="39.5,100,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="145" Position="72.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="146" Position="86.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="147" Position="105.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="148" Position="116.5,204,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="149" Position="116.5,227,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="150" Position="87.5,233,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="151" Position="87.5,248,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="152" Position="116.5,248,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="153" Position="142.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="154" Position="165.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="155" Position="189.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="156" Position="205.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="157" Position="221.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="158" Position="245.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="159" Position="245.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="160" Position="245.5,168,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="161" Position="228.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="162" Position="248.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="163" Position="244.5,140,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="164" Position="241.5,100,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="165" Position="227.5,100,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="166" Position="208.5,7,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="167" Position="214.5,7,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="168" Position="210.5,7,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+</PlacedObjects>
