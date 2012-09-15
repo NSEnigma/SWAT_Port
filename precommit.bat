@@ -10,9 +10,11 @@ for /R %%f in (*) do (
   SET _result=!_ext:~-4!
   if NOT x!_result! == x.xml ( 
     if NOT x!_result! == xgers (
-      ECHO Resetting %%f...
-      call git reset HEAD %%f
-      call git checkout -- %%f 
+      if NOT x!_result! == xects (
+        @ECHO Resetting %%f...
+        @call git reset HEAD %%f
+        @call git checkout -- %%f
+      )
     )
   )  
 )
