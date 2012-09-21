@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PlacedObjects Version="27">
     <ObjectUnit Id="46" Position="7.7895,242.8227,0" Rotation="1.102" Scale="1,1,1" UnitType="Carrier" Player="1"/>
+    <ObjectUnit Id="212" Position="14.6408,240.1074,0" Rotation="3.306" Scale="1,1,1" UnitType="Marauder" Player="1"/>
     <ObjectUnit Id="10" Position="12.8505,238.3408,0" Rotation="5.7536" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="11" Position="11.8024,236.8837,0" Rotation="4.092" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="12" Position="10.1584,236.422,0" Rotation="4.268" Scale="1,1,1" UnitType="Marine" Player="1"/>
@@ -49,6 +50,7 @@
     <ObjectUnit Id="177" Position="135,212.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
     <ObjectUnit Id="178" Position="135,215.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
     <ObjectUnit Id="179" Position="127,214.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectUnit Id="211" Position="126.4721,129.5854,0" Rotation="1.0998" Scale="1,1,1" UnitType="TestHero" Player="1"/>
     <ObjectDoodad Id="187" Position="128,235,7.9982" Rotation="4.7121" Scale="1,1,1.75" Type="SwatElectricCorner2x2">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>

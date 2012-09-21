@@ -12,6 +12,110 @@
         <EffectArray value="DisguiseMimic"/>
     </CEffectSet>
     <CEffectIssueOrder default="1" id="DisguiseIssueOrderDefault"/>
+    <CEffectEnumArea id="EnduranceSearch1">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="9" Effect="Endurance1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch2">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="9" Effect="Endurance2"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch3">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="9" Effect="Endurance3"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch4">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="9" Effect="Endurance4"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch5">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="9" Effect="Endurance5"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch6">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="9" Effect="Endurance6"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch7">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="9" Effect="Endurance7"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch8">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="9" Effect="Endurance8"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch9">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="9.9" Effect="Endurance8"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch10">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="10.9" Effect="Endurance8"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch11">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="12" Effect="Endurance8"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch12">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="13.2" Effect="Endurance8"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch13">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="14.5" Effect="Endurance8"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch14">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="15.9" Effect="Endurance8"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch15">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="17.4" Effect="Endurance8"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="EnduranceSearch16">
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <AreaArray Radius="19" Effect="Endurance8"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="Endurance1">
+        <Behavior value="EnduranceEffect1"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Endurance2">
+        <Behavior value="EnduranceEffect2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Endurance3">
+        <Behavior value="EnduranceEffect3"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Endurance4">
+        <Behavior value="EnduranceEffect4"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Endurance5">
+        <Behavior value="EnduranceEffect5"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Endurance6">
+        <Behavior value="EnduranceEffect6"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Endurance7">
+        <Behavior value="EnduranceEffect7"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="Endurance8">
+        <Behavior value="EnduranceEffect8"/>
+    </CEffectApplyBehavior>
     <CEffectEnumArea id="ChronoBoostAlert"/>
     <CEffectSet id="FungalGrowthInitialSet">
         <EffectArray value="SurfaceForSpellcast"/>
@@ -796,17 +900,6 @@
         <AreaArray Radius="5" Effect="CloakingField"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="CloakingField"/>
-    <CEffectEnumArea id="EnduranceSearch">
-        <EditorCategories value="Race:SWAT"/>
-        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead,Hidden"/>
-        <ImpactLocation Value="CasterUnit"/>
-        <AreaArray Radius="9" Effect="CloakingField"/>
-        <SearchFlags index="ExtendByUnitRadius" value="1"/>
-    </CEffectEnumArea>
-    <CEffectApplyBehavior id="Endurance">
-        <EditorCategories value="Race:SWAT"/>
-        <Behavior value="CloakFieldEffect"/>
-    </CEffectApplyBehavior>
     <CEffectDamage id="Spines" parent="DU_WEAP">
         <EditorCategories value="Race:Zerg"/>
         <Amount value="5"/>

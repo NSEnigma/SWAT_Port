@@ -168,6 +168,7 @@ Abil/EditorSuffix/AttackWarpPrism=
 Abil/EditorSuffix/BansheeCloak=
 Abil/EditorSuffix/Blink=
 Abil/EditorSuffix/Corruption=
+Abil/EditorSuffix/Endurance=(Dummy)
 Abil/EditorSuffix/FighterMode=
 Abil/EditorSuffix/MULEGather=
 Abil/EditorSuffix/MULERepair=
@@ -4831,6 +4832,7 @@ Mover/Name/VikingFighterMissile=Viking Fighter Missile
 Mover/Name/YamatoWeapon=Yamato Weapon
 Requirement/EditorSuffix/LearnChitinousPlating=
 Requirement/Name/ArmInterceptor=Arm Interceptor
+Requirement/Name/Endurance1=Endurance1
 Requirement/Name/GhostHoldingFire=Ghost Holding Fire
 Requirement/Name/GhostNotHoldingFire=Ghost Not Holding Fire
 Requirement/Name/HatcherySpawnLarva=Hatchery Spawn Larva
@@ -5068,6 +5070,7 @@ RequirementNode/Name/AndNotCountUpgradeExtendedThermalLanceQueuedOrBetterAllowUn
 RequirementNode/Name/AndNotCountUpgradeIncreasedRangeQueuedOrBetterAllowUnitImmortal=!CountUpgrade(IncreasedRange,QueuedOrBetter) && AllowUnit(Immortal)
 RequirementNode/Name/AndNotCountUpgradeObserverGraviticBoosterQueuedOrBetterAllowUnitObserver=!CountUpgrade(ObserverGraviticBooster,QueuedOrBetter) && AllowUnit(Observer)
 RequirementNode/Name/AndOr96167438CountUnitFactoryCompleteOnly96167438TechTreeCheatCountUnitFactoryFlyingCompleteOnly1718561093TechTreeCheatNot866976074CountUnitNukeQueuedOrBetterAtUnit=(CountUnit(Factory,CompleteOnly){Factory}[TechTreeCheat] || {Factory}CountUnit(FactoryFlying,CompleteOnly){Flying Factory}[TechTreeCheat]) && !{No Nuke in this Ghost Academy}CountUnit(Nuke,QueuedOrBetterAtUnit)
+RequirementNode/Name/CountAbilEnduranceCompleteOnlyAtUnit=CountAbil(Endurance,CompleteOnlyAtUnit)
 RequirementNode/Name/CountBehaviorGhostHoldFireBCompleteOnlyAtUnit=CountBehavior(GhostHoldFireB,CompleteOnlyAtUnit)
 RequirementNode/Name/CountBehaviorOnCreepCompleteOnlyAtUnit=CountBehavior(OnCreep,CompleteOnlyAtUnit)
 RequirementNode/Name/CountBehaviorQueenSpawnLarvaCompleteOnlyAtUnit=CountBehavior(QueenSpawnLarva,CompleteOnlyAtUnit)
@@ -5324,6 +5327,10 @@ RequirementNode/Name/Eq524089035CountUpgradeProtossAirWeaponsLevel2CompleteOnly1
 RequirementNode/Name/Eq539690215CountUpgradeZergFlyerArmorsLevel1CompleteOnly1=CountUpgrade(ZergFlyerArmorsLevel1,CompleteOnly) == {Zerg Flyer Carapace Level 1}1
 RequirementNode/Name/Eq629999927CountUpgradeProtossGroundWeaponsLevel2CompleteOnly1=CountUpgrade(ProtossGroundWeaponsLevel2,CompleteOnly) == {Protoss Ground Weapons Level 2}1
 RequirementNode/Name/Eq894233239CountUpgradeTerranVehicleWeaponsLevel2CompleteOnly1=CountUpgrade(TerranVehicleWeaponsLevel2,CompleteOnly) == {Terran Vehicle Weapons Level 2}1
+RequirementNode/Name/EqCountAbilEnduranceCompleteOnlyAtUnit=CountAbil(Endurance,CompleteOnlyAtUnit) == ()
+RequirementNode/Name/EqCountAbilEnduranceCompleteOnlyAtUnit0=CountAbil(Endurance,CompleteOnlyAtUnit) == 0
+RequirementNode/Name/EqCountAbilEnduranceCompleteOnlyAtUnit1=CountAbil(Endurance,CompleteOnlyAtUnit) == 1
+RequirementNode/Name/EqCountAbilEnduranceCompleteOnlyAtUnit10=EqCountAbilEnduranceCompleteOnlyAtUnit10
 RequirementNode/Name/EqCountUpgradeHiSecAutoTrackingQueuedOrBetter0=CountUpgrade(HiSecAutoTracking,QueuedOrBetter) == 0
 RequirementNode/Name/EqCountUpgradeProtossAirArmorsLevel1QueuedOrBetter0=CountUpgrade(ProtossAirArmorsLevel1,QueuedOrBetter) == 0
 RequirementNode/Name/EqCountUpgradeProtossAirArmorsLevel2QueuedOrBetter0=CountUpgrade(ProtossAirArmorsLevel2,QueuedOrBetter) == 0

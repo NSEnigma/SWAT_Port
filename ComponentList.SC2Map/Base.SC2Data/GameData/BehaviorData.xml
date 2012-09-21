@@ -7,46 +7,234 @@
             <BehaviorLinkDisableArray value="SensorTowerRadar"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorBuff id="KillsToCaster"/>
-    <CBehaviorBuff id="AutoTurretTimedLife" parent="TimedLife">
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
-        <DisplayDuration index="Enemy" value="1"/>
-        <Duration value="180"/>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="ChangelingDisguise"/>
-    <CBehaviorBuff id="Endurance">
+    <CBehaviorBuff id="Endurance1">
+        <Requirements value="Endurance1"/>
         <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
         <Period value="0.2"/>
-        <PeriodicEffect value="CloakingFieldSearch"/>
+        <PeriodicEffect value="EnduranceSearch1"/>
         <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
         <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
         <Alignment value="Positive"/>
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="EnduranceEffect">
-        <Alignment value="Positive"/>
+    <CBehaviorBuff id="Endurance2">
+        <Requirements value="Endurance2"/>
         <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
-        <InfoIcon value="Assets\Textures\btn-ability-terran-stimpack.dds"/>
-        <Duration value="15"/>
-        <Modification MoveSpeedMultiplier="1.5"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch2"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="Corruption">
-        <Modification>
-            <ModifyFlags index="DisableAbils" value="1"/>
-            <ModifyFlags index="EnableAttack" value="1"/>
-            <ModifyFlags index="EnableMove" value="1"/>
-            <ModifyFlags index="SuppressMoving" value="1"/>
-            <ModifyFlags index="SuppressTurning" value="1"/>
-            <StateFlags index="SuppressAttack" value="1"/>
-            <StateFlags index="SuppressCloak" value="1"/>
-            <StateFlags index="SuppressDetection" value="1"/>
-            <StateFlags index="SuppressRadar" value="1"/>
-            <BehaviorClassDisableArray index="CBehaviorSpawn" value="1"/>
-            <BehaviorLinkDisableArray value="QueenSpawnLarvaTimer"/>
-        </Modification>
-        <DisplayDuration index="Self" value="1"/>
-        <DisplayDuration index="Ally" value="1"/>
+    <CBehaviorBuff id="Endurance3">
+        <Requirements value="Endurance3"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch3"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance4">
+        <Requirements value="Endurance4"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch4"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance5">
+        <Requirements value="Endurance5"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch5"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance6">
+        <Requirements value="Endurance6"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch6"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance7">
+        <Requirements value="Endurance7"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch7"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance8">
+        <Requirements value="Endurance8"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch8"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance9">
+        <Requirements value="Endurance9"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch9"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance10">
+        <Requirements value="Endurance10"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch10"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance11">
+        <Requirements value="Endurance11"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch11"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance12">
+        <Requirements value="Endurance12"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch12"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance13">
+        <Requirements value="Endurance13"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch13"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance14">
+        <Requirements value="Endurance14"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch14"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance15">
+        <Requirements value="Endurance15"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch15"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Endurance16">
+        <Requirements value="Endurance16"/>
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="EnduranceSearch16"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Protoss-CloakField.dds"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnduranceEffect1">
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Requirements value="Endurance9"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+        <Duration value="2.5"/>
+        <Modification MoveSpeedMultiplier="1.02"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnduranceEffect2">
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Requirements value="Endurance10"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+        <Duration value="2.5"/>
+        <Modification MoveSpeedMultiplier="1.04"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnduranceEffect3">
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Requirements value="Endurance11"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+        <Duration value="2.5"/>
+        <Modification MoveSpeedMultiplier="1.06"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnduranceEffect4">
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Requirements value="Endurance12"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+        <Duration value="2.5"/>
+        <Modification MoveSpeedMultiplier="1.08"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnduranceEffect5">
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Requirements value="Endurance13"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+        <Duration value="2.5"/>
+        <Modification MoveSpeedMultiplier="1.1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnduranceEffect6">
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Requirements value="Endurance14"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+        <Duration value="2.5"/>
+        <Modification MoveSpeedMultiplier="1.12"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnduranceEffect7">
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Requirements value="Endurance15"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+        <Duration value="2.5"/>
+        <Modification MoveSpeedMultiplier="1.14"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnduranceEffect8">
+        <EditorCategories value="Race:SWAT,AbilityorEffectType:Units"/>
+        <Requirements value="Endurance16"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+        <Duration value="2.5"/>
+        <Modification MoveSpeedMultiplier="1.16"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AutoTurretTimedLife" parent="TimedLife">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="180"/>
     </CBehaviorBuff>
     <CBehaviorWander id="CritterWander"/>
     <CBehaviorWander id="CritterWanderLeash"/>

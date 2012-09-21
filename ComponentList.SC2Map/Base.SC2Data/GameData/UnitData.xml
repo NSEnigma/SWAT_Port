@@ -270,6 +270,61 @@
         <AddedOnArray UnitLink="Starport" BehaviorLink="StarportReactor"/>
         <TechAliasArray value="Alias_Reactor"/>
     </CUnit>
+    <CUnit id="TestHero">
+        <AbilArray index="4" Link="TestRevive"/>
+        <AbilArray index="5" Link="TactLearn"/>
+        <AbilArray index="6" Link="Endurance"/>
+        <BehaviorArray index="0" Link="TestAttribute"/>
+        <BehaviorArray index="1" Link="TestVeterancy"/>
+        <BehaviorArray Link="Endurance1"/>
+        <BehaviorArray Link="Endurance2"/>
+        <BehaviorArray Link="Endurance3"/>
+        <BehaviorArray Link="Endurance4"/>
+        <BehaviorArray Link="Endurance5"/>
+        <BehaviorArray Link="Endurance6"/>
+        <BehaviorArray Link="Endurance7"/>
+        <BehaviorArray Link="Endurance8"/>
+        <BehaviorArray Link="Endurance9"/>
+        <BehaviorArray Link="Endurance10"/>
+        <BehaviorArray Link="Endurance11"/>
+        <BehaviorArray Link="Endurance12"/>
+        <BehaviorArray Link="Endurance13"/>
+        <BehaviorArray Link="Endurance14"/>
+        <BehaviorArray Link="Endurance15"/>
+        <BehaviorArray Link="Endurance16"/>
+        <BehaviorArray Link="EnduranceEffect1"/>
+        <BehaviorArray Link="EnduranceEffect2"/>
+        <BehaviorArray Link="EnduranceEffect3"/>
+        <BehaviorArray Link="EnduranceEffect4"/>
+        <BehaviorArray Link="EnduranceEffect5"/>
+        <BehaviorArray Link="EnduranceEffect6"/>
+        <BehaviorArray Link="EnduranceEffect7"/>
+        <BehaviorArray Link="EnduranceEffect8"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5">
+                <Face value="Cancel"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="TestInventory,ItemCancel"/>
+                <SubmenuAbilState value=""/>
+                <SubmenuCardId value=""/>
+                <Row value="2"/>
+                <Column value="4"/>
+            </LayoutButtons>
+            <LayoutButtons index="7">
+                <Face value="Learn"/>
+                <Type value="Submenu"/>
+                <AbilCmd value=""/>
+                <SubmenuCardId value="0002"/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts index="1" CardId="0002">
+            <LayoutButtons index="0" Face="Cancel" Type="Submenu" AbilCmd="" Row="2" Column="4"/>
+            <LayoutButtons index="1" Face="LearnEndurance" Type="AbilCmd" AbilCmd="TactLearn,Learn1" Row="0" Column="0"/>
+        </CardLayouts>
+        <AddedOnArray UnitLink="TestHero" BehaviorLink="Endurance1"/>
+    </CUnit>
     <CUnit id="UrsadakMale" parent="Critter">
         <Mob value="Multiplayer"/>
         <Speed value="1"/>
@@ -2942,37 +2997,6 @@
         </CardLayouts>
         <GlossaryPriority value="23"/>
         <TechTreeUnlockedUnitArray value="Battlecruiser"/>
-    </CUnit>
-    <CUnit id="Marauder">
-        <LifeStart value="125"/>
-        <LifeMax value="125"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="StimpackMarauder"/>
-        <CardLayouts>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons>
-                <Face value="ConcussiveGrenade"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255"/>
-                <Requirements value="UsePunisherGrenades"/>
-                <Row value="1"/>
-                <Column value="0"/>
-            </LayoutButtons>
-            <LayoutButtons Face="StimMarauder" Type="AbilCmd" AbilCmd="StimpackMarauder,Execute" Row="2" Column="0"/>
-        </CardLayouts>
-        <GlossaryStrongArray value="Thor"/>
-        <GlossaryStrongArray value="Roach"/>
-        <GlossaryStrongArray value="Stalker"/>
-        <GlossaryWeakArray value="Marine"/>
-        <GlossaryWeakArray value="Zergling"/>
-        <GlossaryWeakArray value="Zealot"/>
-        <WeaponArray Link="PunisherGrenades"/>
     </CUnit>
     <CUnit id="PhotonCannon">
         <AbilArray Link="BuildInProgress"/>
