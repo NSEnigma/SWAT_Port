@@ -8,15 +8,18 @@ echo %cd%
 for /R %%f in (*) do (
   SET _ext=%%f
   SET _result=!_ext:~-4!
-  if NOT x!_result! == x.xml ( 
-    if NOT x!_result! == xgers (
-      if NOT x!_result! == xects (
-        @ECHO Resetting %%f...
-        @call git reset HEAD %%f
-        @call git checkout -- %%f
-      )
-    )
-  )  
+  SET _keep=
+  if x!_result! == x.xml set _keep=1
+  if x!_result! == xgers set _keep=1
+  if x!_result! == xects set _keep=1
+  if x!_result! == xents set _keep=1
+  if x!_result! == x.txt set _keep=1
+  if x!_result! == xions set _keep=1
+  if NOT defined _keep (
+    ECHO Resetting %%f...
+    @call git reset HEAD %%f
+    @call git checkout -- %%f
+  )
 )
 call git status
 cd %pwd%
