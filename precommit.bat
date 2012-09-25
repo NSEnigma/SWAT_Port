@@ -15,6 +15,9 @@ for /R %%f in (*) do (
   if x!_result! == xents set _keep=1
   if x!_result! == x.txt set _keep=1
   if x!_result! == xions set _keep=1
+  if x!_result! == xions set _keep=1
+  if x!_result! == x.tga set _keep=1
+  if x!_result! == xlaxy set _keep=1
   if NOT defined _keep (
     ECHO Resetting %%f...
     @call git reset HEAD %%f

@@ -2,7 +2,7 @@
 // 
 // Generated Map Script
 // 
-// Name:   Just Another StarCraft II Map
+// Name:   
 // 
 //==================================================================================================
 include "TriggerLibs/NativeLib"
@@ -15,37 +15,499 @@ void InitLibs () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger Variables
+// Global Variables
 //--------------------------------------------------------------------------------------------------
-trigger gt_MeleeInitialization;
+int gv_dlgDifficulty;
+int gv_iPlayerCount;
+int[11] gv_difficultyVotes;
+int gv_dlgBtnEasy;
+int gv_dlgBtnNormal;
+int gv_dlgBtnHard;
+region[85] gv_arBuilding;
+int gv_radLevel;
+int gv_radSafe;
+int gv_radLimit;
+region gv_secretHQ;
+int[6] gv_heroBosses;
+int[4] gv_heroCombat;
+int[11] gv_heroMobDmg;
+
+void InitGlobals () {
+    int init_i;
+
+    gv_dlgDifficulty = c_invalidDialogId;
+    gv_iPlayerCount = 0;
+    init_i = 0;
+    while (init_i <= 10) {
+        gv_difficultyVotes[init_i] = 0;
+        init_i = init_i + 1;
+    }
+    gv_dlgBtnEasy = c_invalidDialogControlId;
+    gv_dlgBtnNormal = c_invalidDialogControlId;
+    gv_dlgBtnHard = c_invalidDialogControlId;
+    init_i = 0;
+    while (init_i <= 84) {
+        gv_arBuilding[init_i] = null;
+        init_i = init_i + 1;
+    }
+    gv_radLevel = -2;
+    gv_radSafe = 15;
+    gv_radLimit = 100;
+    gv_secretHQ = null;
+    init_i = 0;
+    while (init_i <= 5) {
+        gv_heroBosses[init_i] = 0;
+        init_i = init_i + 1;
+    }
+    init_i = 0;
+    while (init_i <= 3) {
+        gv_heroCombat[init_i] = 0;
+        init_i = init_i + 1;
+    }
+    init_i = 0;
+    while (init_i <= 10) {
+        gv_heroMobDmg[init_i] = 0;
+        init_i = init_i + 1;
+    }
+}
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Melee Initialization
+// Global Function Declarations
 //--------------------------------------------------------------------------------------------------
-bool gt_MeleeInitialization_Func (bool testConds, bool runActions) {
+bool gf_RedIsHuman (int lp_iP);
+text gf_DifficultyEasy (int lp_iRand);
+text gf_DifficultyNormal (int lp_iRand);
+text gf_DifficultyHard (int lp_iRand);
+text gf_DifficultySurvival (int lp_iRand);
+void gf_RedSpawnDebrisItem (int lp_nSize, region lp_rRect, int lp_iMin, int lp_iMax, string lp_iItem);
+void gf_RedCreateDebris (region lp_rRect);
+void gf_ActivateDebug ();
+void gf_InitializePlayer (int lp_iPlayer);
+void gf_RedSpawnHQCrate (int lp_iChance);
+point gf_RandomCrateLocation (region lp_rRegion);
+
+//--------------------------------------------------------------------------------------------------
+// Trigger Variables
+//--------------------------------------------------------------------------------------------------
+trigger gt_InitHQ;
+trigger gt_InitRads;
+trigger gt_CreateBuildings;
+trigger gt_DifficultyPrompt;
+trigger gt_ButtonClicked;
+
+//--------------------------------------------------------------------------------------------------
+// Global Functions
+//--------------------------------------------------------------------------------------------------
+bool gf_RedIsHuman (int lp_iP) {
+    // Implementation
+    return (PlayerType(lp_iP) == c_playerTypeUser);
+}
+
+text gf_DifficultyEasy (int lp_iRand) {
+    int autoC20EC813_val;
+
+    // Implementation
+    autoC20EC813_val = lp_iRand;
+    if (autoC20EC813_val == 0) {
+        return StringExternal("Param/Value/198C0747");
+    }
+    else if (autoC20EC813_val == 1) {
+        return StringExternal("Param/Value/A0D5B92D");
+    }
+    else if (autoC20EC813_val == 2) {
+        return StringExternal("Param/Value/2E4CF213");
+    }
+    else if (autoC20EC813_val == 3) {
+        return StringExternal("Param/Value/B3AA02AF");
+    }
+    else if (autoC20EC813_val == 4) {
+        return StringExternal("Param/Value/F97E6433");
+    }
+    else {
+        return StringExternal("Param/Value/B980CFD6");
+    }
+}
+
+text gf_DifficultyNormal (int lp_iRand) {
+    int autoE27C3FE0_val;
+
+    // Implementation
+    autoE27C3FE0_val = lp_iRand;
+    if (autoE27C3FE0_val == 0) {
+        return StringExternal("Param/Value/8194E7B5");
+    }
+    else if (autoE27C3FE0_val == 1) {
+        return StringExternal("Param/Value/0AB1B103");
+    }
+    else if (autoE27C3FE0_val == 2) {
+        return StringExternal("Param/Value/2DC77E09");
+    }
+    else if (autoE27C3FE0_val == 3) {
+        return StringExternal("Param/Value/FD528790");
+    }
+    else {
+        return StringExternal("Param/Value/D05CC414");
+    }
+}
+
+text gf_DifficultyHard (int lp_iRand) {
+    int auto41FAECF9_val;
+
+    // Implementation
+    auto41FAECF9_val = lp_iRand;
+    {
+        return StringExternal("Param/Value/A205CD2A");
+    }
+}
+
+text gf_DifficultySurvival (int lp_iRand) {
+    int auto1BC4369A_val;
+
+    // Implementation
+    auto1BC4369A_val = lp_iRand;
+    {
+        return StringExternal("Param/Value/BB17006E");
+    }
+}
+
+void gf_RedSpawnDebrisItem (int lp_nSize, region lp_rRect, int lp_iMin, int lp_iMax, string lp_iItem) {
+}
+
+void gf_RedCreateDebris (region lp_rRect) {
+    // Variable Declarations
+    int lv_i;
+
+    // Variable Initialization
+    lv_i = RandomInt(1, 5);
+
+}
+
+void gf_ActivateDebug () {
+}
+
+void gf_InitializePlayer (int lp_iPlayer) {
+    // Implementation
+    gv_iPlayerCount += 1;
+}
+
+void gf_RedSpawnHQCrate (int lp_iChance) {
+    // Variable Declarations
+    string lv_iItem;
+    int lv_iRand;
+    point lv_pCrate;
+
+    // Variable Initialization
+    lv_iItem = null;
+    lv_iRand = RandomInt(0, 99);
+    lv_pCrate = null;
+
+    // Implementation
+    if ((RandomInt(0, 99) < lp_iChance)) {
+        lv_pCrate = gf_RandomCrateLocation(gv_secretHQ);
+        if ((lv_iRand < 20)) {
+            lv_iItem = null;
+        }
+        else if ((lv_iRand < 45)) {
+            lv_iItem = null;
+        }
+        else if ((lv_iRand < 65)) {
+            lv_iItem = null;
+        }
+        else if ((lv_iRand < 95)) {
+            lv_iItem = null;
+        }
+        else if ((lv_iRand < 100)) {
+            lv_iItem = null;
+        }
+        if ((("FireworksBlue" == null) || ("FireworksBlue" == null) || ("FireworksBlue" == null))) {
+            UnitCreate(1, lv_iItem, 0, 1, lv_pCrate, libNtve_gf_RandomAngle());
+        }
+        else {
+            UnitCreate(1, lv_iItem, 0, 1, lv_pCrate, libNtve_gf_RandomAngle());
+        }
+    }
+    else {
+    }
+}
+
+point gf_RandomCrateLocation (region lp_rRegion) {
+    // Implementation
+    return PointWithOffsetPolar(RegionGetCenter(lp_rRegion), 0.35, 4.7);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: InitHQ
+//--------------------------------------------------------------------------------------------------
+bool gt_InitHQ_Func (bool testConds, bool runActions) {
+    int auto1373FF04_val;
+    int autoE4367ABF_ae;
+    int autoE4367ABF_ai;
+    int auto929D0AB7_ae;
+    int auto929D0AB7_ai;
+
+    // Variable Declarations
+    point lv_pLoc;
+    int lv_i;
+
+    // Variable Initialization
+    lv_pLoc = null;
+    lv_i = (RandomInt(0, 5)
+);
+
     // Actions
     if (!runActions) {
         return true;
     }
 
-    MeleeInitResources();
-    MeleeInitUnits();
-    MeleeInitAI();
-    MeleeInitOptions();
+    TriggerDebugEnableType(1, true);
+    TriggerDebugWindowOpen(true);
+    TriggerDebugOutput(1, StringExternal("Param/Value/2CD78CA7"), true);
+    auto1373FF04_val = lv_i;
+    if (auto1373FF04_val == 0) {
+        gv_secretHQ = RegionFromId(85);
+    }
+    else if (auto1373FF04_val == 1) {
+        gv_secretHQ = RegionFromId(86);
+    }
+    else if (auto1373FF04_val == 2) {
+        gv_secretHQ = RegionFromId(87);
+    }
+    else if (auto1373FF04_val == 3) {
+        gv_secretHQ = RegionFromId(88);
+    }
+    else if (auto1373FF04_val == 4) {
+        gv_secretHQ = RegionFromId(89);
+    }
+    else {
+        gv_secretHQ = RegionFromId(90);
+    }
+    autoE4367ABF_ae = 8;
+    autoE4367ABF_ai = 1;
+    lv_i = 0;
+    while ((autoE4367ABF_ai >= 0 && lv_i <= autoE4367ABF_ae) || (autoE4367ABF_ai <= 0 && lv_i >= autoE4367ABF_ae)) {
+        CameraPan(lv_i, RegionGetCenter(gv_secretHQ), 2.0, -1, 10.0, true);
+        if (lv_i == autoE4367ABF_ae) {
+            break;
+        }
+        lv_i = lv_i + autoE4367ABF_ai;
+    }
+    gf_RedSpawnHQCrate(100);
+    gf_RedSpawnHQCrate(75);
+    gf_RedSpawnHQCrate(25);
+    gf_RedSpawnHQCrate(10);
+    gf_RedSpawnHQCrate(10);
+    gf_RedSpawnHQCrate(10);
+    auto929D0AB7_ae = 8;
+    auto929D0AB7_ai = 1;
+    lv_i = 0;
+    while ((auto929D0AB7_ai >= 0 && lv_i <= auto929D0AB7_ae) || (auto929D0AB7_ai <= 0 && lv_i >= auto929D0AB7_ae)) {
+        gf_InitializePlayer(lv_i);
+        if (lv_i == auto929D0AB7_ae) {
+            break;
+        }
+        lv_i = lv_i + auto929D0AB7_ai;
+    }
+    TriggerExecute(gt_CreateBuildings, false, false);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void gt_MeleeInitialization_Init () {
-    gt_MeleeInitialization = TriggerCreate("gt_MeleeInitialization_Func");
-    TriggerAddEventMapInit(gt_MeleeInitialization);
+void gt_InitHQ_Init () {
+    gt_InitHQ = TriggerCreate("gt_InitHQ_Func");
+    TriggerAddEventTimeElapsed(gt_InitHQ, 0.1, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: InitRads
+//--------------------------------------------------------------------------------------------------
+bool gt_InitRads_Func (bool testConds, bool runActions) {
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerDebugOutput(1, StringExternal("Param/Value/D95B4BBE"), true);
+    FogSetEnabled(true);
+    FogSetColor(Color(0.00, 82.35, 0.00));
+    TriggerExecute(gt_DifficultyPrompt, false, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_InitRads_Init () {
+    gt_InitRads = TriggerCreate("gt_InitRads_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: CreateBuildings
+//--------------------------------------------------------------------------------------------------
+bool gt_CreateBuildings_Func (bool testConds, bool runActions) {
+    int auto922B539A_ae;
+    int auto922B539A_ai;
+    int autoF33FF524_ae;
+    int autoF33FF524_ai;
+    int auto83E6776F_ae;
+    int auto83E6776F_ai;
+
+    // Variable Declarations
+    region lv_rTemp;
+    int lv_iRand;
+    int lv_i;
+
+    // Variable Initialization
+    lv_rTemp = null;
+    lv_iRand = 0;
+    lv_i = 0;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerDebugOutput(1, StringExternal("Param/Value/7490BA26"), true);
+    TriggerDebugOutput(1, StringExternal("Param/Value/02E96F19"), true);
+    auto922B539A_ae = 83;
+    auto922B539A_ai = 1;
+    lv_i = 0;
+    while ((auto922B539A_ai >= 0 && lv_i <= auto922B539A_ae) || (auto922B539A_ai <= 0 && lv_i >= auto922B539A_ae)) {
+        gv_arBuilding[lv_i] = RegionFromId(lv_i);
+        if (lv_i == auto922B539A_ae) {
+            break;
+        }
+        lv_i = lv_i + auto922B539A_ai;
+    }
+    TriggerDebugOutput(1, StringExternal("Param/Value/77CF942A"), true);
+    autoF33FF524_ae = 0;
+    autoF33FF524_ai = -1;
+    lv_i = 83;
+    while ((autoF33FF524_ai >= 0 && lv_i <= autoF33FF524_ae) || (autoF33FF524_ai <= 0 && lv_i >= autoF33FF524_ae)) {
+        lv_iRand = RandomInt(0, lv_i);
+        lv_rTemp = gv_arBuilding[lv_iRand];
+        gv_arBuilding[lv_iRand] = gv_arBuilding[lv_i];
+        gv_arBuilding[lv_i] = lv_rTemp;
+        if (lv_i == autoF33FF524_ae) {
+            break;
+        }
+        lv_i = lv_i + autoF33FF524_ai;
+    }
+    TriggerDebugOutput(1, StringExternal("Param/Value/FC61D60B"), true);
+    auto83E6776F_ae = 146;
+    auto83E6776F_ai = 1;
+    lv_i = 91;
+    while ((auto83E6776F_ai >= 0 && lv_i <= auto83E6776F_ae) || (auto83E6776F_ai <= 0 && lv_i >= auto83E6776F_ae)) {
+        gf_RedCreateDebris(RegionFromId(lv_i));
+        if (lv_i == auto83E6776F_ae) {
+            break;
+        }
+        lv_i = lv_i + auto83E6776F_ai;
+    }
+    TriggerExecute(gt_InitRads, false, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_CreateBuildings_Init () {
+    gt_CreateBuildings = TriggerCreate("gt_CreateBuildings_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: DifficultyPrompt
+//--------------------------------------------------------------------------------------------------
+bool gt_DifficultyPrompt_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_i;
+
+    // Variable Initialization
+    lv_i = 0;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerDebugOutput(1, StringExternal("Param/Value/336818AD"), true);
+    DialogCreate(600, 470, c_anchorCenter, 0, -100, true);
+    gv_dlgDifficulty = DialogLastCreated();
+    DialogSetTitle(DialogLastCreated(), StringExternal("Param/Value/B6A2C9BA"));
+    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/39524C1E"), gf_DifficultyEasy(RandomInt(0, 5)), "");
+    gv_dlgBtnEasy = DialogControlLastCreated();
+    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/D30C9B2B"), gf_DifficultyNormal(RandomInt(0, 5)), "");
+    gv_dlgBtnNormal = DialogControlLastCreated();
+    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/258B95AB"), gf_DifficultyHard(RandomInt(0, 5)), "");
+    gv_dlgBtnHard = DialogControlLastCreated();
+    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/7847716E"), gf_DifficultySurvival(RandomInt(0, 5)), "");
+    DialogSetVisible(DialogLastCreated(), PlayerGroupAll(), true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_DifficultyPrompt_Init () {
+    gt_DifficultyPrompt = TriggerCreate("gt_DifficultyPrompt_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: ButtonClicked
+//--------------------------------------------------------------------------------------------------
+bool gt_ButtonClicked_Func (bool testConds, bool runActions) {
+    int autoDD58EC57_val;
+
+    // Variable Declarations
+    bool lv_bEasy;
+
+    // Variable Initialization
+    lv_bEasy = false;
+
+    // Conditions
+    if (testConds) {
+        if (!(((EventDialogControl() == gv_dlgBtnEasy) || (EventDialogControl() == gv_dlgBtnNormal) || (EventDialogControl() == gv_dlgBtnHard)))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerDebugOutput(1, StringExternal("Param/Value/486C6746"), true);
+    autoDD58EC57_val = gv_dlgBtnEasy;
+    if (autoDD58EC57_val == gv_dlgBtnEasy) {
+        gv_difficultyVotes[EventPlayer()] = 3;
+        lv_bEasy = true;
+    }
+    else if (autoDD58EC57_val == gv_dlgBtnNormal) {
+        gv_difficultyVotes[EventPlayer()] = 2;
+    }
+    else if (autoDD58EC57_val == gv_dlgBtnHard) {
+        gv_difficultyVotes[EventPlayer()] = 1;
+    }
+    else {
+        gv_difficultyVotes[EventPlayer()] = 4;
+    }
+    gv_difficultyVotes[9] += 1;
+    DialogSetVisible(gv_dlgDifficulty, PlayerGroupSingle(EventPlayer()), false);
+    if ((gv_difficultyVotes[9] >= gv_iPlayerCount)) {
+    }
+    else {
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ButtonClicked_Init () {
+    gt_ButtonClicked = TriggerCreate("gt_ButtonClicked_Func");
+    TriggerAddEventDialogControl(gt_ButtonClicked, c_playerAny, c_invalidDialogControlId, c_triggerControlEventTypeClick);
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger Initialization
 //--------------------------------------------------------------------------------------------------
 void InitTriggers () {
-    gt_MeleeInitialization_Init();
+    gt_InitHQ_Init();
+    gt_InitRads_Init();
+    gt_CreateBuildings_Init();
+    gt_DifficultyPrompt_Init();
+    gt_ButtonClicked_Init();
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -53,5 +515,6 @@ void InitTriggers () {
 //--------------------------------------------------------------------------------------------------
 void InitMap () {
     InitLibs();
+    InitGlobals();
     InitTriggers();
 }
