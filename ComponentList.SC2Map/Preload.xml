@@ -11,6 +11,7 @@
 <Terrain id="Tarsonis"/>
 <Unit id="Marine"/>
 <Unit id="Carrier"/>
+<Unit id="Vulture"/>
 <Unit id="SwatGraveyardDoor"/>
 <Unit id="SecurityGateStraightVerticalLFLowered"/>
 </Preload>

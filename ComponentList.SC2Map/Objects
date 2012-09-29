@@ -605,4 +605,10 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectPoint Id="211" Position="36.0197,216.0297,0" Scale="1,1,1" Type="Normal" Name="Televac1" Color="0,0,0,0"/>
+    <ObjectPoint Id="212" Position="45.0466,134.999,0" Scale="1,1,1" Type="Normal" Name="Televac2" Color="0,0,0,0"/>
+    <ObjectPoint Id="213" Position="65.0585,34.9504,0" Scale="1,1,1" Type="Normal" Name="Televac3" Color="0,0,0,0"/>
+    <ObjectPoint Id="214" Position="147.0346,32.961,0" Scale="1,1,1" Type="Normal" Name="Televac6" Color="0,0,0,0"/>
+    <ObjectPoint Id="215" Position="228.0122,165.9931,0" Scale="1,1,1" Type="Normal" Name="Televac5" Color="0,0,0,0"/>
+    <ObjectPoint Id="216" Position="227.0571,226.9377,0" Scale="1,1,1" Type="Normal" Name="Televac4" Color="0,0,0,0"/>
 </PlacedObjects>

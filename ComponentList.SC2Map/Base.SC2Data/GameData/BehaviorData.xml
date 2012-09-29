@@ -76,6 +76,9 @@
             <AbilLinkDisableArray value="BurrowInfestorUp"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="TelevacCivEnergy">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="VoidRayPhase2">
         <RemoveValidatorArray value="NotQuadDamage"/>
         <RemoveValidatorArray value="NotVortexd"/>

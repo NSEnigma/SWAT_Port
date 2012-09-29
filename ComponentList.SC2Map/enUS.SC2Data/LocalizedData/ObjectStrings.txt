@@ -9503,6 +9503,7 @@ Validator/Name/TechLabIsDetached=TechLabIsDetached
 Validator/Name/TechLabNotBarracks=TechLabNotBarracks
 Validator/Name/TechLabNotFactory=TechLabNotFactory
 Validator/Name/TechLabNotStarport=TechLabNotStarport
+Validator/Name/TelevacEnergyGE250=TelevacEnergyGE250
 Validator/Name/ThreeHealth=Health - Plague - Less than Two
 Validator/Name/TimeWarpTargetFilters=TimeWarp Target Filters
 Validator/Name/TimeWarpViableTargets=TimeWarp Viable Targets

@@ -15,16 +15,33 @@ void InitLibs () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Constants
+//--------------------------------------------------------------------------------------------------
+const int gv_pointValue = 0;
+const int gv_userData = 1;
+const int gv_unitId = 2;
+
+//--------------------------------------------------------------------------------------------------
 // Global Variables
 //--------------------------------------------------------------------------------------------------
+int gv_televacCivs;
+bool gv_gameOver;
+unit[8193] gv_units;
+int gv_unitCount;
+unit[7] gv_televac;
+trigger[10] gv_rankCodeTrigs;
 int gv_dlgDifficulty;
+int gv_survival;
 int gv_iPlayerCount;
 int[11] gv_difficultyVotes;
 int gv_dlgBtnEasy;
 int gv_dlgBtnNormal;
 int gv_dlgBtnHard;
 region[85] gv_arBuilding;
+int gv_difficulty;
+int gv_nightmare;
 int gv_radLevel;
+int gv_neutralPlayer;
 int gv_radSafe;
 int gv_radLimit;
 region gv_secretHQ;
@@ -35,7 +52,26 @@ int[11] gv_heroMobDmg;
 void InitGlobals () {
     int init_i;
 
+    gv_televacCivs = 0;
+    gv_gameOver = false;
+    init_i = 0;
+    while (init_i <= 8192) {
+        gv_units[init_i] = null;
+        init_i = init_i + 1;
+    }
+    gv_unitCount = 0;
+    init_i = 0;
+    while (init_i <= 6) {
+        gv_televac[init_i] = null;
+        init_i = init_i + 1;
+    }
+    init_i = 0;
+    while (init_i <= 9) {
+        gv_rankCodeTrigs[init_i] = null;
+        init_i = init_i + 1;
+    }
     gv_dlgDifficulty = c_invalidDialogId;
+    gv_survival = 0;
     gv_iPlayerCount = 0;
     init_i = 0;
     while (init_i <= 10) {
@@ -50,7 +86,10 @@ void InitGlobals () {
         gv_arBuilding[init_i] = null;
         init_i = init_i + 1;
     }
+    gv_difficulty = 0;
+    gv_nightmare = 0;
     gv_radLevel = -2;
+    gv_neutralPlayer = 0;
     gv_radSafe = 15;
     gv_radLimit = 100;
     gv_secretHQ = null;
@@ -75,6 +114,11 @@ void InitGlobals () {
 // Global Function Declarations
 //--------------------------------------------------------------------------------------------------
 bool gf_RedIsHuman (int lp_iP);
+bool gf_RedTelevac_Conditions ();
+void gf_TrigRankCodeText_Actions ();
+void gf_RedInitReactor (int lp_building, int lp_index, int lp_difficulty);
+void gf_RedInitTelevac (unit lp_televac, int lp_bunker);
+void gf_InitTrigRankCodes (int lp_iP);
 text gf_DifficultyEasy (int lp_iRand);
 text gf_DifficultyNormal (int lp_iRand);
 text gf_DifficultyHard (int lp_iRand);
@@ -89,11 +133,15 @@ point gf_RandomCrateLocation (region lp_rRegion);
 //--------------------------------------------------------------------------------------------------
 // Trigger Variables
 //--------------------------------------------------------------------------------------------------
+trigger gt_TelevacRescue;
 trigger gt_InitHQ;
+trigger gt_KeepBuildingSight;
 trigger gt_InitRads;
 trigger gt_CreateBuildings;
 trigger gt_DifficultyPrompt;
 trigger gt_ButtonClicked;
+trigger gt_DlgTimer;
+trigger gt_InitBuildings;
 
 //--------------------------------------------------------------------------------------------------
 // Global Functions
@@ -101,6 +149,47 @@ trigger gt_ButtonClicked;
 bool gf_RedIsHuman (int lp_iP) {
     // Implementation
     return (PlayerType(lp_iP) == c_playerTypeUser);
+}
+
+bool gf_RedTelevac_Conditions () {
+    // Implementation
+    return ((UnitGetCustomValue(EventUnitRangeUnit(), gv_pointValue) < 3) && (UnitGetCustomValue(EventUnitRangeUnit(), gv_userData) < 1.0));
+}
+
+void gf_TrigRankCodeText_Actions () {
+    // Implementation
+}
+
+void gf_RedInitReactor (int lp_building, int lp_index, int lp_difficulty) {
+    // Variable Declarations
+    unit lv_reactor;
+
+    // Variable Initialization
+    lv_reactor = null;
+
+    // Implementation
+    UnitCreate(1, "Vulture", 0, gv_neutralPlayer, RegionGetCenter(gv_arBuilding[lp_building]), 270.0);
+    lv_reactor = UnitLastCreated();
+    if (((gv_difficulty > 1) || (ModI(lp_index, 2) == 1))) {
+        VisRevealArea(1, gv_arBuilding[lp_building], 0.0, false);
+    }
+    else {
+        TriggerAddEventUnitRegion(gt_KeepBuildingSight, null, gv_arBuilding[lp_building], true);
+    }
+}
+
+void gf_RedInitTelevac (unit lp_televac, int lp_bunker) {
+    // Implementation
+    TextExpressionSetToken("Param/Expression/EF7EE0DD", "A", IntToText(lp_bunker));
+    TriggerDebugOutput(1, TextExpressionAssemble("Param/Expression/EF7EE0DD"), true);
+    TriggerAddEventUnitRange(gt_TelevacRescue, null, lp_televac, 1.28, true);
+    gv_televac[lp_bunker] = lp_televac;
+}
+
+void gf_InitTrigRankCodes (int lp_iP) {
+    // Implementation
+    gv_rankCodeTrigs[lp_iP] = TriggerCreate("TrigRankCodeText_Actions");
+    TriggerAddEventChatMessage(gv_rankCodeTrigs[lp_iP], 0, "", false);
 }
 
 text gf_DifficultyEasy (int lp_iRand) {
@@ -236,6 +325,56 @@ point gf_RandomCrateLocation (region lp_rRegion) {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: TelevacRescue
+//--------------------------------------------------------------------------------------------------
+bool gt_TelevacRescue_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_iCivs;
+    unit lv_civ;
+    unit lv_televac;
+    fixed lv_energy;
+
+    // Variable Initialization
+    lv_iCivs = 0;
+    lv_civ = EventUnit();
+    lv_televac = EventUnitRangeUnit();
+    lv_energy = 0.0;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lv_energy = UnitGetPropertyFixed(lv_televac, c_unitPropLife, c_unitPropCurrent);
+    TriggerDebugOutput(1, StringExternal("Param/Value/791CD81E"), true);
+    TextExpressionSetToken("Param/Expression/4D542CBA", "A", FixedToText(lv_energy, c_fixedPrecisionAny));
+    TriggerDebugOutput(1, TextExpressionAssemble("Param/Expression/4D542CBA"), true);
+    if ((lv_energy < 10.0)) {
+        return true;
+    }
+    else {
+    }
+    TriggerDebugOutput(1, StringExternal("Param/Value/68429319"), true);
+    UnitSetPropertyFixed(lv_televac, c_unitPropLife, (lv_energy-10));
+    gv_televacCivs += 1;
+    UnitRemove(lv_civ);
+    Wait(5.0, c_timeGame);
+    if (((gv_televacCivs < 1) || (gv_gameOver == true))) {
+        return true;
+    }
+    else {
+    }
+    lv_iCivs = gv_televacCivs;
+    gv_televacCivs = gv_televacCivs;
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_TelevacRescue_Init () {
+    gt_TelevacRescue = TriggerCreate("gt_TelevacRescue_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: InitHQ
 //--------------------------------------------------------------------------------------------------
 bool gt_InitHQ_Func (bool testConds, bool runActions) {
@@ -307,6 +446,12 @@ bool gt_InitHQ_Func (bool testConds, bool runActions) {
         }
         lv_i = lv_i + auto929D0AB7_ai;
     }
+    TriggerDebugOutput(1, IntToText(TriggerGetEvalCount(TriggerGetCurrent())), true);
+    if ((TriggerEvaluate(gt_InitHQ) == true)) {
+    }
+    else {
+    }
+    TriggerDebugOutput(1, IntToText(TriggerGetEvalCount(TriggerGetCurrent())), true);
     TriggerExecute(gt_CreateBuildings, false, false);
     return true;
 }
@@ -315,6 +460,31 @@ bool gt_InitHQ_Func (bool testConds, bool runActions) {
 void gt_InitHQ_Init () {
     gt_InitHQ = TriggerCreate("gt_InitHQ_Func");
     TriggerAddEventTimeElapsed(gt_InitHQ, 0.1, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: KeepBuildingSight
+//--------------------------------------------------------------------------------------------------
+bool gt_KeepBuildingSight_Func (bool testConds, bool runActions) {
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetOwner(EventUnit()) < 9))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    VisRevealArea(1, EventUnitRegion(), 0.0, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_KeepBuildingSight_Init () {
+    gt_KeepBuildingSight = TriggerCreate("gt_KeepBuildingSight_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -485,8 +655,10 @@ bool gt_ButtonClicked_Func (bool testConds, bool runActions) {
         gv_difficultyVotes[EventPlayer()] = 4;
     }
     gv_difficultyVotes[9] += 1;
+    TriggerDebugOutput(1, StringExternal("Param/Value/900F4E59"), true);
     DialogSetVisible(gv_dlgDifficulty, PlayerGroupSingle(EventPlayer()), false);
-    if ((gv_difficultyVotes[9] >= gv_iPlayerCount)) {
+    if ((gv_difficultyVotes[9] >= gv_iPlayerCount) && (TriggerIsEnabled(gt_DlgTimer) == true)) {
+        TriggerExecute(gt_DlgTimer, true, false);
     }
     else {
     }
@@ -500,14 +672,168 @@ void gt_ButtonClicked_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: DlgTimer
+//--------------------------------------------------------------------------------------------------
+bool gt_DlgTimer_Func (bool testConds, bool runActions) {
+    int auto2AB3647E_ae;
+    int auto2AB3647E_ai;
+
+    // Variable Declarations
+    int lv_i;
+
+    // Variable Initialization
+    lv_i = 0;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(gt_DlgTimer, false);
+    TriggerEnable(gt_ButtonClicked, false);
+    auto2AB3647E_ae = 8;
+    auto2AB3647E_ai = 1;
+    lv_i = 0;
+    while ((auto2AB3647E_ai >= 0 && lv_i <= auto2AB3647E_ae) || (auto2AB3647E_ai <= 0 && lv_i >= auto2AB3647E_ae)) {
+        if ((gv_difficultyVotes[lv_i] == 0)) {
+        }
+        if (lv_i == auto2AB3647E_ae) {
+            break;
+        }
+        lv_i = lv_i + auto2AB3647E_ai;
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_DlgTimer_Init () {
+    gt_DlgTimer = TriggerCreate("gt_DlgTimer_Func");
+    TriggerAddEventTimeElapsed(gt_DlgTimer, 10.5, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: InitBuildings
+//--------------------------------------------------------------------------------------------------
+bool gt_InitBuildings_Func (bool testConds, bool runActions) {
+    int init_i;
+
+    int autoAD522449_ae;
+    int autoAD522449_ai;
+    int auto16816BFF_val;
+
+    // Variable Declarations
+    string lv_utTelevac;
+    int lv_i;
+    int lv_iBuilding;
+    int lv_iRand;
+    int lv_iDrain;
+    int[7] lv_aDrain;
+    point lv_TempLoc;
+    int lv_iAdj;
+
+    // Variable Initialization
+    lv_utTelevac = "Marauder";
+    lv_i = 0;
+    lv_iBuilding = 83;
+    lv_iRand = 0;
+    lv_iDrain = 0;
+    init_i = 0;
+    while (init_i <= 6) {
+        lv_aDrain[init_i] = 0;
+        init_i = init_i + 1;
+    }
+    lv_TempLoc = null;
+    lv_iAdj = ((gv_iPlayerCount-1)/3);
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    autoAD522449_ae = 8;
+    autoAD522449_ai = 1;
+    lv_i = 0;
+    while ((autoAD522449_ai >= 0 && lv_i <= autoAD522449_ae) || (autoAD522449_ai <= 0 && lv_i >= autoAD522449_ae)) {
+        VisExploreArea(lv_i, RegionCircle(RegionGetCenter(gv_secretHQ), 55.0), true, false);
+        if (lv_i == autoAD522449_ae) {
+            break;
+        }
+        lv_i = lv_i + autoAD522449_ai;
+    }
+    if ((gv_survival < 1)) {
+        UnitCreate(1, lv_utTelevac, 0, gv_neutralPlayer, PointFromId(211), 270.0);
+        gf_RedInitTelevac(UnitLastCreated(), 0);
+        UnitCreate(1, lv_utTelevac, 0, gv_neutralPlayer, PointFromId(212), 270.0);
+        gf_RedInitTelevac(UnitLastCreated(), 1);
+        UnitCreate(1, lv_utTelevac, 0, gv_neutralPlayer, PointFromId(213), 270.0);
+        gf_RedInitTelevac(UnitLastCreated(), 2);
+        UnitCreate(1, lv_utTelevac, 0, gv_neutralPlayer, PointFromId(216), 270.0);
+        gf_RedInitTelevac(UnitLastCreated(), 3);
+        UnitCreate(1, lv_utTelevac, 0, gv_neutralPlayer, PointFromId(215), 270.0);
+        gf_RedInitTelevac(UnitLastCreated(), 4);
+        UnitCreate(1, lv_utTelevac, 0, gv_neutralPlayer, PointFromId(214), 270.0);
+        gf_RedInitTelevac(UnitLastCreated(), 5);
+    }
+    else {
+    }
+    auto16816BFF_val = gv_difficulty;
+    if (auto16816BFF_val == 3) {
+        lv_aDrain[0] = 0;
+        lv_aDrain[1] = 0;
+        lv_aDrain[2] = 0;
+        lv_aDrain[3] = 1;
+        lv_aDrain[4] = 1;
+        lv_aDrain[5] = 2;
+    }
+    else if (auto16816BFF_val == 2) {
+        lv_aDrain[0] = 0;
+        lv_aDrain[1] = 0;
+        lv_aDrain[2] = 1;
+        lv_aDrain[3] = 1;
+        lv_aDrain[4] = 1;
+        lv_aDrain[5] = 2;
+    }
+    else {
+        lv_aDrain[0] = 0;
+        lv_aDrain[1] = 1;
+        lv_aDrain[2] = 1;
+        lv_aDrain[3] = 1;
+        lv_aDrain[4] = 2;
+        lv_aDrain[5] = 2;
+    }
+    lv_iRand = (lv_iBuilding-5);
+    if ((gv_survival < 1)) {
+        lv_i = (lv_iBuilding-lv_iRand);
+        while ((lv_iBuilding >= lv_iRand)) {
+            gf_RedInitReactor(lv_iBuilding, lv_i, lv_aDrain[lv_i]);
+            lv_iBuilding -= 1;
+            lv_i -= 1;
+        }
+    }
+    else {
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_InitBuildings_Init () {
+    gt_InitBuildings = TriggerCreate("gt_InitBuildings_Func");
+    TriggerAddEventTimeElapsed(gt_InitBuildings, 15.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger Initialization
 //--------------------------------------------------------------------------------------------------
 void InitTriggers () {
+    gt_TelevacRescue_Init();
     gt_InitHQ_Init();
+    gt_KeepBuildingSight_Init();
     gt_InitRads_Init();
     gt_CreateBuildings_Init();
     gt_DifficultyPrompt_Init();
     gt_ButtonClicked_Init();
+    gt_DlgTimer_Init();
+    gt_InitBuildings_Init();
 }
 
 //--------------------------------------------------------------------------------------------------
