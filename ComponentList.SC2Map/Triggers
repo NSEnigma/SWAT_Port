@@ -182,6 +182,7 @@
         <Item Type="Trigger" Id="5414CFA1"/>
     </Element>
     <Element Type="Category" Id="B17DE1C9">
+        <Item Type="Trigger" Id="6B0D0BE0"/>
         <Item Type="Category" Id="7B5A352B"/>
     </Element>
     <Element Type="Category" Id="D53A84FB">
@@ -264,6 +265,10 @@
         <Action Type="FunctionCall" Id="9E4040E7"/>
         <Action Type="FunctionCall" Id="9EA8B99B"/>
         <Action Type="Comment" Id="071B9472"/>
+    </Element>
+    <Element Type="Trigger" Id="6B0D0BE0">
+        <Identifier>ReactorDone</Identifier>
+        <Event Type="FunctionCall" Id="777D2AD2"/>
     </Element>
     <Element Type="Trigger" Id="7A44C067">
         <Identifier>InitHQ</Identifier>
@@ -1421,6 +1426,12 @@
         <ScriptCode>
             TriggerAddEventChatMessage(gv_rankCodeTrigs[lp_iP], 0, "", false);
         </ScriptCode>
+    </Element>
+    <Element Type="FunctionCall" Id="777D2AD2">
+        <FunctionDef Type="FunctionDef" Library="Ntve" Id="3C0566C4"/>
+        <Parameter Type="Param" Id="6036B7D5"/>
+        <Parameter Type="Param" Id="FD3C5D59"/>
+        <Parameter Type="Param" Id="513EDB47"/>
     </Element>
     <Element Type="FunctionCall" Id="77A1456B">
         <Disabled/>
@@ -2656,7 +2667,7 @@
         <FunctionCall Type="FunctionCall" Id="80CAFE93"/>
     </Element>
     <Element Type="Param" Id="1101854D">
-        <Value>0</Value>
+        <Value>1</Value>
         <ValueType Type="int"/>
     </Element>
     <Element Type="Param" Id="1233ADD3">
@@ -3464,6 +3475,10 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
         <Variable Type="Variable" Id="93F45996"/>
     </Element>
+    <Element Type="Param" Id="513EDB47">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="3029CA3C"/>
+        <Preset Type="PresetValue" Library="Ntve" Id="079527A6"/>
+    </Element>
     <Element Type="Param" Id="5161A413">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="6725C0EB"/>
         <Value>1</Value>
@@ -3639,6 +3654,10 @@
     <Element Type="Param" Id="6025779E">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="1EC7B7A1"/>
         <Variable Type="Variable" Id="FBAE2DC8"/>
+    </Element>
+    <Element Type="Param" Id="6036B7D5">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="F3A8B0DC"/>
+        <Preset Type="PresetValue" Library="Ntve" Id="C84C7A78"/>
     </Element>
     <Element Type="Param" Id="60AC571D">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="AB235258"/>
@@ -5523,6 +5542,12 @@
     <Element Type="Param" Id="FD0AB185">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="ABB380C4"/>
         <FunctionCall Type="FunctionCall" Id="9CA1CF54"/>
+    </Element>
+    <Element Type="Param" Id="FD3C5D59">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="1CDCC284"/>
+        <Value>TelevacCivEnergy</Value>
+        <ValueType Type="gamelink"/>
+        <ValueGameType Type="Behavior"/>
     </Element>
     <Element Type="Param" Id="FD528790">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000488"/>

@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="us-ascii"?>
-<Catalog/>
+<Catalog>
+    <CTargetSortBehaviorCount id="TSEnergyDrainLast">
+        <WhichUnit Value="Target"/>
+        <Descending value="1"/>
+        <Behavior value="TorEnergyDrainLastDrain"/>
+        <Value value="1"/>
+    </CTargetSortBehaviorCount>
+    <CTargetSortVital id="TSEnergyLargestFirst">
+        <Descending value="1"/>
+        <Vital value="Energy"/>
+    </CTargetSortVital>
+</Catalog>

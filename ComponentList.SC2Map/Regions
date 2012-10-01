@@ -495,7 +495,7 @@
     <region id="83">
         <name value="Region 083"/>
         <shape type="rect">
-            <quad value="235.076,224.9196,243.0756,232.9194"/>
+            <quad value="235.0002,225.0002,243,233"/>
         </shape>
     </region>
     <region id="84">

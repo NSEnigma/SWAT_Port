@@ -117,6 +117,7 @@ Trigger/Name/1A4B9D41=ButtonClicked
 Trigger/Name/4D5F0E5D=InitRads
 Trigger/Name/4FB6DFAC=CreateBuildings
 Trigger/Name/5414CFA1=TelevacRescue
+Trigger/Name/6B0D0BE0=ReactorDone
 Trigger/Name/7A44C067=InitHQ
 Trigger/Name/8D79EED3=InitBuildings
 Trigger/Name/E1D221CD=KeepBuildingSight

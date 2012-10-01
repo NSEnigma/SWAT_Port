@@ -89,7 +89,7 @@ void InitGlobals () {
     gv_difficulty = 0;
     gv_nightmare = 0;
     gv_radLevel = -2;
-    gv_neutralPlayer = 0;
+    gv_neutralPlayer = 1;
     gv_radSafe = 15;
     gv_radLimit = 100;
     gv_secretHQ = null;
@@ -133,6 +133,7 @@ point gf_RandomCrateLocation (region lp_rRegion);
 //--------------------------------------------------------------------------------------------------
 // Trigger Variables
 //--------------------------------------------------------------------------------------------------
+trigger gt_ReactorDone;
 trigger gt_TelevacRescue;
 trigger gt_InitHQ;
 trigger gt_KeepBuildingSight;
@@ -322,6 +323,19 @@ void gf_RedSpawnHQCrate (int lp_iChance) {
 point gf_RandomCrateLocation (region lp_rRegion) {
     // Implementation
     return PointWithOffsetPolar(RegionGetCenter(lp_rRegion), 0.35, 4.7);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: ReactorDone
+//--------------------------------------------------------------------------------------------------
+bool gt_ReactorDone_Func (bool testConds, bool runActions) {
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ReactorDone_Init () {
+    gt_ReactorDone = TriggerCreate("gt_ReactorDone_Func");
+    TriggerAddEventUnitBehaviorChange(gt_ReactorDone, null, "TelevacCivEnergy", c_unitBehaviorChangeActivate);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -825,6 +839,7 @@ void gt_InitBuildings_Init () {
 // Trigger Initialization
 //--------------------------------------------------------------------------------------------------
 void InitTriggers () {
+    gt_ReactorDone_Init();
     gt_TelevacRescue_Init();
     gt_InitHQ_Init();
     gt_KeepBuildingSight_Init();
