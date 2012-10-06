@@ -8,4 +8,6 @@
     <DataComponent Type="terr">t3Terrain.xml</DataComponent>
     <DataComponent Type="plob">Objects</DataComponent>
     <DataComponent Type="cuts">Cutscenes/Index</DataComponent>
+    <DataComponent Type="regi">Regions</DataComponent>
+    <DataComponent Type="attr">Attributes</DataComponent>
 </Components>

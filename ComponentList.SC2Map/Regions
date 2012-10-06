@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Regions>
+    <region id="1">
+        <name value="Region 001"/>
+        <shape type="rect">
+            <quad value="29.0002,225.0002,37,233"/>
+        </shape>
+    </region>
+    <region id="2">
+        <name value="Region 002"/>
+        <shape type="rect">
+            <quad value="43.0002,225.0002,51,233"/>
+        </shape>
+    </region>
+    <region id="3">
+        <name value="Region 003"/>
+        <shape type="rect">
+            <quad value="20.0002,210.0002,28,218"/>
+        </shape>
+    </region>
+    <region id="4">
+        <name value="Region 004"/>
+        <shape type="rect">
+            <quad value="66.0002,229.0002,74,237"/>
+        </shape>
+    </region>
+    <region id="5">
+        <name value="Region 005"/>
+        <shape type="rect">
+            <quad value="78.0002,229.0002,86,237"/>
+        </shape>
+    </region>
+    <region id="6">
+        <name value="Region 006"/>
+        <shape type="rect">
+            <quad value="107.0002,223.0002,115,231"/>
+        </shape>
+    </region>
+    <region id="7">
+        <name value="Region 007"/>
+        <shape type="rect">
+            <quad value="106.9975,200.0002,114.9973,208"/>
+        </shape>
+    </region>
+    <region id="8">
+        <name value="Region 008"/>
+        <shape type="rect">
+            <quad value="96.0002,187.0002,104,195"/>
+        </shape>
+    </region>
+    <region id="9">
+        <name value="Region 009"/>
+        <shape type="rect">
+            <quad value="77.0002,187.0002,85,195"/>
+        </shape>
+    </region>
+    <region id="10">
+        <name value="Region 010"/>
+        <shape type="rect">
+            <quad value="66.0002,200.0002,74,208"/>
+        </shape>
+    </region>
+    <region id="11">
+        <name value="Region 011"/>
+        <shape type="rect">
+            <quad value="43.0002,186.996,51,194.9958"/>
+        </shape>
+    </region>
+    <region id="12">
+        <name value="Region 012"/>
+        <shape type="rect">
+            <quad value="16.0002,187.0002,24,195"/>
+        </shape>
+    </region>
+    <region id="13">
+        <name value="Region 013"/>
+        <shape type="rect">
+            <quad value="16.0002,164.0002,24,172"/>
+        </shape>
+    </region>
+    <region id="14">
+        <name value="Region 014"/>
+        <shape type="rect">
+            <quad value="43.0002,164.0002,51,172"/>
+        </shape>
+    </region>
+    <region id="15">
+        <name value="Region 015"/>
+        <shape type="rect">
+            <quad value="66.0002,163.9985,74,171.9982"/>
+        </shape>
+    </region>
+    <region id="16">
+        <name value="Region 016"/>
+        <shape type="rect">
+            <quad value="66.0002,136.0002,74,144"/>
+        </shape>
+    </region>
+    <region id="17">
+        <name value="Region 017"/>
+        <shape type="rect">
+            <quad value="29.0002,136.0002,37,144"/>
+        </shape>
+    </region>
+    <region id="18">
+        <name value="Region 018"/>
+        <shape type="rect">
+            <quad value="16.0002,128.0002,24,136"/>
+        </shape>
+    </region>
+    <region id="19">
+        <name value="Region 019"/>
+        <shape type="rect">
+            <quad value="66.0002,107.0002,74,115"/>
+        </shape>
+    </region>
+    <region id="20">
+        <name value="Region 020"/>
+        <shape type="rect">
+            <quad value="43.0002,112.0002,51,120"/>
+        </shape>
+    </region>
+    <region id="21">
+        <name value="Region 021"/>
+        <shape type="rect">
+            <quad value="28.0002,112.0002,36,120"/>
+        </shape>
+    </region>
+    <region id="22">
+        <name value="Region 022"/>
+        <shape type="rect">
+            <quad value="16.0002,96.0002,24,104"/>
+        </shape>
+    </region>
+    <region id="23">
+        <name value="Region 023"/>
+        <shape type="rect">
+            <quad value="30.0002,96.0002,38,104"/>
+        </shape>
+    </region>
+    <region id="24">
+        <name value="Region 024"/>
+        <shape type="rect">
+            <quad value="47.0002,73.0002,55,81"/>
+        </shape>
+    </region>
+    <region id="25">
+        <name value="Region 025"/>
+        <shape type="rect">
+            <quad value="22.0002,73.0002,30,81"/>
+        </shape>
+    </region>
+    <region id="26">
+        <name value="Region 026"/>
+        <shape type="rect">
+            <quad value="7.0002,73.0002,15,81"/>
+        </shape>
+    </region>
+    <region id="27">
+        <name value="Region 027"/>
+        <shape type="rect">
+            <quad value="7.0002,38.0002,15,46"/>
+        </shape>
+    </region>
+    <region id="28">
+        <name value="Region 028"/>
+        <shape type="rect">
+            <quad value="22.0002,38.0002,30,46"/>
+        </shape>
+    </region>
+    <region id="29">
+        <name value="Region 029"/>
+        <shape type="rect">
+            <quad value="24.0002,15.0002,32,23"/>
+        </shape>
+    </region>
+    <region id="30">
+        <name value="Region 030"/>
+        <shape type="rect">
+            <quad value="9.0002,15.0002,17,23"/>
+        </shape>
+    </region>
+    <region id="31">
+        <name value="Region 031"/>
+        <shape type="rect">
+            <quad value="51.0002,18.0002,59,26"/>
+        </shape>
+    </region>
+    <region id="32">
+        <name value="Region 032"/>
+        <shape type="rect">
+            <quad value="47.0002,33.0002,55,41"/>
+        </shape>
+    </region>
+    <region id="33">
+        <name value="Region 033"/>
+        <shape type="rect">
+            <quad value="66.0002,18.0002,74,26"/>
+        </shape>
+    </region>
+    <region id="34">
+        <name value="Region 034"/>
+        <shape type="rect">
+            <quad value="89.0002,33.0002,97,41"/>
+        </shape>
+    </region>
+    <region id="35">
+        <name value="Region 035"/>
+        <shape type="rect">
+            <quad value="6.5002,55.5002,14.5,63.5"/>
+        </shape>
+    </region>
+    <region id="36">
+        <name value="Region 036"/>
+        <shape type="rect">
+            <quad value="66.0002,56.0002,74,64"/>
+        </shape>
+    </region>
+    <region id="37">
+        <name value="Region 037"/>
+        <shape type="rect">
+            <quad value="64.0002,72.996,72,80.9958"/>
+        </shape>
+    </region>
+    <region id="38">
+        <name value="Region 038"/>
+        <shape type="rect">
+            <quad value="89.0002,96.0002,97,104"/>
+        </shape>
+    </region>
+    <region id="39">
+        <name value="Region 039"/>
+        <shape type="rect">
+            <quad value="98.0002,113.0002,106,121"/>
+        </shape>
+    </region>
+    <region id="40">
+        <name value="Region 040"/>
+        <shape type="rect">
+            <quad value="81.0002,136.0002,89,144"/>
+        </shape>
+    </region>
+    <region id="41">
+        <name value="Region 041"/>
+        <shape type="rect">
+            <quad value="106.0231,136.0217,114.023,144.0214"/>
+        </shape>
+    </region>
+    <region id="42">
+        <name value="Region 042"/>
+        <shape type="rect">
+            <quad value="106.0002,150.0002,114,158"/>
+        </shape>
+    </region>
+    <region id="43">
+        <name value="Region 043"/>
+        <shape type="rect">
+            <quad value="106.0002,164.0002,114,172"/>
+        </shape>
+    </region>
+    <region id="44">
+        <name value="Region 044"/>
+        <shape type="rect">
+            <quad value="91.0002,73.0002,99,81"/>
+        </shape>
+    </region>
+    <region id="45">
+        <name value="Region 045"/>
+        <shape type="rect">
+            <quad value="109.0002,66.0002,117,74"/>
+        </shape>
+    </region>
+    <region id="46">
+        <name value="Region 046"/>
+        <shape type="rect">
+            <quad value="116.0002,33.0002,124,41"/>
+        </shape>
+    </region>
+    <region id="47">
+        <name value="Region 047"/>
+        <shape type="rect">
+            <quad value="116.0002,18.0002,124,26"/>
+        </shape>
+    </region>
+    <region id="48">
+        <name value="Region 048"/>
+        <shape type="rect">
+            <quad value="101.005,18.0002,109.0046,26"/>
+        </shape>
+    </region>
+    <region id="49">
+        <name value="Region 049"/>
+        <shape type="rect">
+            <quad value="141.0002,16.0002,149,24"/>
+        </shape>
+    </region>
+    <region id="50">
+        <name value="Region 050"/>
+        <shape type="rect">
+            <quad value="139.0002,56.0002,147,64"/>
+        </shape>
+    </region>
+    <region id="51">
+        <name value="Region 051"/>
+        <shape type="rect">
+            <quad value="141.0002,71.0002,149,79"/>
+        </shape>
+    </region>
+    <region id="52">
+        <name value="Region 052"/>
+        <shape type="rect">
+            <quad value="156.0002,73.0002,164,81"/>
+        </shape>
+    </region>
+    <region id="53">
+        <name value="Region 053"/>
+        <shape type="rect">
+            <quad value="156.0002,33.0002,164,41"/>
+        </shape>
+    </region>
+    <region id="54">
+        <name value="Region 054"/>
+        <shape type="rect">
+            <quad value="156.0002,19.0002,164,27"/>
+        </shape>
+    </region>
+    <region id="55">
+        <name value="Region 055"/>
+        <shape type="rect">
+            <quad value="156.0002,5.0002,164,13"/>
+        </shape>
+    </region>
+    <region id="56">
+        <name value="Region 056"/>
+        <shape type="rect">
+            <quad value="199.0002,4.0002,207,12"/>
+        </shape>
+    </region>
+    <region id="57">
+        <name value="Region 057"/>
+        <shape type="rect">
+            <quad value="196.0002,96.0002,204,104"/>
+        </shape>
+    </region>
+    <region id="58">
+        <name value="Region 058"/>
+        <shape type="rect">
+            <quad value="232.0002,96.0002,240,104"/>
+        </shape>
+    </region>
+    <region id="59">
+        <name value="Region 059"/>
+        <shape type="rect">
+            <quad value="225.5002,111.5002,233.5,119.5"/>
+        </shape>
+    </region>
+    <region id="60">
+        <name value="Region 060"/>
+        <shape type="rect">
+            <quad value="196.0002,113.0002,204,121"/>
+        </shape>
+    </region>
+    <region id="61">
+        <name value="Region 061"/>
+        <shape type="rect">
+            <quad value="179.0002,113.0002,187,121"/>
+        </shape>
+    </region>
+    <region id="62">
+        <name value="Region 062"/>
+        <shape type="rect">
+            <quad value="157.0002,96.0002,165,104"/>
+        </shape>
+    </region>
+    <region id="63">
+        <name value="Region 063"/>
+        <shape type="rect">
+            <quad value="155.0002,113.0002,163,121"/>
+        </shape>
+    </region>
+    <region id="64">
+        <name value="Region 064"/>
+        <shape type="rect">
+            <quad value="139.0002,113.0002,147,121"/>
+        </shape>
+    </region>
+    <region id="65">
+        <name value="Region 065"/>
+        <shape type="rect">
+            <quad value="124.0002,136.0002,132,144"/>
+        </shape>
+    </region>
+    <region id="66">
+        <name value="Region 066"/>
+        <shape type="rect">
+            <quad value="138.0002,136.0002,146,144"/>
+        </shape>
+    </region>
+    <region id="67">
+        <name value="Region 067"/>
+        <shape type="rect">
+            <quad value="152.0002,136.0002,160,144"/>
+        </shape>
+    </region>
+    <region id="68">
+        <name value="Region 068"/>
+        <shape type="rect">
+            <quad value="179.0002,136.0002,187,144"/>
+        </shape>
+    </region>
+    <region id="69">
+        <name value="Region 069"/>
+        <shape type="rect">
+            <quad value="196.0002,136.0002,204,144"/>
+        </shape>
+    </region>
+    <region id="70">
+        <name value="Region 070"/>
+        <shape type="rect">
+            <quad value="219.0002,136.0002,227,144"/>
+        </shape>
+    </region>
+    <region id="71">
+        <name value="Region 071"/>
+        <shape type="rect">
+            <quad value="236.0002,164.0002,244,172"/>
+        </shape>
+    </region>
+    <region id="72">
+        <name value="Region 072"/>
+        <shape type="rect">
+            <quad value="193.0002,150.0002,201,158"/>
+        </shape>
+    </region>
+    <region id="73">
+        <name value="Region 073"/>
+        <shape type="rect">
+            <quad value="196.0002,164.0002,204,172"/>
+        </shape>
+    </region>
+    <region id="74">
+        <name value="Region 074"/>
+        <shape type="rect">
+            <quad value="179.0002,164.0002,187,172"/>
+        </shape>
+    </region>
+    <region id="75">
+        <name value="Region 075"/>
+        <shape type="rect">
+            <quad value="156.0002,164.0002,164,172"/>
+        </shape>
+    </region>
+    <region id="76">
+        <name value="Region 076"/>
+        <shape type="rect">
+            <quad value="130.0002,164.0002,138,172"/>
+        </shape>
+    </region>
+    <region id="77">
+        <name value="Region 077"/>
+        <shape type="rect">
+            <quad value="180.0002,194.0002,188,202"/>
+        </shape>
+    </region>
+    <region id="78">
+        <name value="Region 078"/>
+        <shape type="rect">
+            <quad value="195.0002,194.0002,203,202"/>
+        </shape>
+    </region>
+    <region id="79">
+        <name value="Region 079"/>
+        <shape type="rect">
+            <quad value="219.0002,187.0002,227,195"/>
+        </shape>
+    </region>
+    <region id="80">
+        <name value="Region 080"/>
+        <shape type="rect">
+            <quad value="236.0002,187.0002,244,195"/>
+        </shape>
+    </region>
+    <region id="81">
+        <name value="Region 081"/>
+        <shape type="rect">
+            <quad value="182.5002,225.0002,190.5,233"/>
+        </shape>
+    </region>
+    <region id="82">
+        <name value="Region 082"/>
+        <shape type="rect">
+            <quad value="196.0002,225.0002,204,233"/>
+        </shape>
+    </region>
+    <region id="83">
+        <name value="Region 083"/>
+        <shape type="rect">
+            <quad value="235.0002,225.0002,243,233"/>
+        </shape>
+    </region>
+    <region id="84">
+        <name value="Region 084"/>
+        <shape type="rect">
+            <quad value="179.0002,96.0002,187,104"/>
+        </shape>
+    </region>
+    <region id="85">
+        <name value="Region 085"/>
+        <shape type="rect">
+            <quad value="220.0002,226.0002,228,232"/>
+        </shape>
+    </region>
+    <region id="86">
+        <name value="Region 086"/>
+        <shape type="rect">
+            <quad value="220.0002,160,229,167"/>
+        </shape>
+    </region>
+    <region id="87">
+        <name value="Region 087"/>
+        <shape type="rect">
+            <quad value="140,32,148,40"/>
+        </shape>
+    </region>
+    <region id="88">
+        <name value="Region 088"/>
+        <shape type="rect">
+            <quad value="64.0002,34,74,40"/>
+        </shape>
+    </region>
+    <region id="89">
+        <name value="Region 089"/>
+        <shape type="rect">
+            <quad value="44,134.0002,50,144"/>
+        </shape>
+    </region>
+    <region id="90">
+        <name value="Region 090"/>
+        <shape type="rect">
+            <quad value="35,210,45,217"/>
+        </shape>
+    </region>
+</Regions>

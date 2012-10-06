@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PlacedObjects Version="27">
     <ObjectUnit Id="46" Position="7.7895,242.8227,0" Rotation="1.102" Scale="1,1,1" UnitType="Carrier" Player="1"/>
+    <ObjectUnit Id="217" Position="71.1386,176.7968,0" Rotation="0.9355" Scale="1,1,1" UnitType="Marauder" Player="1"/>
+    <ObjectUnit Id="218" Position="58.68,179.895,0" Rotation="2.6772" Scale="1,1,1" UnitType="Marauder" Player="1"/>
     <ObjectUnit Id="10" Position="12.8505,238.3408,0" Rotation="5.7536" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="11" Position="11.8024,236.8837,0" Rotation="4.092" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="12" Position="10.1584,236.422,0" Rotation="4.268" Scale="1,1,1" UnitType="Marine" Player="1"/>
@@ -605,4 +607,10 @@
         <Flag Index="HeightOffset" Value="1"/>
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>
+    <ObjectPoint Id="211" Position="36.0197,216.0297,0" Scale="1,1,1" Type="Normal" Name="Televac1" Color="0,0,0,0"/>
+    <ObjectPoint Id="212" Position="45.0466,134.999,0" Scale="1,1,1" Type="Normal" Name="Televac2" Color="0,0,0,0"/>
+    <ObjectPoint Id="213" Position="65.0585,34.9504,0" Scale="1,1,1" Type="Normal" Name="Televac3" Color="0,0,0,0"/>
+    <ObjectPoint Id="214" Position="147.0346,32.961,0" Scale="1,1,1" Type="Normal" Name="Televac6" Color="0,0,0,0"/>
+    <ObjectPoint Id="215" Position="228.0122,165.9931,0" Scale="1,1,1" Type="Normal" Name="Televac5" Color="0,0,0,0"/>
+    <ObjectPoint Id="216" Position="227.0571,226.9377,0" Scale="1,1,1" Type="Normal" Name="Televac4" Color="0,0,0,0"/>
 </PlacedObjects>
