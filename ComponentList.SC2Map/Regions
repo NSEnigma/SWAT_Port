@@ -505,39 +505,45 @@
         </shape>
     </region>
     <region id="85">
-        <name value="Region 085"/>
+        <name value="Northeast Bunker"/>
         <shape type="rect">
             <quad value="220.0002,226.0002,228,232"/>
         </shape>
     </region>
     <region id="86">
-        <name value="Region 086"/>
+        <name value="East Bunker"/>
         <shape type="rect">
             <quad value="220.0002,160,229,167"/>
         </shape>
     </region>
     <region id="87">
-        <name value="Region 087"/>
+        <name value="Southeast Bunker"/>
         <shape type="rect">
             <quad value="140,32,148,40"/>
         </shape>
     </region>
     <region id="88">
-        <name value="Region 088"/>
+        <name value="Southwest Bunker"/>
         <shape type="rect">
             <quad value="64.0002,34,74,40"/>
         </shape>
     </region>
     <region id="89">
-        <name value="Region 089"/>
+        <name value="West Bunker"/>
         <shape type="rect">
             <quad value="44,134.0002,50,144"/>
         </shape>
     </region>
     <region id="90">
-        <name value="Region 090"/>
+        <name value="Northwest Bunker"/>
         <shape type="rect">
             <quad value="35,210,45,217"/>
+        </shape>
+    </region>
+    <region id="91">
+        <name value="Graveyard"/>
+        <shape type="rect">
+            <quad value="128.5,185.0002,165.5,235"/>
         </shape>
     </region>
 </Regions>

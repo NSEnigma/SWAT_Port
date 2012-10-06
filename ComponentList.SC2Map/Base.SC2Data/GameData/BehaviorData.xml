@@ -23,8 +23,14 @@
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
-    <CBehaviorBuff id="TorEnergyDrainTargetBuff">
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-prismaticbeam-color.dds"/>
+    <CBehaviorBuff id="TorFeedbackStun">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+        <Duration value="5"/>
     </CBehaviorBuff>
 </Catalog>

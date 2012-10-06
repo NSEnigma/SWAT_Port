@@ -42,4 +42,23 @@
         <TransferUnit Value="Source"/>
         <VitalArray index="Energy" Change="-50"/>
     </CEffectModifyUnit>
+    <CEffectModifyUnit id="TorEnergyDrainTargetLossMini">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/TorEnergyDrainCasterGain"/>
+        <TransferUnit Value="Source"/>
+        <VitalArray index="Energy" Change="-100"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="TorEnergyDrainTargetSet">
+        <EditorCategories value=""/>
+        <EffectArray value="TorEnergyDrainTargetLoss"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TorFeedbackApplyBehavior">
+        <EditorCategories value=""/>
+        <Behavior value="TorFeedbackStun"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="TorFeedbackStunSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Self,Destructible,Dead,Hidden"/>
+        <AreaArray Radius="5" Effect="TorFeedbackApplyBehavior"/>
+    </CEffectEnumArea>
 </Catalog>
