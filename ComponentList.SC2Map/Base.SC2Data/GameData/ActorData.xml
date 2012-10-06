@@ -40,4 +40,14 @@
         <HostImpact Subject="_Unit" Scope="Caster" Actor="Find"/>
         <HostImpactSiteOps Ops="SOpAttachCenter"/>
     </CActorBeamSimple>
+    <CActorModel id="TorFeedbackStun" parent="ModelAnimationStyleContinuous">
+        <EditorCategories value=""/>
+        <On Terms="ActorCreation" Send="AnimBracketStart GL_BSD GLbirth GLstand GLdeath"/>
+        <On Terms="Behavior.TorFeedbackStun.On" Send="Create"/>
+        <On Terms="ActorCreation" Send="AnimBracketStart $BSD"/>
+        <On Terms="Behavior.TorFeedbackStun.Off" Send="AnimBracketStop BSD"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOverhead"/>
+        <Model value="MindBlastStun"/>
+    </CActorModel>
 </Catalog>

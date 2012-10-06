@@ -9,8 +9,11 @@
 <Actor id="SwatWallElectric6x2" Variations="4"/>
 <Actor id="SwatWallElectric2x6" Variations="0,3"/>
 <Terrain id="Tarsonis"/>
+<Unit id="TestShop"/>
 <Unit id="Marine"/>
+<Unit id="BuildingSight"/>
 <Unit id="Carrier"/>
+<Unit id="InfestedCocoon"/>
 <Unit id="Vulture"/>
 <Unit id="SwatGraveyardDoor"/>
 <Unit id="SecurityGateStraightVerticalLFLowered"/>

@@ -5,18 +5,12 @@
         <CombineArray value="EnergyDrainPeriodicValidators"/>
         <CombineArray value="TargetNotIncapacitated"/>
         <CombineArray value="TargetEnergyGE100"/>
-        <CombineArray value="NotEnergyDraining"/>
     </CValidatorCombine>
     <CValidatorCombine id="EnergyDrainPeriodicValidators">
         <Type value="And"/>
         <CombineArray value="TargetEnergyGE50"/>
         <CombineArray value="NotDead"/>
     </CValidatorCombine>
-    <CValidatorUnitCompareBehaviorCount id="NotEnergyDraining">
-        <ResultFailed value="CantTargetAirUnits"/>
-        <Compare value="LE"/>
-        <Behavior value="TorEnergyDrainTargetBuff"/>
-    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareVital id="TargetEnergy">
         <WhichUnit Value="Caster"/>
         <Compare value="GE"/>
