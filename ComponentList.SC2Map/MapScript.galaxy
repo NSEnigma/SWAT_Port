@@ -17,9 +17,15 @@ void InitLibs () {
 //--------------------------------------------------------------------------------------------------
 // Constants
 //--------------------------------------------------------------------------------------------------
+const string gv_zombieUnitType = "InfestedCivilian";
+const string gv_beastUnitType = "InfestedCivilian";
+const string gv_grotesqueUnitType = "InfestedCivilian";
+const string gv_mutantUnitType = "InfestedCivilian";
+const string gv_dogUnitType = "InfestedCivilian";
 const int gv_neutralPlayer = 0;
 const int gv_policePlayer = 1;
-const int gv_undeadPlayer = 11;
+const int gv_undeadPlayer11 = 11;
+const int gv_undeadPlayer12 = 12;
 const int gv_pointValue = 0;
 const int gv_userData = 1;
 const int gv_unitId = 2;
@@ -28,49 +34,167 @@ const int gv_regionId = 3;
 //--------------------------------------------------------------------------------------------------
 // Global Variables
 //--------------------------------------------------------------------------------------------------
+int gv_swiftRads;
+int gv_radResisters;
+int gv_radResist;
+unit[10] gv_robodog;
+unit[10] gv_playerHero;
+int gv_iPlayerCount;
+int[4] gv_heroCombat;
+int[6] gv_heroBosses;
+string gv_defaultBoss;
+int gv_bosses;
+unit gv_superMutant;
+unit gv_horror;
+unit gv_godzilla;
+unit gv_nemesis;
+int gv_nemesisStage;
+bool gv_graveyardBattle;
+string[8001] gv_qZ;
+int gv_qI;
+int gv_qC;
+bool[8001] gv_qQ;
+int gv_collectionZBonus;
+int[8001] gv_qX;
+int[8001] gv_qB;
+int gv_qLi;
+int gv_minionCount;
+int gv_minionCount2;
+int gv_minionQueue;
+int gv_minionMax;
+int gv_waveCounter;
+int gv_recentBuilding;
+fixed gv_mobSpdBase;
+unit gv_heroToKill;
+order[7] gv_idleOrder;
+unit[6] gv_tyrantsu;
+int gv_spawningMessages;
+int gv_radMessages;
+string gv_robodogUnitType;
 string gv_radUnitType;
 string gv_torUnitType;
-string gv_zombieUnitType;
 string gv_televacUnitType;
 int gv_dlgBtnEasy;
 int gv_dlgBtnNormal;
 int gv_dlgBtnHard;
-int[11] gv_difficultyVotes;
+int[10] gv_difficultyVotes;
 int gv_difficulty;
 int gv_nightmare;
 int gv_survival;
 int gv_nmsurv;
 int gv_dlgDifficulty;
 int gv_televacCivs;
-int gv_radResisters;
 unit[7] gv_televac;
 int[7] gv_aMQStatus;
 int gv_radSafe;
+int gv_killedRads;
+int gv_radPopped;
+int gv_radNuke;
+int gv_radIoned;
 int gv_radLimit;
 int gv_radCount;
 int gv_radLevel;
+fixed gv_diffTime;
+int gv_nightmareUpgrade;
+int[13] gv_uber;
 bool gv_gameOver;
 trigger[10] gv_rankCodeTrigs;
-int gv_iPlayerCount;
+int gv_lastBuilding;
+fixed gv_xWait;
+int gv_currentDay;
 region[85] gv_arBuilding;
 unit[8] gv_aBMs;
 region gv_secretHQ;
-int[6] gv_heroBosses;
-int[4] gv_heroCombat;
-int[11] gv_heroMobDmg;
+int[10] gv_heroMobDmg;
 
 void InitGlobals () {
     int init_i;
 
+    gv_swiftRads = 0;
+    gv_radResisters = 0;
+    gv_radResist = 0;
+    init_i = 0;
+    while (init_i <= 9) {
+        gv_robodog[init_i] = null;
+        init_i = init_i + 1;
+    }
+    init_i = 0;
+    while (init_i <= 9) {
+        gv_playerHero[init_i] = null;
+        init_i = init_i + 1;
+    }
+    gv_iPlayerCount = 0;
+    init_i = 0;
+    while (init_i <= 3) {
+        gv_heroCombat[init_i] = 0;
+        init_i = init_i + 1;
+    }
+    init_i = 0;
+    while (init_i <= 5) {
+        gv_heroBosses[init_i] = 0;
+        init_i = init_i + 1;
+    }
+    gv_defaultBoss = null;
+    gv_bosses = 0;
+    gv_superMutant = null;
+    gv_horror = null;
+    gv_godzilla = null;
+    gv_nemesis = null;
+    gv_nemesisStage = 0;
+    gv_graveyardBattle = false;
+    init_i = 0;
+    while (init_i <= 8000) {
+        gv_qZ[init_i] = null;
+        init_i = init_i + 1;
+    }
+    gv_qI = 0;
+    gv_qC = 0;
+    init_i = 0;
+    while (init_i <= 8000) {
+        gv_qQ[init_i] = false;
+        init_i = init_i + 1;
+    }
+    gv_collectionZBonus = 1;
+    init_i = 0;
+    while (init_i <= 8000) {
+        gv_qX[init_i] = 0;
+        init_i = init_i + 1;
+    }
+    init_i = 0;
+    while (init_i <= 8000) {
+        gv_qB[init_i] = 0;
+        init_i = init_i + 1;
+    }
+    gv_qLi = 0;
+    gv_minionCount = 0;
+    gv_minionCount2 = 0;
+    gv_minionQueue = 0;
+    gv_minionMax = 190;
+    gv_waveCounter = 60;
+    gv_recentBuilding = -999;
+    gv_mobSpdBase = 0.0;
+    gv_heroToKill = null;
+    init_i = 0;
+    while (init_i <= 6) {
+        gv_idleOrder[init_i] = null;
+        init_i = init_i + 1;
+    }
+    init_i = 0;
+    while (init_i <= 5) {
+        gv_tyrantsu[init_i] = null;
+        init_i = init_i + 1;
+    }
+    gv_spawningMessages = 2;
+    gv_radMessages = 3;
+    gv_robodogUnitType = "Dog";
     gv_radUnitType = "Zergling";
     gv_torUnitType = "Vulture";
-    gv_zombieUnitType = "InfestedCivilian";
     gv_televacUnitType = "Vulture";
     gv_dlgBtnEasy = c_invalidDialogControlId;
     gv_dlgBtnNormal = c_invalidDialogControlId;
     gv_dlgBtnHard = c_invalidDialogControlId;
     init_i = 0;
-    while (init_i <= 10) {
+    while (init_i <= 9) {
         gv_difficultyVotes[init_i] = 0;
         init_i = init_i + 1;
     }
@@ -80,7 +204,6 @@ void InitGlobals () {
     gv_nmsurv = 0;
     gv_dlgDifficulty = c_invalidDialogId;
     gv_televacCivs = 0;
-    gv_radResisters = 0;
     init_i = 0;
     while (init_i <= 6) {
         gv_televac[init_i] = null;
@@ -92,16 +215,29 @@ void InitGlobals () {
         init_i = init_i + 1;
     }
     gv_radSafe = 15;
+    gv_killedRads = 0;
+    gv_radPopped = 0;
+    gv_radNuke = 0;
+    gv_radIoned = 0;
     gv_radLimit = 100;
     gv_radCount = 0;
     gv_radLevel = 0;
+    gv_diffTime = 0.0;
+    gv_nightmareUpgrade = 0;
+    init_i = 0;
+    while (init_i <= 12) {
+        gv_uber[init_i] = 0;
+        init_i = init_i + 1;
+    }
     gv_gameOver = false;
     init_i = 0;
     while (init_i <= 9) {
         gv_rankCodeTrigs[init_i] = null;
         init_i = init_i + 1;
     }
-    gv_iPlayerCount = 0;
+    gv_lastBuilding = 0;
+    gv_xWait = 1.0;
+    gv_currentDay = 0;
     init_i = 0;
     while (init_i <= 84) {
         gv_arBuilding[init_i] = null;
@@ -114,17 +250,7 @@ void InitGlobals () {
     }
     gv_secretHQ = null;
     init_i = 0;
-    while (init_i <= 5) {
-        gv_heroBosses[init_i] = 0;
-        init_i = init_i + 1;
-    }
-    init_i = 0;
-    while (init_i <= 3) {
-        gv_heroCombat[init_i] = 0;
-        init_i = init_i + 1;
-    }
-    init_i = 0;
-    while (init_i <= 10) {
+    while (init_i <= 9) {
         gv_heroMobDmg[init_i] = 0;
         init_i = init_i + 1;
     }
@@ -133,19 +259,48 @@ void InitGlobals () {
 //--------------------------------------------------------------------------------------------------
 // Global Function Declarations
 //--------------------------------------------------------------------------------------------------
-bool gf_RedIsHuman (int lp_iP);
+bool gf_RedIncRadCount ();
+bool gf_IsUndeadUnit (unit lp_u);
+bool gf_IsIdle (unit lp_u);
+bool gf_IsNemSpawned ();
+bool gf_IsGraveyardBattle ();
+bool gf_DistanceExceeded (point lp_point1, point lp_point2, fixed lp_dist);
+bool gf_IsNightmarePlus ();
+bool gf_IsNightmare ();
+bool gf_IsExtinction ();
+bool gf_IsNotSurvival ();
+bool gf_IsSurvival ();
+bool gf_IsHuman (int lp_iP);
+bool gf_IsHeroAlive (int lp_player);
 bool gf_RedTelevac_Conditions ();
+void gf_RedAwardSwiftXP (int lp_xp);
+fixed gf_wcToSc (int lp_wcUnits);
+int gf_RedDiv (int lp_i, int lp_j);
+void gf_TriggerDestroyCurrent ();
+void gf_TriggerDestroy (trigger lp_trig);
+void gf_TriggerRegisterTimerEvent (trigger lp_trig, fixed lp_time);
+void gf_TriggerRegisterPeriodicEvent (trigger lp_trig, fixed lp_time);
+void gf_TriggerPostExecute (trigger lp_trig);
 void gf_SetRegionId (region lp_region, int lp_id);
 int gf_GetRegionId (region lp_region);
 point gf_RandomOffsetPt (point lp_origin, fixed lp_min, fixed lp_max);
 point gf_RandomOffsetMob (region lp_region);
 void gf_RedCreateMinion (string lp_type, point lp_point, fixed lp_face, bool lp_queue);
+fixed gf_RedZombieMoveBonus (unit lp_u);
+void gf_RedPickHeroToKill ();
+unit gf_RedReturnHeroToKill ();
+fixed gf_RedCalcMovespeed (unit lp_mob, fixed lp_zombieBonus);
+void gf_RedDoMobAction (unit lp_mob, unit lp_target);
 void gf_RedSpawnGraveyard ();
+void gf_RedTimedSpawnMinions (int lp_region, bool lp_queue);
 void gf_RedAddZombieMutation (unit lp_zombie);
 void gf_RedGoToGraveyard (unit lp_zombie);
 void gf_RedBurninating (unit lp_zombie, int lp_iTNT);
 void gf_RedRadLevel ();
 void gf_RedSpawnRadFragBase ();
+bool gf_RedSpawnRadFrag ();
+void gf_RedRadShattered (point lp_p, bool lp_ioned);
+void gf_SetRadNuke (int lp_radNuke);
 void gf_RedRadDamage ();
 void gf_RedRadFog ();
 int gf_RedCalcDifficulty (fixed lp_n);
@@ -181,29 +336,171 @@ void gf_InitializePlayer (int lp_iPlayer);
 //--------------------------------------------------------------------------------------------------
 // Trigger Variables
 //--------------------------------------------------------------------------------------------------
+trigger gt_MobDies;
+trigger gt_GraveyardEncounter;
+trigger gt_BossSpawn;
+trigger gt_CollectEmUp;
+trigger gt_MobAttacked;
+trigger gt_MinionSpawn;
+trigger gt_MinionSpawnQueue;
+trigger gt_MakeMinions;
+trigger gt_Wave;
+trigger gt_MQRandomTimed;
+trigger gt_SpawnRadFrags;
+trigger gt_RedDestroyed;
+trigger gt_RadBuildup;
 trigger gt_ReactorDone;
+trigger gt_Victory;
 trigger gt_TelevacRescue;
-trigger gt_RankCodeEntry;
 trigger gt_InitHQ;
 trigger gt_CreateBuildings;
 trigger gt_InitRads;
 trigger gt_DifficultyPrompt;
 trigger gt_ButtonClicked;
 trigger gt_DlgTimer;
+trigger gt_Nightmare;
 trigger gt_InitBuildings;
 trigger gt_KeepBuildingSight;
+trigger gt_VersionHistory;
+trigger gt_ExtraInit;
+trigger gt_StartSpawn;
+trigger gt_RankCodeEntry;
+trigger gt_DiffTime;
+trigger gt_DebugWindow;
+trigger gt_PlayerHeroCarrier;
 
 //--------------------------------------------------------------------------------------------------
 // Global Functions
 //--------------------------------------------------------------------------------------------------
-bool gf_RedIsHuman (int lp_iP) {
+bool gf_RedIncRadCount () {
+    // Implementation
+    if ((gv_radCount < 130)) {
+        gv_radCount += 1;
+        TextExpressionSetToken("Param/Expression/D5E5A51B", "A", IntToText(gv_radCount));
+        TriggerDebugOutput(gv_radMessages, TextExpressionAssemble("Param/Expression/D5E5A51B"), true);
+        return true;
+    }
+    return false;
+}
+
+bool gf_IsUndeadUnit (unit lp_u) {
+    // Implementation
+    if ((UnitGetOwner(lp_u) != gv_undeadPlayer11) && (UnitGetOwner(lp_u) != gv_undeadPlayer12)) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+bool gf_IsIdle (unit lp_u) {
+    // Implementation
+    if (((UnitOrder(lp_u, 0) == gv_idleOrder[0]) || (UnitOrder(lp_u, 0) == gv_idleOrder[1]) || (UnitOrder(lp_u, 0) == gv_idleOrder[2]))) {
+        return true;
+    }
+    else {
+        return false;
+    }
+    return false;
+}
+
+bool gf_IsNemSpawned () {
+    // Implementation
+    return (gv_nemesisStage > 0);
+}
+
+bool gf_IsGraveyardBattle () {
+    // Implementation
+    return (gv_graveyardBattle == true);
+}
+
+bool gf_DistanceExceeded (point lp_point1, point lp_point2, fixed lp_dist) {
+    // Implementation
+    return (DistanceBetweenPoints(lp_point1, lp_point2) > lp_dist);
+}
+
+bool gf_IsNightmarePlus () {
+    // Implementation
+    return (gv_nightmare > 0);
+}
+
+bool gf_IsNightmare () {
+    // Implementation
+    return (gv_nightmare == 1);
+}
+
+bool gf_IsExtinction () {
+    // Implementation
+    return (gv_nightmare > 1);
+}
+
+bool gf_IsNotSurvival () {
+    // Implementation
+    return (gv_survival < 1);
+}
+
+bool gf_IsSurvival () {
+    // Implementation
+    return (gv_survival > 0);
+}
+
+bool gf_IsHuman (int lp_iP) {
     // Implementation
     return (PlayerType(lp_iP) == c_playerTypeUser);
+}
+
+bool gf_IsHeroAlive (int lp_player) {
+    // Variable Declarations
+    unit lv_hero;
+
+    // Variable Initialization
+    lv_hero = gv_playerHero[lp_player];
+
+    // Implementation
+    return ((lv_hero != null) && UnitIsAlive(lv_hero));
 }
 
 bool gf_RedTelevac_Conditions () {
     // Implementation
     return ((UnitGetCustomValue(EventUnitRangeUnit(), gv_pointValue) < 3) && (UnitGetCustomValue(EventUnitRangeUnit(), gv_userData) < 1.0));
+}
+
+void gf_RedAwardSwiftXP (int lp_xp) {
+}
+
+fixed gf_wcToSc (int lp_wcUnits) {
+    // Implementation
+    return (lp_wcUnits/100);
+}
+
+int gf_RedDiv (int lp_i, int lp_j) {
+    // Implementation
+    return ((lp_i-ModI(lp_i, lp_j))/lp_j);
+}
+
+void gf_TriggerDestroyCurrent () {
+    // Implementation
+    gf_TriggerDestroy(TriggerGetCurrent());
+}
+
+void gf_TriggerDestroy (trigger lp_trig) {
+    // Implementation
+    TriggerDestroy(lp_trig);
+}
+
+void gf_TriggerRegisterTimerEvent (trigger lp_trig, fixed lp_time) {
+    // Implementation
+    TriggerAddEventTimeElapsed(lp_trig, lp_time, c_timeGame);
+}
+
+void gf_TriggerRegisterPeriodicEvent (trigger lp_trig, fixed lp_time) {
+    // Implementation
+    TriggerAddEventTimePeriodic(lp_trig, lp_time, c_timeGame);
+}
+
+void gf_TriggerPostExecute (trigger lp_trig) {
+    // Implementation
+    gf_TriggerRegisterTimerEvent(lp_trig, 0.0);
 }
 
 void gf_SetRegionId (region lp_region, int lp_id) {
@@ -247,7 +544,96 @@ point gf_RandomOffsetMob (region lp_region) {
 
 void gf_RedCreateMinion (string lp_type, point lp_point, fixed lp_face, bool lp_queue) {
     // Implementation
-    UnitCreate(1, lp_type, 0, gv_undeadPlayer, lp_point, lp_face);
+    UnitCreate(1, lp_type, 0, gv_undeadPlayer11, lp_point, lp_face);
+}
+
+fixed gf_RedZombieMoveBonus (unit lp_u) {
+    // Implementation
+    if ((UnitGetType(lp_u) == gv_zombieUnitType)) {
+        return ((UnitGetCustomValue(lp_u, gv_userData)/gv_collectionZBonus)*(9.00/gv_difficulty));
+    }
+    else {
+        return 0.0;
+    }
+}
+
+void gf_RedPickHeroToKill () {
+    // Implementation
+    gv_heroToKill = gf_RedReturnHeroToKill();
+}
+
+unit gf_RedReturnHeroToKill () {
+    // Variable Declarations
+    int lv_i;
+    int lv_count;
+    unitgroup lv_heroes;
+
+    // Variable Initialization
+    lv_i = 0;
+    lv_count = 0;
+    lv_heroes = UnitGroupEmpty();
+
+    // Implementation
+    PlayerGroupLoopBegin(PlayerGroupSingle(1));
+    while (!PlayerGroupLoopDone()) {
+        UnitGroupAdd(lv_heroes, gv_playerHero[PlayerGroupLoopCurrent()]);
+        PlayerGroupLoopStep();
+    }
+    PlayerGroupLoopEnd();
+    return UnitGroupRandomUnit(lv_heroes, c_unitCountAlive);
+}
+
+fixed gf_RedCalcMovespeed (unit lp_mob, fixed lp_zombieBonus) {
+    // Variable Declarations
+    fixed lv_default;
+
+    // Variable Initialization
+    lv_default = UnitGetPropertyFixed(lp_mob, c_unitPropMovementSpeed, c_unitPropNormal);
+
+    // Implementation
+    if ((lv_default < (lv_default*1.1-gv_mobSpdBase))) {
+        lv_default += gv_mobSpdBase;
+    }
+    else {
+        lv_default *= 1.1;
+    }
+    lv_default += gv_mobSpdBase;
+    if ((lp_zombieBonus < 58)) {
+        lv_default += lp_zombieBonus;
+    }
+    else {
+        lv_default += 58.0;
+    }
+    return lv_default;
+}
+
+void gf_RedDoMobAction (unit lp_mob, unit lp_target) {
+    // Variable Declarations
+    unit lv_target;
+    point lv_point;
+
+    // Variable Initialization
+    lv_target = lp_mob;
+    lv_point = null;
+
+    // Implementation
+    if (gf_IsGraveyardBattle()) {
+        return ;
+    }
+    else {
+    }
+    if ((lp_target == null)) {
+        lv_target = gv_heroToKill;
+    }
+    else {
+    }
+    if ((UnitIsAlive(lv_target) == true)) {
+        lv_point = Point((PointGetX(UnitGetPosition(lv_target))+RandomFixed(gf_wcToSc(-499), gf_wcToSc(499))), (PointGetY(UnitGetPosition(lv_target))+RandomFixed(gf_wcToSc(-499), gf_wcToSc(499))));
+        UnitIssueOrder(lp_mob, OrderTargetingPoint(AbilityCommand("attack", 0), lv_point), c_orderQueueReplace);
+    }
+    else {
+        gf_RedGoToGraveyard(lp_mob);
+    }
 }
 
 void gf_RedSpawnGraveyard () {
@@ -263,6 +649,96 @@ void gf_RedSpawnGraveyard () {
         gf_RedCreateMinion(gv_zombieUnitType, RegionRandomPoint(RegionFromId(91)), libNtve_gf_RandomAngle(), false);
         lv_i -= 1;
     }
+}
+
+void gf_RedTimedSpawnMinions (int lp_region, bool lp_queue) {
+    // Variable Declarations
+    int lv_i;
+    int lv_j;
+
+    // Variable Initialization
+    lv_i = 0;
+    lv_j = gv_difficulty;
+
+    // Implementation
+    lv_i = RandomInt((4-gv_difficulty+gf_RedDiv(gv_uber[12], 90)+gv_survival), (6-gv_difficulty+RoundI((gv_uber[12]/30.0+gv_diffTime/4.8))+gv_survival));
+    if ((!(gf_IsNemSpawned()))) {
+        if ((lv_i > 21)) {
+            lv_i = 21;
+        }
+        else {
+        }
+        lv_j = (RoundI((lv_i*.25))+1);
+        if ((lv_i > lv_j) && (RandomInt(1, 4) < gv_radLevel)) {
+            lv_i -= 1;
+            gv_qZ[gv_qC] = gv_mutantUnitType;
+            gv_qB[gv_qC] = lp_region;
+            gv_qQ[gv_qC] = lp_queue;
+            gv_qC += 1;
+        }
+        else {
+        }
+        while ((lv_i >= lv_j)) {
+            lv_i -= 1;
+            gv_qZ[gv_qC] = gv_zombieUnitType;
+            gv_qB[gv_qC] = lp_region;
+            gv_qQ[gv_qC] = lp_queue;
+            gv_qX[gv_qC] = 0;
+            gv_qC += 1;
+        }
+        while ((lv_i > 0)) {
+            lv_j = RandomInt(0, 9);
+            if ((lv_j < 1)) {
+                gv_qZ[gv_qC] = gv_beastUnitType;
+                gv_qX[gv_qC] = MaxI((0-
+gv_nightmareUpgrade), 77);
+            }
+            else if ((lv_j < 2)) {
+                gv_qZ[gv_qC] = gv_grotesqueUnitType;
+                gv_qX[gv_qC] = MaxI(0, RandomInt((0-gv_nightmareUpgrade), 77));
+            }
+            else if ((lv_j < 4)) {
+                gv_qZ[gv_qC] = gv_dogUnitType;
+                gv_qX[gv_qC] = MaxI(0, RandomInt((0-gv_nightmare), 77));
+            }
+            else if (true) {
+                if ((RandomInt(-1, 43) < gv_radLevel)) {
+                    gv_qZ[gv_qC] = gv_mutantUnitType;
+                }
+                else {
+                    gv_qZ[gv_qC] = gv_zombieUnitType;
+                    gv_qX[gv_qC] = RandomInt(1, 13);
+                }
+                gv_qZ[gv_qC] = gv_dogUnitType;
+                gv_qX[gv_qC] = MaxI(0, RandomInt((0-gv_nightmare), 77));
+            }
+            gv_qB[gv_qC] = lp_region;
+            gv_qQ[gv_qC] = lp_queue;
+            gv_qC += 1;
+            lv_i -= 1;
+        }
+    }
+    else {
+        if (((gf_IsNightmare() && (gv_nemesisStage > 70)) || (gf_IsGraveyardBattle() && (gv_nemesisStage < 80)))) {
+            if ((lv_i > (2+gv_iPlayerCount/2))) {
+                lv_i = (2+gv_iPlayerCount/2);
+            }
+            else {
+            }
+        }
+        else if ((lv_i > 30)) {
+            lv_i = 30;
+        }
+        while ((lv_i > 0)) {
+            gv_qZ[gv_qC] = gv_zombieUnitType;
+            gv_qB[gv_qC] = -1;
+            gv_qQ[gv_qC] = lp_queue;
+            gv_qX[gv_qC] = RandomInt(1, 13);
+            gv_qC += 1;
+            lv_i -= 1;
+        }
+    }
+    gf_TriggerPostExecute(gt_MakeMinions);
 }
 
 void gf_RedAddZombieMutation (unit lp_zombie) {
@@ -325,6 +801,33 @@ void gf_RedSpawnRadFragBase () {
     }
     gv_radCount = lv_i;
     gf_RedRadLevel();
+}
+
+bool gf_RedSpawnRadFrag () {
+    // Variable Declarations
+    point lv_point;
+    int lv_i;
+
+    // Variable Initialization
+    lv_point = null;
+    lv_i = RandomInt(0, 999);
+
+    // Implementation
+    if (gf_RedIncRadCount()) {
+        lv_point = gf_RandomOffsetMob(gv_arBuilding[RandomInt(1, gv_lastBuilding)]);
+        TriggerDebugOutput(gv_radMessages, StringExternal("Param/Value/E1DDE904"), true);
+        UnitCreate(1, gv_radUnitType, 0, gv_neutralPlayer, lv_point, 270.0);
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+void gf_RedRadShattered (point lp_p, bool lp_ioned) {
+}
+
+void gf_SetRadNuke (int lp_radNuke) {
 }
 
 void gf_RedRadDamage () {
@@ -493,7 +996,7 @@ void gf_RedSpawnRandomBad (region lp_region, bool lp_spawn) {
     }
     lv_i = MaxI(1, RandomInt(-5, (4-gv_difficulty)));
     while ((lv_i >= 1)) {
-        UnitCreate(1, gv_zombieUnitType, 0, gv_undeadPlayer, gf_RandomOffsetMob(lp_region), 0.0);
+        UnitCreate(1, gv_zombieUnitType, 0, gv_undeadPlayer11, gf_RandomOffsetMob(lp_region), 0.0);
         gf_RedGoToGraveyard(UnitLastCreated());
         gf_RedAddZombieMutation(UnitLastCreated());
         if ((RandomInt(0, 20) == 0)) {
@@ -686,6 +1189,564 @@ void gf_InitializePlayer (int lp_iPlayer) {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: MobDies
+//--------------------------------------------------------------------------------------------------
+bool gt_MobDies_Func (bool testConds, bool runActions) {
+    // Conditions
+    if (testConds) {
+        if (!(gf_IsUndeadUnit(EventUnit()))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((UnitGetOwner(EventUnit()) == gv_undeadPlayer12)) {
+        if ((gv_minionCount > 0)) {
+            gv_minionCount -= 1;
+        }
+        else {
+        }
+    }
+    else {
+        if ((gv_minionCount2 > 0)) {
+            gv_minionCount2 -= 1;
+        }
+        else {
+        }
+    }
+    TextExpressionSetToken("Param/Expression/8ADB0005", "A", IntToText((gv_minionCount+gv_minionCount2)));
+    TriggerDebugOutput(gv_spawningMessages, TextExpressionAssemble("Param/Expression/8ADB0005"), true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_MobDies_Init () {
+    gt_MobDies = TriggerCreate("gt_MobDies_Func");
+    TriggerAddEventUnitDied(gt_MobDies, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: GraveyardEncounter
+//--------------------------------------------------------------------------------------------------
+bool gt_GraveyardEncounter_Func (bool testConds, bool runActions) {
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetOwner(EventUnit()) >= 1))) {
+            return false;
+        }
+
+        if (!((UnitGetOwner(EventUnit()) <= 9))) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_GraveyardEncounter_Init () {
+    gt_GraveyardEncounter = TriggerCreate("gt_GraveyardEncounter_Func");
+    TriggerAddEventUnitRegion(gt_GraveyardEncounter, null, RegionFromId(91), true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: BossSpawn
+//--------------------------------------------------------------------------------------------------
+bool gt_BossSpawn_Func (bool testConds, bool runActions) {
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_BossSpawn_Init () {
+    gt_BossSpawn = TriggerCreate("gt_BossSpawn_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: CollectEmUp
+//--------------------------------------------------------------------------------------------------
+bool gt_CollectEmUp_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unitgroup lv_units;
+    unit lv_u;
+
+    // Variable Initialization
+    lv_units = UnitGroupEmpty();
+    lv_u = null;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitGroupLoopBegin(UnitGroup(null, c_playerAny, RegionPlayableMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+    while (!UnitGroupLoopDone()) {
+        if (gf_IsUndeadUnit(UnitGroupLoopCurrent())) {
+            lv_u = UnitGroupLoopCurrent();
+            UnitSetPropertyFixed(lv_u, c_unitPropMovementSpeed, gf_RedCalcMovespeed(lv_u, gf_RedZombieMoveBonus(lv_u)));
+            if (((gf_IsNemSpawned() && ((RegionContainsPoint(RegionFromId(91), UnitGetPosition(lv_u)) == false) || (!(gf_IsGraveyardBattle())))) || gf_IsIdle(lv_u))) {
+                UnitGroupAdd(lv_units, lv_u);
+            }
+        }
+        else {
+        }
+        UnitGroupLoopStep();
+    }
+    UnitGroupLoopEnd();
+    gf_RedPickHeroToKill();
+    gv_collectionZBonus = MaxI(1, (2*gv_difficulty-gv_survival));
+    UnitGroupLoopBegin(lv_units);
+    while (!UnitGroupLoopDone()) {
+        gf_RedDoMobAction(UnitGroupLoopCurrent(), null);
+        UnitGroupLoopStep();
+    }
+    UnitGroupLoopEnd();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_CollectEmUp_Init () {
+    gt_CollectEmUp = TriggerCreate("gt_CollectEmUp_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: MobAttacked
+//--------------------------------------------------------------------------------------------------
+bool gt_MobAttacked_Func (bool testConds, bool runActions) {
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_MobAttacked_Init () {
+    gt_MobAttacked = TriggerCreate("gt_MobAttacked_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: MinionSpawn
+//--------------------------------------------------------------------------------------------------
+bool gt_MinionSpawn_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_i;
+
+    // Variable Initialization
+    lv_i = 0;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if (gf_IsNightmarePlus() && (gv_currentDay > 1)) {
+        lv_i = (18-gv_iPlayerCount/4-gv_nightmare*gv_nightmare);
+    }
+    else {
+        lv_i = MaxI((gv_difficulty*10), (19-gv_iPlayerCount/4));
+    }
+    if ((RandomInt((1+gv_survival), 100) > lv_i)) {
+        gv_waveCounter -= 1;
+        if ((gv_waveCounter < 0)) {
+            TriggerEnable(gt_MinionSpawn, false);
+            TriggerDebugOutput(gv_spawningMessages, StringExternal("Param/Value/09C13F0E"), true);
+            gf_TriggerPostExecute(gt_MinionSpawnQueue);
+        }
+        else {
+            if ((gv_recentBuilding > 0)) {
+                lv_i = gv_recentBuilding;
+                gv_recentBuilding *= -1;
+                Wait(0.01, c_timeGame);
+            }
+            else {
+                lv_i = RandomInt(1, gv_lastBuilding);
+            }
+            gf_RedTimedSpawnMinions(lv_i, true);
+        }
+    }
+    else {
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_MinionSpawn_Init () {
+    gt_MinionSpawn = TriggerCreate("gt_MinionSpawn_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: MinionSpawnQueue
+//--------------------------------------------------------------------------------------------------
+bool gt_MinionSpawnQueue_Func (bool testConds, bool runActions) {
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((gv_minionQueue > 0)) {
+        if ((gv_minionMax <= (gv_minionCount+gv_minionCount2))) {
+            TriggerDebugOutput(gv_spawningMessages, StringExternal("Param/Value/9233AF50"), true);
+            TriggerExecute(gt_CollectEmUp, true, false);
+            TriggerDebugOutput(gv_spawningMessages, StringExternal("Param/Value/41F3B157"), true);
+            Wait((48-2*gv_iPlayerCount), c_timeGame);
+        }
+        else {
+            Wait(((1+gv_difficulty)*gv_xWait), c_timeGame);
+            gf_RedTimedSpawnMinions(RandomInt(1, gv_lastBuilding), false);
+        }
+        gf_TriggerPostExecute(gt_MinionSpawnQueue);
+    }
+    else {
+        TextExpressionSetToken("Param/Expression/CDB79CC1", "A", IntToText(gv_minionQueue));
+        TriggerDebugOutput(gv_spawningMessages, TextExpressionAssemble("Param/Expression/CDB79CC1"), true);
+        gf_TriggerPostExecute(gt_Wave);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_MinionSpawnQueue_Init () {
+    gt_MinionSpawnQueue = TriggerCreate("gt_MinionSpawnQueue_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: MakeMinions
+//--------------------------------------------------------------------------------------------------
+bool gt_MakeMinions_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_mob;
+    string lv_type;
+    int lv_x;
+    bool lv_queue;
+    fixed lv_x1;
+    fixed lv_y1;
+    point lv_point;
+
+    // Variable Initialization
+    lv_mob = null;
+    lv_type = null;
+    lv_x = 0;
+    lv_queue = false;
+    lv_x1 = 0.0;
+    lv_y1 = 0.0;
+    lv_point = null;
+
+    // Conditions
+    if (testConds) {
+        if (!((gv_qC > 0))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lv_type = gv_qZ[gv_qI];
+    if ((gv_qB[gv_qI] < 0)) {
+        lv_point = RegionRandomPoint(RegionFromId(91));
+    }
+    else {
+        lv_point = RegionRandomPoint(gv_arBuilding[gv_qB[gv_qI]]);
+    }
+    lv_x = gv_qX[gv_qI];
+    lv_queue = gv_qQ[gv_qI];
+    gv_qI += 1;
+    if ((gv_qI >= gv_qC)) {
+        gv_qI = 0;
+        gv_qC = 0;
+    }
+    else {
+        gf_TriggerPostExecute(gt_MakeMinions);
+    }
+    if ((gv_minionCount < (gv_minionMax/2))) {
+        gv_minionCount += 1;
+        UnitCreate(1, lv_type, 0, gv_undeadPlayer12, lv_point, 270.0);
+        lv_mob = UnitLastCreated();
+    }
+    else if ((gv_minionCount2 < (gv_minionMax/2))) {
+        gv_minionCount2 += 1;
+        UnitCreate(1, lv_type, 0, gv_undeadPlayer11, lv_point, 270.0);
+        lv_mob = UnitLastCreated();
+    }
+    else if ((lv_queue == true)) {
+        gv_minionQueue += 1;
+        TextExpressionSetToken("Param/Expression/E1842A1E", "A", IntToText(gv_minionQueue));
+        TriggerDebugOutput(gv_spawningMessages, TextExpressionAssemble("Param/Expression/E1842A1E"), true);
+    }
+    if ((lv_mob != null)) {
+        gv_minionQueue -= 1;
+        TextExpressionSetToken("Param/Expression/574D8A11", "A", IntToText((gv_minionCount+gv_minionCount2)));
+        TriggerDebugOutput(gv_spawningMessages, TextExpressionAssemble("Param/Expression/574D8A11"), true);
+        if ((gv_minionQueue < 0)) {
+            gv_minionQueue = 0;
+        }
+        else {
+        }
+        UnitSetPropertyFixed(lv_mob, c_unitPropLife, MaxF(1.0, (UnitGetPropertyFixed(lv_mob, c_unitPropLife, c_unitPropCurrent)-RandomInt(0, 99))));
+        UnitSetPropertyFixed(lv_mob, c_unitPropMovementSpeed, gf_RedCalcMovespeed(lv_mob, gv_nemesisStage));
+        gf_RedDoMobAction(lv_mob, null);
+    }
+    else {
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_MakeMinions_Init () {
+    gt_MakeMinions = TriggerCreate("gt_MakeMinions_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Wave
+//--------------------------------------------------------------------------------------------------
+bool gt_Wave_Func (bool testConds, bool runActions) {
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((gv_minionMax < (3*(gv_minionCount+gv_minionCount2)))) {
+        TriggerDebugOutput(gv_spawningMessages, StringExternal("Param/Value/C6C5B26A"), true);
+        gv_minionQueue = 1;
+        gv_qLi = 0;
+        gf_TriggerPostExecute(gt_CollectEmUp);
+        Wait(15.0, c_timeGame);
+        gv_mobSpdBase += 0.5;
+        gf_TriggerPostExecute(gt_Wave);
+    }
+    else {
+        TriggerDebugOutput(gv_spawningMessages, StringExternal("Param/Value/0FC1B581"), true);
+        gv_minionQueue = 0;
+        gv_qLi = 0;
+        gv_mobSpdBase = 0;
+        Wait((75+20*MinI(gv_bosses, 3)+10*(gv_difficulty-MinI(gv_survival, 4))), c_timeGame);
+        gv_waveCounter = (51+gv_iPlayerCount+3*gv_nightmare*gv_nightmare);
+        TriggerEnable(gt_MinionSpawn, true);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Wave_Init () {
+    gt_Wave = TriggerCreate("gt_Wave_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Untitled Trigger 001
+//--------------------------------------------------------------------------------------------------
+bool gt_MQRandomTimed_Func (bool testConds, bool runActions) {
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_MQRandomTimed_Init () {
+    gt_MQRandomTimed = TriggerCreate("gt_MQRandomTimed_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: SpawnRadFrags
+//--------------------------------------------------------------------------------------------------
+bool gt_SpawnRadFrags_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_rads;
+
+    // Variable Initialization
+    lv_rads = RandomInt((4-gv_difficulty), (5-gv_difficulty));
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerDebugOutput(gv_radMessages, StringExternal("Param/Value/C2E335C9"), true);
+    if ((!(gf_IsNotSurvival()))) {
+        lv_rads = 6;
+    }
+    while ((lv_rads >= 0)) {
+        gf_RedSpawnRadFrag();
+        lv_rads -= 1;
+    }
+    gf_TriggerPostExecute(gt_RadBuildup);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_SpawnRadFrags_Init () {
+    gt_SpawnRadFrags = TriggerCreate("gt_SpawnRadFrags_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: RedDestroyed
+//--------------------------------------------------------------------------------------------------
+bool gt_RedDestroyed_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_rad;
+    unit lv_killer;
+    int lv_killingPlayer;
+    int lv_data;
+
+    // Variable Initialization
+    lv_rad = EventUnit();
+    lv_killer = libNtve_gf_KillingUnit();
+    lv_killingPlayer = libNtve_gf_KillingPlayer();
+    lv_data = FixedToInt(UnitGetCustomValue(lv_rad, gv_userData));
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetType(EventUnit()) == gv_radUnitType))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((lv_data != 997)) {
+        if ((lv_data != 998)) {
+            if ((lv_data != 999)) {
+                lv_killer = libNtve_gf_KillingUnit();
+                if (true) {
+                    gv_radPopped /= 2;
+                }
+                else if ((UnitGetType(lv_killer) == gv_robodogUnitType)) {
+                    if (gf_IsHeroAlive(lv_killingPlayer) && (!(gf_DistanceExceeded(EventUnitDamageSourcePoint(), UnitGetPosition(gv_playerHero[lv_killingPlayer]), gf_wcToSc(2900))))) {
+                        gv_radPopped += 1;
+                    }
+                    else {
+                    }
+                }
+                else if (true) {
+                    gv_radPopped += 1;
+                }
+            }
+            else {
+                gv_radIoned += (1+gf_RedDiv(gv_radIoned, 3));
+            }
+        }
+        else {
+        }
+        gv_killedRads += 1;
+        gf_RedRadShattered(UnitGetPosition(lv_rad), (lv_data == 999));
+        if ((gv_swiftRads > 0)) {
+            gv_swiftRads -= 1;
+        }
+    }
+    else {
+    }
+    gv_radCount -= 1;
+    gf_RedRadLevel();
+    gf_TriggerPostExecute(gt_Victory);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_RedDestroyed_Init () {
+    gt_RedDestroyed = TriggerCreate("gt_RedDestroyed_Func");
+    TriggerAddEventUnitDied(gt_RedDestroyed, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Untitled Trigger 001
+//--------------------------------------------------------------------------------------------------
+bool gt_RadBuildup_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    fixed lv_delay;
+    bool lv_spawned;
+    int lv_radIoned;
+    fixed lv_arg1;
+    fixed lv_arg2;
+
+    // Variable Initialization
+    lv_delay = 4.5;
+    lv_spawned = false;
+    lv_radIoned = 0;
+    lv_arg1 = 0.0;
+    lv_arg2 = 0.0;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if (((gv_radCount > gv_radSafe) || (gv_radNuke > 0) || (gv_radIoned > 0))) {
+        if (((gv_radCount < gv_radLimit) || (gv_radNuke > 0))) {
+            lv_radIoned = RandomInt(1, (1+MaxI(0, gf_RedDiv((gv_radNuke+gv_radIoned), 5))));
+            gf_SetRadNuke(MaxI(0, (gv_radNuke-MaxI(0, ((lv_radIoned-2)*5)))));
+            TextExpressionSetToken("Param/Expression/570D1ED8", "A", IntToText(lv_radIoned));
+            TriggerDebugOutput(gv_radMessages, TextExpressionAssemble("Param/Expression/570D1ED8"), true);
+            while ((lv_radIoned > 0)) {
+                if ((gf_RedSpawnRadFrag() == true)) {
+                    lv_spawned = true;
+                }
+                lv_radIoned -= 1;
+            }
+            if ((lv_spawned == true)) {
+                gf_RedRadLevel();
+            }
+        }
+        else {
+        }
+        if (gf_IsSurvival()) {
+            lv_radIoned = gv_radIoned;
+            lv_arg1 = MaxF((10.0-gf_RedDiv(gv_radNuke, 10)-lv_radIoned), 8.0);
+            lv_arg2 = (74.0-0.76*IntToFixed((gv_radCount+gv_aMQStatus[5]*2+gv_radNuke-gv_radResist)));
+            TextExpressionSetToken("Param/Expression/E0B13CD0", "A", FixedToText(MaxF(lv_arg1, lv_arg2), c_fixedPrecisionAny));
+            TriggerDebugOutput(gv_radMessages, TextExpressionAssemble("Param/Expression/E0B13CD0"), true);
+            Wait(MaxF(lv_arg1, lv_arg2), c_timeGame);
+            lv_radIoned = gv_radIoned;
+            gv_radIoned = 0;
+            lv_arg1 = MaxF((10.0-gf_RedDiv(gv_radNuke, 5)-lv_radIoned), 4.0);
+            lv_arg2 = (74.0-0.66*IntToFixed((gv_radCount+gv_aMQStatus[5]*2+gv_radNuke+2*lv_radIoned*(lv_radIoned-1)-gv_radResist)));
+            TextExpressionSetToken("Param/Expression/97AF50E8", "A", FixedToText(MaxF(lv_arg1, lv_arg2), c_fixedPrecisionAny));
+            TriggerDebugOutput(gv_radMessages, TextExpressionAssemble("Param/Expression/97AF50E8"), true);
+            Wait(MaxF(lv_arg1, lv_arg2), c_timeGame);
+        }
+        else {
+            lv_radIoned = gv_radIoned;
+            lv_arg1 = MaxF((15.0-gf_RedDiv(gv_radNuke, 10)-lv_radIoned), 10.0);
+            lv_arg2 = (79.0-0.6*IntToFixed((gv_radCount+gv_aMQStatus[5]*2+gv_radNuke-gv_radResist)));
+            TextExpressionSetToken("Param/Expression/4D4A4AA6", "A", FixedToText(MaxF(lv_arg1, lv_arg2), c_fixedPrecisionAny));
+            TriggerDebugOutput(gv_radMessages, TextExpressionAssemble("Param/Expression/4D4A4AA6"), true);
+            Wait(MaxF(lv_arg1, lv_arg2), c_timeGame);
+            lv_radIoned = gv_radIoned;
+            gv_radIoned = 0;
+            lv_arg1 = MaxF((15.0-gf_RedDiv(gv_radNuke, 5)-lv_radIoned), 5.0);
+            lv_arg2 = (79.0-0.6*IntToFixed((gv_radCount+gv_aMQStatus[5]*2+gv_radNuke+2*lv_radIoned*(lv_radIoned-1)-gv_radResist)));
+            TextExpressionSetToken("Param/Expression/C0C6F37B", "A", FixedToText(MaxF(lv_arg1, lv_arg2), c_fixedPrecisionAny));
+            TriggerDebugOutput(gv_radMessages, TextExpressionAssemble("Param/Expression/C0C6F37B"), true);
+            Wait(MaxF(lv_arg1, lv_arg2), c_timeGame);
+        }
+        while ((gv_radPopped > 0)) {
+            if (gf_IsSurvival()) {
+                lv_delay = (1.7+IntToFixed(gv_radResisters)/2.0);
+            }
+            lv_delay = ((lv_delay+gv_radPopped*1.1)*(1.03-.02*gv_iPlayerCount));
+            TextExpressionSetToken("Param/Expression/5490344F", "A", IntToText(gv_radPopped));
+            TextExpressionSetToken("Param/Expression/5490344F", "B", FixedToText(lv_delay, c_fixedPrecisionAny));
+            TriggerDebugOutput(gv_radMessages, TextExpressionAssemble("Param/Expression/5490344F"), true);
+            gv_radPopped = 0;
+            Wait((lv_delay*lv_delay), c_timeGame);
+            lv_delay = 2.0;
+        }
+    }
+    else {
+        TriggerDebugOutput(gv_radMessages, StringExternal("Param/Value/1428FF19"), true);
+        Wait(60.0, c_timeGame);
+    }
+    gf_TriggerPostExecute(gt_RadBuildup);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_RadBuildup_Init () {
+    gt_RadBuildup = TriggerCreate("gt_RadBuildup_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: ReactorDone
 //--------------------------------------------------------------------------------------------------
 bool gt_ReactorDone_Func (bool testConds, bool runActions) {
@@ -696,6 +1757,18 @@ bool gt_ReactorDone_Func (bool testConds, bool runActions) {
 void gt_ReactorDone_Init () {
     gt_ReactorDone = TriggerCreate("gt_ReactorDone_Func");
     TriggerAddEventUnitBehaviorChange(gt_ReactorDone, null, "TelevacCivEnergy", c_unitBehaviorChangeActivate);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Untitled Trigger 001
+//--------------------------------------------------------------------------------------------------
+bool gt_Victory_Func (bool testConds, bool runActions) {
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Victory_Init () {
+    gt_Victory = TriggerCreate("gt_Victory_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -749,18 +1822,6 @@ void gt_TelevacRescue_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Untitled Trigger 001
-//--------------------------------------------------------------------------------------------------
-bool gt_RankCodeEntry_Func (bool testConds, bool runActions) {
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void gt_RankCodeEntry_Init () {
-    gt_RankCodeEntry = TriggerCreate("gt_RankCodeEntry_Func");
-}
-
-//--------------------------------------------------------------------------------------------------
 // Trigger: InitHQ
 //--------------------------------------------------------------------------------------------------
 bool gt_InitHQ_Func (bool testConds, bool runActions) {
@@ -784,8 +1845,6 @@ bool gt_InitHQ_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    TriggerDebugEnableType(1, true);
-    TriggerDebugWindowOpen(true);
     TriggerDebugOutput(1, StringExternal("Param/Value/2CD78CA7"), true);
     auto1373FF04_val = lv_i;
     if (auto1373FF04_val == 0) {
@@ -833,13 +1892,14 @@ bool gt_InitHQ_Func (bool testConds, bool runActions) {
         lv_i = lv_i + auto929D0AB7_ai;
     }
     TriggerExecute(gt_CreateBuildings, false, false);
+    gf_TriggerDestroyCurrent();
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
 void gt_InitHQ_Init () {
     gt_InitHQ = TriggerCreate("gt_InitHQ_Func");
-    TriggerAddEventTimeElapsed(gt_InitHQ, 0.1, c_timeGame);
+    TriggerAddEventMapInit(gt_InitHQ);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -907,6 +1967,7 @@ bool gt_CreateBuildings_Func (bool testConds, bool runActions) {
         lv_i = lv_i + auto83E6776F_ai;
     }
     TriggerExecute(gt_InitRads, false, false);
+    gf_TriggerDestroyCurrent();
     return true;
 }
 
@@ -928,6 +1989,7 @@ bool gt_InitRads_Func (bool testConds, bool runActions) {
     FogSetEnabled(true);
     FogSetColor(Color(0.00, 82.35, 0.00));
     TriggerExecute(gt_DifficultyPrompt, false, false);
+    gf_TriggerDestroyCurrent();
     return true;
 }
 
@@ -964,6 +2026,7 @@ bool gt_DifficultyPrompt_Func (bool testConds, bool runActions) {
     gv_dlgBtnHard = DialogControlLastCreated();
     libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/7847716E"), gf_DifficultySurvival(RandomInt(0, 5)), "");
     DialogSetVisible(DialogLastCreated(), PlayerGroupAll(), true);
+    gf_TriggerDestroyCurrent();
     return true;
 }
 
@@ -1059,6 +2122,7 @@ bool gt_DlgTimer_Func (bool testConds, bool runActions) {
 
     TriggerEnable(gt_DlgTimer, false);
     TriggerEnable(gt_ButtonClicked, false);
+    gf_TriggerDestroyCurrent();
     auto2AB3647E_ae = 9;
     auto2AB3647E_ai = 1;
     lv_i = 1;
@@ -1103,6 +2167,22 @@ bool gt_DlgTimer_Func (bool testConds, bool runActions) {
         }
         gv_survival = 0;
     }
+    gf_TriggerPostExecute(gt_SpawnRadFrags);
+    gf_TriggerRegisterTimerEvent(gt_ExtraInit, 30.0);
+    gf_TriggerRegisterTimerEvent(gt_VersionHistory, 30.0);
+    TriggerExecute(gt_InitBuildings, true, false);
+    gf_TriggerPostExecute(gt_Nightmare);
+    lv_i = 0;
+    gf_RedPickHeroToKill();
+    while ((lv_i <= 20) && (gv_heroToKill == null)) {
+        gf_RedPickHeroToKill();
+        Wait((3*gv_xWait), c_timeGame);
+        lv_i += 1;
+    }
+    gf_TriggerRegisterTimerEvent(gt_StartSpawn, 30.0);
+    Wait(240.0, c_timeGame);
+    gf_TriggerDestroy(gt_MobAttacked);
+    gf_TriggerDestroyCurrent();
     return true;
 }
 
@@ -1110,6 +2190,18 @@ bool gt_DlgTimer_Func (bool testConds, bool runActions) {
 void gt_DlgTimer_Init () {
     gt_DlgTimer = TriggerCreate("gt_DlgTimer_Func");
     TriggerAddEventTimeElapsed(gt_DlgTimer, 10.5, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Nightmare
+//--------------------------------------------------------------------------------------------------
+bool gt_Nightmare_Func (bool testConds, bool runActions) {
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Nightmare_Init () {
+    gt_Nightmare = TriggerCreate("gt_Nightmare_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1222,6 +2314,7 @@ bool gt_InitBuildings_Func (bool testConds, bool runActions) {
         gf_RedInitABM(lv_i, lv_iBuilding, lv_iAdj);
         lv_iBuilding -= 1;
     }
+    gv_lastBuilding = lv_iBuilding;
     lv_iRand = (lv_iBuilding-MaxI(0, RandomInt((2-gv_difficulty+2*gv_survival), 1)));
     while ((lv_iBuilding >= lv_iRand)) {
         gf_RedInitATME(gv_arBuilding[lv_iBuilding], lv_iAdj);
@@ -1261,6 +2354,7 @@ bool gt_InitBuildings_Func (bool testConds, bool runActions) {
     gf_RedSpawnGraveyard();
     VisRevealArea(11, RegionEntireMap(), 0.0, false);
     VisRevealArea(12, RegionEntireMap(), 0.0, false);
+    gf_TriggerDestroyCurrent();
     return true;
 }
 
@@ -1298,7 +2392,7 @@ bool gt_KeepBuildingSight_Func (bool testConds, bool runActions) {
 
     lv_sight = RegionGetAttachUnit(EventUnitRegion());
     UnitSetOwner(lv_sight, gv_policePlayer, true);
-    TriggerDestroy(TriggerGetCurrent());
+    gf_TriggerDestroyCurrent();
     return true;
 }
 
@@ -1308,20 +2402,181 @@ void gt_KeepBuildingSight_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: VersionHistory
+//--------------------------------------------------------------------------------------------------
+bool gt_VersionHistory_Func (bool testConds, bool runActions) {
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_VersionHistory_Init () {
+    gt_VersionHistory = TriggerCreate("gt_VersionHistory_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: ExtraInit
+//--------------------------------------------------------------------------------------------------
+bool gt_ExtraInit_Func (bool testConds, bool runActions) {
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ExtraInit_Init () {
+    gt_ExtraInit = TriggerCreate("gt_ExtraInit_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: StartSpawn
+//--------------------------------------------------------------------------------------------------
+bool gt_StartSpawn_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    fixed lv_minionInterval;
+
+    // Variable Initialization
+    lv_minionInterval = 0.0;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    gf_TriggerPostExecute(gt_CollectEmUp);
+    gf_TriggerRegisterPeriodicEvent(gt_CollectEmUp, (75-15*(gv_difficulty-gv_survival)));
+    gf_TriggerRegisterTimerEvent(gt_BossSpawn, 45.0);
+    Wait(180.0, c_timeGame);
+    gf_TriggerPostExecute(gt_MQRandomTimed);
+    if ((gv_difficulty > 2) && gf_IsNotSurvival()) {
+        lv_minionInterval = 6.0;
+    }
+    else {
+        lv_minionInterval = 5.0;
+    }
+    gf_TriggerRegisterPeriodicEvent(gt_MinionSpawn, lv_minionInterval);
+    if (gf_IsNotSurvival()) {
+        Wait(480.0, c_timeGame);
+    }
+    else {
+        Wait(1.0, c_timeGame);
+    }
+    TriggerEnable(gt_DiffTime, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_StartSpawn_Init () {
+    gt_StartSpawn = TriggerCreate("gt_StartSpawn_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: RankCodeEntry
+//--------------------------------------------------------------------------------------------------
+bool gt_RankCodeEntry_Func (bool testConds, bool runActions) {
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_RankCodeEntry_Init () {
+    gt_RankCodeEntry = TriggerCreate("gt_RankCodeEntry_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Untitled Trigger 001
+//--------------------------------------------------------------------------------------------------
+bool gt_DiffTime_Func (bool testConds, bool runActions) {
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_DiffTime_Init () {
+    gt_DiffTime = TriggerCreate("gt_DiffTime_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Untitled Trigger 001
+//--------------------------------------------------------------------------------------------------
+bool gt_DebugWindow_Func (bool testConds, bool runActions) {
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerDebugEnableType(gv_spawningMessages, true);
+    TriggerDebugEnableType(gv_radMessages, true);
+    if ((EventChatMessage(false) == "a")) {
+        TriggerDebugWindowOpen(true);
+    }
+    else {
+        TriggerDebugWindowOpen(false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_DebugWindow_Init () {
+    gt_DebugWindow = TriggerCreate("gt_DebugWindow_Func");
+    TriggerAddEventChatMessage(gt_DebugWindow, c_playerAny, "", false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Untitled Trigger 001
+//--------------------------------------------------------------------------------------------------
+bool gt_PlayerHeroCarrier_Func (bool testConds, bool runActions) {
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    IntLoopBegin(0, 9);
+    while (!IntLoopDone()) {
+        gv_playerHero[IntLoopCurrent()] = UnitFromId(46);
+        IntLoopStep();
+    }
+    IntLoopEnd();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_PlayerHeroCarrier_Init () {
+    gt_PlayerHeroCarrier = TriggerCreate("gt_PlayerHeroCarrier_Func");
+    TriggerAddEventMapInit(gt_PlayerHeroCarrier);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger Initialization
 //--------------------------------------------------------------------------------------------------
 void InitTriggers () {
+    gt_MobDies_Init();
+    gt_GraveyardEncounter_Init();
+    gt_BossSpawn_Init();
+    gt_CollectEmUp_Init();
+    gt_MobAttacked_Init();
+    gt_MinionSpawn_Init();
+    gt_MinionSpawnQueue_Init();
+    gt_MakeMinions_Init();
+    gt_Wave_Init();
+    gt_MQRandomTimed_Init();
+    gt_SpawnRadFrags_Init();
+    gt_RedDestroyed_Init();
+    gt_RadBuildup_Init();
     gt_ReactorDone_Init();
+    gt_Victory_Init();
     gt_TelevacRescue_Init();
-    gt_RankCodeEntry_Init();
     gt_InitHQ_Init();
     gt_CreateBuildings_Init();
     gt_InitRads_Init();
     gt_DifficultyPrompt_Init();
     gt_ButtonClicked_Init();
     gt_DlgTimer_Init();
+    gt_Nightmare_Init();
     gt_InitBuildings_Init();
     gt_KeepBuildingSight_Init();
+    gt_VersionHistory_Init();
+    gt_ExtraInit_Init();
+    gt_StartSpawn_Init();
+    gt_RankCodeEntry_Init();
+    gt_DiffTime_Init();
+    gt_DebugWindow_Init();
+    gt_PlayerHeroCarrier_Init();
 }
 
 //--------------------------------------------------------------------------------------------------

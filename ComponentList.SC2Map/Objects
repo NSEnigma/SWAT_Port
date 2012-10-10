@@ -2,6 +2,7 @@
 <PlacedObjects Version="27">
     <ObjectUnit Id="44" Position="123.4587,212.7556,0" Rotation="0.6865" Scale="1,1,1" UnitType="BuildingSight"/>
     <ObjectUnit Id="46" Position="7.7895,242.8227,0" Rotation="1.102" Scale="1,1,1" UnitType="Carrier" Player="1"/>
+    <ObjectUnit Id="220" Position="118.4963,162.8854,0" Rotation="0.6145" Scale="1,1,1" UnitType="InfestedAbomination"/>
     <ObjectUnit Id="217" Position="71.1386,176.7968,0" Rotation="0.9355" Scale="1,1,1" UnitType="Marauder" Player="1"/>
     <ObjectUnit Id="218" Position="58.68,179.895,0" Rotation="2.6772" Scale="1,1,1" UnitType="Marauder" Player="1"/>
     <ObjectUnit Id="10" Position="12.8505,238.3408,0" Rotation="5.7536" Scale="1,1,1" UnitType="Marine" Player="1"/>
@@ -50,6 +51,8 @@
     <ObjectUnit Id="177" Position="135,212.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
     <ObjectUnit Id="178" Position="135,215.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
     <ObjectUnit Id="179" Position="127,214.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
+    <ObjectUnit Id="184" Position="119.0168,166.2138,0" Rotation="3.059" Scale="1,1,1" UnitType="Zergling"/>
+    <ObjectUnit Id="219" Position="120.628,165.9843,0" Rotation="5.3371" Scale="1,1,1" UnitType="Zergling"/>
     <ObjectDoodad Id="187" Position="128,235,7.9982" Rotation="4.7121" Scale="1,1,1.75" Type="SwatElectricCorner2x2">
         <Flag Index="HeightAbsolute" Value="1"/>
     </ObjectDoodad>

@@ -9,6 +9,7 @@
 <Actor id="SwatWallElectric6x2" Variations="4"/>
 <Actor id="SwatWallElectric2x6" Variations="0,3"/>
 <Terrain id="Tarsonis"/>
+<Unit id="Zergling"/>
 <Unit id="TestShop"/>
 <Unit id="Marine"/>
 <Unit id="BuildingSight"/>
@@ -17,5 +18,6 @@
 <Unit id="Vulture"/>
 <Unit id="SwatGraveyardDoor"/>
 <Unit id="SecurityGateStraightVerticalLFLowered"/>
+<Unit id="InfestedAbomination"/>
 <Unit id="Marauder"/>
 </Preload>
