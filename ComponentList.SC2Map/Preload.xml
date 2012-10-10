@@ -8,6 +8,7 @@
 <Actor id="SwatWallElectric2x4" Variations="0,3"/>
 <Actor id="SwatWallElectric6x2" Variations="4"/>
 <Actor id="SwatWallElectric2x6" Variations="0,3"/>
+<Behavior id="Radlet"/>
 <Terrain id="Tarsonis"/>
 <Unit id="Zergling"/>
 <Unit id="TestShop"/>

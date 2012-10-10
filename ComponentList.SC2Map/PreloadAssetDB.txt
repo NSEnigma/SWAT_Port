@@ -48,6 +48,9 @@ Actor=ConstructionRefundActorEnemy
 id=TorFeedbackStun
 asset=Assets\Textures\btn-missing-kaeo.dds
 Actor=ConstructionRefundActorEnemy,##id##
+id=Radlet
+asset=Assets\Textures\btn-missing-kaeo.dds
+Actor=ConstructionRefundActorEnemy
 
 [Button]
 id=EnergyDrain

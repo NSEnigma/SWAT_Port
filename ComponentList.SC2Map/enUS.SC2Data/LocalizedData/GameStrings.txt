@@ -684,6 +684,7 @@ Behavior/Name/PsiStorm=Psionic Storm
 Behavior/Name/QueenBirthUnburrow=Queen birth unburrow
 Behavior/Name/QueenSpawnLarva=Spawn Mutant Larva
 Behavior/Name/QueenSpawnLarvaTimer=Spawn Larvae
+Behavior/Name/Radlet=Radlet
 Behavior/Name/RawRichVespeneGeyserGas=Gas (Raw Rich Vespene Geyser)
 Behavior/Name/RawVespeneGeyserGas=Gas (Raw Vespene Geyser)
 Behavior/Name/ReactorDone=ReactorDone
