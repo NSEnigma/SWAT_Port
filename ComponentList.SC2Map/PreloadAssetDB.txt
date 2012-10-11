@@ -42,15 +42,15 @@ Actor=ConstructionRefundActorEnemy
 Model=MindBlastStun
 
 [Behavior]
+id=Radlet
+asset=Assets\Textures\btn-missing-kaeo.dds
+Actor=ConstructionRefundActorEnemy
 id=TorEnergyDrainLastDrain
 asset=Assets\Textures\btn-ability-protoss-prismaticbeam.dds
 Actor=ConstructionRefundActorEnemy
 id=TorFeedbackStun
 asset=Assets\Textures\btn-missing-kaeo.dds
 Actor=ConstructionRefundActorEnemy,##id##
-id=Radlet
-asset=Assets\Textures\btn-missing-kaeo.dds
-Actor=ConstructionRefundActorEnemy
 
 [Button]
 id=EnergyDrain

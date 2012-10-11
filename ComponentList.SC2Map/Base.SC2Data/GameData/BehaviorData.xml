@@ -4,10 +4,12 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification DetectArc="0" RadarArc="0">
+            <StateFlags index="SuppressCollision" value="1"/>
             <StateFlags index="Unselectable" value="1"/>
             <StateFlags index="Untargetable" value="1"/>
             <VitalRegenArray index="Life" value="-1"/>
         </Modification>
+        <Requirements value="FireSuppressionSystemsResearched"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TorEnergyDrainLastDrain">
         <Cost>
