@@ -388,6 +388,7 @@ Variable/Name/7F753E4D=QQ
 Variable/Name/80880387=Untitled Variable 001
 Variable/Name/811FBDEA=radNuke
 Variable/Name/814DE4D6=nemesisStage
+Variable/Name/854364B1=Untitled Variable 001
 Variable/Name/85678563=survival
 Variable/Name/872B3A98=Untitled Variable 001
 Variable/Name/8768A628=regionId

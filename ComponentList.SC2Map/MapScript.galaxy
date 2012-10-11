@@ -1845,6 +1845,7 @@ bool gt_TelevacRescue_Func (bool testConds, bool runActions) {
     unit lv_civ;
     unit lv_televac;
     fixed lv_energy;
+    const int lv_civEnergyCost = 250;
 
     // Variable Initialization
     lv_iCivs = 0;
@@ -1852,22 +1853,29 @@ bool gt_TelevacRescue_Func (bool testConds, bool runActions) {
     lv_televac = EventUnitRangeUnit();
     lv_energy = 0.0;
 
+    // Conditions
+    if (testConds) {
+        if (!((!(gf_IsUndeadUnit(lv_civ))))) {
+            return false;
+        }
+    }
+
     // Actions
     if (!runActions) {
         return true;
     }
 
-    lv_energy = UnitGetPropertyFixed(lv_televac, c_unitPropLife, c_unitPropCurrent);
+    lv_energy = UnitGetPropertyFixed(lv_televac, c_unitPropEnergy, c_unitPropCurrent);
     TriggerDebugOutput(1, StringExternal("Param/Value/791CD81E"), true);
     TextExpressionSetToken("Param/Expression/4D542CBA", "A", FixedToText(lv_energy, c_fixedPrecisionAny));
     TriggerDebugOutput(1, TextExpressionAssemble("Param/Expression/4D542CBA"), true);
-    if ((lv_energy < 10.0)) {
+    if ((lv_energy < lv_civEnergyCost)) {
         return true;
     }
     else {
     }
     TriggerDebugOutput(1, StringExternal("Param/Value/68429319"), true);
-    UnitSetPropertyFixed(lv_televac, c_unitPropLife, (lv_energy-10));
+    UnitSetPropertyFixed(lv_televac, c_unitPropEnergy, (lv_energy-lv_civEnergyCost));
     gv_televacCivs += 1;
     UnitRemove(lv_civ);
     Wait(5.0, c_timeGame);
