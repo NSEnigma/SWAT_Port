@@ -9,7 +9,6 @@
             <StateFlags index="Untargetable" value="1"/>
             <VitalRegenArray index="Life" value="-1"/>
         </Modification>
-        <Requirements value="FireSuppressionSystemsResearched"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TorEnergyDrainLastDrain">
         <Cost>
