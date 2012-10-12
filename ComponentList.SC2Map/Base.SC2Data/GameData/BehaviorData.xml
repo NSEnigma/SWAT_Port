@@ -1,5 +1,123 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <CBehaviorBuff id="Radiation">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RadiationEffects">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="RadiationEffectsSearchSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RadiationEffectsSWATBuffIcon">
+        <InfoIcon value="Assets\Textures\btn-techupgrade-terran-singularityanchor.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RadiationEffectsUndeadBuffIcon">
+        <InfoIcon value="Assets\Textures\btn-techupgrade-terran-singularityanchor.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RadiationEffectsUndeadRegenLv1">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2.5"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <VitalRegenArray index="Life" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RadiationEffectsUndeadRegenLv12">
+        <Cost>
+            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+        </Cost>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2.5"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <VitalRegenArray index="Life" value="2"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RadiationEffectsUndeadRegenLv13">
+        <Cost>
+            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+        </Cost>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2.5"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <VitalRegenArray index="Life" value="3"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RadiationEffectsUndeadRegenLv14">
+        <Cost>
+            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+        </Cost>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2.5"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <VitalRegenArray index="Life" value="4"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RadiationEffectsUndeadRegenLv15">
+        <Cost>
+            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+        </Cost>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2.5"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <VitalRegenArray index="Life" value="5"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Radlet">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

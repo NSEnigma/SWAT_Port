@@ -11,6 +11,29 @@
         <CombineArray value="TargetEnergyGE50"/>
         <CombineArray value="NotDead"/>
     </CValidatorCombine>
+    <CValidatorUnitType id="RadiationEffectIsMutant">
+        <Value value="InfestedCivilian"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="RadiationEffectsLv2">
+        <WhichUnit Value="Caster"/>
+        <Value value="2"/>
+        <Behavior value="Radiation"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RadiationEffectsLv3">
+        <WhichUnit Value="Caster"/>
+        <Value value="3"/>
+        <Behavior value="Radiation"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RadiationEffectsLv4">
+        <WhichUnit Value="Caster"/>
+        <Value value="4"/>
+        <Behavior value="Radiation"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RadiationEffectsLv5">
+        <WhichUnit Value="Caster"/>
+        <Value value="5"/>
+        <Behavior value="Radiation"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareVital id="TargetEnergy">
         <WhichUnit Value="Caster"/>
         <Compare value="GE"/>

@@ -12,10 +12,19 @@
         <FlagArray index="Invulnerable" value="1"/>
         <Sight value="4"/>
     </CUnit>
+    <CUnit id="HighTemplar">
+        <FlagArray index="Movable" value="0"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="Cloaked" value="1"/>
+    </CUnit>
     <CUnit id="Marauder">
         <EnergyStart value="1000"/>
         <EnergyMax value="1000"/>
         <EnergyRegenRate value="6"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="Vulture">
         <EnergyMax value="3000"/>

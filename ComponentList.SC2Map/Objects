@@ -2,6 +2,7 @@
 <PlacedObjects Version="27">
     <ObjectUnit Id="44" Position="123.4587,212.7556,0" Rotation="0.6865" Scale="1,1,1" UnitType="BuildingSight"/>
     <ObjectUnit Id="46" Position="7.7895,242.8227,0" Rotation="1.102" Scale="1,1,1" UnitType="Carrier" Player="1"/>
+    <ObjectUnit Id="221" Position="124.0097,127.8198,0" Rotation="5.692" Scale="1,1,1" UnitType="HighTemplar" Player="12"/>
     <ObjectUnit Id="220" Position="118.4963,162.8854,0" Rotation="0.6145" Scale="1,1,1" UnitType="InfestedAbomination"/>
     <ObjectUnit Id="217" Position="71.1386,176.7968,0" Rotation="0.9355" Scale="1,1,1" UnitType="Marauder" Player="1"/>
     <ObjectUnit Id="218" Position="58.68,179.895,0" Rotation="2.6772" Scale="1,1,1" UnitType="Marauder" Player="1"/>

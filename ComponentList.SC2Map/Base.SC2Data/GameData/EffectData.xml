@@ -1,5 +1,100 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <CEffectApplyBehavior id="RadiationEffectApplyDebuffIcon">
+        <EditorCategories value=""/>
+        <Behavior value="RadiationEffectsSWATBuffIcon"/>
+        <Duration value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="RadiationEffectApplyDebuffIcon2">
+        <EditorCategories value=""/>
+        <Behavior value="RadiationEffectsUndeadBuffIcon"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="RadiationEffectsApplyBehaviorLv1">
+        <ValidatorArray value="RadiationEffectsLv1"/>
+        <EditorCategories value=""/>
+        <Behavior value="RadiationEffectsUndeadRegenLv1"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="RadiationEffectsApplyBehaviorLv12">
+        <ValidatorArray index="0" value="RadiationEffectsApplyBehaviorLv1TargetFilters"/>
+        <ValidatorArray value="RadiationEffectsLv12"/>
+        <EditorCategories value=""/>
+        <Marker Link="Effect/RadiationEffectsApplyBehaviorLv1"/>
+        <Behavior value="RadiationEffectsUndeadRegenLv12"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="RadiationEffectsApplyBehaviorLv13">
+        <ValidatorArray index="0" value="RadiationEffectsApplyBehaviorLv1TargetFilters"/>
+        <ValidatorArray value="RadiationEffectsLv13"/>
+        <EditorCategories value=""/>
+        <Marker Link="Effect/RadiationEffectsApplyBehaviorLv1"/>
+        <Behavior value="RadiationEffectsUndeadRegenLv13"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="RadiationEffectsApplyBehaviorLv14">
+        <ValidatorArray index="0" value="RadiationEffectsApplyBehaviorLv1TargetFilters"/>
+        <ValidatorArray value="RadiationEffectsLv14"/>
+        <EditorCategories value=""/>
+        <Marker Link="Effect/RadiationEffectsApplyBehaviorLv1"/>
+        <Behavior value="RadiationEffectsUndeadRegenLv14"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="RadiationEffectsApplyBehaviorLv15">
+        <ValidatorArray index="0" value="RadiationEffectsApplyBehaviorLv1TargetFilters"/>
+        <ValidatorArray value="RadiationEffectsLv5"/>
+        <EditorCategories value=""/>
+        <Marker Link="Effect/RadiationEffectsApplyBehaviorLv1"/>
+        <Behavior value="RadiationEffectsUndeadRegenLv15"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="RadiationEffectsSWATHeroDamage2">
+        <ValidatorArray value="RadiationEffectsLv12"/>
+        <EditorCategories value=""/>
+        <Flags index="Live" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="RadiationEffectsSWATHeroDamage3">
+        <ValidatorArray value="RadiationEffectsLv13"/>
+        <EditorCategories value=""/>
+        <Flags index="Live" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="RadiationEffectsSWATHeroDamage4">
+        <ValidatorArray value="RadiationEffectsLv14"/>
+        <EditorCategories value=""/>
+        <Flags index="Live" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="RadiationEffectsSWATHeroDamage5">
+        <ValidatorArray value="RadiationEffectsLv5"/>
+        <EditorCategories value=""/>
+        <Flags index="Live" value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="RadiationEffectsSWATSet">
+        <EditorCategories value=""/>
+        <EffectArray value="RadiationEffectsSWATHeroDamage2"/>
+        <EffectArray value="RadiationEffectsSWATHeroDamage3"/>
+        <EffectArray value="RadiationEffectsSWATHeroDamage4"/>
+        <EffectArray value="RadiationEffectsSWATHeroDamage5"/>
+        <EffectArray value="RadiationEffectApplyDebuffIcon"/>
+    </CEffectSet>
+    <CEffectEnumArea id="RadiationEffectsSearchSWAT">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Dead,Hidden"/>
+        <AreaArray Radius="500" Effect="RadiationEffectsSWATSet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="RadiationEffectsSearchSet">
+        <EditorCategories value=""/>
+        <EffectArray value="RadiationEffectsSearchSWAT"/>
+        <EffectArray value="RadiationEffectsSearchUndead"/>
+    </CEffectSet>
+    <CEffectEnumArea id="RadiationEffectsSearchUndead">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Neutral,Enemy,Missile,Dead,Hidden"/>
+        <AreaArray Radius="500" Effect="RadiationEffectsUndeadSet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="RadiationEffectsUndeadSet">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/RadiationEffectsSWATSet"/>
+        <EffectArray value="RadiationEffectsApplyBehaviorLv1"/>
+        <EffectArray value="RadiationEffectsApplyBehaviorLv12"/>
+        <EffectArray value="RadiationEffectsApplyBehaviorLv13"/>
+        <EffectArray value="RadiationEffectsApplyBehaviorLv14"/>
+        <EffectArray value="RadiationEffectsApplyBehaviorLv15"/>
+        <EffectArray value="RadiationEffectApplyDebuffIcon2"/>
+    </CEffectSet>
     <CEffectApplyBehavior id="TorEnergyDrain">
         <ValidatorArray index="0" value="TorEnergyDrainApplyBehaviorTargetFilters"/>
         <EditorCategories value=""/>

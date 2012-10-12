@@ -8,10 +8,14 @@
 <Actor id="SwatWallElectric2x4" Variations="0,3"/>
 <Actor id="SwatWallElectric6x2" Variations="4"/>
 <Actor id="SwatWallElectric2x6" Variations="0,3"/>
+<Behavior id="Radiation"/>
 <Behavior id="Radlet"/>
+<Behavior id="RadiationEffects"/>
+<Behavior id="250mmStrikeCannons"/>
 <Terrain id="Tarsonis"/>
 <Unit id="Zergling"/>
 <Unit id="TestShop"/>
+<Unit id="HighTemplar"/>
 <Unit id="Marine"/>
 <Unit id="BuildingSight"/>
 <Unit id="Carrier"/>
