@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <CEffectDamage id="DummyDamageEffect">
+        <EditorCategories value=""/>
+        <KindSplash value="Melee"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="ExtMinibossHealth2">
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Life" Change="2500"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="ExtMinibossHealth3">
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Life" Change="5500"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="ExtMinibossHealth4">
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Life" Change="8500"/>
+    </CEffectModifyUnit>
+    <CEffectDamage id="InfestedClawsDamage">
+        <Amount value="117"/>
+        <Random value="36"/>
+        <ArmorReduction value="0"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="MinibossHealth">
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Life" Change="1500"/>
+    </CEffectModifyUnit>
+    <CEffectDamage id="PunisherGrenadesU">
+        <AttributeBonus index="Armored" value="0"/>
+        <Chance value="0.5"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="RadiationEffectApplyDebuffIcon">
         <EditorCategories value=""/>
         <Behavior value="RadiationEffectsSWATBuffIcon"/>
@@ -43,24 +72,28 @@
         <Behavior value="RadiationEffectsUndeadRegenLv15"/>
     </CEffectApplyBehavior>
     <CEffectDamage id="RadiationEffectsSWATHeroDamage2">
-        <ValidatorArray value="RadiationEffectsLv12"/>
+        <ValidatorArray value="RadiationEffectsLv2"/>
         <EditorCategories value=""/>
         <Flags index="Live" value="1"/>
+        <Amount value="0.8"/>
     </CEffectDamage>
     <CEffectDamage id="RadiationEffectsSWATHeroDamage3">
-        <ValidatorArray value="RadiationEffectsLv13"/>
+        <ValidatorArray value="RadiationEffectsLv3"/>
         <EditorCategories value=""/>
         <Flags index="Live" value="1"/>
+        <Amount value="2"/>
     </CEffectDamage>
     <CEffectDamage id="RadiationEffectsSWATHeroDamage4">
-        <ValidatorArray value="RadiationEffectsLv14"/>
+        <ValidatorArray value="RadiationEffectsLv4"/>
         <EditorCategories value=""/>
         <Flags index="Live" value="1"/>
+        <Amount value="12"/>
     </CEffectDamage>
     <CEffectDamage id="RadiationEffectsSWATHeroDamage5">
         <ValidatorArray value="RadiationEffectsLv5"/>
         <EditorCategories value=""/>
         <Flags index="Live" value="1"/>
+        <Amount value="25"/>
     </CEffectDamage>
     <CEffectSet id="RadiationEffectsSWATSet">
         <EditorCategories value=""/>
@@ -72,7 +105,7 @@
     </CEffectSet>
     <CEffectEnumArea id="RadiationEffectsSearchSWAT">
         <EditorCategories value=""/>
-        <SearchFilters value="-;Player,Ally,Neutral,Missile,Dead,Hidden"/>
+        <SearchFilters value="Heroic;Player,Ally,Neutral,Mechanical,Psionic,Missile,Dead,Hidden"/>
         <AreaArray Radius="500" Effect="RadiationEffectsSWATSet"/>
     </CEffectEnumArea>
     <CEffectSet id="RadiationEffectsSearchSet">
@@ -94,38 +127,57 @@
         <EffectArray value="RadiationEffectsApplyBehaviorLv14"/>
         <EffectArray value="RadiationEffectsApplyBehaviorLv15"/>
         <EffectArray value="RadiationEffectApplyDebuffIcon2"/>
+        <ValidatorArray value="HasGenerateCreepBehavior"/>
     </CEffectSet>
-    <CEffectApplyBehavior id="TorEnergyDrain">
-        <ValidatorArray index="0" value="TorEnergyDrainApplyBehaviorTargetFilters"/>
-        <EditorCategories value=""/>
-        <Marker Link="Effect/TorEnergyDrainApplyBehavior"/>
-        <Behavior value="TorEnergyDrainLastDrain"/>
-    </CEffectApplyBehavior>
-    <CEffectModifyUnit id="TorEnergyDrainCasterGain">
-        <EditorCategories value=""/>
-        <TransferUnit Value="Source"/>
-        <ImpactUnit Value="Source"/>
-        <VitalArray index="Energy" Change="50"/>
+    <CEffectModifyUnit id="STNTExtEnergy">
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Energy" Change="150"/>
     </CEffectModifyUnit>
+    <CEffectModifyUnit id="STNTExtHealth">
+        <EditorCategories value="Race:Zerg"/>
+        <VitalArray index="Life" Change="1000"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="SprintLight">
+        <EditorCategories value=""/>
+        <Duration value="6"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="ZombieTNTDamageEffect">
+        <EditorCategories value="Race:Zerg"/>
+        <KindSplash value="Melee"/>
+        <Amount value="600"/>
+        <AreaArray Radius="0.9375" Fraction="1"/>
+        <AreaArray Radius="1.7968" Fraction="0.333"/>
+    </CEffectDamage>
+    <CEffectDamage id="ZombieBlueDamageEffect">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="400"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="TorEnergyDrainApplyComplete">
+        <ValidatorArray index="0" value="TorEnergyLT3000"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Source"/>
+        <Behavior value="TorComplete"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="TorEnergyDrainCasterGain">
+        <EditorCategories value=""/>
+        <Flags index="NoVitalAbsorbLife" value="1"/>
+        <Flags index="NoVitalAbsorbShields" value="1"/>
+        <Flags index="NoVitalAbsorbEnergy" value="1"/>
+        <VitalBonus index="Energy" value="50"/>
+        <LeechFraction index="Energy" value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="TorEnergyDrainPeriodicSet">
+        <EditorCategories value=""/>
+        <EffectArray value="TorEnergyDrainTargetLoss"/>
+        <EffectArray value="TorEnergyDrainCasterGain"/>
+    </CEffectSet>
     <CEffectCreatePersistent id="TorEnergyDrainPersistent">
-        <ValidatorArray value="EnergyDrainInitialValidators"/>
         <EditorCategories value=""/>
         <WhichLocation Value="TargetUnit"/>
         <Flags index="Channeled" value="1"/>
-        <FinalEffect value="TorEnergyDrainPersistentRemoveLast"/>
         <PeriodCount value="10"/>
-        <PeriodicValidator value="EnergyDrainPeriodicValidators"/>
-        <PeriodicEffectArray value="TorEnergyDrainCasterGain"/>
-        <PeriodicEffectArray value="TorEnergyDrainTargetLoss"/>
-        <PeriodicEffectArray value="TorEnergyDrainApplyBehavior"/>
-        <PeriodicEffectArray value="TorEnergyDrain"/>
+        <PeriodicEffectArray value="TorEnergyDrainPeriodicSet"/>
         <PeriodicPeriodArray value="0.5"/>
-    </CEffectCreatePersistent>
-    <CEffectCreatePersistent id="TorEnergyDrainPersistentRemoveLast">
-        <EditorCategories value=""/>
-        <PeriodCount value="1"/>
-        <PeriodicEffectArray value="TorEnergyDrainRemoveLast"/>
-        <PeriodicPeriodArray value="1"/>
     </CEffectCreatePersistent>
     <CEffectRemoveBehavior id="TorEnergyDrainRemoveLast">
         <EditorCategories value=""/>
@@ -143,17 +195,38 @@
         <TransferUnit Value="Source"/>
         <VitalArray index="Energy" Change="-100"/>
     </CEffectModifyUnit>
-    <CEffectSet id="TorEnergyDrainTargetSet">
-        <EditorCategories value=""/>
-        <EffectArray value="TorEnergyDrainTargetLoss"/>
-    </CEffectSet>
     <CEffectApplyBehavior id="TorFeedbackApplyBehavior">
         <EditorCategories value=""/>
         <Behavior value="TorFeedbackStun"/>
     </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="TorFeedbackRemoveSleep">
+        <EditorCategories value=""/>
+        <Chance value="0"/>
+        <WhichUnit Value="Source"/>
+        <BehaviorLink value="TorFeedbackSleep"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
     <CEffectEnumArea id="TorFeedbackStunSearch">
         <EditorCategories value=""/>
         <SearchFilters value="-;Self,Destructible,Dead,Hidden"/>
         <AreaArray Radius="5" Effect="TorFeedbackApplyBehavior"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="ZombieToxinsApplyBehavior">
+        <EditorCategories value=""/>
+        <Behavior value="ZombieToxins"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZombieBlueApplyBehavior">
+        <EditorCategories value=""/>
+        <Behavior value="ZombieBlue"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="ZombieToxinsSearchArea">
+        <EditorCategories value=""/>
+        <SearchFilters value="Biological;Player,Ally,Neutral,Mechanical,Missile,Dead,Invulnerable"/>
+        <AreaArray Radius="3.5156" Effect="ZombieToxinsApplyBehavior"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ZombieBlueSearchArea">
+        <EditorCategories value=""/>
+        <SearchFilters value="Biological;Player,Ally,Neutral,Mechanical,Missile,Dead,Invulnerable"/>
+        <AreaArray Radius="1.125" Effect="ZombieBlueApplyBehavior"/>
     </CEffectEnumArea>
 </Catalog>

@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <CActorUnit id="BuildingSight" parent="GenericUnitStandard">
+        <EditorCategories value=""/>
+        <On index="1" Terms="UnitBirth.BuildingSight"/>
+        <Model value=""/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Infested Civilian ..................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="InfestedCivilian">
+        <On Terms="Behavior.Lightenating.On" Send="SetTintColor 255,255,0"/>
+        <On Terms="Behavior.TNTApplyDamage.On" Send="SetTintColor 253,165,0"/>
+        <On Terms="Behavior.ZombieFlaming2.On" Send="SetTintColor 255,150,81"/>
+        <On Terms="Behavior.ZombieFlaming.On" Send="SetTintColor 255,150,81"/>
+        <On Terms="Behavior.ZombieToxinsAura.On" Send="SetTintColor 0,255,0"/>
+        <On Terms="Behavior.ZombieBlueDegenAura.On" Send="SetTintColor 0,0,255"/>
+    </CActorUnit>
     <CActorDoodad id="SwatElectricCorner2x2" parent="MetalWallCorner">
         <Footprint value="Footprint2x2DoodadBlockLOS"/>
     </CActorDoodad>
@@ -36,7 +52,7 @@
         <HostForProps Subject="_Unit" Scope="Caster" Actor="Find"/>
         <Model value="ColossusAttackBeam"/>
         <HostLaunch Subject="_Unit" Scope="Target" Actor="Find"/>
-        <HostLaunchSiteOps Ops="SOpAttachWeapon"/>
+        <HostLaunchSiteOps Ops="SOpAttachCenter"/>
         <HostImpact Subject="_Unit" Scope="Caster" Actor="Find"/>
         <HostImpactSiteOps Ops="SOpAttachCenter"/>
     </CActorBeamSimple>
@@ -49,5 +65,51 @@
         <Host Subject="_Selectable"/>
         <HostSiteOps Ops="SOpAttachOverhead"/>
         <Model value="MindBlastStun"/>
+    </CActorModel>
+    <CActorModel id="ZombieBurninating" parent="ModelAddition">
+        <On Terms="Behavior.ZombieFlaming2.On" Send="Create"/>
+        <On Terms="Behavior.ZombieFlaming.On" Send="Create"/>
+        <On Terms="UnitDeath" Send="Destroy"/>
+        <On Terms="Behavior.ZombieFlaming.On" Send="SetTintColor 255,150,81"/>
+        <On Terms="Behavior.ZombieFlaming2.On" Send="SetTintColor 255,150,81"/>
+        <HostSiteOps Ops="SOpAttachWeapon" HoldRotation="1"/>
+        <Model value="FireMedium"/>
+        <Scale value="0.400000"/>
+    </CActorModel>
+    <CActorModel id="ZombieLightenating" parent="ModelAddition">
+        <On Terms="Behavior.Lightenating.On" Send="Create"/>
+        <On Terms="UnitDeath" Send="Destroy"/>
+        <On Terms="Behavior.Lightenating.On; AnimPlaying" Send="SetTintColor 255,255,0"/>
+        <HostSiteOps Ops="SOpAttachOrigin"/>
+    </CActorModel>
+    <CActorModel id="ZombieTNTBarrel" parent="ModelAddition">
+        <On Terms="Behavior.TNTApplyDamage.On" Send="Create"/>
+        <HostSiteOps Ops="SOpAttachWeaponLeft"/>
+        <Model value="ExplosiveBarrel"/>
+        <Scale value="0.600000"/>
+    </CActorModel>
+    <CActorModel id="ZombieTNTBarrel2" parent="ModelAddition">
+        <On Terms="Behavior.TNTApplyDamage2.On" Send="Create"/>
+        <HostSiteOps Ops="SOpAttachWeaponRight"/>
+        <Model value="ExplosiveBarrel"/>
+        <Scale value="0.600000"/>
+    </CActorModel>
+    <CActorModel id="ZombieTNTSmoke" parent="ModelAddition">
+        <On Terms="Behavior.TNTApplyDamage.On" Send="Create"/>
+        <HostSiteOps Ops="SOpAttachHead"/>
+        <Model value="SmokeMedium"/>
+    </CActorModel>
+    <CActorModel id="ZombieToxins" parent="ModelAnimationStyleContinuous">
+        <On Terms="Behavior.ZombieToxinsAura.On" Send="Create"/>
+        <On Terms="UnitDeath" Send="AnimBracketStop BSD"/>
+        <Model value="GasBarrelExplodeModel"/>
+        <Scale value="0.200000"/>
+    </CActorModel>
+    <CActorModel id="ZombieToxinsLiving" parent="ModelAnimationStyleContinuous">
+        <On Terms="Behavior.ZombieToxins.On" Send="Create"/>
+        <On Terms="Behavior.ZombieToxins.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachHead"/>
+        <Model value="GasBarrelExplodeModel"/>
+        <Scale value="0.150000"/>
     </CActorModel>
 </Catalog>

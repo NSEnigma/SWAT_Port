@@ -546,4 +546,28 @@
             <quad value="128.5,185.0002,165.5,235"/>
         </shape>
     </region>
+    <region id="92">
+        <name value="ReinSouth"/>
+        <shape type="rect">
+            <quad value="167,2,177,6"/>
+        </shape>
+    </region>
+    <region id="93">
+        <name value="ReinNorth"/>
+        <shape type="rect">
+            <quad value="118,244,128,248"/>
+        </shape>
+    </region>
+    <region id="94">
+        <name value="ReinWest"/>
+        <shape type="rect">
+            <quad value="4,84,8,93"/>
+        </shape>
+    </region>
+    <region id="95">
+        <name value="ReinEast"/>
+        <shape type="rect">
+            <quad value="248,147,252,156"/>
+        </shape>
+    </region>
 </Regions>

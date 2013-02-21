@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CUser id="Burninating">
+        <Fields Id="behavior" Type="GameLink" GameLinkType="Behavior"/>
+        <Instances Id="[Default]">
+            <GameLink GameLink="Flaming">
+                <Field Id="behavior"/>
+            </GameLink>
+        </Instances>
+        <Instances Id="Nightmare">
+            <GameLink GameLink="Flaming2">
+                <Field Id="behavior"/>
+            </GameLink>
+        </Instances>
+        <Instances Id="Extinction">
+            <GameLink GameLink="Flaming2">
+                <Field Id="behavior"/>
+            </GameLink>
+        </Instances>
+    </CUser>
+    <CUser id="HeroArmor">
+        <Fields Id="Movespeed" Type="Fixed" EditorText="Name"/>
+        <Fields Id="Damage Reduction" Type="GameLink" GameLinkType="Behavior"/>
+        <Fields Id="Sprint" Type="GameLink" GameLinkType="Behavior"/>
+        <Fields Id="Nanites" Type="GameLink" GameLinkType="Abil"/>
+        <Instances Id="[Default]">
+            <Fixed Fixed="290">
+                <Field Id="Movespeed"/>
+            </Fixed>
+            <GameLink GameLink="PowerArmorLight">
+                <Field Id="Damage Reduction"/>
+            </GameLink>
+            <GameLink GameLink="SWATNanites">
+                <Field Id="Nanites"/>
+            </GameLink>
+            <GameLink GameLink="SprintLight">
+                <Field Id="Sprint"/>
+            </GameLink>
+        </Instances>
+        <Instances Id="Medium">
+            <Fixed Fixed="250">
+                <Field Id="Movespeed"/>
+            </Fixed>
+            <GameLink GameLink="PowerArmorMedium">
+                <Field Id="Damage Reduction"/>
+            </GameLink>
+            <GameLink GameLink="SWATNanites">
+                <Field Id="Nanites"/>
+            </GameLink>
+            <GameLink GameLink="PowerArmorMedium">
+                <Field Id="Sprint"/>
+            </GameLink>
+        </Instances>
+        <Instances Id="Heavy">
+            <Fixed Fixed="220">
+                <Field Id="Movespeed"/>
+            </Fixed>
+            <GameLink GameLink="SWATNanites">
+                <Field Id="Nanites"/>
+            </GameLink>
+            <GameLink GameLink="PowerArmorHeavy">
+                <Field Id="Damage Reduction"/>
+            </GameLink>
+            <GameLink GameLink="SprintHeavy">
+                <Field Id="Sprint"/>
+            </GameLink>
+        </Instances>
+        <Instances Id="Advanced">
+            <Fixed Fixed="230">
+                <Field Id="Movespeed"/>
+            </Fixed>
+            <GameLink GameLink="SWATNanites">
+                <Field Id="Nanites"/>
+            </GameLink>
+            <GameLink GameLink="PowerArmorAdvanced">
+                <Field Id="Damage Reduction"/>
+            </GameLink>
+        </Instances>
+    </CUser>
+    <CUser id="STNTExtHealth">
+        <Fields>
+            <Id value="modify unit"/>
+            <Type value="GameLink"/>
+            <GameLinkType value="Effect"/>
+            <EditorText value="Name"/>
+        </Fields>
+        <Instances Id="[Default]">
+            <GameLink GameLink="ExtMinibossHealth4">
+                <Field Id="modify unit"/>
+            </GameLink>
+        </Instances>
+        <Instances Id="Day 2">
+            <GameLink GameLink="ExtMinibossHealth">
+                <Field Id="modify unit"/>
+            </GameLink>
+        </Instances>
+        <Instances Id="Day 3">
+            <GameLink GameLink="ExtMinibossHealth2">
+                <Field Id="modify unit"/>
+            </GameLink>
+        </Instances>
+        <Instances Id="Day 4">
+            <GameLink GameLink="ExtMinibossHealth3">
+                <Field Id="modify unit"/>
+            </GameLink>
+        </Instances>
+    </CUser>
+</Catalog>

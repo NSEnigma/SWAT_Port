@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Preload>
+<Asset path="Assets\Textures\targetingcursorx1.dds" Type="Image"/>
 <Actor id="SwatElectricCorner2x2" Variations="0"/>
 <Actor id="SwatWallElectric7x2" Variations="2"/>
 <Actor id="SYSTEM_ActorConfig"/>
@@ -9,15 +10,31 @@
 <Actor id="SwatWallElectric6x2" Variations="4"/>
 <Actor id="SwatWallElectric2x6" Variations="0,3"/>
 <Behavior id="Radiation"/>
+<Behavior id="MinibossArmor"/>
+<Behavior id="Invisibility"/>
+<Behavior id="STNTRegen"/>
+<Behavior id="ZombieBlueDegenAura"/>
 <Behavior id="Radlet"/>
+<Behavior id="TNTApplyDamage"/>
 <Behavior id="RadiationEffects"/>
-<Behavior id="250mmStrikeCannons"/>
+<Behavior id="STNTCollisionLoss"/>
+<Behavior id="ZombieFlaming"/>
+<Behavior id="ZombieToxinsAura"/>
+<Behavior id="TNTApplyDamage2"/>
+<Behavior id="TorFeedbackSleep"/>
+<Behavior id="TelevacEnergyDrain"/>
+<Behavior id="Lightenating"/>
+<Effect id="MinibossHealth"/>
+<Effect id="DummyDamageEffect"/>
+<Effect id="TorFeedbackStunSearch"/>
+<Effect id="STNTExtEnergy"/>
+<Model id="PingAlert"/>
 <Terrain id="Tarsonis"/>
 <Unit id="Zergling"/>
 <Unit id="TestShop"/>
 <Unit id="HighTemplar"/>
-<Unit id="Marine"/>
 <Unit id="BuildingSight"/>
+<Unit id="Marine"/>
 <Unit id="Carrier"/>
 <Unit id="InfestedCocoon"/>
 <Unit id="Vulture"/>
@@ -25,4 +42,6 @@
 <Unit id="SecurityGateStraightVerticalLFLowered"/>
 <Unit id="InfestedAbomination"/>
 <Unit id="Marauder"/>
+<User id="STNTExtHealth"/>
+<User id="Burninating"/>
 </Preload>

@@ -10,7 +10,11 @@
         <Type value="And"/>
         <CombineArray value="TargetEnergyGE50"/>
         <CombineArray value="NotDead"/>
+        <CombineArray value="UnknownValidator"/>
     </CValidatorCombine>
+    <CValidatorUnitCompareVital id="HasNoEnergy">
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
     <CValidatorUnitType id="RadiationEffectIsMutant">
         <Value value="InfestedCivilian"/>
     </CValidatorUnitType>
@@ -34,12 +38,6 @@
         <Value value="5"/>
         <Behavior value="Radiation"/>
     </CValidatorUnitCompareBehaviorCount>
-    <CValidatorUnitCompareVital id="TargetEnergy">
-        <WhichUnit Value="Caster"/>
-        <Compare value="GE"/>
-        <Value value="100"/>
-        <Vital value="Energy"/>
-    </CValidatorUnitCompareVital>
     <CValidatorUnitCompareVital id="TargetEnergyGE100">
         <Compare value="GE"/>
         <Value value="100"/>
@@ -50,4 +48,19 @@
         <Value value="50"/>
         <Vital value="Energy"/>
     </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="TorEnergyLT3000">
+        <Compare value="LT"/>
+        <Value value="3000"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="TorEnergyLT4000">
+        <Compare value="LT"/>
+        <Value value="4000"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorLocationCompareRange id="UnknownValidator">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="2.929"/>
+    </CValidatorLocationCompareRange>
 </Catalog>
