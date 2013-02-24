@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Catalog>
+    <CEffectEnumArea id="slowSearchArea">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran" />
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Dead,Invulnerable" />
+        <AreaArray Radius="4.8828125" Effect="slowSet" />
+    </CEffectEnumArea>
+    <CEffectSet id="slowEffectSet">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran" />
+        <MinCount value="8" />
+        <MaxCount value="8" />
+        <EffectArray value="slowApplyBehavior1" />
+        <EffectArray value="slowApplyBehavior2" />
+        <EffectArray value="slowApplyBehavior3" />
+        <EffectArray value="slowApplyBehavior4" />
+        <EffectArray value="slowApplyBehavior5" />
+        <EffectArray value="slowApplyBehavior6" />
+        <EffectArray value="slowApplyBehavior7" />
+        <EffectArray value="slowApplyBehavior8" />
+    </CEffectSet>
+    <CEffectApplyBehavior id="slowApplyBehavior1">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran" />
+        <Behavior value="slow1" />
+        <ValidatorArray value="slowValidator1" />
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="slowApplyBehavior2">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran" />
+        <Behavior value="slow2" />
+        <ValidatorArray value="slowValidator2" />
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="slowApplyBehavior3">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran" />
+        <Behavior value="slow3" />
+        <ValidatorArray value="slowValidator3" />
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="slowApplyBehavior4">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran" />
+        <Behavior value="slow4" />
+        <ValidatorArray value="slowValidator4" />
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="slowApplyBehavior5">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran" />
+        <Behavior value="slow5" />
+        <ValidatorArray value="slowValidator5" />
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="slowApplyBehavior6">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran" />
+        <Behavior value="slow6" />
+        <ValidatorArray value="slowValidator6" />
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="slowApplyBehavior7">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran" />
+        <Behavior value="slow7" />
+        <ValidatorArray value="slowValidator7" />
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="slowApplyBehavior8">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran" />
+        <Behavior value="slow8" />
+        <ValidatorArray value="slowValidator8" />
+    </CEffectApplyBehavior>
+</Catalog>

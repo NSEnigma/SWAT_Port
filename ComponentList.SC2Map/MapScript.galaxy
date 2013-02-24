@@ -20,12 +20,12 @@ void InitLibs () {
 const int gv_secondsPerMinute = 10;
 const int gv_specCount = 9;
 const int gv_traitCount = 16;
-const string gv_bossHealth = null;
-const string gv_bossDamage = null;
-const string gv_tentacleArmor = null;
+const string gv_bossHealth = "ProtossAirArmorsLevel1";
+const string gv_bossDamage = "ProtossAirArmorsLevel1";
+const string gv_tentacleArmor = "ProtossAirArmorsLevel1";
+const string gv_sMHealth = "ProtossAirArmorsLevel1";
+const string gv_sMArmor = "ProtossAirArmorsLevel1";
 const string gv_minionDamage = "MinionDamage";
-const string gv_sMHealth = null;
-const string gv_sMArmor = null;
 const string gv_minionHealth8 = "MinionHealth8";
 const string gv_minionHealth4 = "MinionHealth4";
 const string gv_minionHealth2 = "MinionHealth";
@@ -35,7 +35,7 @@ const int gv_unitId = 2;
 const int gv_regionId = 3;
 const int gv_torId = 4;
 const int gv_torBeamsBase = 5;
-const string gv_zombieUnitType = "InfestedCivilian";
+const string gv_zombieUnitType = "Zombie";
 const string gv_fireflyUnitType = "Scourge";
 const string gv_beastUnitType = "InfestedCivilian";
 const string gv_grotesqueUnitType = "InfestedCivilian";
@@ -49,6 +49,7 @@ const int gv_undeadPlayer12 = 12;
 //--------------------------------------------------------------------------------------------------
 // Global Variables
 //--------------------------------------------------------------------------------------------------
+int[10] gv_monsterSlayer;
 timer gv_dayTimer;
 int gv_daytimeState;
 fixed gv_movementX;
@@ -86,10 +87,20 @@ bool gv_blueDog;
 unit gv_superGarg;
 int gv_charred;
 string gv_defaultBoss;
+int gv_tyrants;
 int gv_bosses;
+int gv_commandos;
+unit gv_sludge;
+int gv_radHorrorRads;
+int gv_aboms;
 int[7] gv_bossChance;
+bool gv_survivalBoss;
 unit gv_superMutant;
 unit gv_horror;
+unit[6] gv_tyrantsu;
+int gv_useTyrantQueue;
+bool gv_useTyrantSpawn;
+int gv_useTyrantTrack;
 unit gv_godzilla;
 unit gv_nemesis;
 int gv_nemesisStage;
@@ -113,7 +124,6 @@ fixed gv_mobSpdBase;
 fixed gv_mobSpd;
 unit gv_heroToKill;
 order[7] gv_idleOrder;
-unit[6] gv_tyrantsu;
 int gv_innardsChance;
 int[10] gv_aVotePerfect;
 fixed gv_nDifficulty;
@@ -183,6 +193,14 @@ string gv_hazmatUnitType;
 string gv_torUnitType;
 string gv_televacUnitType;
 string gv_apcUnitType;
+string gv_sludgeUnitType;
+string gv_abomUnitType;
+string gv_horrorUnitType;
+string gv_sMUnitType;
+string gv_godzillaUnitType;
+string gv_megazillaUnitType;
+string gv_commandoUnitType;
+string gv_tyrantUnitType;
 string gv_shieldCapType;
 string gv_assaultDroidParts;
 string gv_exoLeg;
@@ -194,6 +212,11 @@ void InitGlobals () {
     int init_i;
     int init_j;
 
+    init_i = 0;
+    while (init_i <= 9) {
+        gv_monsterSlayer[init_i] = 0;
+        init_i = init_i + 1;
+    }
     gv_dayTimer = TimerCreate();
     gv_daytimeState = 0;
     gv_movementX = 0.0;
@@ -307,14 +330,28 @@ void InitGlobals () {
     gv_superGarg = null;
     gv_charred = 0;
     gv_defaultBoss = null;
+    gv_tyrants = 0;
     gv_bosses = 0;
+    gv_commandos = 0;
+    gv_sludge = null;
+    gv_radHorrorRads = 0;
+    gv_aboms = 0;
     init_i = 0;
     while (init_i <= 6) {
         gv_bossChance[init_i] = 0;
         init_i = init_i + 1;
     }
+    gv_survivalBoss = false;
     gv_superMutant = null;
     gv_horror = null;
+    init_i = 0;
+    while (init_i <= 5) {
+        gv_tyrantsu[init_i] = null;
+        init_i = init_i + 1;
+    }
+    gv_useTyrantQueue = 0;
+    gv_useTyrantSpawn = false;
+    gv_useTyrantTrack = 0;
     gv_godzilla = null;
     gv_nemesis = null;
     gv_nemesisStage = 0;
@@ -360,11 +397,6 @@ void InitGlobals () {
     init_i = 0;
     while (init_i <= 6) {
         gv_idleOrder[init_i] = null;
-        init_i = init_i + 1;
-    }
-    init_i = 0;
-    while (init_i <= 5) {
-        gv_tyrantsu[init_i] = null;
         init_i = init_i + 1;
     }
     gv_innardsChance = -100;
@@ -492,6 +524,14 @@ void InitGlobals () {
     gv_torUnitType = "Vulture";
     gv_televacUnitType = "Baneling";
     gv_apcUnitType = "ColonistTransport";
+    gv_sludgeUnitType = null;
+    gv_abomUnitType = "InfestedAbomination";
+    gv_horrorUnitType = "StoneZealot";
+    gv_sMUnitType = "Brutalisk";
+    gv_godzillaUnitType = null;
+    gv_megazillaUnitType = null;
+    gv_commandoUnitType = null;
+    gv_tyrantUnitType = "Omegalisk";
     gv_shieldCapType = null;
     gv_assaultDroidParts = null;
     gv_exoLeg = null;
@@ -571,6 +611,16 @@ int gf_UnitGetPointValue (unit lp_unit);
 point gf_RandomOffsetPt (point lp_origin, fixed lp_min, fixed lp_max);
 point gf_RandomOffset (region lp_region);
 point gf_RandomOffsetMob (region lp_region);
+void gf_RedHorrorRadWaveInit (bool lp_waveNow);
+void gf_RedTimedSpawnAbomMinions (region lp_building);
+void gf_RedTimedSpawnHorrorMinions (region lp_building);
+void gf_DoCommandoSpawn ();
+void gf_DoTyrantSpawn ();
+void gf_DoHorrorSpawn ();
+void gf_DoSMSpawn ();
+void gf_DoSludgeSpawn ();
+void gf_DoGodzillaSpawn ();
+void gf_DoAbomSpawn (unit lp_abom);
 bool gf_RedBurninating (unit lp_zombie, int lp_iTNT);
 void gf_RedHyperBeast (unit lp_beast);
 bool gf_RedRadinating (unit lp_zombie, bool lp_isZombie);
@@ -583,6 +633,7 @@ bool gf_RedGray (unit lp_zombie);
 void gf_RedSuperGarg (unit lp_garg);
 void gf_RedBlueDog (unit lp_dog);
 void gf_RedCreateMinion (string lp_type, point lp_point, fixed lp_face, bool lp_queue);
+void gf_RedShowToAll (unit lp_boss, bool lp_show);
 fixed gf_RedZombieMoveBonus (unit lp_u);
 void gf_RedPickHeroToKill ();
 unit gf_RedReturnHeroToKill ();
@@ -593,6 +644,7 @@ void gf_RedTimedSpawnMinions (int lp_region, bool lp_queue);
 void gf_RedAddZombieMutation (unit lp_zombie);
 void gf_RedGoToGraveyard (unit lp_zombie);
 void gf_RedUpdateUber ();
+void gf_SetUpgradeLevelForPlayerIfHigher (int lp_player, string lp_upgrade, int lp_level);
 void gf_RedCreateExoPiece (string lp_unitType, int lp_index);
 int gf_RedFeedbackChance (fixed lp_beams, fixed lp_players);
 void gf_RedClearBeamsGroup (unitgroup lp_beamsGroup, int lp_torIndex);
@@ -659,6 +711,10 @@ trigger gt_SuspendXP;
 trigger gt_EnableXP;
 trigger gt_AwardMedals;
 trigger gt_NewbRevive;
+trigger gt_AbomJustDied;
+trigger gt_AbombLow;
+trigger gt_BossSpawn;
+trigger gt_DoBossSpawn;
 trigger gt_LightenatingDeath;
 trigger gt_FireflyHurt;
 trigger gt_FireflyDies;
@@ -666,7 +722,6 @@ trigger gt_InitFungus;
 trigger gt_SpawnNemesis;
 trigger gt_MobDies;
 trigger gt_GraveyardEncounter;
-trigger gt_BossSpawn;
 trigger gt_CollectEmUp;
 trigger gt_MobAttacked;
 trigger gt_MinionSpawn;
@@ -1436,6 +1491,59 @@ point gf_RandomOffsetMob (region lp_region) {
     return gf_RandomOffsetPt(RegionGetCenter(lp_region), gf_wcToScI(1), gf_wcToScI(480));
 }
 
+void gf_RedHorrorRadWaveInit (bool lp_waveNow) {
+}
+
+void gf_RedTimedSpawnAbomMinions (region lp_building) {
+}
+
+void gf_RedTimedSpawnHorrorMinions (region lp_building) {
+}
+
+trigger auto_gf_DoCommandoSpawn_Trigger = null;
+
+void gf_DoCommandoSpawn () {
+    if (auto_gf_DoCommandoSpawn_Trigger == null) {
+        auto_gf_DoCommandoSpawn_Trigger = TriggerCreate("auto_gf_DoCommandoSpawn_TriggerFunc");
+    }
+
+    TriggerExecute(auto_gf_DoCommandoSpawn_Trigger, false, false);
+}
+
+bool auto_gf_DoCommandoSpawn_TriggerFunc (bool testConds, bool runActions) {
+    return true;
+}
+
+void gf_DoTyrantSpawn () {
+}
+
+void gf_DoHorrorSpawn () {
+}
+
+void gf_DoSMSpawn () {
+}
+
+void gf_DoSludgeSpawn () {
+}
+
+void gf_DoGodzillaSpawn () {
+}
+
+void gf_DoAbomSpawn (unit lp_abom) {
+    // Implementation
+    gv_aboms += 1;
+    if (gf_RandomChanceI(1, (gv_difficulty*4+1))) {
+    }
+    else if ((gv_nmsurv > 1) && gf_RandomChanceI(1, 3)) {
+        gf_TriggerRegisterEventUnitHurt(gt_AbombLow, lp_abom, c_unitDamageTypeAny, c_unitDamageEither, null);
+    }
+    if ((gv_nmsurv > 0)) {
+        gf_TriggerRegisterEventUnitDeath(gt_AbomJustDied, lp_abom);
+    }
+    else {
+    }
+}
+
 bool gf_RedBurninating (unit lp_zombie, int lp_iTNT) {
     // Implementation
     if (gf_RandomChanceI(lp_iTNT, 9)) {
@@ -1680,6 +1788,9 @@ void gf_RedBlueDog (unit lp_dog) {
 void gf_RedCreateMinion (string lp_type, point lp_point, fixed lp_face, bool lp_queue) {
     // Implementation
     UnitCreate(1, lp_type, 0, gv_undeadPlayer11, lp_point, lp_face);
+}
+
+void gf_RedShowToAll (unit lp_boss, bool lp_show) {
 }
 
 fixed gf_RedZombieMoveBonus (unit lp_u) {
@@ -1929,6 +2040,15 @@ void gf_RedUpdateUber () {
     else {
     }
     gf_TriggerRegisterEventTimeElapsed(gt_UpgradeMobs, 0.1);
+}
+
+void gf_SetUpgradeLevelForPlayerIfHigher (int lp_player, string lp_upgrade, int lp_level) {
+    // Implementation
+    if ((TechTreeUpgradeCount(lp_player, lp_upgrade, c_techCountCompleteOnly) < lp_level)) {
+        libNtve_gf_SetUpgradeLevelForPlayer(lp_player, lp_upgrade, lp_level);
+    }
+    else {
+    }
 }
 
 void gf_RedCreateExoPiece (string lp_unitType, int lp_index) {
@@ -2797,7 +2917,6 @@ void gf_RedSpawnRandomBad (region lp_region, bool lp_spawn) {
     lv_i = MaxI(1, RandomInt(-5, (4-gv_difficulty)));
     while ((lv_i >= 1)) {
         UnitCreate(1, gv_zombieUnitType, 0, gv_undeadPlayer11, gf_RandomOffsetMob(lp_region), 0.0);
-        gv_graveyardBattle = gf_RedBlue(UnitLastCreated());
         gf_RedGoToGraveyard(UnitLastCreated());
         gf_RedAddZombieMutation(UnitLastCreated());
         if ((RandomInt(0, 20) == 0)) {
@@ -3241,6 +3360,333 @@ void gt_NewbRevive_Init () {
 //--------------------------------------------------------------------------------------------------
 // Trigger: Untitled Trigger 001
 //--------------------------------------------------------------------------------------------------
+bool gt_AbomJustDied_Func (bool testConds, bool runActions) {
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    gv_bosses -= 1;
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_AbomJustDied_Init () {
+    gt_AbomJustDied = TriggerCreate("gt_AbomJustDied_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Untitled Trigger 001
+//--------------------------------------------------------------------------------------------------
+bool gt_AbombLow_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_abom;
+    fixed lv_maxLife;
+
+    // Variable Initialization
+    lv_abom = EventUnit();
+    lv_maxLife = UnitGetPropertyFixed(lv_abom, c_unitPropLifeMax, c_unitPropCurrent);
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(gt_AbombLow, false);
+    if ((UnitGetPropertyFixed(lv_abom, c_unitPropLife, c_unitPropCurrent) < (0.15*lv_maxLife+MinF((111.1*gv_iPlayerCount*gv_currentDay), (0.18*lv_maxLife))))) {
+        Wait(RandomInt(1, (21-gv_nightmare*gv_nightmare*gv_nightmare)), c_timeGame);
+        if ((lv_abom == null) && (UnitGetPropertyFixed(lv_abom, c_unitPropLife, c_unitPropCurrent) < 1)) {
+            return true;
+        }
+        else {
+        }
+        UnitKill(lv_abom);
+    }
+    else {
+        Wait(2.0, c_timeGame);
+    }
+    TriggerEnable(gt_AbombLow, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_AbombLow_Init () {
+    gt_AbombLow = TriggerCreate("gt_AbombLow_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: BossSpawn
+//--------------------------------------------------------------------------------------------------
+bool gt_BossSpawn_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_i;
+
+    // Variable Initialization
+    lv_i = (11-gv_nightmare*gv_nightmare);
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((gv_useTyrantTrack > 1)) {
+        lv_i += (15-gv_nightmare*gv_nightmare);
+    }
+    else {
+    }
+    if (gf_NotBoolean(gv_survivalBoss) && (gv_currentDay > 1) && gf_RandomChanceI(gv_nmsurv, 5)) {
+        gv_survivalBoss = true;
+        Wait((30.0-24.0*(gv_nightmare/2.0)), c_timeGame);
+        lv_i += 5;
+    }
+    else if (gf_IsSurvival()) {
+        Wait(MaxF(40.0, ((2.0+gv_difficulty)*60.0-RandomInt((-10*gv_difficulty), 10)-Round((gv_diffTime*10.0)))), c_timeGame);
+        Wait(MaxF(20.0, ((2.0+gv_difficulty)*60.0-RandomInt((-10*gv_difficulty), 10)-Round((gv_diffTime*5.0)))), c_timeGame);
+        gv_survivalBoss = false;
+    }
+    else if (true) {
+        Wait(MaxF(90.0, ((2.0+gv_difficulty)*60.0-RandomInt((-10*gv_difficulty), 10)-Round((gv_diffTime*6.0)))), c_timeGame);
+        Wait(MaxF((30.0*gv_nDifficulty), ((2.0+gv_difficulty)*60.0-RandomInt((-10*gv_difficulty), 10)-Round((gv_diffTime*2.0)))), c_timeGame);
+        gv_survivalBoss = false;
+    }
+    while ((gv_minionCount >= ((gv_minionMax/4*3)-gv_minionCount2)) && (gv_minionQueue >= ((gv_minionMax/8)+gv_qLi/8*7)) && (gv_minionQueue >= (gv_useTyrantQueue-gv_minionMax/8*7)) && (lv_i >= 1)) {
+        Wait(8.5, c_timeGame);
+        lv_i -= 1;
+    }
+    if ((gf_Boolean(gv_gameOver) || gf_IsNemSpawned())) {
+        return true;
+    }
+    else {
+    }
+    if ((lv_i < 1)) {
+        if ((gv_useTyrantTrack < 2)) {
+            gv_useTyrantTrack = 3;
+        }
+        else {
+        }
+    }
+    else {
+        gv_useTyrantTrack = 0;
+        gv_useTyrantQueue = 0;
+    }
+    if ((gv_useTyrantTrack > 0)) {
+        gv_useTyrantQueue = gv_minionQueue;
+        gv_useTyrantSpawn = true;
+        gf_TriggerRegisterEventTimeElapsed(gt_DoBossSpawn, 1.0);
+        Wait(20.0, c_timeGame);
+        gv_useTyrantSpawn = false;
+        gv_useTyrantTrack -= 1;
+        if ((gf_Boolean(gv_gameOver) || gf_IsNemSpawned())) {
+        }
+        else {
+        }
+    }
+    else {
+    }
+    gf_TriggerRegisterEventTimeElapsed(gt_DoBossSpawn, 1.0);
+    gf_TriggerRegisterEventTimeElapsed(gt_BossSpawn, 1.0);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_BossSpawn_Init () {
+    gt_BossSpawn = TriggerCreate("gt_BossSpawn_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Untitled Trigger 001
+//--------------------------------------------------------------------------------------------------
+bool gt_DoBossSpawn_Func (bool testConds, bool runActions) {
+    int auto70359327_ae;
+    int auto70359327_ai;
+    string auto2C3FA376_val;
+    string auto35C4C71A_val;
+
+    // Variable Declarations
+    int lv_i;
+    int lv_j;
+    string lv_type;
+    int lv_nightmare;
+    trigger lv_trig;
+    unit lv_boss;
+    point lv_loc;
+
+    // Variable Initialization
+    lv_i = 0;
+    lv_j = 0;
+    lv_type = gv_defaultBoss;
+    lv_nightmare = gv_nightmare;
+    lv_trig = null;
+    lv_boss = null;
+    lv_loc = null;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if (gf_IsExtinction()) {
+        lv_nightmare = 1;
+    }
+    else {
+    }
+    if (gf_Boolean(gv_useTyrantSpawn) && (gf_IsNotSurvival() || gf_RandomChanceI(1, 4))) {
+        lv_type = gv_tyrantUnitType;
+    }
+    else if ((gv_difficulty > 2) && gf_IsNotSurvival()) {
+        if ((gv_currentDay > 2) && (gv_radHorrorRads == 0) && (RandomInt((0-gv_aboms), (10-2*MaxI(0, gv_radLevel)+gv_bossChance[0])) < 1)) {
+            lv_type = gv_horrorUnitType;
+            gv_bossChance[0] += 4;
+        }
+        else {
+        }
+    }
+    else if ((gv_currentDay > 1)) {
+        if ((gv_MQStatus[1] < 1) && (gv_plantsFixed > 2) && (gv_uber[12] > (100+lv_nightmare*85+lv_nightmare*15*gv_iPlayerCount))) {
+            lv_type = gv_godzillaUnitType;
+            gv_MQStatus[1] = 1;
+        }
+        else if ((gv_radHorrorRads == 0) && (RandomInt((0-gv_aboms), (10-2*MaxI(0, gv_radLevel)+gv_bossChance[0])) < 1)) {
+            lv_type = gv_horrorUnitType;
+            gv_bossChance[0] += 4;
+        }
+        else if ((gv_superMutant == null) && (RandomInt((0-gv_aboms), (MaxI(0, (7-gv_radLevel))+3*gv_difficulty-gv_nightmare+gv_bossChance[1])) < 1)) {
+            lv_type = gv_sMUnitType;
+            gv_bossChance[1] += 4;
+        }
+        else if ((gv_sludge == null) && (RandomInt((0-gv_aboms), (5+gv_difficulty+gv_bossChance[6])) < 1)) {
+            lv_type = gv_sludgeUnitType;
+            gv_bossChance[6] += 4;
+        }
+        else if ((gv_commandos == 0) && (RandomInt((0-gv_aboms), (5+gv_difficulty*gv_difficulty+gv_bossChance[2])) < 1)) {
+            lv_type = gv_commandoUnitType;
+            gv_bossChance[2] += 4;
+        }
+    }
+    lv_i = RandomInt(0, gv_lastBuilding);
+    gv_bosses += 1;
+    if ((lv_type == gv_commandoUnitType)) {
+        gf_DoCommandoSpawn();
+    }
+    else {
+        if ((lv_type == gv_godzillaUnitType) && gf_IsNightmare() && gf_IsNotSurvival() && (gv_iPlayerCount > 8)) {
+            auto70359327_ae = 9;
+            auto70359327_ai = 1;
+            lv_j = 1;
+            while ((auto70359327_ai >= 0 && lv_j <= auto70359327_ae) || (auto70359327_ai <= 0 && lv_j >= auto70359327_ae)) {
+                gv_monsterSlayer[lv_j] = 1;
+                if (lv_j == auto70359327_ae) {
+                    break;
+                }
+                lv_j = lv_j + auto70359327_ai;
+            }
+            lv_type = gv_megazillaUnitType;
+        }
+        else {
+        }
+        UnitCreate(1, lv_type, 0, gv_undeadPlayer11, RegionGetCenter(gv_arBuilding[lv_i]), 0.0);
+        lv_boss = UnitLastCreated();
+        if ((lv_type == gv_tyrantUnitType)) {
+            gf_DoTyrantSpawn();
+        }
+        else {
+            if (gf_IsNightmarePlus()) {
+            }
+            else {
+            }
+            auto2C3FA376_val = lv_type;
+            if (auto2C3FA376_val == gv_godzillaUnitType) {
+                gf_DoGodzillaSpawn();
+            }
+            else if (auto2C3FA376_val == gv_megazillaUnitType) {
+                gf_DoGodzillaSpawn();
+            }
+            else if (auto2C3FA376_val == gv_horrorUnitType) {
+                gf_DoHorrorSpawn();
+            }
+            else if (auto2C3FA376_val == gv_sMUnitType) {
+                gf_DoSMSpawn();
+            }
+            else if (auto2C3FA376_val == gv_sludgeUnitType) {
+                gf_DoSludgeSpawn();
+            }
+            else if (auto2C3FA376_val == gv_abomUnitType) {
+                gf_DoAbomSpawn(lv_boss);
+            }
+            else {
+            }
+            UnitSetPropertyFixed(lv_boss, c_unitPropMovementSpeed, gf_RedCalcMovespeed(lv_boss, 0.0));
+        }
+        gf_RedDoMobAction(lv_boss, null);
+        gv_minionCount += 1;
+    }
+    if ((lv_type != gv_tyrantUnitType)) {
+        if (gf_RedCityPowered() && gf_IsNotSurvival() && (lv_boss != null) && (!(gf_IsExtinction()))) {
+            gf_RedShowToAll(lv_boss, true);
+            lv_loc = RegionGetCenter(gv_arBuilding[lv_i]);
+            if ((lv_type == gv_commandoUnitType)) {
+                gf_RedMsgAll(StringExternal("Param/Value/8EDDF049"));
+            }
+            else {
+                gf_RedMsgAll(StringExternal("Param/Value/C8C04E78"));
+            }
+        }
+        else {
+        }
+        gf_AlertAllPlayers(null, null, lv_loc);
+        PingCreate(PlayerGroupAll(), "PingAlert", lv_loc, ColorWithAlpha(100.00, 31.76, 0.00, 0.00), 4.0);
+        SoundPlay(SoundLink("UI_TerranKlaxonAlert", -1), PlayerGroupAll(), 100.0, 0.0);
+        auto35C4C71A_val = lv_type;
+        if (auto35C4C71A_val == gv_abomUnitType) {
+            gf_RedTimedSpawnAbomMinions(gv_arBuilding[lv_i]);
+        }
+        else if (auto35C4C71A_val == gv_horrorUnitType) {
+            if (gf_IsExtinction()) {
+                gv_radHorrorRads = (42+2*gv_iPlayerCount-gv_radCount);
+            }
+            else if (gf_IsNightmarePlus()) {
+                gv_radHorrorRads = (40-gv_radCount);
+            }
+            if ((gv_radHorrorRads < 20)) {
+                gv_radHorrorRads = 20;
+            }
+            else {
+            }
+            gv_radCount += gv_radHorrorRads;
+            gf_RedRadLevel();
+            if ((gv_nmsurv > 0)) {
+                gf_RedTimedSpawnHorrorMinions(gv_arBuilding[0]);
+                if ((RandomInt((0-gv_nightmare*gv_nightmare), 5) < gv_radLevel)) {
+                    gf_RedHorrorRadWaveInit(true);
+                }
+                else {
+                }
+                if (gf_RandomChanceI((2+gf_RedDiv(gv_survival, 2)), (4-gv_nightmare))) {
+                    Wait(1.0, c_timeGame);
+                    gf_RedHorrorRadWaveInit(false);
+                }
+                else {
+                }
+            }
+            else {
+            }
+        }
+        else {
+        }
+    }
+    else {
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_DoBossSpawn_Init () {
+    gt_DoBossSpawn = TriggerCreate("gt_DoBossSpawn_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Untitled Trigger 001
+//--------------------------------------------------------------------------------------------------
 bool gt_LightenatingDeath_Func (bool testConds, bool runActions) {
     // Actions
     if (!runActions) {
@@ -3399,18 +3845,6 @@ bool gt_GraveyardEncounter_Func (bool testConds, bool runActions) {
 void gt_GraveyardEncounter_Init () {
     gt_GraveyardEncounter = TriggerCreate("gt_GraveyardEncounter_Func");
     TriggerAddEventUnitRegion(gt_GraveyardEncounter, null, RegionFromId(91), true);
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: BossSpawn
-//--------------------------------------------------------------------------------------------------
-bool gt_BossSpawn_Func (bool testConds, bool runActions) {
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void gt_BossSpawn_Init () {
-    gt_BossSpawn = TriggerCreate("gt_BossSpawn_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4947,17 +5381,17 @@ bool gt_UpgradeMobs_Func (bool testConds, bool runActions) {
         lv_mobHealthLevel = gf_RedDiv(gv_uber[12], MaxI((58-4*gv_survival), 15));
     }
     lv_bossHealthLevel += (gv_undeadUpgrade+gv_nightmareUpgrade);
-    libNtve_gf_SetUpgradeLevelForPlayer(gv_undeadPlayer11, gv_bossHealth, lv_bossHealthLevel);
-    libNtve_gf_SetUpgradeLevelForPlayer(gv_undeadPlayer12, gv_bossHealth, lv_bossHealthLevel);
-    libNtve_gf_SetUpgradeLevelForPlayer(gv_undeadPlayer11, gv_tentacleArmor, lv_bossHealthLevel);
-    libNtve_gf_SetUpgradeLevelForPlayer(gv_undeadPlayer12, gv_tentacleArmor, lv_bossHealthLevel);
-    libNtve_gf_SetUpgradeLevelForPlayer(gv_undeadPlayer11, gv_bossDamage, (gf_RedDiv(gv_uber[11], 40)+gv_nightmareUpgrade));
-    libNtve_gf_SetUpgradeLevelForPlayer(gv_undeadPlayer12, gv_bossDamage, (gf_RedDiv(gv_uber[11], 40)+gv_nightmareUpgrade));
-    libNtve_gf_SetUpgradeLevelForPlayer(gv_undeadPlayer11, gv_minionDamage, (gf_RedDiv(gv_uber[12], 30)+gv_undeadUpgrade+gv_nightmareUpgrade));
-    libNtve_gf_SetUpgradeLevelForPlayer(gv_undeadPlayer12, gv_minionDamage, (gf_RedDiv(gv_uber[12], 30)+gv_undeadUpgrade+gv_nightmareUpgrade));
-    libNtve_gf_SetUpgradeLevelForPlayer(gv_undeadPlayer12, gv_sMHealth, RoundI((lv_bossHealthLevel*1.75)));
+    gf_SetUpgradeLevelForPlayerIfHigher(gv_undeadPlayer11, gv_bossHealth, lv_bossHealthLevel);
+    gf_SetUpgradeLevelForPlayerIfHigher(gv_undeadPlayer12, gv_bossHealth, lv_bossHealthLevel);
+    gf_SetUpgradeLevelForPlayerIfHigher(gv_undeadPlayer11, gv_tentacleArmor, lv_bossHealthLevel);
+    gf_SetUpgradeLevelForPlayerIfHigher(gv_undeadPlayer12, gv_tentacleArmor, lv_bossHealthLevel);
+    gf_SetUpgradeLevelForPlayerIfHigher(gv_undeadPlayer11, gv_bossDamage, (gf_RedDiv(gv_uber[11], 40)+gv_nightmareUpgrade));
+    gf_SetUpgradeLevelForPlayerIfHigher(gv_undeadPlayer12, gv_bossDamage, (gf_RedDiv(gv_uber[11], 40)+gv_nightmareUpgrade));
+    gf_SetUpgradeLevelForPlayerIfHigher(gv_undeadPlayer11, gv_minionDamage, (gf_RedDiv(gv_uber[12], 30)+gv_undeadUpgrade+gv_nightmareUpgrade));
+    gf_SetUpgradeLevelForPlayerIfHigher(gv_undeadPlayer12, gv_minionDamage, (gf_RedDiv(gv_uber[12], 30)+gv_undeadUpgrade+gv_nightmareUpgrade));
+    gf_SetUpgradeLevelForPlayerIfHigher(gv_undeadPlayer12, gv_sMHealth, RoundI((lv_bossHealthLevel*1.75)));
     if ((lv_bossHealthLevel > 3)) {
-        libNtve_gf_SetUpgradeLevelForPlayer(gv_undeadPlayer12, gv_sMArmor, gf_RedDiv(lv_bossHealthLevel, 3));
+        gf_SetUpgradeLevelForPlayerIfHigher(gv_undeadPlayer12, gv_sMArmor, RoundI(gf_RedDiv(lv_bossHealthLevel, 3)));
     }
     else {
     }
@@ -4965,17 +5399,17 @@ bool gt_UpgradeMobs_Func (bool testConds, bool runActions) {
     autoBCA3AC7C_ai = 1;
     lv_i = 1;
     while ((autoBCA3AC7C_ai >= 0 && lv_i <= autoBCA3AC7C_ae) || (autoBCA3AC7C_ai <= 0 && lv_i >= autoBCA3AC7C_ae)) {
-        libNtve_gf_SetUpgradeLevelForPlayer(lv_i, gv_minionHealth8, (lv_mobHealthLevel+gv_nightmareUpgrade3));
+        gf_SetUpgradeLevelForPlayerIfHigher(lv_i, gv_minionHealth8, (lv_mobHealthLevel+gv_nightmareUpgrade3));
         if ((gv_difficulty < 2)) {
-            libNtve_gf_SetUpgradeLevelForPlayer(lv_i, gv_minionHealth4, (lv_mobHealthLevel+gv_nightmareUpgrade));
+            gf_SetUpgradeLevelForPlayerIfHigher(lv_i, gv_minionHealth4, (lv_mobHealthLevel+gv_nightmareUpgrade));
             if (gf_IsNightmarePlus()) {
-                libNtve_gf_SetUpgradeLevelForPlayer(lv_i, gv_minionHealth2, (lv_mobHealthLevel+gv_nightmareUpgrade2));
+                gf_SetUpgradeLevelForPlayerIfHigher(lv_i, gv_minionHealth4, (lv_mobHealthLevel+gv_nightmareUpgrade2));
             }
             else {
             }
         }
         else if ((gv_difficulty < 3)) {
-            libNtve_gf_SetUpgradeLevelForPlayer(lv_i, gv_minionHealth2, (lv_mobHealthLevel+gv_nightmareUpgrade));
+            gf_SetUpgradeLevelForPlayerIfHigher(lv_i, gv_minionHealth2, (lv_mobHealthLevel+gv_nightmareUpgrade));
         }
         if (lv_i == autoBCA3AC7C_ae) {
             break;
@@ -5040,7 +5474,7 @@ bool gt_InitHQ_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    TriggerDebugOutput(1, StringExternal("Param/Value/2CD78CA7"), true);
+    gv_defaultBoss = gv_abomUnitType;
     auto1373FF04_val = lv_i;
     if (auto1373FF04_val == 0) {
         gv_secretHQ = RegionFromId(85);
@@ -6054,11 +6488,11 @@ void gt_MapInit_Init () {
 //--------------------------------------------------------------------------------------------------
 bool gt_Debug_Func (bool testConds, bool runActions) {
     // Variable Declarations
-    int lv_armorIndex;
+    int lv_uber;
     unit lv_unit;
 
     // Variable Initialization
-    lv_armorIndex = StringToInt(EventChatMessage(false));
+    lv_uber = StringToInt(EventChatMessage(false));
     lv_unit = UnitGroupRandomUnit(UnitGroupSelected(1), c_unitCountAlive);
 
     // Actions
@@ -6066,14 +6500,7 @@ bool gt_Debug_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    if ((lv_armorIndex <= 3)) {
-        gf_UnitArmorTypeAdd(lv_unit, lv_armorIndex);
-    }
-    else {
-        TextExpressionSetToken("Param/Expression/3C84DC68", "A", FixedToText(UnitGetPropertyFixed(lv_unit, c_unitPropMovementSpeed, c_unitPropCurrent), c_fixedPrecisionAny));
-        TextExpressionSetToken("Param/Expression/3C84DC68", "B", FixedToText(UnitGetPropertyFixed(lv_unit, c_unitPropMovementSpeed, c_unitPropNormal), c_fixedPrecisionAny));
-        TriggerDebugOutput(1, TextExpressionAssemble("Param/Expression/3C84DC68"), true);
-    }
+    gf_TriggerPostExecute(gt_DoBossSpawn);
     return true;
 }
 
@@ -6138,6 +6565,10 @@ void InitTriggers () {
     gt_EnableXP_Init();
     gt_AwardMedals_Init();
     gt_NewbRevive_Init();
+    gt_AbomJustDied_Init();
+    gt_AbombLow_Init();
+    gt_BossSpawn_Init();
+    gt_DoBossSpawn_Init();
     gt_LightenatingDeath_Init();
     gt_FireflyHurt_Init();
     gt_FireflyDies_Init();
@@ -6145,7 +6576,6 @@ void InitTriggers () {
     gt_SpawnNemesis_Init();
     gt_MobDies_Init();
     gt_GraveyardEncounter_Init();
-    gt_BossSpawn_Init();
     gt_CollectEmUp_Init();
     gt_MobAttacked_Init();
     gt_MinionSpawn_Init();

@@ -27,7 +27,8 @@
     </CEffectModifyUnit>
     <CEffectDamage id="PunisherGrenadesU">
         <AttributeBonus index="Armored" value="0"/>
-        <Chance value="0.5"/>
+        <Amount value="94"/>
+        <Random value="63"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="RadiationEffectApplyDebuffIcon">
         <EditorCategories value=""/>

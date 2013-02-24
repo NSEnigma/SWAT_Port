@@ -5,16 +5,109 @@
         <On index="1" Terms="UnitBirth.BuildingSight"/>
         <Model value=""/>
     </CActorUnit>
+    <CActorUnit id="Abomination" parent="GenericUnitBase" unitName="Abomination">
+        <Macros value="ZergBurrowStandardAnimMacro"/>
+        <Macros value="ZergLargeBurrowEffects"/>
+        <On Terms="UnitBirth.InfestedAbominationBurrowed" Send="Create"/>
+        <On Terms="UnitBirth.InfestedAbominationBurrowed" Send="AnimBracketStart Burrow Burrow IGNORE Unburrow ClosingFull,OpeningPlayForever,Instant"/>
+        <On Terms="WeaponStart.InfestedAbomination.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.InfestedAbomination.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="AbilMorph.*.Start; AbilKey BurrowDown" Send="Create BurrowDownAberration"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom InfestedAbomination; MorphTo InfestedAbominationBurrowed" Send="AnimClear Burrow"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo InfestedAbomination; MorphFrom InfestedAbominationBurrowed" Send="AnimBracketStop Burrow"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo InfestedAbomination; MorphFrom InfestedAbominationBurrowed" Send="AnimClear Burrow"/>
+        <Model value="InfestedAbomination"/>
+        <AnimBlendTime value="0.300000"/>
+        <BuildModel value="InfestedAbomination"/>
+        <DeathArray index="Normal" ModelLink="InfestedAbominationDeath"/>
+        <DeathCustoms ModelLink="ZergLargeUnitDeathLow" Name="AntiGravZerg"/>
+        <PlacementModel value="InfestedAbomination"/>
+        <PortraitModel value="AberrationPortrait"/>
+        <WalkAnimMoveSpeed value="2.9375"/>
+        <BarOffset value="120"/>
+        <BarWidth value="102"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Zerg-Aberration.dds"/>
+        </GroupIcon>
+        <GroupSoundArray index="Ready" value="UltraliskReady"/>
+        <GroupSoundArray index="Help" value="UltraliskHelp"/>
+        <GroupSoundArray index="What" value="UltraliskWhat"/>
+        <GroupSoundArray index="Yes" value="UltraliskYes"/>
+        <GroupSoundArray index="Attack" value="UltraliskYes"/>
+        <GroupSoundArray index="Pissed" value="UltraliskPissed"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
+        <SoundArray index="Ready" value="UltraliskReady"/>
+        <SoundArray index="Help" value="UltraliskHelp"/>
+        <SoundArray index="What" value="UltraliskWhat"/>
+        <SoundArray index="Yes" value="UltraliskYes"/>
+        <SoundArray index="Attack" value="UltraliskYes"/>
+        <SoundArray index="Pissed" value="UltraliskPissed"/>
+        <UnitIcon value="Assets\Textures\btn-unit-zerg-aberration.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Zerg-Aberration.dds"/>
+        </Wireframe>
+    </CActorUnit>
     <!--                                                                                         -->
     <!-- Infested Civilian ..................................................................... -->
     <!--                                                                                         -->
-    <CActorUnit id="InfestedCivilian">
+    <CActorUnit id="Zombie" parent="GenericBurrowerStandard" unitName="Zombie">
         <On Terms="Behavior.Lightenating.On" Send="SetTintColor 255,255,0"/>
         <On Terms="Behavior.TNTApplyDamage.On" Send="SetTintColor 253,165,0"/>
         <On Terms="Behavior.ZombieFlaming2.On" Send="SetTintColor 255,150,81"/>
         <On Terms="Behavior.ZombieFlaming.On" Send="SetTintColor 255,150,81"/>
         <On Terms="Behavior.ZombieToxinsAura.On" Send="SetTintColor 0,255,0"/>
         <On Terms="Behavior.ZombieBlueDegenAura.On" Send="SetTintColor 0,0,255"/>
+        <On Terms="ActorCreation" Send="TextureSelectBySlot main {RequireAll diffuse}"/>
+        <On Terms="ActorCreation" Send="TextureSelectByMatch main.specular main"/>
+        <On Terms="ActorCreation" Send="Create InfestedCivilian_Moan"/>
+        <On Terms="AbilMorph.MorphToInfestedCivilian.Finish; MorphTo InfestedCivilian" Send="Create"/>
+        <On Terms="AbilMorph.MorphToInfestedCivilian.Finish; MorphTo InfestedCivilian" Send="$Birth 0 0.000000"/>
+        <On Terms="Behavior.Lightenating.On" Send="SetTintColor 255,255,0"/>
+        <On Terms="Behavior.TNTApplyDamage.On" Send="SetTintColor 253,165,0"/>
+        <On Terms="Behavior.ZombieFlaming2.On" Send="SetTintColor 255,150,81"/>
+        <On Terms="Behavior.ZombieFlaming.On" Send="SetTintColor 255,150,81"/>
+        <On Terms="Behavior.ZombieToxinsAura.On" Send="SetTintColor 0,255,0"/>
+        <On Terms="Behavior.ZombieBlueDegenAura.On" Send="SetTintColor 0,0,255"/>
+        <Macros value="ZergBurrowStandardAnimMacro"/>
+        <Macros value="ZergSmallBurrowEffects"/>
+        <Model value="InfestedCivilian"/>
+        <BuildModel value="InfestedCivilian"/>
+        <DeathArray index="Normal" ModelLink="InfestedCivilianDeath" SoundLink="InfestedCivilian_Explode"/>
+        <DeathArray index="Fire" ModelLink="InfestedCivilianDeathFire" SoundLink="Uni_DeathFXFire"/>
+        <DeathActorModel value="InfestedCivilianDeath"/>
+        <PlacementModel value="InfestedCivilian"/>
+        <PortraitModel value="InfestedColonistPortrait"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <BarOffset value="45"/>
+        <BarWidth value="36"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Zerg-Infestedcolonist.dds"/>
+        </GroupIcon>
+        <GroupSoundArray index="Birth" value="InfestedTerranBirth"/>
+        <GroupSoundArray index="Ready" value="InfestedTerranReady"/>
+        <GroupSoundArray index="Help" value="InfestedTerranHelp"/>
+        <GroupSoundArray index="What" value="InfestedTerranWhat"/>
+        <GroupSoundArray index="Yes" value="InfestedTerranYes"/>
+        <GroupSoundArray index="Attack" value="InfestedTerranYes"/>
+        <GroupSoundArray index="Pissed" value="InfestedTerranPissed"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
+        <SoundArray index="Birth" value="InfestedTerranBirth"/>
+        <SoundArray index="Ready" value="InfestedTerranReady"/>
+        <SoundArray index="Help" value="InfestedTerranHelp"/>
+        <SoundArray index="What" value="InfestedTerranWhat"/>
+        <SoundArray index="Yes" value="InfestedTerranYes"/>
+        <SoundArray index="Attack" value="InfestedTerranYes"/>
+        <SoundArray index="Pissed" value="InfestedTerranPissed"/>
+        <SoundArray index="Movement" value="InfestedTerranMovement"/>
+        <SoundArray index="Turning" value="InfestedTerranCampaignTurning"/>
+        <SoundArray index="Board" value="InfestedTerranCampaignBoard"/>
+        <SoundArray index="Click" value="InfestedTerranCampaignClick"/>
+        <SoundArray index="ClickError" value="InfestedTerranCampaignClickError"/>
+        <SoundArray index="Highlight" value="InfestedTerranCampaignHighlight"/>
+        <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Zerg-Infestedcolonist.dds"/>
+        </Wireframe>
     </CActorUnit>
     <CActorDoodad id="SwatElectricCorner2x2" parent="MetalWallCorner">
         <Footprint value="Footprint2x2DoodadBlockLOS"/>

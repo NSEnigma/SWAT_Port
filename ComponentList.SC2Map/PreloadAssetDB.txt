@@ -27,12 +27,6 @@ Actor=TerrainMgr
 Effect=Blink
 
 [Actor]
-id=InfestedCivilian
-path=Assets\Textures\.dds
-asset=Wireframe-Zerg-Infestedcolonist,btn-missing-kaeo,btn-unit-zerg-infestedcolonist,btn-upgrade-protoss-shieldslevel0,btn-upgrade-zerg-groundcarapace-level0,ui_ingame_workercount_bg
-Actor=BurrowDownSmall,BurrowUpSmall,CliffLocalSelection,CliffPreSelection,DeadAnimationMacro,EditorSelection,FlyerHelperSplat,FlyerShadow,GroundLocalFlashingSelection,GroundLocalSelection,GroundPreSelection,GroundShadow,GroundSyncFlashingSelection,GroundSyncSelection,##id##Death,##id##_Moan,ModelPretargetGround,PlaceholderModel,PlacementModel,PortraitActor,SmallBurrowDownEffects,SmallBurrowUpEffects,Snapshot,SoundEmitter,TerrainMgr,UnitDeathModelUnscaled,UnitDeathSound,UnitDeathVoice,UnitFootprint,UnitSound,ZergBurrowStandardAnimMacro,ZergSmallBurrowEffects
-Model=##id##,##id##Death,##id##DeathFire,InfestedColonistPortrait,Invisible,ProtossSmallUnitDeathLow,TerranSmallUnitDeathLow,ZergSmallUnitDeathLow
-Sound=##id##_Ambience,InfestedTerranPissed,InfestedTerranReady,InfestedTerranWhat,InfestedTerranYes
 id=BuildingSight
 path=Assets\Textures\.dds
 asset=btn-missing-kaeo,btn-upgrade-protoss-shieldslevel0,ui_ingame_workercount_bg
@@ -93,6 +87,18 @@ Model=GasBarrelExplodeModel
 id=ZombieToxinsLiving
 Actor=TerrainMgr
 Model=GasBarrelExplodeModel
+id=Zombie
+path=Assets\Textures\.dds
+asset=Wireframe-Zerg-Infestedcolonist,btn-missing-kaeo,btn-unit-zerg-infestedcolonist,btn-upgrade-protoss-shieldslevel0,btn-upgrade-zerg-groundcarapace-level0,ui_ingame_workercount_bg
+Actor=BurrowDownSmall,BurrowUpSmall,CliffLocalSelection,CliffPreSelection,DeadAnimationMacro,EditorSelection,FlyerHelperSplat,FlyerShadow,GroundLocalFlashingSelection,GroundLocalSelection,GroundPreSelection,GroundShadow,GroundSyncFlashingSelection,GroundSyncSelection,InfestedCivilianDeath,InfestedCivilian_Moan,ModelPretargetGround,PlaceholderModel,PlacementModel,PortraitActor,SmallBurrowDownEffects,SmallBurrowUpEffects,Snapshot,SoundEmitter,TerrainMgr,UnitDeathModelUnscaled,UnitDeathSound,UnitDeathVoice,UnitFootprint,UnitSound,ZergBurrowStandardAnimMacro,ZergSmallBurrowEffects
+Model=InfestedCivilian,InfestedCivilianDeath,InfestedCivilianDeathFire,InfestedColonistPortrait,Invisible,ProtossSmallUnitDeathLow,TerranSmallUnitDeathLow,ZergSmallUnitDeathLow
+Sound=InfestedTerranPissed,InfestedTerranReady,InfestedTerranWhat,InfestedTerranYes,##id##_Ambience
+id=Abomination
+path=Assets\Textures\.dds
+asset=Wireframe-Zerg-Aberration,btn-missing-kaeo,btn-unit-zerg-aberration,btn-upgrade-protoss-shieldslevel0,btn-upgrade-zerg-groundcarapace-level0,ui_ingame_workercount_bg
+Actor=BurrowDownAberration,BurrowUpLarge,CliffLocalSelection,CliffPreSelection,DeadAnimationMacro,EditorSelection,FlyerHelperSplat,FlyerShadow,GroundLocalFlashingSelection,GroundLocalSelection,GroundPreSelection,GroundShadow,GroundSyncFlashingSelection,GroundSyncSelection,LargeBurrowDownEffects,LargeBurrowUpEffects,ModelPretargetGround,PlaceholderModel,PlacementModel,PortraitActor,Snapshot,SoundEmitter,TerrainMgr,UnitDeathModel,UnitDeathModelUnscaled,UnitDeathSound,UnitDeathVoice,UnitFootprint,UnitSound,ZergBurrowStandardAnimMacro,ZergLargeBurrowEffects
+Model=AberrationPortrait,Infested##id##,Infested##id##Death,Invisible,ProtossSmallUnitDeathLow,TerranSmallUnitDeathLow,ZergLargeUnitDeathLow,ZergSmallUnitDeathLow
+Sound=##id##_Ambience
 
 [Behavior]
 id=SWATNanites
@@ -216,6 +222,10 @@ Effect=RadiationEffectsSWATHeroDamage2,RadiationEffectsSWATHeroDamage3,Radiation
 id=TorFeedbackStun
 asset=Assets\Textures\btn-missing-kaeo.dds
 Actor=TerrainMgr,##id##
+id=ZombieBlueDegenAura
+asset=Assets\Textures\btn-missing-kaeo.dds
+Actor=TerrainMgr
+Effect=ZombieBlueSearchArea
 id=ZombieFlaming
 asset=Assets\Textures\btn-missing-kaeo.dds
 Actor=TerrainMgr,ZombieBurninating
@@ -225,18 +235,14 @@ Actor=TerrainMgr,ZombieBurninating
 id=ZombieToxins
 asset=Assets\Textures\btn-missing-kaeo.dds
 Actor=TerrainMgr,##id##Living
-id=ZombieToxinsAura
-asset=Assets\Textures\btn-missing-kaeo.dds
-Actor=TerrainMgr,ZombieToxins
-Effect=ZombieToxinsSearchArea
-id=ZombieBlueDegenAura
-asset=Assets\Textures\btn-missing-kaeo.dds
-Actor=TerrainMgr
-Effect=ZombieBlueSearchArea
 id=ZombieBlue
 asset=Assets\Textures\btn-missing-kaeo.dds
 Actor=TerrainMgr
 Effect=##id##DamageEffect
+id=ZombieToxinsAura
+asset=Assets\Textures\btn-missing-kaeo.dds
+Actor=TerrainMgr,ZombieToxins
+Effect=ZombieToxinsSearchArea
 
 [Button]
 id=SWATNanitesstandardon
@@ -269,6 +275,8 @@ Actor=TerrainMgr
 id=RadiationEffectsSearchSet
 Actor=TerrainMgr
 Effect=RadiationEffectsSearchSWAT,RadiationEffectsSearchUndead
+id=ZombieTNTDamageEffect
+Actor=TerrainMgr
 id=TorFeedbackRemoveSleep
 Actor=TerrainMgr
 Behavior=TorFeedbackSleep
@@ -279,6 +287,11 @@ Actor=TerrainMgr
 id=RadiationEffectsSWATHeroDamage4
 Actor=TerrainMgr
 id=RadiationEffectsSWATHeroDamage5
+Actor=TerrainMgr
+id=ZombieBlueSearchArea
+Actor=TerrainMgr
+Effect=ZombieBlueApplyBehavior
+id=ZombieBlueDamageEffect
 Actor=TerrainMgr
 id=ZombieToxinsSearchArea
 Actor=TerrainMgr
@@ -350,16 +363,9 @@ Effect=TorFeedbackApplyBehavior
 id=ZombieToxinsApplyBehavior
 Actor=TerrainMgr
 Behavior=ZombieToxins
-id=ZombieBlueSearchArea
-Actor=TerrainMgr
-Effect=ZombieBlueApplyBehavior
 id=ZombieBlueApplyBehavior
 Actor=TerrainMgr
 Behavior=ZombieBlue
-id=ZombieBlueDamageEffect
-Actor=TerrainMgr
-id=ZombieTNTDamageEffect
-Actor=TerrainMgr
 
 [Item]
 id=10SlotBag
@@ -397,11 +403,6 @@ id=Zergling
 Abil=Burrow##id##Down,Morph##id##ToBaneling,attack,move,que1,stop
 Actor=BlipVisual,ConfirmationLocalAirAttack,ConfirmationLocalGroundAttack,ConfirmationSyncAirAttack,ConfirmationSyncGroundAttack,ConstructionRefundTextAlly,ConstructionRefundTextEnemy,FlyerShadow,GroundShadow,SalvagedTextAlly,SalvagedTextEnemy,ShieldImpact,TerrainMgr,UnitPointsTextAll,##id##,##id##_Death
 Button=Attack,Baneling,BurrowDown,Move,MoveHoldPosition,MovePatrol,Stop
-id=InfestedCivilian
-Abil=Burrow##id##Down,attack,move,stop
-Actor=BlipVisual,ConfirmationLocalAirAttack,ConfirmationLocalGroundAttack,ConfirmationSyncAirAttack,ConfirmationSyncGroundAttack,ConstructionRefundTextAlly,ConstructionRefundTextEnemy,FlyerShadow,GroundShadow,##id##,SalvagedTextAlly,SalvagedTextEnemy,ShieldImpact,TerrainMgr,UnitPointsTextAll
-Button=Attack,BurrowDown,Move,MoveHoldPosition,MovePatrol,Stop
-Weapon=InfestedClaws
 id=Vulture
 Abil=Make##id##SpiderMines,TorEnergyDrain,##id##Queue3,##id##SpiderMines,attack,move,stop
 Actor=BlipVisual,ConfirmationLocalAirAttack,ConfirmationLocalGroundAttack,ConfirmationSyncAirAttack,ConfirmationSyncGroundAttack,ConstructionRefundTextAlly,ConstructionRefundTextEnemy,FlyerShadow,GroundShadow,SalvagedTextAlly,SalvagedTextEnemy,ShieldImpact,TerrainMgr,UnitPointsTextAll,##id##
@@ -420,6 +421,16 @@ Button=Attack,##id##Load,##id##UnloadAll,Move,MoveHoldPosition,MovePatrol,Rally,
 Weapon
 id=BuildingSight
 Actor=BlipVisual,##id##,ConfirmationLocalAirAttack,ConfirmationLocalGroundAttack,ConfirmationSyncAirAttack,ConfirmationSyncGroundAttack,ConstructionRefundTextAlly,ConstructionRefundTextEnemy,FlyerShadow,GroundShadow,SalvagedTextAlly,SalvagedTextEnemy,ShieldImpact,TerrainMgr,UnitPointsTextAll
+id=Zombie
+Abil=BurrowInfestedCivilianDown,attack,move,stop
+Actor=BlipVisual,ConfirmationLocalAirAttack,ConfirmationLocalGroundAttack,ConfirmationSyncAirAttack,ConfirmationSyncGroundAttack,ConstructionRefundTextAlly,ConstructionRefundTextEnemy,FlyerShadow,GroundShadow,SalvagedTextAlly,SalvagedTextEnemy,ShieldImpact,TerrainMgr,UnitPointsTextAll,##id##
+Button=Attack,BurrowDown,Move,MoveHoldPosition,MovePatrol,Stop
+Weapon=InfestedClaws
+id=Abomination
+Abil=BurrowInfested##id##Down,attack,move,stop
+Actor=##id##,ConfirmationLocalAirAttack,ConfirmationLocalGroundAttack,ConfirmationSyncAirAttack,ConfirmationSyncGroundAttack,ConstructionRefundTextEnemy,FlyerShadow,GroundShadow,TerrainMgr
+Button=Attack,BurrowDown,Move,MoveHoldPosition,MovePatrol,Stop
+Weapon=Infested##id##
 
 [Upgrade]
 id=MinionDamage
@@ -447,5 +458,10 @@ Actor=TerrainMgr
 id=HeroArmor
 Actor=TerrainMgr
 id=STNTExtHealth
+Actor=TerrainMgr
+
+[Weapon]
+id=RocketLauncher
+asset=Assets\Textures\btn-missing-kaeo.dds
 Actor=TerrainMgr
 

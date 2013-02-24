@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CWeaponLegacy id="RocketLauncher">
+        <EditorCategories value=""/>
+        <Range value="11.719"/>
+        <Cost>
+            <Cooldown TimeStart="3.1"/>
+        </Cost>
+        <Period value="3.1"/>
+        <DamagePoint value="0.17"/>
+        <Backswing value="0.7"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <Effect value="RocketLauncherLaunchMissile"/>
+    </CWeaponLegacy>
+</Catalog>

@@ -423,7 +423,7 @@
         <Duration value="3"/>
         <DurationRandomMin value="1"/>
         <DurationRandomMax value="-1"/>
-        <Modification>
+        <Modification MoveSpeedMultiplier="0.75">
             <VitalRegenArray index="Life" value="-3.25"/>
         </Modification>
     </CBehaviorBuff>

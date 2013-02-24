@@ -13,12 +13,12 @@
 <Behavior id="MinibossArmor"/>
 <Behavior id="Invisibility"/>
 <Behavior id="STNTRegen"/>
-<Behavior id="ZombieBlueDegenAura"/>
 <Behavior id="Radlet"/>
+<Behavior id="ZombieBlueDegenAura"/>
 <Behavior id="TNTApplyDamage"/>
 <Behavior id="RadiationEffects"/>
-<Behavior id="STNTCollisionLoss"/>
 <Behavior id="ZombieFlaming"/>
+<Behavior id="STNTCollisionLoss"/>
 <Behavior id="ZombieToxinsAura"/>
 <Behavior id="TNTApplyDamage2"/>
 <Behavior id="TorFeedbackSleep"/>
@@ -29,6 +29,7 @@
 <Effect id="TorFeedbackStunSearch"/>
 <Effect id="STNTExtEnergy"/>
 <Model id="PingAlert"/>
+<Sound id="UI_TerranKlaxonAlert"/>
 <Terrain id="Tarsonis"/>
 <Unit id="Zergling"/>
 <Unit id="TestShop"/>
