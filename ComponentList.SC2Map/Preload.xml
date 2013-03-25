@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Preload>
 <Asset path="Assets\Textures\targetingcursorx1.dds" Type="Image"/>
-<Actor id="SwatElectricCorner2x2" Variations="0"/>
-<Actor id="SwatWallElectric7x2" Variations="2"/>
+<Actor id="PathingBlocker1x1Doodad2"/>
+<Actor id="PathingandSightBlocker3x3Doodad2"/>
+<Actor id="PathingBlocker1x1Doodad"/>
 <Actor id="SYSTEM_ActorConfig"/>
-<Actor id="SwatWallStraight3x14"/>
-<Actor id="SwatWallElectric2x7" Variations="0,1,4"/>
-<Actor id="SwatWallElectric2x4" Variations="0,3"/>
-<Actor id="SwatWallElectric6x2" Variations="4"/>
-<Actor id="SwatWallElectric2x6" Variations="0,3"/>
+<Actor id="PathingBlocker2x2Doodad3"/>
+<Actor id="PathingandSightBlocker3x3Doodad"/>
+<Actor id="PathingandSightBlocker2x2Doodad"/>
+<Actor id="PathingBlocker2x2Doodad"/>
+<Actor id="PathingBlocker2x2Doodad22"/>
+<Actor id="PathingandSightBlocker1x1Doodad"/>
+<Actor id="PathingBlocker2x2Doodad2"/>
+<Actor id="PathingBlocker1x1Doodad22"/>
 <Behavior id="Radiation"/>
 <Behavior id="MinibossArmor"/>
 <Behavior id="Invisibility"/>
@@ -40,7 +44,6 @@
 <Unit id="InfestedCocoon"/>
 <Unit id="Vulture"/>
 <Unit id="SwatGraveyardDoor"/>
-<Unit id="SecurityGateStraightVerticalLFLowered"/>
 <Unit id="InfestedAbomination"/>
 <Unit id="Marauder"/>
 <User id="STNTExtHealth"/>

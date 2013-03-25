@@ -18,12 +18,21 @@
             </GameLink>
         </Instances>
     </CUser>
-    <CUser id="HeroArmor">
+    <CUser id="Armor">
         <Fields Id="Movespeed" Type="Fixed" EditorText="Name"/>
         <Fields Id="Damage Reduction" Type="GameLink" GameLinkType="Behavior"/>
         <Fields Id="Sprint" Type="GameLink" GameLinkType="Behavior"/>
         <Fields Id="Nanites" Type="GameLink" GameLinkType="Abil"/>
+        <Fields Id="Description" Type="Text"/>
+        <Fields Id="Image" Type="Image"/>
+        <Fields Id="Roles" Type="Text"/>
+        <Fields Id="Name" Type="Text"/>
+        <Fields Id="Color" Type="Color"/>
+        <Fields Id="Image Color" Type="Int"/>
         <Instances Id="[Default]">
+            <Color Color="255,94,94,255">
+                <Field Id="Color"/>
+            </Color>
             <Fixed Fixed="290">
                 <Field Id="Movespeed"/>
             </Fixed>
@@ -36,6 +45,18 @@
             <GameLink GameLink="SprintLight">
                 <Field Id="Sprint"/>
             </GameLink>
+            <Image Image="Assets\Textures\btn-upgrade-terran-infantryarmorlevel0.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Armor/[Default]_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Armor/[Default]_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Armor/[Default]_Roles">
+                <Field Id="Roles"/>
+            </Text>
         </Instances>
         <Instances Id="Medium">
             <Fixed Fixed="250">
@@ -50,6 +71,15 @@
             <GameLink GameLink="PowerArmorMedium">
                 <Field Id="Sprint"/>
             </GameLink>
+            <Image Image="Assets\Textures\btn-upgrade-terran-infantryarmorlevel1.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Armor/Medium_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Armor/Medium_Description">
+                <Field Id="Description"/>
+            </Text>
         </Instances>
         <Instances Id="Heavy">
             <Fixed Fixed="220">
@@ -64,18 +94,280 @@
             <GameLink GameLink="SprintHeavy">
                 <Field Id="Sprint"/>
             </GameLink>
+            <Image Image="Assets\Textures\btn-upgrade-terran-infantryarmorlevel2.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Armor/Heavy_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Armor/Heavy_Description">
+                <Field Id="Description"/>
+            </Text>
         </Instances>
         <Instances Id="Advanced">
             <Fixed Fixed="230">
                 <Field Id="Movespeed"/>
             </Fixed>
-            <GameLink GameLink="SWATNanites">
-                <Field Id="Nanites"/>
-            </GameLink>
             <GameLink GameLink="PowerArmorAdvanced">
                 <Field Id="Damage Reduction"/>
             </GameLink>
+            <Image Image="Assets\Textures\btn-upgrade-terran-infantryarmorlevel3.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Armor/Advanced_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Armor/Advanced_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Armor/Advanced_Description">
+                <Field Id="Description"/>
+            </Text>
         </Instances>
+    </CUser>
+    <CUser id="Class">
+        <Fields Id="Image" Type="Image"/>
+        <Fields Id="Description" Type="Text"/>
+        <Fields Id="Name" Type="Text"/>
+        <Fields Id="Color" Type="Color"/>
+        <Fields Id="Roles" Type="Text"/>
+        <Fields Id="Image Color" Type="Int"/>
+        <Fields Id="Unit" Type="Unit"/>
+        <Instances Id="[Default]">
+            <Color Color="255,80,0,129">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-terran-ghost.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/[Default]_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/[Default]_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/[Default]_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Unit Unit="Marauder">
+                <Field Id="Unit"/>
+            </Unit>
+        </Instances>
+        <Instances Id="Field Medic">
+            <Color Color="255,255,3,3">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-terran-medic.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/Field Medic_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Field Medic_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Field Medic_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Tactician">
+            <Color Color="255,0,66,255">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-terran-marinemercenary.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/Tactician_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Tactician_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Tactician_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Psychologist">
+            <Color Color="255,229,91,176">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-protoss-hightemplar.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/Psychologist_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Psychologist_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Psychologist_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Maverick">
+            <Color Color="255,149,150,151">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-terran-marauderswann.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/Maverick_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Maverick_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Maverick_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Heavy Ordnance">
+            <Color Color="255,32,192,0">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-terran-maraudermercenary.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/Heavy Ordnance_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Heavy Ordnance_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Heavy Ordnance_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Demolitions">
+            <Color Color="255,254,138,14">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-terran-marauderkillsquad.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/Demolitions_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Demolitions_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Demolitions_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Cyborg">
+            <Color Color="255,28,230,185">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-terran-marineraynor.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/Cyborg_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Cyborg_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Cyborg_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Pyrotechnician">
+            <Color Color="255,255,255,1">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-terran-firebat.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/Pyrotechnician_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Pyrotechnician_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Pyrotechnician_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Watchman">
+            <Color Color="255,16,98,70">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-terran-nova.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/Watchman_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Watchman_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Watchman_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Tech Ops">
+            <Color Color="255,74,42,4">
+                <Field Id="Color"/>
+            </Color>
+            <Text Text="UserData/Class/Tech Ops_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Tech Ops_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Tech Ops_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Umbrella Clone">
+            <Color Color="255,126,191,241">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-unit-terran-nova.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Class/Umbrella Clone_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Class/Umbrella Clone_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Class/Umbrella Clone_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+    </CUser>
+    <CUser id="Robodog">
+        <Fields Id="Name" Type="Text"/>
+        <Fields Id="Description" Type="Text"/>
+        <Fields Id="Roles" Type="Text"/>
+        <Fields Id="Color" Type="Color"/>
+        <Fields Id="Image" Type="Image"/>
+        <Fields Id="Image Color" Type="Int"/>
+        <Fields Id="Unit" Type="Unit"/>
+        <Instances Id="[Default]">
+            <Color Color="255,255,3,3">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-research-zerg-predator.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Robodog/[Default]_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Robodog/[Default]_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Robodog/[Default]_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Unit Unit="Predator">
+                <Field Id="Unit"/>
+            </Unit>
+        </Instances>
+        <Instances Id="Untitled Instance"/>
+        <Instances Id="Untitled Instance 2"/>
     </CUser>
     <CUser id="STNTExtHealth">
         <Fields>
@@ -103,6 +395,470 @@
             <GameLink GameLink="ExtMinibossHealth3">
                 <Field Id="modify unit"/>
             </GameLink>
+        </Instances>
+    </CUser>
+    <CUser id="Spec">
+        <Fields Id="Name" Type="Text"/>
+        <Fields Id="Roles" Type="Text"/>
+        <Fields Id="Description" Type="Text"/>
+        <Fields Id="Color" Type="Color"/>
+        <Fields Id="Image" Type="Image"/>
+        <Fields Id="Image Color" Type="Int"/>
+        <Instances Id="[Default]">
+            <Color Color="255,94,94,255">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-techupgrade-terran-fullborecanisterammo.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Spec/[Default]_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Spec/[Default]_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Spec/[Default]_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Untitled Instance"/>
+        <Instances Id="Untitled Instance 2"/>
+        <Instances Id="Untitled Instance 3"/>
+        <Instances Id="Untitled Instance 4"/>
+        <Instances Id="Untitled Instance 5"/>
+        <Instances Id="Untitled Instance 6"/>
+        <Instances Id="Untitled Instance 7"/>
+        <Instances Id="Untitled Instance 8"/>
+    </CUser>
+    <CUser id="Talent">
+        <Fields Id="Image Color" Type="Color"/>
+        <Fields Id="Image" Type="Image"/>
+        <Fields Id="Name" Type="Text"/>
+        <Fields Id="Roles" Type="Text"/>
+        <Fields Id="Description" Type="Text"/>
+        <Fields Id="Color" Type="Color"/>
+        <Instances Id="[Default]">
+            <Text Text="UserData/Talent/[Default]_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Talent/[Default]_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Talent/[Default]_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Untitled Instance"/>
+        <Instances Id="Untitled Instance 2"/>
+        <Instances Id="Untitled Instance 3"/>
+        <Instances Id="Untitled Instance 4"/>
+        <Instances Id="Untitled Instance 5"/>
+        <Instances Id="Untitled Instance 6"/>
+    </CUser>
+    <CUser id="Trait">
+        <Fields Id="Name" Type="Text"/>
+        <Fields Id="Color" Type="Color"/>
+        <Fields Id="Description" Type="Text"/>
+        <Fields Id="Image" Type="Image"/>
+        <Fields Id="Roles" Type="Text"/>
+        <Fields Id="Image Color" Type="Color"/>
+        <Instances Id="[Default]">
+            <Color Color="255,94,94,255">
+                <Field Id="Color"/>
+            </Color>
+            <Color Color="255,255,255,255">
+                <Field Id="Image Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-ability-terran-heal-color.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/[Default]_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/[Default]_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/[Default]_Name">
+                <Field Id="Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Gifted">
+            <Image Image="Assets\Textures\btn-ability-protoss-protoncharge-color.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Gifted_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/Gifted_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Trait/Gifted_Description">
+                <Field Id="Description"/>
+            </Text>
+        </Instances>
+        <Instances Id="Survivalist">
+            <Image Image="Assets\Textures\btn-ability-terran-selfixarmor.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Survivalist_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Survivalist_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Trait/Survivalist_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Dragoon">
+            <Image Image="Assets\Textures\btn-techupgrade-terran-combatshield-color.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Dragoon_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/Dragoon_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Trait/Dragoon_Description">
+                <Field Id="Description"/>
+            </Text>
+        </Instances>
+        <Instances Id="Acrobat">
+            <Image Image="Assets\Textures\btn-ability-protoss-cloakfield-color.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Acrobat_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Acrobat_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/Acrobat_Name">
+                <Field Id="Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Swift Learner">
+            <Image Image="Assets\Textures\btn-ability-terran-domination.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Swift Learner_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Swift Learner_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Trait/Swift Learner_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Healer">
+            <Image Image="Assets\Textures\icon-health-nobg.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Healer_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Healer_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Trait/Healer_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Flower Child">
+            <Image Image="Assets\Textures\btn-ability-zerg-rapidregeneration-color.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Flower Child_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Flower Child_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Trait/Flower Child_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Chem. Reliant">
+            <Image Image="Assets\Textures\btn-tips-biosample.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Chem. Reliant_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Chem. Reliant_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/Chem. Reliant_Name">
+                <Field Id="Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Rad. Resistant">
+            <Color Color="255,135,219,10">
+                <Field Id="Image Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-tips-richminerals.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Rad. Resistant_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Trait/Rad. Resistant_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/Rad. Resistant_Description">
+                <Field Id="Description"/>
+            </Text>
+        </Instances>
+        <Instances Id="Gadgeteer">
+            <Image Image="Assets\Textures\btn-ability-terran-stimpack-color.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Gadgeteer_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Gadgeteer_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/Gadgeteer_Name">
+                <Field Id="Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Prowler">
+            <Image Image="Assets\Textures\btn-ability-terran-scannersweep-color.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Prowler_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/Prowler_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Prowler_Name">
+                <Field Id="Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Energizer">
+            <Image Image="Assets\Textures\btn-ability-protoss-psistorm-color.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Energizer_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Energizer_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/Energizer_Name">
+                <Field Id="Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Pack Rat">
+            <Image Image="Assets\Textures\btn-research-terran-microfiltering.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Pack Rat_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Pack Rat_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Trait/Pack Rat_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Engineer">
+            <Image Image="Assets\Textures\btn-research-terran-ultracapacitors.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Engineer_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/Engineer_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Trait/Engineer_Name">
+                <Field Id="Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Reckless">
+            <Color Color="255,114,1,252">
+                <Field Id="Image Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-ability-terran-tosh-consumption.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Trait/Reckless_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Trait/Reckless_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Trait/Reckless_Description">
+                <Field Id="Description"/>
+            </Text>
+        </Instances>
+    </CUser>
+    <CUser id="Weapon">
+        <Fields Id="Image" Type="Image"/>
+        <Fields Id="Description" Type="Text"/>
+        <Fields Id="Name" Type="Text"/>
+        <Fields Id="Roles" Type="Text"/>
+        <Fields Id="Color" Type="Color"/>
+        <Fields Id="Short Name" Type="Text"/>
+        <Fields Id="Weapon" Type="GameLink" GameLinkType="Weapon"/>
+        <Fields Id="Image Color" Type="Int"/>
+        <Fields Id="ID" Type="Int"/>
+        <Instances Id="[Default]">
+            <Color Color="255,94,94,255">
+                <Field Id="Color"/>
+            </Color>
+            <Image Image="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Weapon/[Default]_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Weapon/[Default]_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Weapon/[Default]_Short Name">
+                <Field Id="Short Name"/>
+            </Text>
+            <Text Text="UserData/Weapon/[Default]_Roles">
+                <Field Id="Roles"/>
+            </Text>
+        </Instances>
+        <Instances Id="Sniper Rifle">
+            <Image Image="Assets\Textures\btn-ability-terran-penetratorround.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Int Int="10">
+                <Field Id="ID"/>
+            </Int>
+            <Text Text="UserData/Weapon/Sniper Rifle_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Weapon/Sniper Rifle_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Weapon/Sniper Rifle_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Weapon/Sniper Rifle_Short Name">
+                <Field Id="Short Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Chaingun">
+            <Image Image="Assets\Textures\btn-ability-terran-haleoflead.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Int Int="9">
+                <Field Id="ID"/>
+            </Int>
+            <Text Text="UserData/Weapon/Chaingun_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Weapon/Chaingun_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Weapon/Chaingun_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Weapon/Chaingun_Short Name">
+                <Field Id="Short Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Rocket Launcher">
+            <Image Image="Assets\Textures\btn-ability-terran-punishergrenade-color.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Int Int="8">
+                <Field Id="ID"/>
+            </Int>
+            <Text Text="UserData/Weapon/Rocket Launcher_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Weapon/Rocket Launcher_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Weapon/Rocket Launcher_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Weapon/Rocket Launcher_Short Name">
+                <Field Id="Short Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Flamethrower">
+            <Image Image="Assets\Textures\btn-upgrade-terran-jotunboosters.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Int Int="5">
+                <Field Id="ID"/>
+            </Int>
+            <Text Text="UserData/Weapon/Flamethrower_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Weapon/Flamethrower_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Weapon/Flamethrower_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Weapon/Flamethrower_Short Name">
+                <Field Id="Short Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Laser Rifle">
+            <Image Image="Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Int Int="1">
+                <Field Id="ID"/>
+            </Int>
+            <Text Text="UserData/Weapon/Laser Rifle_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Weapon/Laser Rifle_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Weapon/Laser Rifle_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Weapon/Laser Rifle_Short Name">
+                <Field Id="Short Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Gatling Laser">
+            <Image Image="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel1.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Weapon/Gatling Laser_Roles">
+                <Field Id="Roles"/>
+            </Text>
+            <Text Text="UserData/Weapon/Gatling Laser_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Weapon/Gatling Laser_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Weapon/Gatling Laser_Short Name">
+                <Field Id="Short Name"/>
+            </Text>
+        </Instances>
+        <Instances Id="Blast Gloves and Pistols">
+            <Image Image="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds">
+                <Field Id="Image"/>
+            </Image>
+            <Text Text="UserData/Weapon/Blast Gloves and Pistols_Description">
+                <Field Id="Description"/>
+            </Text>
+            <Text Text="UserData/Weapon/Blast Gloves and Pistols_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/Weapon/Blast Gloves and Pistols_Short Name">
+                <Field Id="Short Name"/>
+            </Text>
         </Instances>
     </CUser>
 </Catalog>

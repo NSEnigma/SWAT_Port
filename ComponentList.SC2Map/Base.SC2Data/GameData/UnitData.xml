@@ -87,6 +87,23 @@
             <ChanceArray index="Idle" value="50"/>
         </Fidget>
     </CUnit>
+    <CUnit id="ValhallaDestructibleWall2">
+        <DeathRevealRadius value="3"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="Destructible" value="1"/>
+        <EditorFlags index="NeutralDefault" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <LifeArmor value="1"/>
+        <Footprint value="Footprint2x6DestructibleRockVertical"/>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectType:Destructible,ObjectFamily:Campaign"/>
+    </CUnit>
     <CUnit id="Zombie">
         <DeathRevealRadius value="3"/>
         <Race value="Zerg"/>
@@ -147,15 +164,33 @@
         <AbilArray Link="SWATNanitesstandard"/>
         <AbilArray Link="NanitesLearn"/>
         <AbilArray Link="SprintLight"/>
+        <AbilArray Link="MarauderLearn"/>
+        <AbilArray Link="War3Inventory"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="SWATNanitesstandardon" Type="AbilCmd" AbilCmd="SWATNanitesstandard,On" Row="1" Column="3"/>
+            <LayoutButtons>
+                <Face value="LearningTab"/>
+                <Type value="Submenu"/>
+                <SubmenuAbilState value="MarauderLearn"/>
+                <SubmenuCardId value="0002"/>
+                <Row value="1"/>
+                <Column value="4"/>
+            </LayoutButtons>
             <LayoutButtons Face="SWATNanitesstandardoff" Type="AbilCmd" AbilCmd="SWATNanitesstandard,Off" Row="1" Column="3"/>
             <LayoutButtons Face="TestLearn" Type="AbilCmd" AbilCmd="NanitesLearn,Learn1" Row="1" Column="4"/>
             <LayoutButtons Face="SprintLight" Type="AbilCmd" AbilCmd="SprintLight,Execute" Row="2" Column="4"/>
         </CardLayouts>
+        <CardLayouts CardId="0002">
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="1" Column="4"/>
+        </CardLayouts>
         <SightBonus index="Dusk" value="-5"/>
         <BehaviorArray Link="HeroVeterancy"/>
         <BehaviorArray Link="Detector12"/>
+        <BehaviorArray Link="MarauderVeterancy"/>
+        <BehaviorArray Link="Strength"/>
+        <BehaviorArray Link="Agility"/>
+        <BehaviorArray Link="Intelligence"/>
+        <FlagArray index="Hero" value="1"/>
+        <DeathTime value="-1"/>
     </CUnit>
     <CUnit id="Scourge">
         <FlagArray index="CreateVisible" value="1"/>

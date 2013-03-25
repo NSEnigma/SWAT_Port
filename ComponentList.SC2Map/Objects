@@ -40,8 +40,6 @@
     <ObjectUnit Id="42" Position="10.078,235.2016,0" Rotation="1.841" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="43" Position="11.2158,235.5422,0" Rotation="6.2233" Scale="1,1,1" UnitType="Marine" Player="1"/>
     <ObjectUnit Id="45" Position="13.6042,238.6928,0" Rotation="4.7773" Scale="1,1,1" UnitType="Marine" Player="1"/>
-    <ObjectUnit Id="169" Position="128,215.5,0" Rotation="3.1413" Scale="1.75,1.75,1.75" UnitType="SecurityGateStraightVerticalLFLowered"/>
-    <ObjectUnit Id="170" Position="166,209.5,0" Rotation="3.1413" Scale="1.75,1.75,1.75" UnitType="SecurityGateStraightVerticalLFLowered"/>
     <ObjectUnit Id="171" Position="132,215,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
     <ObjectUnit Id="172" Position="130.5,216,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
     <ObjectUnit Id="173" Position="130.5,215,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
@@ -53,562 +51,1356 @@
     <ObjectUnit Id="179" Position="127,214.5,0" Scale="1,1,1" UnitType="SwatGraveyardDoor" Player="1"/>
     <ObjectUnit Id="184" Position="119.0168,166.2138,0" Rotation="3.059" Scale="1,1,1" UnitType="Zergling"/>
     <ObjectUnit Id="219" Position="120.628,165.9843,0" Rotation="5.3371" Scale="1,1,1" UnitType="Zergling"/>
-    <ObjectDoodad Id="187" Position="128,235,7.9982" Rotation="4.7121" Scale="1,1,1.75" Type="SwatElectricCorner2x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="188" Position="128,185,7.9982" Scale="1,1,1.75" Type="SwatElectricCorner2x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="195" Position="166,185,7.9982" Rotation="1.5705" Scale="1,1,1.75" Type="SwatElectricCorner2x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="206" Position="166,235,7.9982" Rotation="3.1413" Scale="1,1,1.75" Type="SwatElectricCorner2x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="186" Position="128,232,7.9982" Rotation="4.7121" Scale="1,1,1" Type="SwatWallElectric2x4">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="198" Variation="3" Position="166,231.5,7.9982" Rotation="1.5705" Scale="1,1,1" Type="SwatWallElectric2x4">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="207" Variation="3" Position="166,221,7.9982" Rotation="1.5705" Scale="1,1,1" Type="SwatWallElectric2x4">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="180" Variation="3" Position="128,221,7.9982" Rotation="4.7121" Scale="1,1,1" Type="SwatWallElectric2x6">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="181" Variation="3" Position="128,227,7.9982" Rotation="4.7121" Scale="1,1,1" Type="SwatWallElectric2x6">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="196" Position="128,189,7.9982" Rotation="4.7121" Scale="1,1,1" Type="SwatWallElectric2x6">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="182" Position="128,209.5,7.9982" Rotation="4.7121" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="183" Position="128,202.5,7.9982" Rotation="4.7121" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="185" Variation="4" Position="128,195.5,7.9982" Rotation="4.7121" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="197" Variation="1" Position="166,226.5,7.9982" Rotation="1.5705" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="205" Variation="1" Position="166,215.5,7.9982" Rotation="1.5705" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="208" Variation="4" Position="166,203.5,7.9982" Rotation="1.5705" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="209" Variation="4" Position="166,196.5,7.9982" Rotation="1.5705" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="210" Variation="4" Position="166,189.5,7.9982" Rotation="1.5705" Scale="1.75,1.75,1.75" Type="SwatWallElectric2x7">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="189" Variation="4" Position="132,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="190" Variation="4" Position="138,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="191" Variation="4" Position="144,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="192" Variation="4" Position="150,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="193" Variation="4" Position="156,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="194" Variation="4" Position="162,185,7.9982" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="199" Variation="4" Position="132,235,7.9982" Rotation="3.1413" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="200" Variation="4" Position="138,235,7.9982" Rotation="3.1413" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="201" Variation="4" Position="143.5,235,7.9982" Rotation="3.1413" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="202" Variation="4" Position="149,235,7.9982" Rotation="3.1413" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="203" Variation="4" Position="155,235,7.9982" Rotation="3.1413" Scale="1.5,1.75,1.75" Type="SwatWallElectric6x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="204" Variation="2" Position="161.5,235,7.9982" Rotation="3.1413" Scale="1.75,1.75,1.75" Type="SwatWallElectric7x2">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="1" Position="14.5,229,7.9987" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="2" Position="64.5,233,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="3" Position="64.5,205,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="4" Position="41.5,229,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="5" Position="75.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="6" Position="64.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="7" Position="94.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="8" Position="27.5,229,7.9987" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="9" Position="108.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="47" Position="105.5,227,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="48" Position="64.5,248,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="49" Position="91.5,248,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="50" Position="14.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="51" Position="14.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="52" Position="41.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="53" Position="41.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="54" Position="14.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="55" Position="14.5,132,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="56" Position="26.5,116,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="57" Position="14.5,116,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="58" Position="41.5,116,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="59" Position="79.5,140,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="60" Position="64.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="61" Position="5.5,77,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="62" Position="20.5,77,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="63" Position="60.5,77,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="64" Position="137.5,60,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="65" Position="114.5,37,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="66" Position="114.5,22,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="67" Position="99.5,22,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="68" Position="102.5,37,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="69" Position="87.5,22,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="70" Position="64.5,22,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="71" Position="22.5,19,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="72" Position="7.5,19,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="73" Position="5.5,42,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="74" Position="20.5,42,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="75" Position="45.5,37,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="76" Position="64.5,60,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="77" Position="45.5,60,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="78" Position="87.5,60,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="79" Position="137.5,5,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="80" Position="154.5,9,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="81" Position="154.5,23,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="82" Position="154.5,37,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="83" Position="178.5,6,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="84" Position="197.5,6,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="85" Position="154.5,77,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="86" Position="137.5,117,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="87" Position="194.5,140,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="88" Position="194.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="89" Position="177.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="90" Position="154.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="91" Position="128.5,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="92" Position="122.5,140,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="93" Position="194.5,229.5,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="94" Position="233.5,229,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="95" Position="217.5,207,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="96" Position="217.5,221,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="97" Position="217.5,191,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="98" Position="234,168,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="99" Position="217.5,140,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="100" Position="177.5,154,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="101" Position="230.5,100,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="102" Position="217.5,100,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="103" Position="193.5,198,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="104" Position="177.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="105" Position="193.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="106" Position="209.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="107" Position="225.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="108" Position="146.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="109" Position="128.5,252,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="110" Position="24.5,229,7.9987" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="111" Position="38.5,229,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="112" Position="29.5,214,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="113" Position="38.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="114" Position="25.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="115" Position="25.5,168,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="116" Position="52.5,168,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="117" Position="75.5,168,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="118" Position="75.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="119" Position="90.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="120" Position="115.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="121" Position="115.5,168,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="122" Position="115.5,154,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="123" Position="150.5,5,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="124" Position="150.5,20,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="125" Position="110.5,22,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="126" Position="111.5,37,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="127" Position="125.5,37,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="128" Position="98.5,37,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="129" Position="96.5,22,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="130" Position="60.5,22,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="131" Position="56.5,37,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="132" Position="18.5,19,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="133" Position="16.5,42,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="134" Position="16.5,77,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="135" Position="56.5,77,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="136" Position="75.5,77,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="137" Position="100.5,77,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="138" Position="98.5,100,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="139" Position="107.5,117,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="140" Position="75.5,125,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="141" Position="38.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="142" Position="37.5,116,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="143" Position="25.5,100,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="144" Position="39.5,100,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="145" Position="72.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="146" Position="86.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="147" Position="105.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="148" Position="116.5,204,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="149" Position="116.5,227,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="150" Position="87.5,233,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="151" Position="87.5,248,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="152" Position="116.5,248,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="153" Position="142.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="154" Position="165.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="155" Position="189.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="156" Position="205.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="157" Position="221.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="158" Position="245.5,252,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="159" Position="245.5,191,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="160" Position="245.5,168,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="161" Position="228.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="162" Position="248.5,140,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="163" Position="244.5,140,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="164" Position="241.5,100,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="165" Position="227.5,100,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="166" Position="208.5,7,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="167" Position="214.5,7,7.9985" Rotation="3.1413" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
-    <ObjectDoodad Id="168" Position="210.5,7,7.9982" Scale="2.25,3.5,0.75" Type="SwatWallStraight3x14">
-        <Flag Index="HeightOffset" Value="1"/>
-        <Flag Index="HeightAbsolute" Value="1"/>
-    </ObjectDoodad>
+    <ObjectDoodad Id="282" Position="68.5,160.5,7.998" Rotation="3.0456" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="283" Position="68.5,159.5,7.998" Rotation="4.0644" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="284" Position="68.5,158.5,7.998" Rotation="0.1096" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="285" Position="71.5,158.5,7.998" Rotation="3.8845" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="286" Position="71.5,159.5,7.998" Rotation="4.042" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="287" Position="71.5,160.5,7.998" Rotation="0.6296" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="641" Position="216.5,123.5,7.998" Rotation="3.3784" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="642" Position="217.5,123.5,7.998" Rotation="0.7324" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="643" Position="218.5,123.5,7.998" Rotation="0.843" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="644" Position="219.5,123.5,7.998" Rotation="1.2316" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="645" Position="239.5,123.5,7.998" Rotation="1.7817" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="646" Position="240.5,123.5,7.998" Rotation="5.5747" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="647" Position="241.5,123.5,7.998" Rotation="1.651" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="648" Position="242.5,123.5,7.998" Rotation="3.664" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="928" Position="27.5,59.5,7.998" Rotation="2.1665" Scale="1,1,1" Type="PathingBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1074" Position="242.5,27,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1075" Position="176.5,27,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1076" Position="176.5,37,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1077" Position="242.5,37,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1078" Position="242.5,49,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1079" Position="242.5,59,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1080" Position="242.5,43,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1081" Position="242.5,74,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1082" Position="242.5,79,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1083" Position="176.5,41,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1084" Position="176.5,56,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1085" Position="176.5,66,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1086" Position="176.5,76,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1087" Position="176.5,79,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1132" Position="127.5,189,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1133" Position="127.5,199,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1152" Position="128.5,190,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1153" Position="128.5,200,7.998" Rotation="5.5788" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1154" Position="127.5,208,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1155" Position="128.5,208,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1156" Position="127.5,223,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1157" Position="128.5,223,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1158" Position="127.5,231,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1159" Position="128.5,231,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1171" Position="165.5,229,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1177" Position="166.5,229,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1178" Position="165.5,218,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1179" Position="166.5,218,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1180" Position="165.5,224,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1181" Position="166.5,224,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1182" Position="165.5,191,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1183" Position="166.5,191,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1184" Position="165.5,202,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1185" Position="166.5,202,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1186" Position="165.5,196,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1187" Position="166.5,196,7.998" Rotation="3.1413" Scale="1,1,1" Type="PathingBlocker1x1Doodad2"/>
+    <ObjectDoodad Id="1088" Position="182.5,83.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1089" Position="193.5,83.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1090" Position="204.5,83.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1091" Position="215.5,83.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1092" Position="226.5,83.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1093" Position="182.5,22.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1094" Position="193.5,22.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1095" Position="204.5,22.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1096" Position="215.5,22.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1097" Position="236.5,22.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1134" Position="133.5,184.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1135" Position="144.5,184.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1136" Position="155.5,184.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1143" Position="133.5,185.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1144" Position="144.5,185.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1145" Position="155.5,185.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1160" Position="134.5,234.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1161" Position="145.5,234.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1162" Position="156.5,234.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1163" Position="134.5,235.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1164" Position="145.5,235.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="1165" Position="156.5,235.5,7.998" Rotation="5.8264" Scale="1,1,1" Type="PathingBlocker1x1Doodad22"/>
+    <ObjectDoodad Id="229" Position="29,131,7.998" Rotation="1.828" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="230" Position="29,130,7.998" Rotation="3.5998" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="231" Position="31,131,7.998" Rotation="5.8801" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="232" Position="31,130,7.998" Rotation="4.0705" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="233" Position="33,131,7.998" Rotation="5.4475" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="234" Position="33,130,7.998" Rotation="5.0043" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="235" Position="35,131,7.998" Rotation="3.3193" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="236" Position="35,130,7.998" Rotation="2.1445" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="266" Position="82,134,7.998" Rotation="2.6147" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="267" Position="82,135,7.998" Rotation="4.9284" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="268" Position="88,135,7.998" Rotation="5.9421" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="269" Position="88,134,7.998" Rotation="1.2336" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="537" Position="246,160,7.998" Rotation="1.7426" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="538" Position="246,158,7.998" Rotation="0.8347" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="539" Position="246,157,7.998" Rotation="5.6057" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="540" Position="244,157,7.998" Rotation="2.7072" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="541" Position="243,157,7.998" Rotation="4.532" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="542" Position="237,157,7.998" Rotation="2.112" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="543" Position="235,157,7.998" Rotation="4.5737" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="544" Position="234,157,7.998" Rotation="1.3684" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="545" Position="234,159,7.998" Rotation="1.1066" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="546" Position="234,160,7.998" Rotation="6.223" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="629" Position="221,109,7.998" Rotation="2.1835" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="649" Position="188,105,7.998" Rotation="0.1386" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="650" Position="188,106,7.998" Rotation="5.362" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="651" Position="189,106,7.998" Rotation="3.4567" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="652" Position="189,105,7.998" Rotation="3.455" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="653" Position="194,106,7.998" Rotation="3.9526" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="654" Position="195,106,7.998" Rotation="1.1254" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="655" Position="195,105,7.998" Rotation="5.864" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="656" Position="194,105,7.998" Rotation="1.4101" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="657" Position="194,111,7.998" Rotation="4.756" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="658" Position="194,112,7.998" Rotation="0.45" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="659" Position="195,112,7.998" Rotation="6.2563" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="660" Position="195,111,7.998" Rotation="5.357" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="661" Position="188,112,7.998" Rotation="4.5427" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="662" Position="189,112,7.998" Rotation="5.277" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="663" Position="189,111,7.998" Rotation="5.5356" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="664" Position="188,111,7.998" Rotation="0.4165" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="715" Position="166,105,7.998" Rotation="1.0156" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="716" Position="166,103,7.998" Rotation="4.683" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="717" Position="166,101,7.998" Rotation="3.9526" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="718" Position="166,99,7.998" Rotation="5.4565" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="719" Position="166,97,7.998" Rotation="1.095" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="751" Position="140,72,7.998" Rotation="2.5517" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="752" Position="140,73,7.998" Rotation="2.404" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="753" Position="140,77,7.998" Rotation="4.0278" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="754" Position="140,79,7.998" Rotation="1.0686" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="755" Position="140,80,7.998" Rotation="6.2197" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="756" Position="142,80,7.998" Rotation="5.5341" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="757" Position="143,80,7.998" Rotation="5.0034" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="758" Position="147,80,7.998" Rotation="3.0083" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="759" Position="149,80,7.998" Rotation="6.1391" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="767" Position="151,58,7.998" Rotation="0.4543" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="768" Position="152,58,7.998" Rotation="3.9206" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="769" Position="152,56,7.998" Rotation="4.2126" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="770" Position="151,56,7.998" Rotation="3.6745" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="783" Position="164,68,7.998" Rotation="2.9802" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="784" Position="164,69,7.998" Rotation="1.4663" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="785" Position="162,69,7.998" Rotation="2.262" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="786" Position="162,68,7.998" Rotation="5.1967" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="914" Position="23,61,7.998" Rotation="2.289" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="915" Position="23,59,7.998" Rotation="3.3613" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="916" Position="23,58,7.998" Rotation="6.251" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="917" Position="25,61,7.998" Rotation="5.043" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="918" Position="27,61,7.998" Rotation="4.3886" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="919" Position="29,61,7.998" Rotation="6.1284" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="920" Position="31,61,7.998" Rotation="0.9104" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="921" Position="32,61,7.998" Rotation="4.4504" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="922" Position="32,59,7.998" Rotation="3.0114" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="923" Position="32,58,7.998" Rotation="0.3327" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="924" Position="30,58,7.998" Rotation="2.4016" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="925" Position="28,58,7.998" Rotation="3.7265" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="926" Position="26,58,7.998" Rotation="4.144" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="927" Position="25,58,7.998" Rotation="4.6442" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1188" Position="195,44,7.998" Rotation="3.9453" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1189" Position="194,43,7.998" Rotation="5.335" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1190" Position="196,44,7.998" Rotation="3.5034" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1191" Position="196,42,7.998" Rotation="5.2868" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1192" Position="196,40,7.998" Rotation="1.6691" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1193" Position="196,37,7.998" Rotation="4.5632" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1194" Position="196,35,7.998" Rotation="2.3737" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1195" Position="197,34,7.998" Rotation="3.532" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1196" Position="199,34,7.998" Rotation="4.226" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1197" Position="201,36,7.998" Rotation="1.3352" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1198" Position="203,36,7.998" Rotation="4.9042" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1199" Position="205,37,7.998" Rotation="4.5988" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1200" Position="206,39,7.998" Rotation="4.2744" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1201" Position="206,41,7.998" Rotation="4.4736" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1202" Position="204,43,7.998" Rotation="1.199" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1203" Position="204,45,7.998" Rotation="5.0661" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1204" Position="202,45,7.998" Rotation="2.5051" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1205" Position="201,44,7.998" Rotation="2.8801" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1206" Position="199,42,7.998" Rotation="3.541" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1207" Position="198,41,7.998" Rotation="5.393" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1208" Position="197,39,7.998" Rotation="1.1135" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1209" Position="198,36,7.998" Rotation="2.5354" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1210" Position="198,38,7.998" Rotation="3.6337" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1211" Position="199,36,7.998" Rotation="4.099" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1212" Position="199,40,7.998" Rotation="0.6682" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1213" Position="200,38,7.998" Rotation="1.6848" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1214" Position="202,38,7.998" Rotation="1.8505" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1215" Position="204,38,7.998" Rotation="5.3154" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1216" Position="204,40,7.998" Rotation="2.2968" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1217" Position="204,42,7.998" Rotation="0.1013" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1218" Position="202,43,7.998" Rotation="2.68" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1219" Position="201,41,7.998" Rotation="0.2092" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1220" Position="202,41,7.998" Rotation="6.1018" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1221" Position="202,41,7.998" Rotation="5.3947" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1222" Position="202,41,7.998" Rotation="0.54" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1223" Position="201,40,7.998" Rotation="5.2067" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1224" Position="202,39,7.998" Rotation="0.5725" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1225" Position="213,46,7.998" Rotation="4.9453" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1226" Position="213,47,7.998" Rotation="0.272" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1227" Position="214,48,7.998" Rotation="3.9921" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1228" Position="213,50,7.998" Rotation="3.2861" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1229" Position="212,51,7.998" Rotation="1.638" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1230" Position="212,53,7.998" Rotation="5.5534" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1231" Position="213,52,7.998" Rotation="0.2321" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1232" Position="215,50,7.998" Rotation="0.9904" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1233" Position="217,51,7.998" Rotation="5.331" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1234" Position="218,53,7.998" Rotation="0.8041" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1235" Position="219,54,7.998" Rotation="5.032" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1236" Position="220,54,7.998" Rotation="1.4448" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1237" Position="221,53,7.998" Rotation="4.261" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1238" Position="223,52,7.998" Rotation="6.0144" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1239" Position="223,50,7.998" Rotation="1.54" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1240" Position="224,48,7.998" Rotation="2.1977" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1241" Position="224,47,7.998" Rotation="1.4821" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1242" Position="223,45,7.998" Rotation="4.2456" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1243" Position="224,44,7.998" Rotation="4.399" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1244" Position="224,43,7.998" Rotation="1.4653" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1245" Position="223,42,7.998" Rotation="1.6228" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1246" Position="222,42,7.998" Rotation="3.867" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1247" Position="221,41,7.998" Rotation="2.9985" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1248" Position="219,41,7.998" Rotation="1.8266" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1249" Position="217,42,7.998" Rotation="4.6174" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1250" Position="216,43,7.998" Rotation="0.1286" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1251" Position="216,44,7.998" Rotation="3.5031" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad"/>
+    <ObjectDoodad Id="88" Position="46.5,234.5,7.998" Rotation="1.4338" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="89" Position="49.5,234.5,7.998" Rotation="2.0332" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="90" Position="52.5,234.5,7.998" Rotation="6.003" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="91" Position="52.5,231.5,7.998" Rotation="4.763" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="92" Position="52.5,228.5,7.998" Rotation="6.2448" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="137" Position="122.5,70.5,7.998" Rotation="5.5014" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="452" Position="217.5,223.5,7.998" Rotation="2.1772" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="587" Position="191.5,153.5,7.998" Rotation="0.9538" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="588" Position="191.5,154.5,7.998" Rotation="4.9375" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="593" Position="177.5,137.5,7.998" Rotation="1.3364" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="594" Position="177.5,142.5,7.998" Rotation="1.101" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="605" Position="248.5,145.5,7.998" Rotation="0.2998" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="606" Position="248.5,142.5,7.998" Rotation="5.4396" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="607" Position="248.5,139.5,7.998" Rotation="6.2321" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="608" Position="248.5,136.5,7.998" Rotation="3.1047" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="609" Position="248.5,134.5,7.998" Rotation="4.6372" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="720" Position="165.5,94.5,7.998" Rotation="0.8605" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="721" Position="162.5,94.5,7.998" Rotation="1.1074" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="722" Position="159.5,94.5,7.998" Rotation="5.1965" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="723" Position="156.5,94.5,7.998" Rotation="0.4387" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="787" Position="124.5,70.5,7.998" Rotation="1.3591" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="788" Position="122.5,67.5,7.998" Rotation="3.0646" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="789" Position="124.5,67.5,7.998" Rotation="3.3593" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="790" Position="110.5,79.5,7.998" Rotation="5.0754" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="791" Position="110.5,81.5,7.998" Rotation="3.9042" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="792" Position="113.5,81.5,7.998" Rotation="3.3264" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="793" Position="113.5,79.5,7.998" Rotation="0.2326" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="912" Position="25.5,59.5,7.998" Rotation="4.6186" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="913" Position="29.5,59.5,7.998" Rotation="3.8117" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="967" Position="49.5,22.5,7.998" Rotation="4.6345" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="968" Position="49.5,21.5,7.998" Rotation="3.79" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="969" Position="48.5,22.5,7.998" Rotation="4.6667" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="970" Position="48.5,21.5,7.998" Rotation="3.1091" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad2"/>
+    <ObjectDoodad Id="2" Position="20,229,7.9982" Rotation="3.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="44" Position="20,232,7.9982" Rotation="4.6491" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="47" Position="36,194,7.998" Rotation="5.277" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="63" Position="49,211,7.998" Rotation="3.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="65" Position="49,217,7.998" Rotation="3.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="79" Position="36,191,7.998" Rotation="3.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="80" Position="9,188,7.998" Rotation="4.9721" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="81" Position="9,194,7.998" Rotation="3.6267" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="93" Position="28,194,7.998" Rotation="4.3334" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="94" Position="28,188,7.998" Rotation="2.0544" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="103" Position="31,160,7.998" Rotation="5.8603" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="104" Position="36,160,7.998" Rotation="0.2021" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="105" Position="36,167,7.998" Rotation="1.5927" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="106" Position="36,171,7.998" Rotation="4.9963" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="107" Position="31,171,7.998" Rotation="6.049" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="108" Position="31,166,7.998" Rotation="3.305" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="109" Position="111,191,7.998" Rotation="3.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="124" Position="111,194,7.998" Rotation="5.1884" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="161" Position="47,127,7.998" Rotation="2.1977" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="162" Position="50,127,7.998" Rotation="5.873" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="239" Position="20,119,7.998" Rotation="4.4118" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="240" Position="20,111,7.998" Rotation="0.4626" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="241" Position="17,119,7.998" Rotation="0.6723" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="242" Position="17,111,7.998" Rotation="3.908" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="250" Position="47,100,7.998" Rotation="3.8107" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="251" Position="50,100,7.998" Rotation="5.378" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="253" Position="70,100,7.998" Rotation="3.8107" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="254" Position="73,100,7.998" Rotation="5.378" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="259" Position="70,124,7.998" Rotation="3.8107" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="260" Position="73,124,7.998" Rotation="5.378" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="289" Position="85,168,7.998" Rotation="4.331" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="290" Position="88,168,7.998" Rotation="4.8283" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="291" Position="85,163,7.998" Rotation="5.8132" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="301" Position="70,191,7.998" Rotation="3.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="302" Position="70,193,7.998" Rotation="4.2341" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="303" Position="94,224,7.998" Rotation="0.3186" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="304" Position="99,224,7.998" Rotation="1.289" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="305" Position="99,232,7.998" Rotation="3.1513" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="306" Position="99,236,7.998" Rotation="1.53" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="307" Position="94,236,7.998" Rotation="5.713" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="308" Position="94,231,7.998" Rotation="3.1718" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="310" Position="97,248,7.998" Rotation="3.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="312" Position="111,248,7.998" Rotation="3.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="314" Position="70,248,7.998" Rotation="3.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="316" Position="82,248,7.998" Rotation="3.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="323" Position="101,100,7.998" Rotation="5.0834" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="325" Position="106,100,7.998" Rotation="5.0834" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="326" Position="118,103,7.998" Rotation="0.72" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="327" Position="123,103,7.998" Rotation="2.2172" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="328" Position="123,99,7.998" Rotation="2.5764" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="329" Position="118,99,7.998" Rotation="5.6181" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="405" Position="147,168,7.998" Rotation="0.9313" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="406" Position="150,168,7.998" Rotation="3.6767" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="410" Position="180,188,7.998" Rotation="3.9973" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="411" Position="187,188,7.998" Rotation="4.4372" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="413" Position="196,188,7.998" Rotation="1.4687" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="414" Position="203,188,7.998" Rotation="6.1694" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="434" Position="195,221,7.998" Rotation="3.603" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="435" Position="203,218,7.998" Rotation="3.4118" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="436" Position="195,218,7.998" Rotation="2.667" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="451" Position="223,219,7.998" Rotation="3.5151" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="472" Position="223,207,7.998" Rotation="3.5151" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="474" Position="240,207,7.998" Rotation="3.5151" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="476" Position="240,218,7.998" Rotation="3.5151" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="478" Position="231,219,7.998" Rotation="1.8103" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="479" Position="232,219,7.998" Rotation="3.9213" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="480" Position="232,211,7.998" Rotation="3.956" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="481" Position="230,207,7.998" Rotation="1.0881" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="482" Position="233,204,7.998" Rotation="4.3027" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="547" Position="220,171,7.998" Rotation="1.407" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="548" Position="228,171,7.998" Rotation="5.9238" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="549" Position="229,171,7.998" Rotation="6.161" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="590" Position="183,154,7.998" Rotation="5.074" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="591" Position="183,157,7.998" Rotation="4.7875" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="602" Position="237,140,7.998" Rotation="4.0368" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="603" Position="240,140,7.998" Rotation="5.9323" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="625" Position="223,100,7.998" Rotation="0.8813" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="626" Position="223,97,7.998" Rotation="3.9831" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="665" Position="202,108,7.998" Rotation="2.2084" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="666" Position="202,109,7.998" Rotation="5.5395" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="667" Position="192,119,7.998" Rotation="5.0222" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="668" Position="191,119,7.998" Rotation="2.3576" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="669" Position="181,109,7.998" Rotation="3.8757" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="670" Position="181,108,7.998" Rotation="1.146" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="671" Position="191,98,7.998" Rotation="2.0427" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="672" Position="192,98,7.998" Rotation="1.738" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="673" Position="192,120,7.998" Rotation="5.022" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="674" Position="191,120,7.998" Rotation="2.3576" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="675" Position="192,97,7.998" Rotation="5.022" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="676" Position="191,97,7.998" Rotation="2.3576" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="677" Position="180,109,7.998" Rotation="3.8757" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="678" Position="180,108,7.998" Rotation="1.146" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="679" Position="203,109,7.998" Rotation="3.8757" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="680" Position="203,108,7.998" Rotation="1.146" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="726" Position="143,102,7.998" Rotation="5.7131" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="728" Position="150,100,7.998" Rotation="1.2324" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="729" Position="151,106,7.998" Rotation="0.2575" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="847" Position="98,57,7.998" Rotation="4.446" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="848" Position="98,65,7.998" Rotation="0.9826" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="849" Position="90,65,7.998" Rotation="3.7897" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="850" Position="90,57,7.998" Rotation="3.488" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="851" Position="90,66,7.998" Rotation="2.4272" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="852" Position="98,66,7.998" Rotation="5.3742" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="897" Position="48,68,7.998" Rotation="0.0268" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="898" Position="54,68,7.998" Rotation="1.258" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="937" Position="14,69,7.998" Rotation="4.6052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="938" Position="10,69,7.998" Rotation="6.048" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="942" Position="8,51,7.998" Rotation="1.8796" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="943" Position="14,51,7.998" Rotation="4.3164" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="960" Position="10,7,7.998" Rotation="5.695" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="961" Position="16,7,7.998" Rotation="1.0407" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="962" Position="25,7,7.998" Rotation="0.7065" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="963" Position="31,7,7.998" Rotation="2.212" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1004" Position="93,22,7.998" Rotation="4.7343" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1005" Position="94,22,7.998" Rotation="1.9243" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1015" Position="108,37,7.998" Rotation="5.8356" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1016" Position="109,37,7.998" Rotation="5.6882" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1049" Position="140,8,7.998" Rotation="1.4885" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1050" Position="148,8,7.998" Rotation="2.0615" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1058" Position="181,9,7.998" Rotation="2.223" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1059" Position="181,8,7.998" Rotation="4.3818" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1060" Position="189,9,7.998" Rotation="2.223" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1061" Position="189,8,7.998" Rotation="4.3818" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1062" Position="195,9,7.998" Rotation="2.223" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1063" Position="195,8,7.998" Rotation="4.3818" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1064" Position="211,9,7.998" Rotation="2.223" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1065" Position="211,8,7.998" Rotation="4.3818" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1066" Position="219,9,7.998" Rotation="2.223" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1067" Position="219,8,7.998" Rotation="4.3818" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1068" Position="227,9,7.998" Rotation="2.223" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1069" Position="227,8,7.998" Rotation="4.3818" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1070" Position="235,9,7.998" Rotation="2.223" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1071" Position="235,8,7.998" Rotation="4.3818" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1072" Position="239,9,7.998" Rotation="2.223" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="1073" Position="239,8,7.998" Rotation="4.3818" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad22"/>
+    <ObjectDoodad Id="85" Position="165,77,7.998" Rotation="4.4995" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="114" Position="39,209,7.998" Rotation="2.807" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="115" Position="40,209,7.998" Rotation="0.734" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="116" Position="40,208,7.998" Rotation="3.312" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="117" Position="39,208,7.998" Rotation="6.196" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="121" Position="134,163,7.998" Rotation="1.3535" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="122" Position="134,163,7.998" Rotation="0.8286" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="123" Position="134,162,7.998" Rotation="3.0673" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="141" Position="144,177,7.998" Rotation="4.0334" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="144" Position="161,174,7.998" Rotation="1.3535" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="199" Position="47,186,7.998" Rotation="0.4985" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="200" Position="48,185,7.998" Rotation="5.2084" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="201" Position="48,185,7.998" Rotation="2.1843" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="202" Position="47,185,7.998" Rotation="3.254" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="203" Position="48,186,7.998" Rotation="2.7607" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="204" Position="47,197,7.998" Rotation="2.1362" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="205" Position="47,196,7.998" Rotation="5.961" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="206" Position="48,196,7.998" Rotation="1.1984" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="224" Position="34,111,7.998" Rotation="4.8666" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="225" Position="34,110,7.998" Rotation="1.5283" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="318" Position="87,100,7.998" Rotation="6.242" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="319" Position="88,100,7.998" Rotation="0.2707" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="320" Position="93,105,7.998" Rotation="5.541" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="321" Position="93,106,7.998" Rotation="3.7731" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="363" Position="97,115,7.998" Rotation="4.79" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="364" Position="96,115,7.998" Rotation="5.1145" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="365" Position="96,119,7.998" Rotation="3.5815" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="366" Position="97,119,7.998" Rotation="5.117" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="367" Position="96,117,7.998" Rotation="2.3381" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="368" Position="97,117,7.998" Rotation="1.054" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="374" Position="75,230,7.998" Rotation="2.665" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="378" Position="133,138,7.998" Rotation="4.3183" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="379" Position="134,138,7.998" Rotation="0.4973" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="383" Position="147,138,7.998" Rotation="4.3183" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="384" Position="148,138,7.998" Rotation="0.4973" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="388" Position="136,138,7.998" Rotation="4.3183" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="389" Position="137,138,7.998" Rotation="0.4973" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="390" Position="150,138,7.998" Rotation="4.3183" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="391" Position="151,138,7.998" Rotation="0.4973" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="392" Position="75,231,7.998" Rotation="2.6191" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="393" Position="77,231,7.998" Rotation="0.1364" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="394" Position="77,230,7.998" Rotation="5.9902" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="395" Position="161,174,7.998" Rotation="0.8286" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="396" Position="161,163,7.998" Rotation="1.3535" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="397" Position="161,163,7.998" Rotation="0.8286" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="398" Position="161,162,7.998" Rotation="3.0673" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="399" Position="161,173,7.998" Rotation="3.0673" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="412" Position="176,192,7.998" Rotation="5.0205" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="415" Position="207,192,7.998" Rotation="2.732" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="418" Position="200,234,7.998" Rotation="5.439" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="419" Position="200,235,7.998" Rotation="3.0832" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="462" Position="237,235,7.998" Rotation="0.5983" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="463" Position="237,234,7.998" Rotation="0.334" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="485" Position="228,189,7.998" Rotation="4.2336" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="486" Position="229,189,7.998" Rotation="0.3332" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="524" Position="228,188,7.998" Rotation="2.3908" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="525" Position="229,188,7.998" Rotation="4.5334" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="526" Position="234,189,7.998" Rotation="5.6777" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="527" Position="235,189,7.998" Rotation="5.4467" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="528" Position="235,188,7.998" Rotation="4.2172" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="529" Position="234,188,7.998" Rotation="5.393" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="577" Position="191,160,7.998" Rotation="2.3613" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="578" Position="192,159,7.998" Rotation="1.0375" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="579" Position="192,160,7.998" Rotation="5.934" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="580" Position="191,159,7.998" Rotation="0.9291" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="581" Position="202,154,7.998" Rotation="3.1081" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="582" Position="203,154,7.998" Rotation="6.1374" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="583" Position="191,149,7.998" Rotation="2.9157" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="584" Position="192,149,7.998" Rotation="5.952" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="585" Position="192,148,7.998" Rotation="2.7775" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="586" Position="191,148,7.998" Rotation="0.9267" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="595" Position="183,135,7.998" Rotation="3.1281" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="596" Position="183,134,7.998" Rotation="0.401" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="731" Position="166,77,7.998" Rotation="0.538" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="762" Position="143,55,7.998" Rotation="4.1972" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="763" Position="143,54,7.998" Rotation="5.7722" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="854" Position="63,80,7.998" Rotation="5.321" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="855" Position="63,82,7.998" Rotation="1.9931" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="856" Position="63,83,7.998" Rotation="4.5908" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="857" Position="73,83,7.998" Rotation="0.32" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="858" Position="73,82,7.998" Rotation="2.679" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="859" Position="73,80,7.998" Rotation="0.8781" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="871" Position="68,55,7.998" Rotation="5.2553" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="872" Position="69,55,7.998" Rotation="2.7854" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="873" Position="69,54,7.998" Rotation="5.5405" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="874" Position="68,54,7.998" Rotation="5.0883" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="930" Position="7,63,7.998" Rotation="2.9055" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="931" Position="9,63,7.998" Rotation="4.5141" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="932" Position="11,63,7.998" Rotation="1.71" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="933" Position="14,63,7.998" Rotation="3.4067" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="934" Position="13,63,7.998" Rotation="5.5395" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="958" Position="25,24,7.998" Rotation="5.6757" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="959" Position="25,25,7.998" Rotation="1.4611" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="982" Position="65,35,7.998" Rotation="0.2416" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="983" Position="65,37,7.998" Rotation="3.4235" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="984" Position="65,39,7.998" Rotation="5.0231" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="996" Position="87,40,7.998" Rotation="2.5798" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="997" Position="87,41,7.998" Rotation="4.7487" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="998" Position="89,40,7.998" Rotation="5.9052" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="999" Position="89,42,7.998" Rotation="5.5314" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1000" Position="89,44,7.998" Rotation="3.524" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1039" Position="163,43,7.998" Rotation="4.7897" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1040" Position="163,42,7.998" Rotation="0.2595" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1041" Position="165,42,7.998" Rotation="3.9248" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1042" Position="166,43,7.998" Rotation="1.7355" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1043" Position="165,43,7.998" Rotation="0.9833" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1044" Position="166,42,7.998" Rotation="3.3784" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1271" Position="48,197,7.998" Rotation="3.035" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1272" Position="237,234,7.998" Rotation="4.141" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1273" Position="237,235,7.998" Rotation="1.1091" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1274" Position="192,148,7.998" Rotation="5.7546" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1275" Position="202,154,7.998" Rotation="4.4787" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1276" Position="203,154,7.998" Rotation="0.2712" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1277" Position="192,149,7.998" Rotation="2.8107" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1278" Position="191,149,7.998" Rotation="2.576" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1279" Position="191,148,7.998" Rotation="2.4094" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1280" Position="191,159,7.998" Rotation="2.717" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1281" Position="191,160,7.998" Rotation="0.733" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1282" Position="192,160,7.998" Rotation="2.328" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1283" Position="192,159,7.998" Rotation="5.6423" Scale="0.8498,0.8498,0.8498" Type="PathingBlocker2x2Doodad3"/>
+    <ObjectDoodad Id="1098" Position="221.5,22.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1099" Position="227.5,22.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1100" Position="229.5,22.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1101" Position="230.5,22.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1102" Position="228.5,22.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1103" Position="232.5,83.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1104" Position="234.5,83.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1105" Position="233.5,83.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1106" Position="235.5,83.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1107" Position="236.5,83.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1108" Position="237.5,83.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1109" Position="238.5,83.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1110" Position="239.5,83.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1111" Position="240.5,83.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1112" Position="241.5,83.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1113" Position="219.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1114" Position="219.5,33.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1115" Position="219.5,32.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1116" Position="219.5,31.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1117" Position="219.5,30.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1118" Position="220.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1119" Position="222.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1120" Position="223.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1121" Position="221.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1122" Position="224.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1123" Position="225.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1124" Position="226.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1125" Position="227.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1126" Position="228.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1127" Position="229.5,34.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1128" Position="229.5,33.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1129" Position="229.5,31.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1130" Position="229.5,30.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1131" Position="229.5,32.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1137" Position="161.5,184.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1138" Position="163.5,184.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1139" Position="164.5,184.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1140" Position="165.5,184.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1141" Position="162.5,184.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1142" Position="166.5,184.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1146" Position="161.5,185.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1147" Position="163.5,185.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1148" Position="164.5,185.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1149" Position="165.5,185.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1150" Position="162.5,185.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1151" Position="166.5,185.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1166" Position="162.5,234.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1167" Position="164.5,234.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1168" Position="165.5,234.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1169" Position="166.5,234.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1170" Position="163.5,234.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1172" Position="162.5,235.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1173" Position="164.5,235.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1174" Position="165.5,235.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1175" Position="166.5,235.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="1176" Position="163.5,235.5,7.998" Scale="1,1,1" Type="PathingandSightBlocker1x1Doodad"/>
+    <ObjectDoodad Id="86" Position="33,234,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="87" Position="33,235,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="408" Position="178,202,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="409" Position="178,194,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="535" Position="237,162,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="536" Position="243,162,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="636" Position="238,109,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="730" Position="156,108,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="765" Position="150,54,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="766" Position="152,54,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="780" Position="166,68,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="781" Position="166,69,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="834" Position="112,75,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="835" Position="114,75,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="836" Position="116,75,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="837" Position="118,75,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="838" Position="118,73,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="839" Position="118,71,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="840" Position="118,69,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="846" Position="89,77,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="863" Position="76,83,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="864" Position="76,81,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="865" Position="76,79,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="866" Position="76,77,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="867" Position="76,75,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="868" Position="76,73,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="869" Position="76,71,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="892" Position="45,79,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="893" Position="46,79,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="894" Position="46,75,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="895" Position="45,75,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="896" Position="59,67,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="905" Position="31,68,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="906" Position="29,68,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="907" Position="27,68,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="908" Position="25,68,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="909" Position="23,68,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="910" Position="21,68,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="911" Position="19,68,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="947" Position="19,51,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="948" Position="21,51,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="949" Position="23,51,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="950" Position="25,51,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="951" Position="27,51,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="952" Position="29,51,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="953" Position="31,51,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="974" Position="45,27,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="975" Position="47,27,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="976" Position="47,17,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="977" Position="45,17,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1053" Position="165,9,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1054" Position="166,9,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1252" Position="215,46,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1253" Position="216,48,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1254" Position="217,46,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1255" Position="218,44,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1256" Position="219,43,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1257" Position="221,43,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1258" Position="222,44,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1259" Position="220,45,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1260" Position="222,46,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1261" Position="219,46,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1262" Position="217,49,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1263" Position="218,48,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1264" Position="220,47,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1265" Position="222,48,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1266" Position="220,49,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1267" Position="219,50,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1268" Position="221,50,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1269" Position="221,52,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="1270" Position="219,52,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker2x2Doodad"/>
+    <ObjectDoodad Id="4" Position="18.5,217.5,7.9982" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="5" Position="18.5,210.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="8" Position="33.5,211.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="9" Position="33.5,214.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="49" Position="14.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="50" Position="17.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="51" Position="20.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="52" Position="23.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="53" Position="26.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="54" Position="29.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="55" Position="32.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="56" Position="35.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="57" Position="38.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="58" Position="41.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="59" Position="44.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="60" Position="47.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="61" Position="50.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="62" Position="52.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightOffset" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="66" Position="52.5,208.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="67" Position="52.5,211.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="68" Position="52.5,214.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="69" Position="52.5,217.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="70" Position="52.5,219.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="71" Position="39.5,223.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="72" Position="42.5,223.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="73" Position="45.5,223.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="74" Position="48.5,223.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="75" Position="51.5,223.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="76" Position="52.5,223.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="77" Position="41.5,226.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="82" Position="41.5,234.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="83" Position="41.5,232.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="84" Position="41.5,229.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="96" Position="16.5,162.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="97" Position="19.5,162.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="99" Position="33.5,217.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="100" Position="36.5,218.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="101" Position="47.5,162.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="102" Position="50.5,162.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="111" Position="39.5,218.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="112" Position="42.5,218.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="113" Position="43.5,218.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="119" Position="131.5,173.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="120" Position="136.5,173.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="126" Position="52.5,116.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="128" Position="52.5,115.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="129" Position="16.5,137.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="130" Position="14.5,137.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="131" Position="14.5,134.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="132" Position="14.5,131.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="133" Position="14.5,128.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="134" Position="14.5,126.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="135" Position="17.5,126.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="136" Position="20.5,126.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="138" Position="23.5,126.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="139" Position="26.5,126.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="140" Position="25.5,130.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="143" Position="25.5,133.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="145" Position="23.5,137.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="146" Position="25.5,136.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="147" Position="25.5,137.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="148" Position="27.5,137.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="149" Position="28.5,134.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="150" Position="31.5,134.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="151" Position="34.5,134.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="152" Position="29.5,126.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="153" Position="32.5,126.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="154" Position="35.5,126.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="155" Position="27.5,143.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="156" Position="27.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="157" Position="30.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="158" Position="33.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="159" Position="36.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="163" Position="52.5,135.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="164" Position="51.5,135.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="165" Position="51.5,138.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="166" Position="52.5,138.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="167" Position="52.5,141.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="168" Position="51.5,141.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="170" Position="52.5,194.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="180" Position="52.5,144.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="181" Position="52.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="182" Position="49.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="183" Position="51.5,143.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="185" Position="44.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="186" Position="41.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="187" Position="39.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="188" Position="42.5,142.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="189" Position="39.5,142.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="190" Position="39.5,139.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="191" Position="42.5,139.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="192" Position="42.5,136.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="193" Position="39.5,136.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="194" Position="39.5,134.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="195" Position="42.5,134.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="196" Position="38.5,134.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="197" Position="38.5,142.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="198" Position="52.5,187.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="207" Position="38.5,139.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="208" Position="38.5,136.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="209" Position="38.5,131.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="210" Position="38.5,128.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="222" Position="38.5,126.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="226" Position="27.5,121.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="227" Position="32.5,121.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="228" Position="34.5,121.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="244" Position="14.5,103.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="245" Position="14.5,96.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="247" Position="30.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="248" Position="37.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="256" Position="75.5,110.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="257" Position="75.5,109.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="263" Position="64.5,143.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="264" Position="64.5,136.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="270" Position="104.5,143.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="271" Position="104.5,136.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="273" Position="104.5,157.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="274" Position="104.5,150.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="276" Position="104.5,171.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="277" Position="104.5,164.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="280" Position="69.5,162.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="281" Position="70.5,162.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="293" Position="84.5,196.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="294" Position="77.5,196.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="295" Position="75.5,200.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="296" Position="75.5,207.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="317" Position="90.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="331" Position="116.5,110.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="332" Position="119.5,110.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="333" Position="122.5,110.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="334" Position="123.5,113.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="335" Position="123.5,116.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="336" Position="123.5,119.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="337" Position="121.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="338" Position="121.5,121.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="339" Position="124.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="340" Position="125.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="341" Position="125.5,119.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="342" Position="125.5,116.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="343" Position="125.5,113.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="344" Position="125.5,110.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="345" Position="125.5,109.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="347" Position="103.5,196.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="348" Position="96.5,196.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="349" Position="111.5,109.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="350" Position="111.5,112.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="351" Position="111.5,115.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="352" Position="111.5,118.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="353" Position="111.5,121.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="354" Position="111.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="355" Position="114.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="356" Position="115.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="357" Position="115.5,121.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="359" Position="106.5,111.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="360" Position="97.5,111.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="362" Position="105.5,207.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="369" Position="67.5,227.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="370" Position="69.5,227.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="371" Position="82.5,227.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="372" Position="84.5,227.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="373" Position="105.5,200.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="376" Position="125.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="377" Position="130.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="381" Position="139.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="382" Position="144.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="386" Position="153.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="387" Position="158.5,145.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="400" Position="165.5,168.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="401" Position="165.5,167.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="402" Position="165.5,163.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="403" Position="165.5,172.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="420" Position="205.5,231.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="421" Position="205.5,226.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="422" Position="178.5,225.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="423" Position="180.5,225.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="424" Position="180.5,228.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="425" Position="180.5,231.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="426" Position="180.5,234.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="427" Position="183.5,234.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="428" Position="186.5,234.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="429" Position="189.5,234.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="430" Position="192.5,234.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="431" Position="192.5,231.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="432" Position="192.5,228.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="433" Position="192.5,226.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="437" Position="178.5,215.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="438" Position="181.5,215.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="439" Position="184.5,215.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="440" Position="187.5,215.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="441" Position="189.5,215.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="443" Position="218.5,231.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="444" Position="217.5,231.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="445" Position="217.5,234.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="446" Position="217.5,226.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="447" Position="218.5,226.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="448" Position="221.5,233.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="449" Position="224.5,233.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="450" Position="226.5,233.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="457" Position="107.5,232.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="458" Position="114.5,232.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="464" Position="244.5,231.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="465" Position="244.5,229.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="466" Position="244.5,224.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="467" Position="231.5,234.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="468" Position="231.5,231.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="469" Position="231.5,228.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="470" Position="231.5,225.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="471" Position="231.5,223.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="487" Position="128.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="488" Position="131.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="489" Position="134.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="490" Position="137.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="491" Position="140.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="492" Position="142.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="493" Position="146.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="494" Position="149.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="495" Position="152.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="496" Position="155.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="497" Position="158.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="498" Position="161.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="499" Position="163.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="500" Position="165.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="501" Position="177.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="502" Position="180.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="503" Position="183.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="504" Position="186.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="505" Position="189.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="506" Position="193.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="507" Position="196.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="508" Position="199.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="509" Position="202.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="510" Position="205.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="511" Position="209.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="512" Position="212.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="513" Position="215.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="514" Position="218.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="515" Position="221.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="516" Position="225.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="517" Position="228.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="518" Position="231.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="519" Position="234.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="520" Position="237.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="521" Position="240.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="522" Position="243.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="523" Position="245.5,246.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="530" Position="220.5,185.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="531" Position="223.5,185.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="532" Position="239.5,185.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="533" Position="242.5,185.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="550" Position="231.5,165.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="551" Position="231.5,162.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="552" Position="231.5,159.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="553" Position="231.5,157.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="554" Position="228.5,157.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="555" Position="227.5,157.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="556" Position="227.5,158.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="557" Position="230.5,160.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="558" Position="230.5,163.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="559" Position="230.5,165.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="560" Position="217.5,165.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="561" Position="218.5,165.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="562" Position="217.5,162.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="563" Position="218.5,162.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="564" Position="217.5,159.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="565" Position="218.5,159.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="566" Position="217.5,157.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="567" Position="221.5,158.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="568" Position="221.5,157.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="569" Position="220.5,157.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="571" Position="205.5,171.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="572" Position="205.5,164.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="574" Position="179.5,173.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="575" Position="186.5,173.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="598" Position="205.5,143.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="599" Position="205.5,136.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="610" Position="223.5,119.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="611" Position="223.5,111.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="612" Position="235.5,111.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="613" Position="235.5,119.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="614" Position="232.5,121.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="615" Position="229.5,121.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="616" Position="226.5,121.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="617" Position="223.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="618" Position="235.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="619" Position="237.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="620" Position="221.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="622" Position="232.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="623" Position="239.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="630" Position="222.5,109.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="631" Position="236.5,109.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="632" Position="233.5,109.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="633" Position="225.5,109.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="634" Position="228.5,109.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="635" Position="230.5,109.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="637" Position="226.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="638" Position="229.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="639" Position="232.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="640" Position="229.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="681" Position="177.5,114.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="682" Position="177.5,119.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="683" Position="177.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="684" Position="180.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="685" Position="185.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="686" Position="197.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="687" Position="202.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="688" Position="205.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="689" Position="205.5,119.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="690" Position="205.5,114.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="691" Position="205.5,102.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="692" Position="205.5,97.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="693" Position="205.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="694" Position="202.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="695" Position="197.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="696" Position="185.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="697" Position="180.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="698" Position="177.5,102.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="699" Position="177.5,97.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="700" Position="177.5,94.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="703" Position="152.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="704" Position="152.5,119.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="705" Position="152.5,116.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="706" Position="152.5,113.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="707" Position="152.5,111.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="708" Position="165.5,111.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="709" Position="165.5,114.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="710" Position="165.5,117.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="711" Position="165.5,120.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="712" Position="165.5,122.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="713" Position="160.5,107.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="714" Position="157.5,107.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="732" Position="162.5,71.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="733" Position="147.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="734" Position="150.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="735" Position="150.5,79.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="736" Position="150.5,76.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="737" Position="150.5,73.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="738" Position="150.5,70.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="739" Position="150.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="740" Position="147.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="741" Position="144.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="742" Position="141.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="743" Position="138.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="744" Position="137.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="745" Position="137.5,72.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="746" Position="137.5,77.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="747" Position="137.5,80.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="748" Position="137.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="749" Position="140.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="750" Position="142.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="764" Position="148.5,57.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="771" Position="154.5,54.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="772" Position="157.5,54.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="773" Position="160.5,54.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="774" Position="163.5,54.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="775" Position="165.5,54.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="776" Position="165.5,57.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="777" Position="165.5,60.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="778" Position="165.5,63.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="779" Position="165.5,65.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="782" Position="154.5,65.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="794" Position="117.5,81.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="795" Position="117.5,79.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="796" Position="115.5,79.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="797" Position="115.5,81.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="798" Position="122.5,74.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="799" Position="124.5,74.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="800" Position="124.5,72.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="801" Position="122.5,72.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="802" Position="122.5,65.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="803" Position="124.5,65.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="804" Position="124.5,62.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="805" Position="122.5,62.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="806" Position="105.5,81.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="807" Position="109.5,79.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="808" Position="109.5,81.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="809" Position="122.5,66.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="810" Position="124.5,66.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="811" Position="107.5,79.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="812" Position="107.5,81.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="813" Position="105.5,79.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="814" Position="105.5,76.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="815" Position="105.5,73.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="816" Position="105.5,70.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="817" Position="105.5,67.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="818" Position="105.5,64.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="819" Position="105.5,62.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="820" Position="108.5,62.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="821" Position="111.5,62.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="822" Position="114.5,62.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="823" Position="117.5,62.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="824" Position="119.5,62.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="825" Position="119.5,64.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="826" Position="117.5,64.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="827" Position="114.5,64.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="828" Position="111.5,64.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="829" Position="108.5,64.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="830" Position="107.5,67.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="831" Position="107.5,70.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="832" Position="107.5,73.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="833" Position="107.5,76.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="842" Position="87.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="843" Position="89.5,81.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="844" Position="89.5,72.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="845" Position="87.5,71.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="860" Position="65.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="861" Position="68.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="862" Position="70.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="875" Position="75.5,64.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="876" Position="75.5,58.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="877" Position="75.5,56.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="880" Position="60.5,68.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="881" Position="60.5,71.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="882" Position="60.5,74.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="883" Position="60.5,77.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="884" Position="60.5,80.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="885" Position="60.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="886" Position="63.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="887" Position="66.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="888" Position="69.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="889" Position="72.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="890" Position="75.5,69.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="900" Position="31.5,79.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="901" Position="31.5,78.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="903" Position="7.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="904" Position="14.5,82.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="935" Position="16.5,55.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="936" Position="16.5,63.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="940" Position="7.5,36.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="941" Position="14.5,36.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="945" Position="31.5,40.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="946" Position="31.5,38.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="955" Position="9.5,24.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="956" Position="16.5,24.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="964" Position="33.5,21.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="965" Position="33.5,18.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="972" Position="47.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="973" Position="54.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="979" Position="75.5,20.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="980" Position="75.5,19.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="985" Position="75.5,39.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="986" Position="75.5,34.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="987" Position="72.5,32.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="988" Position="69.5,32.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="989" Position="66.5,32.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="990" Position="66.5,41.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="991" Position="69.5,41.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="992" Position="72.5,41.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1001" Position="92.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1002" Position="95.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1007" Position="101.5,16.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1008" Position="108.5,16.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1009" Position="116.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1010" Position="123.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1012" Position="125.5,25.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1013" Position="125.5,18.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1018" Position="139.5,24.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1019" Position="139.5,15.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1021" Position="138.5,38.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1022" Position="137.5,38.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1023" Position="137.5,41.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1024" Position="137.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1025" Position="140.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1026" Position="143.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1027" Position="146.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1028" Position="149.5,42.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1029" Position="138.5,33.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1030" Position="137.5,33.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1031" Position="137.5,30.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1032" Position="137.5,29.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1033" Position="140.5,29.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1034" Position="143.5,29.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1035" Position="146.5,29.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1036" Position="149.5,29.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1045" Position="165.5,37.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1046" Position="165.5,34.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1051" Position="165.5,13.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1052" Position="165.5,4.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1055" Position="165.5,26.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1056" Position="165.5,20.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad"/>
+    <ObjectDoodad Id="1057" Position="165.5,21.5,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="1" Position="20,229,7.9982" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="3" Position="33,229,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="6" Position="24,214,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="7" Position="38,214,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="48" Position="20,191,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="64" Position="160,77,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="78" Position="36,191,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="95" Position="20,168,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="98" Position="47,168,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="110" Position="111,191,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="118" Position="134,168,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="125" Position="47,116,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="127" Position="120,37,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="142" Position="160,168,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="160" Position="47,127,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="169" Position="47,191,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="223" Position="32,116,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="237" Position="70,233,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="238" Position="82,233,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="243" Position="20,100,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="246" Position="34,100,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="249" Position="47,100,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="252" Position="70,100,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="255" Position="70,111,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="258" Position="70,124,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="261" Position="70,125,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="262" Position="70,140,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="265" Position="85,140,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="272" Position="110,140,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="275" Position="110,154,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="278" Position="110,168,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="279" Position="70,168,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="288" Position="85,168,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="292" Position="85,163,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="297" Position="93,100,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="298" Position="81,191,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="299" Position="70,191,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="300" Position="70,204,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="309" Position="97,248,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="311" Position="111,248,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="313" Position="70,248,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="315" Position="82,248,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="322" Position="101,100,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="324" Position="106,100,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="330" Position="119,115,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="346" Position="100,191,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="358" Position="102,117,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="361" Position="111,204,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="375" Position="128,140,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="380" Position="142,140,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="385" Position="156,140,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="404" Position="147,168,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="407" Position="184,198,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="416" Position="199,198,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="417" Position="200,229,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="442" Position="224,229,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="453" Position="223,219,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="454" Position="239,229,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="455" Position="239,229,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="456" Position="111,227,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="459" Position="239,229,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="460" Position="239,229,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="461" Position="239,229,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="473" Position="223,207,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="475" Position="240,207,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="477" Position="240,218,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="483" Position="240,191,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="484" Position="223,191,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="534" Position="240,168,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="570" Position="200,168,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="573" Position="183,168,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="576" Position="197,154,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="589" Position="183,154,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="592" Position="183,140,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="597" Position="200,140,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="600" Position="223,140,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="601" Position="237,140,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="604" Position="239,140,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="621" Position="236,100,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="624" Position="223,100,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="627" Position="223,101,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="628" Position="236,101,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="701" Position="159,117,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="702" Position="143,117,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="724" Position="143,100,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="725" Position="143,103,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="727" Position="150,100,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="760" Position="143,60,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="761" Position="143,60,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="841" Position="95,77,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="853" Position="68,77,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="870" Position="70,60,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="878" Position="51,60,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="879" Position="55,60,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="891" Position="51,77,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="899" Position="26,77,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="902" Position="11,77,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="929" Position="10,59,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="939" Position="11,42,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="944" Position="26,42,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="954" Position="13,19,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="957" Position="28,19,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="966" Position="55,22,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="971" Position="51,37,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="978" Position="70,22,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="981" Position="70,37,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="993" Position="67,37,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="994" Position="66,37,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="995" Position="93,37,7.998" Rotation="1.5705" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="1003" Position="93,22,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="1006" Position="105,22,7.998" Rotation="4.7121" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="1011" Position="120,22,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="1014" Position="108,37,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="1017" Position="145,20,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="1020" Position="144,36,7.998" Rotation="3.1413" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="1037" Position="160,37,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="1038" Position="158,37,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="1047" Position="160,23,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
+    <ObjectDoodad Id="1048" Position="160,9,7.998" Scale="0.8498,0.8498,0.8498" Type="PathingandSightBlocker3x3Doodad2"/>
     <ObjectPoint Id="211" Position="36.0197,216.0297,0" Scale="1,1,1" Type="Normal" Name="Televac1" Color="0,0,0,0"/>
     <ObjectPoint Id="212" Position="45.0466,134.999,0" Scale="1,1,1" Type="Normal" Name="Televac2" Color="0,0,0,0"/>
     <ObjectPoint Id="213" Position="65.0585,34.9504,0" Scale="1,1,1" Type="Normal" Name="Televac3" Color="0,0,0,0"/>

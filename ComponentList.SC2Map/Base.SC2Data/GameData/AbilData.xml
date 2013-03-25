@@ -1,105 +1,120 @@
-<?xml version="1.0" encoding="us-ascii"?>
+<?xml version="1.0"?>
 <Catalog>
     <CAbilLearn id="NanitesLearn">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <InfoArray index="Learn1" Abil="SWATNanitesstandard"/>
+        <EditorCategories value="AbilityorEffectType:Units" />
+        <InfoArray index="Learn1" Abil="SWATNanitesstandard" />
         <InfoArray index="Learn2">
-            <Cooldown Link="Abil/NovaNuclearStrike"/>
+            <Cooldown Link="Abil/NovaNuclearStrike" />
         </InfoArray>
-        <Points value="1"/>
+        <Points value="1" />
     </CAbilLearn>
     <CAbilBehavior id="SWATNanitesstandard">
-        <EditorCategories value="AbilityorEffectType:Units"/>
+        <EditorCategories value="AbilityorEffectType:Units" />
         <CmdButtonArray index="On" DefaultButtonFace="SWATNanitesstandardon">
-            <Flags index="ToSelection" value="1"/>
+            <Flags index="ToSelection" value="1" />
         </CmdButtonArray>
         <CmdButtonArray index="Off" DefaultButtonFace="SWATNanitesstandardoff">
-            <Flags index="ToSelection" value="1"/>
+            <Flags index="ToSelection" value="1" />
         </CmdButtonArray>
-        <Flags index="Toggle" value="1"/>
-        <Flags index="Transient" value="1"/>
+        <Flags index="Toggle" value="1" />
+        <Flags index="Transient" value="1" />
         <Cost>
-            <Vital index="Energy" value="1"/>
-            <Charge Link=""/>
-            <Cooldown Link=""/>
+            <Vital index="Energy" value="1" />
+            <Charge Link="" />
+            <Cooldown Link="" />
         </Cost>
         <Cost>
-            <Vital index="Energy" value="2"/>
-            <Charge Link=""/>
-            <Cooldown Link=""/>
+            <Vital index="Energy" value="2" />
+            <Charge Link="" />
+            <Cooldown Link="" />
         </Cost>
         <Cost>
-            <Vital index="Energy" value="3"/>
-            <Charge Link=""/>
-            <Cooldown Link=""/>
+            <Vital index="Energy" value="3" />
+            <Charge Link="" />
+            <Cooldown Link="" />
         </Cost>
         <Cost>
-            <Vital index="Energy" value="4"/>
-            <Charge Link=""/>
-            <Cooldown Link=""/>
+            <Vital index="Energy" value="4" />
+            <Charge Link="" />
+            <Cooldown Link="" />
         </Cost>
         <Cost>
-            <Charge Link=""/>
-            <Cooldown Link=""/>
+            <Charge Link="" />
+            <Cooldown Link="" />
         </Cost>
         <Cost>
-            <Charge Link=""/>
-            <Cooldown Link=""/>
+            <Charge Link="" />
+            <Cooldown Link="" />
         </Cost>
         <Cost>
-            <Charge Link=""/>
-            <Cooldown Link=""/>
+            <Charge Link="" />
+            <Cooldown Link="" />
         </Cost>
         <Cost>
-            <Charge Link=""/>
-            <Cooldown Link=""/>
+            <Charge Link="" />
+            <Cooldown Link="" />
         </Cost>
-        <BehaviorArray value="SWATNanites"/>
+        <BehaviorArray value="SWATNanites" />
     </CAbilBehavior>
     <CAbilEffectInstant id="SprintLight">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="SprintLight"/>
-        <Flags index="Transient" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units" />
+        <CmdButtonArray index="Execute" DefaultButtonFace="SprintLight" />
+        <Flags index="Transient" value="1" />
     </CAbilEffectInstant>
     <CAbilEffectTarget id="TorEnergyDrain">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="TorEnergyDrainPersistent"/>
-        <Flags index="NoDeceleration" value="1"/>
-        <Flags index="ReExecutable" value="1"/>
-        <Flags index="Smart" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units" />
+        <Effect index="0" value="TorEnergyDrainPersistent" />
+        <Flags index="NoDeceleration" value="1" />
+        <Flags index="ReExecutable" value="1" />
+        <Flags index="Smart" value="1" />
         <Cost>
-            <Cooldown TimeUse="2.5"/>
+            <Cooldown TimeUse="2.5" />
         </Cost>
-        <TargetFilters value="Ground,Visible;Self,Enemy,Air,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
-        <Range value="2.4"/>
-        <Marker Link="Abil/MedivacHeal"/>
-        <UseMarkerArray index="Approach" value="0"/>
-        <UseMarkerArray index="Prep" value="0"/>
-        <DefaultError value="RequiresHealTarget"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="EnergyDrain"/>
-        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
-        <Arc value="358.9892"/>
-        <ArcSlop value="358.9892"/>
-        <CancelableArray index="Channel" value="1"/>
-        <CancelableArray index="Finish" value="1"/>
-        <AINotifyEffect value="TorEnergyDrainApplyComplete"/>
+        <TargetFilters value="Ground,Visible;Self,Enemy,Air,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable" />
+        <Range value="2.4" />
+        <Marker Link="Abil/MedivacHeal" />
+        <UseMarkerArray index="Approach" value="0" />
+        <UseMarkerArray index="Prep" value="0" />
+        <DefaultError value="RequiresHealTarget" />
+        <CmdButtonArray index="Execute" DefaultButtonFace="EnergyDrain" />
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel" />
+        <Arc value="358.9892" />
+        <ArcSlop value="358.9892" />
+        <CancelableArray index="Channel" value="1" />
+        <CancelableArray index="Finish" value="1" />
+        <AINotifyEffect value="TorEnergyDrainApplyComplete" />
     </CAbilEffectTarget>
     <CAbilEffectTarget id="TyrantBlink">
-        <AbilSetId value="Blnk"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="Blink"/>
-        <Flags index="BestUnit" value="0"/>
-        <Flags index="RequireTargetVision" value="0"/>
+        <AbilSetId value="Blnk" />
+        <EditorCategories value="AbilityorEffectType:Units" />
+        <Effect index="0" value="Blink" />
+        <Flags index="BestUnit" value="0" />
+        <Flags index="RequireTargetVision" value="0" />
         <Cost>
-            <Charge Link="Abil/Blink"/>
-            <Cooldown Link="Blink" TimeUse="10"/>
+            <Charge Link="Abil/Blink" />
+            <Cooldown Link="Blink" TimeUse="10" />
         </Cost>
-        <Range value="500"/>
-        <Arc value="360"/>
-        <Marker Link="Abil/Blink"/>
-        <AINotifyEffect value="Blink"/>
+        <Range value="500" />
+        <Arc value="360" />
+        <Marker Link="Abil/Blink" />
+        <AINotifyEffect value="Blink" />
         <CmdButtonArray index="Execute" DefaultButtonFace="Blink" Requirements="UseBlink">
-            <Flags index="ToSelection" value="1"/>
+            <Flags index="ToSelection" value="1" />
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilLearn id="MarauderLearn">
+        <EditorCategories value="AbilityorEffectType:Units" />
+        <PointsPerLevel value="1" />
+    </CAbilLearn>
+    <CAbilInventory id="War3Inventory">
+        <EditorCategories value="AbilityorEffectType:Units" />
+        <TargetFilters value="Item;-" />
+        <MaxDropRange value="1" />
+        <InfoArray />
+        <InfoArray />
+        <InfoArray />
+        <InfoArray />
+        <InfoArray />
+        <InfoArray />
+    </CAbilInventory>
 </Catalog>

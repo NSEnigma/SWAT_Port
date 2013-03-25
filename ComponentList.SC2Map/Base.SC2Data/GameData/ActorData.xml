@@ -47,6 +47,71 @@
             <Image value="Assets\Textures\Wireframe-Zerg-Aberration.dds"/>
         </Wireframe>
     </CActorUnit>
+    <CActorDoodad id="PathingBlocker1x1Doodad2">
+        <EditorCategories value="DoodadType:Blocker"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker1x1Doodad"/>
+        <Model value="Invisible"/>
+        <DoodadFlags index="FootprintOnly" value="1"/>
+        <EditorModel value="PathingBlocker1x1"/>
+        <Footprint value="FootprintNoBuild1x1"/>
+        <RandomScaleRange value="1.000000,1.000000"/>
+    </CActorDoodad>
+    <CActorDoodad id="PathingBlocker1x1Doodad22">
+        <EditorCategories value="DoodadType:Blocker"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker1x1Doodad"/>
+        <Model value="Invisible"/>
+        <DoodadFlags index="FootprintOnly" value="1"/>
+        <EditorModel value="PathingBlocker1x1"/>
+        <Footprint value="FootprintDoodad11x1"/>
+        <RandomScaleRange value="1.000000,1.000000"/>
+    </CActorDoodad>
+    <CActorDoodad id="PathingBlocker2x2Doodad2">
+        <EditorCategories value="DoodadType:Blocker"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker2x2Doodad"/>
+        <Model value="Invisible"/>
+        <DoodadFlags index="FootprintOnly" value="1"/>
+        <EditorModel value="PathingBlocker2x2"/>
+        <Footprint value="Footprint3x3Creep"/>
+        <RandomScaleRange value="0.850000,0.850000"/>
+    </CActorDoodad>
+    <CActorDoodad id="PathingBlocker2x2Doodad22">
+        <EditorCategories value="DoodadType:Blocker"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker2x2Doodad"/>
+        <Model value="Invisible"/>
+        <DoodadFlags index="FootprintOnly" value="1"/>
+        <EditorModel value="PathingBlocker2x2"/>
+        <Footprint value="Footprint8x8PathingBlocker"/>
+        <RandomScaleRange value="0.850000,0.850000"/>
+    </CActorDoodad>
+    <CActorDoodad id="PathingBlocker2x2Doodad3">
+        <EditorCategories value="DoodadType:Blocker"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker2x2Doodad"/>
+        <Model value="Invisible"/>
+        <DoodadFlags index="FootprintOnly" value="1"/>
+        <EditorModel value="PathingBlocker2x2"/>
+        <Footprint value="Footprint2x2Creep"/>
+        <RandomScaleRange value="0.850000,0.850000"/>
+    </CActorDoodad>
+    <CActorDoodad id="PathingandSightBlocker3x3Doodad">
+        <EditorCategories value="DoodadType:Blocker"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingandSightBlocker2x2Doodad"/>
+        <Model value="Invisible"/>
+        <DoodadFlags index="FootprintOnly" value="1"/>
+        <EditorFlags index="NoAutoRotate" value="1"/>
+        <EditorModel value="PathingandSightBlocker2x2Doodad"/>
+        <Footprint value="FootprintDoodad3x3"/>
+        <RandomScaleRange value="0.850000,0.850000"/>
+    </CActorDoodad>
+    <CActorDoodad id="PathingandSightBlocker3x3Doodad2">
+        <EditorCategories value="DoodadType:Blocker"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingandSightBlocker2x2Doodad"/>
+        <Model value="Invisible"/>
+        <DoodadFlags index="FootprintOnly" value="1"/>
+        <EditorFlags index="NoAutoRotate" value="1"/>
+        <EditorModel value="PathingandSightBlocker2x2Doodad"/>
+        <Footprint value="FootprintDoodad6x6"/>
+        <RandomScaleRange value="0.850000,0.850000"/>
+    </CActorDoodad>
     <!--                                                                                         -->
     <!-- Infested Civilian ..................................................................... -->
     <!--                                                                                         -->
@@ -109,32 +174,6 @@
             <Image value="Assets\Textures\Wireframe-Zerg-Infestedcolonist.dds"/>
         </Wireframe>
     </CActorUnit>
-    <CActorDoodad id="SwatElectricCorner2x2" parent="MetalWallCorner">
-        <Footprint value="Footprint2x2DoodadBlockLOS"/>
-    </CActorDoodad>
-    <CActorDoodad id="SwatWallElectric2x4" parent="MetalWall">
-        <Scale value="1.000000,1.750000,1.750000"/>
-        <Facing value="90"/>
-        <Footprint value="Swat2x4"/>
-    </CActorDoodad>
-    <CActorDoodad id="SwatWallElectric2x6" parent="MetalWall">
-        <Scale value="1.500000,1.750000,1.750000"/>
-        <Facing value="90"/>
-        <Footprint value="Swat2x6"/>
-    </CActorDoodad>
-    <CActorDoodad id="SwatWallElectric2x7" parent="MetalWall">
-        <Facing value="90"/>
-        <Footprint value="Swat2x7"/>
-    </CActorDoodad>
-    <CActorDoodad id="SwatWallElectric6x2" parent="MetalWall">
-        <Footprint value="Swat6x2"/>
-    </CActorDoodad>
-    <CActorDoodad id="SwatWallElectric7x2" parent="MetalWall">
-        <Footprint value="Swat7x2"/>
-    </CActorDoodad>
-    <CActorDoodad id="SwatWallStraight3x14" parent="MetalGateStraight">
-        <Footprint value="Swat3x14"/>
-    </CActorDoodad>
     <CActorBeamSimple id="TorEnergyBeam" parent="BeamSimpleAnimationStyleOneShot">
         <Flags index="SuppressSaveLoad" value="0"/>
         <Inherits index="Visibility" value="1"/>

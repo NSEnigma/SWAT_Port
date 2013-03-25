@@ -1,18 +1,28 @@
-<?xml version="1.0" encoding="us-ascii"?>
+<?xml version="1.0"?>
 <Catalog>
     <CButton id="EnergyDrain">
-        <Icon value="Assets\Textures\btn-ability-protoss-prismaticbeam-color.dds"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-prismaticbeam-color.dds" />
     </CButton>
     <CButton id="SWATNanitesstandardoff">
-        <Icon value="Assets\Textures\ui_chatbaricons_zerg_all.dds"/>
-        <AlertIcon value="Assets\Textures\ui_chatbaricons_zerg_all.dds"/>
+        <Icon value="Assets\Textures\ui_chatbaricons_zerg_all.dds" />
+        <AlertIcon value="Assets\Textures\ui_chatbaricons_zerg_all.dds" />
     </CButton>
     <CButton id="SWATNanitesstandardon">
-        <Icon value="Assets\Textures\ui_chatbaricons_protoss_all.dds"/>
-        <AlertIcon value="Assets\Textures\ui_charbaricons_protoss_all.dds"/>
+        <Icon value="Assets\Textures\ui_chatbaricons_protoss_all.dds" />
+        <AlertIcon value="Assets\Textures\ui_charbaricons_protoss_all.dds" />
     </CButton>
     <CButton id="SprintLight">
-        <Icon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <Icon value="Assets\Textures\btn-ability-protoss-charge-color.dds" />
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-charge-color.dds" />
+    </CButton>
+    <CButton id="CancelLearning">
+        <Icon value="Assets\Textures\btn-command-cancel.dds" />
+        <AlertIcon value="Assets\Textures\btn-command-cancel.dds" />
+        <EditorCategories value="Race:Neutral" />
+        <TintRacially value="1" />
+    </CButton>
+    <CButton id="LearningTab">
+        <Icon value="Assets\Textures\btn-ability-terran-heal.dds" />
+        <TintRacially value="1" />
     </CButton>
 </Catalog>
