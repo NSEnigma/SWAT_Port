@@ -3,4 +3,12 @@
     <CItem id="10SlotBag">
         <Container value=""/>
     </CItem>
+    <CItemEffectTarget id="AntidoteItem">
+        <Effect value="Antidote"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <EffectCost>
+            <Charge CountMax="1" CountStart="1" CountUse="1"/>
+        </EffectCost>
+        <TargetFilters value="Ground,Biological;Player,Ally,Neutral,Armored,Heroic"/>
+    </CItemEffectTarget>
 </Catalog>

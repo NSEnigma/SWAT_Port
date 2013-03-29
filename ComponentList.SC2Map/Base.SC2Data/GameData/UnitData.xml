@@ -186,7 +186,7 @@
         <BehaviorArray Link="HeroVeterancy"/>
         <BehaviorArray Link="Detector12"/>
         <BehaviorArray Link="MarauderVeterancy"/>
-        <BehaviorArray Link="Strength"/>
+        <BehaviorArray Link="Vitality"/>
         <BehaviorArray Link="Agility"/>
         <BehaviorArray Link="Intelligence"/>
         <FlagArray index="Hero" value="1"/>
@@ -218,5 +218,10 @@
         <LifeMax value="1000"/>
         <LifeRegenRate value="0"/>
         <Sight value="0"/>
+    </CUnit>
+    <CUnit id="AntidoteItem">
+        <FlagArray index="Pawnable" value="1"/>
+        <EditorCategories value="ObjectType:Item"/>
+        <Item value="AntidoteItem"/>
     </CUnit>
 </Catalog>

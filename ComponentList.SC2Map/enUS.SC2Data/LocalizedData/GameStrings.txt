@@ -1,3 +1,6 @@
+Behavior/Name/Agility=Agility
+Behavior/Name/Intelligence=Intelligence
+Behavior/Name/Vitality=Vitality
 Param/Expression/0CD78A66=Civilians rescued: <c val="FF8000">~A~</c>
 Param/Expression/4EA30D60=Restore Reactors: ~A~/~B~
 Param/Expression/6087D8D8=-~A~
@@ -13,4 +16,29 @@ Param/Expression/CD526B1D=A.P.C. destroyed! Civilian casualties: ~A~
 Param/Expression/D5E5A51B=~A~<n/>
 Param/Expression/E3C848A7=Reduce Radiation: ~A~/~B~
 Param/Expression/F3A4D71C=-~A~
+Param/Value/07697ECD=
+Param/Value/0AB1B103=Average Guy (hard)
+Param/Value/171796BB=28 Days Later... (survival)
+Param/Value/198C0747=Afraid of Kittens (normal)
+Param/Value/206963BE=Pain-Bringer (insane)
+Param/Value/299EFECB=Army of Darkness (survival)
+Param/Value/2B9C3C91=Hardcore (insane)
+Param/Value/2DC77E09=Fairly Normal (hard)
+Param/Value/2E4CF213=Weak by Choice (normal)
+Param/Value/45378146=Zombie Slayer (insane)
+Param/Value/4819CA1C=Dawn of the Dead (survival)
 Param/Value/5C2E3765=<c val="00FF00">HINT</c><c val="FFCC00">Rescued civs increase your hazard pay and recognition</c>.
+Param/Value/5FAFA136=
+Param/Value/8194E7B5=Joe Schmoe (hard)
+Param/Value/9EB66AFB=Resident Evil (survival)
+Param/Value/A0D5B92D=Scared of the Dark (normal)
+Param/Value/A205CD2A=BikeHelmet Clone (insane)
+Param/Value/A29D7473=Carnage Incarnate (insane)
+Param/Value/B3AA02AF=Little Girl (normal)
+Param/Value/B980CFD6=Fairy Princess (normal)
+Param/Value/BB17006E=Night of Living Dead (survival)
+Param/Value/D05CC414=Tough Kid (hard)
+Param/Value/D0AB1EAA=Land of the Dead (survival)
+Param/Value/F689BBC3=Bane of the Wicked (insane)
+Param/Value/F97E6433=Hopeless Noob (normal)
+Param/Value/FD528790=Burly Man (hard)

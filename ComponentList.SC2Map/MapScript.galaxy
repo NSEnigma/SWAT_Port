@@ -2823,7 +2823,22 @@ text gf_DifficultyHard (int lp_iRand) {
 
     // Implementation
     auto41FAECF9_val = lp_iRand;
-    {
+    if (auto41FAECF9_val == 0) {
+        return StringExternal("Param/Value/2B9C3C91");
+    }
+    else if (auto41FAECF9_val == 1) {
+        return StringExternal("Param/Value/45378146");
+    }
+    else if (auto41FAECF9_val == 2) {
+        return StringExternal("Param/Value/F689BBC3");
+    }
+    else if (auto41FAECF9_val == 3) {
+        return StringExternal("Param/Value/206963BE");
+    }
+    else if (auto41FAECF9_val == 4) {
+        return StringExternal("Param/Value/A29D7473");
+    }
+    else {
         return StringExternal("Param/Value/A205CD2A");
     }
 }
@@ -2833,7 +2848,22 @@ text gf_DifficultySurvival (int lp_iRand) {
 
     // Implementation
     auto1BC4369A_val = lp_iRand;
-    {
+    if (auto1BC4369A_val == 0) {
+        return StringExternal("Param/Value/4819CA1C");
+    }
+    else if (auto1BC4369A_val == 1) {
+        return StringExternal("Param/Value/171796BB");
+    }
+    else if (auto1BC4369A_val == 2) {
+        return StringExternal("Param/Value/9EB66AFB");
+    }
+    else if (auto1BC4369A_val == 3) {
+        return StringExternal("Param/Value/299EFECB");
+    }
+    else if (auto1BC4369A_val == 4) {
+        return StringExternal("Param/Value/D0AB1EAA");
+    }
+    else {
         return StringExternal("Param/Value/BB17006E");
     }
 }
@@ -5664,17 +5694,16 @@ bool gt_DifficultyPrompt_Func (bool testConds, bool runActions) {
     }
 
     gf_RedSpawnRadFragBase();
-    TriggerDebugOutput(1, StringExternal("Param/Value/336818AD"), true);
     DialogCreate(600, 470, c_anchorCenter, 0, -100, true);
     gv_dlgDifficulty = DialogLastCreated();
     DialogSetTitle(DialogLastCreated(), StringExternal("Param/Value/B6A2C9BA"));
-    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, 90, StringExternal("Param/Value/39524C1E"), gf_DifficultyEasy(RandomInt(0, 5)), "");
-    gv_dlgBtnEasy = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/D30C9B2B"), gf_DifficultyNormal(RandomInt(0, 5)), "");
-    gv_dlgBtnNormal = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/258B95AB"), gf_DifficultyHard(RandomInt(0, 5)), "");
+    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, 90, StringExternal("Param/Value/39524C1E"), TextWithColor(gf_DifficultyHard(RandomInt(0, 5)), Color(100.00, 50.20, 0.00)), "");
     gv_dlgBtnHard = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/7847716E"), gf_DifficultySurvival(RandomInt(0, 5)), "");
+    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/D30C9B2B"), TextWithColor(gf_DifficultyNormal(RandomInt(0, 4)), Color(100.00, 100.00, 100.00)), "");
+    gv_dlgBtnNormal = DialogControlLastCreated();
+    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/07697ECD"), TextWithColor(gf_DifficultyNormal(RandomInt(0, 5)), Color(0.00, 100.00, 0.00)), "");
+    gv_dlgBtnEasy = DialogControlLastCreated();
+    libNtve_gf_CreateDialogItemButton(gv_dlgDifficulty, 400, 70, c_anchorTop, 0, (DialogControlGetOffsetY(DialogControlLastCreated(), 0)+90), StringExternal("Param/Value/5FAFA136"), TextWithColor(gf_DifficultySurvival(RandomInt(0, 5)), Color(100.00, 100.00, 0.00)), "");
     DialogSetVisible(DialogLastCreated(), PlayerGroupAll(), true);
     gf_TriggerDestroyCurrent();
     return true;

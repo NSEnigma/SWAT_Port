@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+    <CEffectLaunchMissile id="Antidote">
+        <EditorCategories value=""/>
+        <AmmoUnit value="NeedleSpinesWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectDamage id="DummyDamageEffect">
         <EditorCategories value=""/>
         <KindSplash value="Melee"/>

@@ -5,7 +5,6 @@
 <Actor id="PathingandSightBlocker3x3Doodad2"/>
 <Actor id="PathingBlocker1x1Doodad"/>
 <Actor id="SYSTEM_ActorConfig"/>
-<Actor id="PathingBlocker2x2Doodad3"/>
 <Actor id="PathingandSightBlocker3x3Doodad"/>
 <Actor id="PathingandSightBlocker2x2Doodad"/>
 <Actor id="PathingBlocker2x2Doodad"/>
@@ -17,12 +16,12 @@
 <Behavior id="MinibossArmor"/>
 <Behavior id="Invisibility"/>
 <Behavior id="STNTRegen"/>
-<Behavior id="Radlet"/>
 <Behavior id="ZombieBlueDegenAura"/>
+<Behavior id="Radlet"/>
 <Behavior id="TNTApplyDamage"/>
 <Behavior id="RadiationEffects"/>
-<Behavior id="ZombieFlaming"/>
 <Behavior id="STNTCollisionLoss"/>
+<Behavior id="ZombieFlaming"/>
 <Behavior id="ZombieToxinsAura"/>
 <Behavior id="TNTApplyDamage2"/>
 <Behavior id="TorFeedbackSleep"/>
@@ -43,6 +42,7 @@
 <Unit id="Carrier"/>
 <Unit id="InfestedCocoon"/>
 <Unit id="Vulture"/>
+<Unit id="AntidoteItem"/>
 <Unit id="SwatGraveyardDoor"/>
 <Unit id="InfestedAbomination"/>
 <Unit id="Marauder"/>

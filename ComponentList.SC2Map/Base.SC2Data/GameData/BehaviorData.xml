@@ -1,605 +1,605 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
     <CBehaviorAttribute id="Agility">
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorAttribute>
     <CBehaviorBuff id="EnergySurge">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <Duration value="60" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="60"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Energy" value="25" />
+            <VitalRegenArray index="Energy" value="25"/>
             <DeathResponse>
                 <Cost>
-                    <Charge Link="Behavior/EnergySurge4" />
-                    <Cooldown Link="Behavior/EnergySurge4" />
+                    <Charge Link="Behavior/EnergySurge4"/>
+                    <Cooldown Link="Behavior/EnergySurge4"/>
                 </Cost>
             </DeathResponse>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="EnergySurgeExtinction">
         <Cost>
-            <Charge Link="Behavior/EnergySurge" />
-            <Cooldown Link="Behavior/EnergySurge" />
+            <Charge Link="Behavior/EnergySurge"/>
+            <Cooldown Link="Behavior/EnergySurge"/>
         </Cost>
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <Duration value="40" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="40"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Energy" value="25" />
+            <VitalRegenArray index="Energy" value="25"/>
             <DeathResponse>
                 <Cost>
-                    <Charge Link="Behavior/EnergySurge" />
-                    <Cooldown Link="Behavior/EnergySurge" />
+                    <Charge Link="Behavior/EnergySurge"/>
+                    <Cooldown Link="Behavior/EnergySurge"/>
                 </Cost>
             </DeathResponse>
         </Modification>
         <DamageResponse>
             <Cost>
-                <Charge Link="Behavior/EnergySurge" />
-                <Cooldown Link="Behavior/EnergySurge" />
+                <Charge Link="Behavior/EnergySurge"/>
+                <Cooldown Link="Behavior/EnergySurge"/>
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="EnergySurgeNightmare">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <Duration value="50" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="50"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Energy" value="25" />
+            <VitalRegenArray index="Energy" value="25"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="HeavyOrdnancePowerGrid">
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
     <CBehaviorVeterancy id="HeroVeterancy">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <VeterancyLevelArray />
-        <VeterancyLevelArray MinVeterancyXP="1000" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <VeterancyLevelArray/>
+        <VeterancyLevelArray MinVeterancyXP="1000"/>
         <VeterancyLevelArray MinVeterancyXP="2000">
             <Modification>
-                <AttributeChangeArray Attribute="Agility" />
+                <AttributeChangeArray Attribute="Agility"/>
             </Modification>
         </VeterancyLevelArray>
-        <VeterancyLevelArray MinVeterancyXP="3000" />
-        <VeterancyLevelArray MinVeterancyXP="4000" />
-        <VeterancyLevelArray MinVeterancyXP="5000" />
-        <VeterancyLevelArray MinVeterancyXP="6200" />
-        <VeterancyLevelArray MinVeterancyXP="8600" />
-        <VeterancyLevelArray MinVeterancyXP="12200" />
-        <VeterancyLevelArray MinVeterancyXP="17000" />
-        <VeterancyLevelArray MinVeterancyXP="23000" />
-        <VeterancyLevelArray MinVeterancyXP="30200" />
-        <VeterancyLevelArray MinVeterancyXP="38600" />
-        <VeterancyLevelArray MinVeterancyXP="48200" />
-        <VeterancyLevelArray MinVeterancyXP="59000" />
-        <VeterancyLevelArray MinVeterancyXP="71000" />
-        <VeterancyLevelArray MinVeterancyXP="84200" />
-        <VeterancyLevelArray MinVeterancyXP="98600" />
-        <VeterancyLevelArray MinVeterancyXP="114200" />
-        <VeterancyLevelArray MinVeterancyXP="131000" />
-        <VeterancyLevelArray MinVeterancyXP="149000" />
-        <VeterancyLevelArray MinVeterancyXP="168200" />
-        <VeterancyLevelArray MinVeterancyXP="188600" />
-        <VeterancyLevelArray MinVeterancyXP="210200" />
-        <VeterancyLevelArray MinVeterancyXP="233000" />
-        <VeterancyLevelArray MinVeterancyXP="257000" />
-        <VeterancyLevelArray MinVeterancyXP="282200" />
-        <VeterancyLevelArray MinVeterancyXP="308600" />
-        <VeterancyLevelArray MinVeterancyXP="336200" />
-        <VeterancyLevelArray MinVeterancyXP="365000" />
-        <VeterancyLevelArray MinVeterancyXP="395000" />
-        <VeterancyLevelArray MinVeterancyXP="426200" />
-        <VeterancyLevelArray MinVeterancyXP="458600" />
-        <VeterancyLevelArray MinVeterancyXP="492200" />
-        <VeterancyLevelArray MinVeterancyXP="527000" />
-        <VeterancyLevelArray MinVeterancyXP="563000" />
-        <VeterancyLevelArray MinVeterancyXP="600200" />
-        <VeterancyLevelArray MinVeterancyXP="638600" />
-        <VeterancyLevelArray MinVeterancyXP="678200" />
-        <VeterancyLevelArray MinVeterancyXP="719000" />
-        <VeterancyLevelArray MinVeterancyXP="761000" />
-        <VeterancyLevelArray MinVeterancyXP="804200" />
-        <VeterancyLevelArray MinVeterancyXP="848600" />
-        <VeterancyLevelArray MinVeterancyXP="894200" />
-        <VeterancyLevelArray MinVeterancyXP="941000" />
-        <VeterancyLevelArray MinVeterancyXP="989000" />
-        <VeterancyLevelArray MinVeterancyXP="1038200" />
-        <VeterancyLevelArray MinVeterancyXP="1088600" />
-        <VeterancyLevelArray MinVeterancyXP="1140200" />
-        <VeterancyLevelArray MinVeterancyXP="1193000" />
-        <VeterancyLevelArray MinVeterancyXP="1247000" />
-        <VeterancyLevelArray MinVeterancyXP="1302200" />
-        <VeterancyLevelArray MinVeterancyXP="1358600" />
-        <VeterancyLevelArray MinVeterancyXP="1416200" />
-        <VeterancyLevelArray MinVeterancyXP="1475000" />
-        <VeterancyLevelArray MinVeterancyXP="1535000" />
+        <VeterancyLevelArray MinVeterancyXP="3000"/>
+        <VeterancyLevelArray MinVeterancyXP="4000"/>
+        <VeterancyLevelArray MinVeterancyXP="5000"/>
+        <VeterancyLevelArray MinVeterancyXP="6200"/>
+        <VeterancyLevelArray MinVeterancyXP="8600"/>
+        <VeterancyLevelArray MinVeterancyXP="12200"/>
+        <VeterancyLevelArray MinVeterancyXP="17000"/>
+        <VeterancyLevelArray MinVeterancyXP="23000"/>
+        <VeterancyLevelArray MinVeterancyXP="30200"/>
+        <VeterancyLevelArray MinVeterancyXP="38600"/>
+        <VeterancyLevelArray MinVeterancyXP="48200"/>
+        <VeterancyLevelArray MinVeterancyXP="59000"/>
+        <VeterancyLevelArray MinVeterancyXP="71000"/>
+        <VeterancyLevelArray MinVeterancyXP="84200"/>
+        <VeterancyLevelArray MinVeterancyXP="98600"/>
+        <VeterancyLevelArray MinVeterancyXP="114200"/>
+        <VeterancyLevelArray MinVeterancyXP="131000"/>
+        <VeterancyLevelArray MinVeterancyXP="149000"/>
+        <VeterancyLevelArray MinVeterancyXP="168200"/>
+        <VeterancyLevelArray MinVeterancyXP="188600"/>
+        <VeterancyLevelArray MinVeterancyXP="210200"/>
+        <VeterancyLevelArray MinVeterancyXP="233000"/>
+        <VeterancyLevelArray MinVeterancyXP="257000"/>
+        <VeterancyLevelArray MinVeterancyXP="282200"/>
+        <VeterancyLevelArray MinVeterancyXP="308600"/>
+        <VeterancyLevelArray MinVeterancyXP="336200"/>
+        <VeterancyLevelArray MinVeterancyXP="365000"/>
+        <VeterancyLevelArray MinVeterancyXP="395000"/>
+        <VeterancyLevelArray MinVeterancyXP="426200"/>
+        <VeterancyLevelArray MinVeterancyXP="458600"/>
+        <VeterancyLevelArray MinVeterancyXP="492200"/>
+        <VeterancyLevelArray MinVeterancyXP="527000"/>
+        <VeterancyLevelArray MinVeterancyXP="563000"/>
+        <VeterancyLevelArray MinVeterancyXP="600200"/>
+        <VeterancyLevelArray MinVeterancyXP="638600"/>
+        <VeterancyLevelArray MinVeterancyXP="678200"/>
+        <VeterancyLevelArray MinVeterancyXP="719000"/>
+        <VeterancyLevelArray MinVeterancyXP="761000"/>
+        <VeterancyLevelArray MinVeterancyXP="804200"/>
+        <VeterancyLevelArray MinVeterancyXP="848600"/>
+        <VeterancyLevelArray MinVeterancyXP="894200"/>
+        <VeterancyLevelArray MinVeterancyXP="941000"/>
+        <VeterancyLevelArray MinVeterancyXP="989000"/>
+        <VeterancyLevelArray MinVeterancyXP="1038200"/>
+        <VeterancyLevelArray MinVeterancyXP="1088600"/>
+        <VeterancyLevelArray MinVeterancyXP="1140200"/>
+        <VeterancyLevelArray MinVeterancyXP="1193000"/>
+        <VeterancyLevelArray MinVeterancyXP="1247000"/>
+        <VeterancyLevelArray MinVeterancyXP="1302200"/>
+        <VeterancyLevelArray MinVeterancyXP="1358600"/>
+        <VeterancyLevelArray MinVeterancyXP="1416200"/>
+        <VeterancyLevelArray MinVeterancyXP="1475000"/>
+        <VeterancyLevelArray MinVeterancyXP="1535000"/>
     </CBehaviorVeterancy>
     <CBehaviorBuff id="Invisibility">
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Lightenating">
-        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units" />
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="MinibossArmor">
-        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units" />
-        <Modification LifeArmorBonus="50" DetectArc="0" RadarArc="0" />
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Modification LifeArmorBonus="50" DetectArc="0" RadarArc="0"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PowerArmorAdvanced">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <DamageResponse ModifyAmount="-2.8" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse ModifyAmount="-2.8"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PowerArmorHeavy">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <DamageResponse ModifyAmount="-2.8" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse ModifyAmount="-2.8"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PowerArmorLight">
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
         <DamageResponse Chance="1" ModifyAmount="-1.4">
-            <Kind index="Spell" value="0" />
+            <Kind index="Spell" value="0"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="PowerArmorMedium">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <DamageResponse ModifyAmount="-2.1" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse ModifyAmount="-2.1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ProwlerAgility">
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification DetectArc="0" RadarArc="0">
-            <AttributeChangeArray Attribute="Agility" Points="32" />
+            <AttributeChangeArray Attribute="Agility" Points="32"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="Radiation">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <MaxStackCount value="5" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="RadiationEffects">
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
-        <Period value="1" />
-        <PeriodicEffect value="RadiationEffectsSearchSet" />
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <Period value="1"/>
+        <PeriodicEffect value="RadiationEffectsSearchSet"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="RadiationEffectsSWATBuffIcon">
-        <InfoIcon value="Assets\Textures\btn-techupgrade-terran-singularityanchor.dds" />
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
-        <Duration value="2" />
+        <InfoIcon value="Assets\Textures\btn-techupgrade-terran-singularityanchor.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <Duration value="2"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="RadiationEffectsUndeadBuffIcon">
-        <InfoIcon value="Assets\Textures\btn-techupgrade-terran-singularityanchor.dds" />
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
-        <Duration value="2" />
+        <InfoIcon value="Assets\Textures\btn-techupgrade-terran-singularityanchor.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <Duration value="2"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="RadiationEffectsUndeadRegenLv1">
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
-        <Duration value="2.5" />
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <Duration value="2.5"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Life" value="1" />
+            <VitalRegenArray index="Life" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="RadiationEffectsUndeadRegenLv12">
         <Cost>
-            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
         </Cost>
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
-        <Duration value="2.5" />
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <Duration value="2.5"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Life" value="2" />
+            <VitalRegenArray index="Life" value="2"/>
             <DeathResponse>
                 <Cost>
-                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
                 </Cost>
             </DeathResponse>
         </Modification>
         <DamageResponse>
             <Cost>
-                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="RadiationEffectsUndeadRegenLv13">
         <Cost>
-            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
         </Cost>
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
-        <Duration value="2.5" />
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <Duration value="2.5"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Life" value="3" />
+            <VitalRegenArray index="Life" value="3"/>
             <DeathResponse>
                 <Cost>
-                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
                 </Cost>
             </DeathResponse>
         </Modification>
         <DamageResponse>
             <Cost>
-                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="RadiationEffectsUndeadRegenLv14">
         <Cost>
-            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
         </Cost>
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
-        <Duration value="2.5" />
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <Duration value="2.5"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Life" value="4" />
+            <VitalRegenArray index="Life" value="4"/>
             <DeathResponse>
                 <Cost>
-                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
                 </Cost>
             </DeathResponse>
         </Modification>
         <DamageResponse>
             <Cost>
-                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="RadiationEffectsUndeadRegenLv15">
         <Cost>
-            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+            <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+            <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
         </Cost>
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
-        <Duration value="2.5" />
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <Duration value="2.5"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Life" value="5" />
+            <VitalRegenArray index="Life" value="5"/>
             <DeathResponse>
                 <Cost>
-                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+                    <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                    <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
                 </Cost>
             </DeathResponse>
         </Modification>
         <DamageResponse>
             <Cost>
-                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1" />
-                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1" />
+                <Charge Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
+                <Cooldown Link="Behavior/RadiationEffectsUndeadRegenLv1"/>
             </Cost>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="Radlet">
-        <InfoFlags index="Hidden" value="1" />
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification DetectArc="0" RadarArc="0">
-            <StateFlags index="SuppressCollision" value="1" />
-            <StateFlags index="Unselectable" value="1" />
-            <StateFlags index="Untargetable" value="1" />
-            <VitalRegenArray index="Life" value="-1" />
+            <StateFlags index="SuppressCollision" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+            <VitalRegenArray index="Life" value="-1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="STNTCollisionLoss">
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
         <Modification>
-            <StateFlags index="SuppressCollision" value="1" />
+            <StateFlags index="SuppressCollision" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="STNTRegen">
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Life" value="10" />
+            <VitalRegenArray index="Life" value="10"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SWATNanites">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <RemoveValidatorArray value="CasterHasEnergyAndNotDead" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterHasEnergyAndNotDead"/>
         <DamageResponse Chance="1" ModifyFraction="0.5">
-            <ExcludeEffectArray value="ZombieTNTDamageEffect" />
+            <ExcludeEffectArray value="ZombieTNTDamageEffect"/>
         </DamageResponse>
         <Modification>
             <VitalDamageGainArray index="Energy">
-                <KindArray index="Spell" value="-0.5" />
-                <KindArray index="Melee" value="-0.5" />
-                <KindArray index="Ranged" value="-0.5" />
-                <KindArray index="Splash" value="-0.5" />
+                <KindArray index="Spell" value="-0.5"/>
+                <KindArray index="Melee" value="-0.5"/>
+                <KindArray index="Ranged" value="-0.5"/>
+                <KindArray index="Splash" value="-0.5"/>
             </VitalDamageGainArray>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SprintHeavy">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <Duration value="6" />
-        <Modification MoveSpeedMultiplier="1.8" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="6"/>
+        <Modification MoveSpeedMultiplier="1.8"/>
         <DamageResponse ModifyFraction="0">
-            <Kind index="Splash" value="0" />
+            <Kind index="Splash" value="0"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="SprintLight">
-        <InfoIcon value="Assets\Textures\btn-ability-protoss-charge-color.dds" />
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <Duration value="6" />
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="6"/>
         <Modification MoveSpeedMultiplier="1.5">
-            <StateFlags index="SuppressCollision" value="1" />
+            <StateFlags index="SuppressCollision" value="1"/>
         </Modification>
         <DamageResponse ModifyFraction="0">
-            <Kind index="Splash" value="0" />
+            <Kind index="Splash" value="0"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="SprintMedium">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <Duration value="6" />
-        <Modification MoveSpeedMultiplier="1.6" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="6"/>
+        <Modification MoveSpeedMultiplier="1.6"/>
         <DamageResponse ModifyFraction="0">
-            <Kind index="Splash" value="0" />
+            <Kind index="Splash" value="0"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="TNTApplyDamage">
-        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units" />
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Modification>
-            <DeathResponse Chance="1" Effect="ZombieTNTDamageEffect" />
+            <DeathResponse Chance="1" Effect="ZombieTNTDamageEffect"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="TNTApplyDamage2">
-        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units" />
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Modification>
-            <DeathResponse Chance="1" Effect="ZombieTNTDamageEffect" />
+            <DeathResponse Chance="1" Effect="ZombieTNTDamageEffect"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="TelevacEnergyDrain">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <RemoveValidatorArray value="HasNoEnergy" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="HasNoEnergy"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Energy" value="-1" />
+            <VitalRegenArray index="Energy" value="-1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="TorDamageDrainBadly">
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Energy" value="-40" />
+            <VitalRegenArray index="Energy" value="-40"/>
         </Modification>
-        <RemoveValidatorArray value="TorEnergyLT3000" />
+        <RemoveValidatorArray value="TorEnergyLT3000"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TorDamageDrainNormal">
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Energy" value="-13" />
+            <VitalRegenArray index="Energy" value="-13"/>
         </Modification>
-        <RemoveValidatorArray value="TorEnergyLT3000" />
+        <RemoveValidatorArray value="TorEnergyLT3000"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TorDamageDrainSevere">
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification DetectArc="0" RadarArc="0">
-            <VitalRegenArray index="Energy" value="-60" />
+            <VitalRegenArray index="Energy" value="-60"/>
         </Modification>
-        <RemoveValidatorArray value="TorEnergyLT3000" />
+        <RemoveValidatorArray value="TorEnergyLT3000"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TorFeedbackSleep">
-        <Alignment value="Negative" />
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <Duration value="60" />
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="60"/>
         <Modification DetectArc="0" RadarArc="0">
-            <StateFlags index="Stun" value="1" />
+            <StateFlags index="Stun" value="1"/>
         </Modification>
         <DamageResponse Chance="1" Handled="TorFeedbackRemoveSleep">
-            <Ignore index="Life" value="10" />
-            <ExcludeEffectArray value="RadiationEffectsSWATHeroDamage2" />
-            <ExcludeEffectArray value="RadiationEffectsSWATHeroDamage3" />
-            <ExcludeEffectArray value="RadiationEffectsSWATHeroDamage4" />
-            <ExcludeEffectArray value="RadiationEffectsSWATHeroDamage5" />
+            <Ignore index="Life" value="10"/>
+            <ExcludeEffectArray value="RadiationEffectsSWATHeroDamage2"/>
+            <ExcludeEffectArray value="RadiationEffectsSWATHeroDamage3"/>
+            <ExcludeEffectArray value="RadiationEffectsSWATHeroDamage4"/>
+            <ExcludeEffectArray value="RadiationEffectsSWATHeroDamage5"/>
         </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="TorFeedbackStun">
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
-            <ModifyFlags index="DisableAbils" value="1" />
-            <ModifyFlags index="SuppressMoving" value="1" />
-            <ModifyFlags index="SuppressTurning" value="1" />
-            <StateFlags index="Stun" value="1" />
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="Stun" value="1"/>
         </Modification>
-        <Duration value="5" />
-        <Alignment value="Negative" />
+        <Duration value="5"/>
+        <Alignment value="Negative"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZombieBlueDegenAura">
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
         <Modification>
-            <StateFlags index="Cloak" value="1" />
-            <DamageDealtFraction index="Spell" value="1" />
-            <DamageDealtFraction index="Melee" value="0.01" />
-            <DamageDealtFraction index="Ranged" value="1" />
-            <DamageDealtFraction index="Splash" value="1" />
+            <StateFlags index="Cloak" value="1"/>
+            <DamageDealtFraction index="Spell" value="1"/>
+            <DamageDealtFraction index="Melee" value="0.01"/>
+            <DamageDealtFraction index="Ranged" value="1"/>
+            <DamageDealtFraction index="Splash" value="1"/>
         </Modification>
-        <Period value="0.2" />
-        <PeriodicEffect value="ZombieBlueSearchArea" />
+        <Period value="0.2"/>
+        <PeriodicEffect value="ZombieBlueSearchArea"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZombieFlaming">
-        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units" />
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Modification>
-            <DamageDealtUnscaled index="Melee" value="150" />
+            <DamageDealtUnscaled index="Melee" value="150"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZombieFlaming2">
-        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units" />
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <Modification>
-            <DamageDealtUnscaled index="Melee" value="250" />
+            <DamageDealtUnscaled index="Melee" value="250"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZombieToxins">
-        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units" />
-        <Duration value="3" />
-        <DurationRandomMin value="1" />
-        <DurationRandomMax value="-1" />
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <DurationRandomMin value="1"/>
+        <DurationRandomMax value="-1"/>
         <Modification MoveSpeedMultiplier="0.75">
-            <VitalRegenArray index="Life" value="-3.25" />
+            <VitalRegenArray index="Life" value="-3.25"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZombieBlue">
-        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units" />
-        <Duration value="3" />
-        <DurationRandomMin value="1" />
-        <DurationRandomMax value="-1" />
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <DurationRandomMin value="1"/>
+        <DurationRandomMax value="-1"/>
         <Modification>
-            <VitalRegenArray index="Energy" value="-12" />
-            <DeathResponse Chance="1" Effect="ZombieBlueDamageEffect" />
+            <VitalRegenArray index="Energy" value="-12"/>
+            <DeathResponse Chance="1" Effect="ZombieBlueDamageEffect"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ZombieToxinsAura">
-        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg" />
-        <Period value="0.2" />
-        <PeriodicEffect value="ZombieToxinsSearchArea" />
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="ZombieToxinsSearchArea"/>
     </CBehaviorBuff>
-    <CBehaviorAttribute id="Strength">
-        <EditorCategories value="AbilityorEffectType:Units" />
+    <CBehaviorAttribute id="Vitality">
+        <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
-            <DamageDealtUnscaled index="Melee" value="1" />
-            <VitalMaxArray index="Life" value="5" />
+            <DamageDealtUnscaled index="Melee" value="1"/>
+            <VitalMaxArray index="Life" value="5"/>
         </Modification>
     </CBehaviorAttribute>
     <CBehaviorAttribute id="Intelligence">
-        <EditorCategories value="AbilityorEffectType:Units" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
-            <DamageDealtUnscaled index="Spell" value="1" />
-            <VitalMaxArray index="Energy" value="5" />
+            <DamageDealtUnscaled index="Spell" value="1"/>
+            <VitalMaxArray index="Energy" value="5"/>
         </Modification>
     </CBehaviorAttribute>
     <CBehaviorVeterancy id="MarauderVeterancy">
-        <EditorCategories value="AbilityorEffectType:Units" />
-        <SharedXPRadius index="Kills" value="7.5" />
-        <SharedXPFraction index="Kills" value="0.5" />
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <SharedXPRadius index="Kills" value="7.5"/>
+        <SharedXPFraction index="Kills" value="0.5"/>
         <VeterancyLevelArray>
             <Modification>
-                <AttributeChangeArray />
-                <AttributeChangeArray Attribute="Strength" Points="1" />
-                <AttributeChangeArray Attribute="Agility" Points="1" />
-                <AttributeChangeArray Attribute="Intelligence" Points="1" />
+                <AttributeChangeArray/>
+                <AttributeChangeArray Attribute="Vitality" Points="1"/>
+                <AttributeChangeArray Attribute="Agility" Points="1"/>
+                <AttributeChangeArray Attribute="Intelligence" Points="1"/>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="10">
             <Modification>
-                <AttributeChangeArray />
-                <AttributeChangeArray Attribute="Strength" Points="1" />
-                <AttributeChangeArray Attribute="Agility" Points="1" />
-                <AttributeChangeArray Attribute="Intelligence" Points="1" />
+                <AttributeChangeArray/>
+                <AttributeChangeArray Attribute="Vitality" Points="1"/>
+                <AttributeChangeArray Attribute="Agility" Points="1"/>
+                <AttributeChangeArray Attribute="Intelligence" Points="1"/>
                 <DeathResponse>
                     <Cost>
-                        <Charge Link="" Location="Abil" />
-                        <Cooldown Link="" Location="Abil" />
+                        <Charge Link="" Location="Abil"/>
+                        <Cooldown Link="" Location="Abil"/>
                     </Cost>
-                    <Type index="Remove" value="1" />
+                    <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="20">
             <Modification>
-                <AttributeChangeArray />
-                <AttributeChangeArray Attribute="Strength" Points="1" />
-                <AttributeChangeArray Attribute="Agility" Points="1" />
-                <AttributeChangeArray Attribute="Intelligence" Points="1" />
+                <AttributeChangeArray/>
+                <AttributeChangeArray Attribute="Vitality" Points="1"/>
+                <AttributeChangeArray Attribute="Agility" Points="1"/>
+                <AttributeChangeArray Attribute="Intelligence" Points="1"/>
                 <DeathResponse>
                     <Cost>
-                        <Charge Link="" Location="Abil" />
-                        <Cooldown Link="" Location="Abil" />
+                        <Charge Link="" Location="Abil"/>
+                        <Cooldown Link="" Location="Abil"/>
                     </Cost>
-                    <Type index="Remove" value="1" />
+                    <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="30">
             <Modification>
-                <AttributeChangeArray />
-                <AttributeChangeArray Attribute="Strength" Points="1" />
-                <AttributeChangeArray Attribute="Agility" Points="1" />
-                <AttributeChangeArray Attribute="Intelligence" Points="1" />
+                <AttributeChangeArray/>
+                <AttributeChangeArray Attribute="Vitality" Points="1"/>
+                <AttributeChangeArray Attribute="Agility" Points="1"/>
+                <AttributeChangeArray Attribute="Intelligence" Points="1"/>
                 <DeathResponse>
                     <Cost>
-                        <Charge Link="" Location="Abil" />
-                        <Cooldown Link="" Location="Abil" />
+                        <Charge Link="" Location="Abil"/>
+                        <Cooldown Link="" Location="Abil"/>
                     </Cost>
-                    <Type index="Remove" value="1" />
+                    <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="40">
             <Modification>
-                <AttributeChangeArray />
-                <AttributeChangeArray Attribute="Strength" Points="1" />
-                <AttributeChangeArray Attribute="Agility" Points="1" />
-                <AttributeChangeArray Attribute="Intelligence" Points="1" />
+                <AttributeChangeArray/>
+                <AttributeChangeArray Attribute="Vitality" Points="1"/>
+                <AttributeChangeArray Attribute="Agility" Points="1"/>
+                <AttributeChangeArray Attribute="Intelligence" Points="1"/>
                 <DeathResponse>
                     <Cost>
-                        <Charge Link="" Location="Abil" />
-                        <Cooldown Link="" Location="Abil" />
+                        <Charge Link="" Location="Abil"/>
+                        <Cooldown Link="" Location="Abil"/>
                     </Cost>
-                    <Type index="Remove" value="1" />
+                    <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="50">
             <Modification>
-                <AttributeChangeArray />
-                <AttributeChangeArray Attribute="Strength" Points="1" />
-                <AttributeChangeArray Attribute="Agility" Points="1" />
-                <AttributeChangeArray Attribute="Intelligence" Points="1" />
+                <AttributeChangeArray/>
+                <AttributeChangeArray Attribute="Vitality" Points="1"/>
+                <AttributeChangeArray Attribute="Agility" Points="1"/>
+                <AttributeChangeArray Attribute="Intelligence" Points="1"/>
                 <DeathResponse>
                     <Cost>
-                        <Charge Link="" Location="Abil" />
-                        <Cooldown Link="" Location="Abil" />
+                        <Charge Link="" Location="Abil"/>
+                        <Cooldown Link="" Location="Abil"/>
                     </Cost>
-                    <Type index="Remove" value="1" />
+                    <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="60">
             <Modification>
-                <AttributeChangeArray />
-                <AttributeChangeArray Attribute="Strength" Points="1" />
-                <AttributeChangeArray Attribute="Agility" Points="1" />
-                <AttributeChangeArray Attribute="Intelligence" Points="1" />
+                <AttributeChangeArray/>
+                <AttributeChangeArray Attribute="Vitality" Points="1"/>
+                <AttributeChangeArray Attribute="Agility" Points="1"/>
+                <AttributeChangeArray Attribute="Intelligence" Points="1"/>
                 <DeathResponse>
                     <Cost>
-                        <Charge Link="" Location="Abil" />
-                        <Cooldown Link="" Location="Abil" />
+                        <Charge Link="" Location="Abil"/>
+                        <Cooldown Link="" Location="Abil"/>
                     </Cost>
-                    <Type index="Remove" value="1" />
+                    <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="70">
             <Modification>
-                <AttributeChangeArray />
-                <AttributeChangeArray Attribute="Strength" Points="1" />
-                <AttributeChangeArray Attribute="Agility" Points="1" />
-                <AttributeChangeArray Attribute="Intelligence" Points="1" />
+                <AttributeChangeArray/>
+                <AttributeChangeArray Attribute="Vitality" Points="1"/>
+                <AttributeChangeArray Attribute="Agility" Points="1"/>
+                <AttributeChangeArray Attribute="Intelligence" Points="1"/>
                 <DeathResponse>
                     <Cost>
-                        <Charge Link="" Location="Abil" />
-                        <Cooldown Link="" Location="Abil" />
+                        <Charge Link="" Location="Abil"/>
+                        <Cooldown Link="" Location="Abil"/>
                     </Cost>
-                    <Type index="Remove" value="1" />
+                    <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="80">
             <Modification>
-                <AttributeChangeArray />
-                <AttributeChangeArray Attribute="Strength" Points="1" />
-                <AttributeChangeArray Attribute="Agility" Points="1" />
-                <AttributeChangeArray Attribute="Intelligence" Points="1" />
+                <AttributeChangeArray/>
+                <AttributeChangeArray Attribute="Vitality" Points="1"/>
+                <AttributeChangeArray Attribute="Agility" Points="1"/>
+                <AttributeChangeArray Attribute="Intelligence" Points="1"/>
                 <DeathResponse>
                     <Cost>
-                        <Charge Link="" Location="Abil" />
-                        <Cooldown Link="" Location="Abil" />
+                        <Charge Link="" Location="Abil"/>
+                        <Cooldown Link="" Location="Abil"/>
                     </Cost>
-                    <Type index="Remove" value="1" />
+                    <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
         </VeterancyLevelArray>
         <VeterancyLevelArray MinVeterancyXP="90">
             <Modification>
-                <AttributeChangeArray />
-                <AttributeChangeArray Attribute="Strength" Points="1" />
-                <AttributeChangeArray Attribute="Agility" Points="1" />
-                <AttributeChangeArray Attribute="Intelligence" Points="1" />
+                <AttributeChangeArray/>
+                <AttributeChangeArray Attribute="Vitality" Points="1"/>
+                <AttributeChangeArray Attribute="Agility" Points="1"/>
+                <AttributeChangeArray Attribute="Intelligence" Points="1"/>
                 <DeathResponse>
                     <Cost>
-                        <Charge Link="" Location="Abil" />
-                        <Cooldown Link="" Location="Abil" />
+                        <Charge Link="" Location="Abil"/>
+                        <Cooldown Link="" Location="Abil"/>
                     </Cost>
-                    <Type index="Remove" value="1" />
+                    <Type index="Remove" value="1"/>
                 </DeathResponse>
             </Modification>
         </VeterancyLevelArray>

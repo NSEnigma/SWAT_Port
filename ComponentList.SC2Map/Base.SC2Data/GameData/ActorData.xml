@@ -1,247 +1,243 @@
-<?xml version="1.0" encoding="us-ascii"?>
+<?xml version="1.0"?>
 <Catalog>
     <CActorUnit id="BuildingSight" parent="GenericUnitStandard">
-        <EditorCategories value=""/>
-        <On index="1" Terms="UnitBirth.BuildingSight"/>
-        <Model value=""/>
+        <EditorCategories value="" />
+        <On index="1" Terms="UnitBirth.BuildingSight" />
+        <Model value="" />
     </CActorUnit>
     <CActorUnit id="Abomination" parent="GenericUnitBase" unitName="Abomination">
-        <Macros value="ZergBurrowStandardAnimMacro"/>
-        <Macros value="ZergLargeBurrowEffects"/>
-        <On Terms="UnitBirth.InfestedAbominationBurrowed" Send="Create"/>
-        <On Terms="UnitBirth.InfestedAbominationBurrowed" Send="AnimBracketStart Burrow Burrow IGNORE Unburrow ClosingFull,OpeningPlayForever,Instant"/>
-        <On Terms="WeaponStart.InfestedAbomination.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On Terms="WeaponStop.InfestedAbomination.AttackStop" Send="AnimBracketStop Attack"/>
-        <On Terms="AbilMorph.*.Start; AbilKey BurrowDown" Send="Create BurrowDownAberration"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom InfestedAbomination; MorphTo InfestedAbominationBurrowed" Send="AnimClear Burrow"/>
-        <On Terms="AbilMorph.*.Finish; MorphTo InfestedAbomination; MorphFrom InfestedAbominationBurrowed" Send="AnimBracketStop Burrow"/>
-        <On Terms="AbilMorph.*.Finish; MorphTo InfestedAbomination; MorphFrom InfestedAbominationBurrowed" Send="AnimClear Burrow"/>
-        <Model value="InfestedAbomination"/>
-        <AnimBlendTime value="0.300000"/>
-        <BuildModel value="InfestedAbomination"/>
-        <DeathArray index="Normal" ModelLink="InfestedAbominationDeath"/>
-        <DeathCustoms ModelLink="ZergLargeUnitDeathLow" Name="AntiGravZerg"/>
-        <PlacementModel value="InfestedAbomination"/>
-        <PortraitModel value="AberrationPortrait"/>
-        <WalkAnimMoveSpeed value="2.9375"/>
-        <BarOffset value="120"/>
-        <BarWidth value="102"/>
+        <Macros value="ZergBurrowStandardAnimMacro" />
+        <Macros value="ZergLargeBurrowEffects" />
+        <On Terms="UnitBirth.InfestedAbominationBurrowed" Send="Create" />
+        <On Terms="UnitBirth.InfestedAbominationBurrowed" Send="AnimBracketStart Burrow Burrow IGNORE Unburrow ClosingFull,OpeningPlayForever,Instant" />
+        <On Terms="WeaponStart.InfestedAbomination.AttackStart" Send="AnimBracketStart Attack Attack" />
+        <On Terms="WeaponStop.InfestedAbomination.AttackStop" Send="AnimBracketStop Attack" />
+        <On Terms="AbilMorph.*.Start; AbilKey BurrowDown" Send="Create BurrowDownAberration" />
+        <On Terms="AbilMorph.*.Cancel; MorphFrom InfestedAbomination; MorphTo InfestedAbominationBurrowed" Send="AnimClear Burrow" />
+        <On Terms="AbilMorph.*.Finish; MorphTo InfestedAbomination; MorphFrom InfestedAbominationBurrowed" Send="AnimBracketStop Burrow" />
+        <On Terms="AbilMorph.*.Finish; MorphTo InfestedAbomination; MorphFrom InfestedAbominationBurrowed" Send="AnimClear Burrow" />
+        <Model value="InfestedAbomination" />
+        <AnimBlendTime value="0.300000" />
+        <BuildModel value="InfestedAbomination" />
+        <DeathArray index="Normal" ModelLink="InfestedAbominationDeath" />
+        <DeathCustoms ModelLink="ZergLargeUnitDeathLow" Name="AntiGravZerg" />
+        <PlacementModel value="InfestedAbomination" />
+        <PortraitModel value="AberrationPortrait" />
+        <WalkAnimMoveSpeed value="2.9375" />
+        <BarOffset value="120" />
+        <BarWidth value="102" />
         <GroupIcon>
-            <Image value="Assets\Textures\Wireframe-Zerg-Aberration.dds"/>
+            <Image value="Assets\Textures\Wireframe-Zerg-Aberration.dds" />
         </GroupIcon>
-        <GroupSoundArray index="Ready" value="UltraliskReady"/>
-        <GroupSoundArray index="Help" value="UltraliskHelp"/>
-        <GroupSoundArray index="What" value="UltraliskWhat"/>
-        <GroupSoundArray index="Yes" value="UltraliskYes"/>
-        <GroupSoundArray index="Attack" value="UltraliskYes"/>
-        <GroupSoundArray index="Pissed" value="UltraliskPissed"/>
-        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
-        <SoundArray index="Ready" value="UltraliskReady"/>
-        <SoundArray index="Help" value="UltraliskHelp"/>
-        <SoundArray index="What" value="UltraliskWhat"/>
-        <SoundArray index="Yes" value="UltraliskYes"/>
-        <SoundArray index="Attack" value="UltraliskYes"/>
-        <SoundArray index="Pissed" value="UltraliskPissed"/>
-        <UnitIcon value="Assets\Textures\btn-unit-zerg-aberration.dds"/>
+        <GroupSoundArray index="Ready" value="UltraliskReady" />
+        <GroupSoundArray index="Help" value="UltraliskHelp" />
+        <GroupSoundArray index="What" value="UltraliskWhat" />
+        <GroupSoundArray index="Yes" value="UltraliskYes" />
+        <GroupSoundArray index="Attack" value="UltraliskYes" />
+        <GroupSoundArray index="Pissed" value="UltraliskPissed" />
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds" />
+        <SoundArray index="Ready" value="UltraliskReady" />
+        <SoundArray index="Help" value="UltraliskHelp" />
+        <SoundArray index="What" value="UltraliskWhat" />
+        <SoundArray index="Yes" value="UltraliskYes" />
+        <SoundArray index="Attack" value="UltraliskYes" />
+        <SoundArray index="Pissed" value="UltraliskPissed" />
+        <UnitIcon value="Assets\Textures\btn-unit-zerg-aberration.dds" />
         <Wireframe>
-            <Image value="Assets\Textures\Wireframe-Zerg-Aberration.dds"/>
+            <Image value="Assets\Textures\Wireframe-Zerg-Aberration.dds" />
         </Wireframe>
     </CActorUnit>
     <CActorDoodad id="PathingBlocker1x1Doodad2">
-        <EditorCategories value="DoodadType:Blocker"/>
-        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker1x1Doodad"/>
-        <Model value="Invisible"/>
-        <DoodadFlags index="FootprintOnly" value="1"/>
-        <EditorModel value="PathingBlocker1x1"/>
-        <Footprint value="FootprintNoBuild1x1"/>
-        <RandomScaleRange value="1.000000,1.000000"/>
+        <EditorCategories value="DoodadType:Blocker" />
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker1x1Doodad" />
+        <Model value="Invisible" />
+        <DoodadFlags index="FootprintOnly" value="1" />
+        <EditorModel value="PathingBlocker1x1" />
+        <Footprint value="FootprintNoBuild1x1" />
+        <RandomScaleRange value="1.000000,1.000000" />
     </CActorDoodad>
     <CActorDoodad id="PathingBlocker1x1Doodad22">
-        <EditorCategories value="DoodadType:Blocker"/>
-        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker1x1Doodad"/>
-        <Model value="Invisible"/>
-        <DoodadFlags index="FootprintOnly" value="1"/>
-        <EditorModel value="PathingBlocker1x1"/>
-        <Footprint value="FootprintDoodad11x1"/>
-        <RandomScaleRange value="1.000000,1.000000"/>
+        <EditorCategories value="DoodadType:Blocker" />
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker1x1Doodad" />
+        <Model value="Invisible" />
+        <DoodadFlags index="FootprintOnly" value="1" />
+        <EditorModel value="PathingBlocker1x1" />
+        <Footprint value="FootprintDoodad11x1" />
+        <RandomScaleRange value="1.000000,1.000000" />
     </CActorDoodad>
     <CActorDoodad id="PathingBlocker2x2Doodad2">
-        <EditorCategories value="DoodadType:Blocker"/>
-        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker2x2Doodad"/>
-        <Model value="Invisible"/>
-        <DoodadFlags index="FootprintOnly" value="1"/>
-        <EditorModel value="PathingBlocker2x2"/>
-        <Footprint value="Footprint3x3Creep"/>
-        <RandomScaleRange value="0.850000,0.850000"/>
+        <EditorCategories value="DoodadType:Blocker" />
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker2x2Doodad" />
+        <Model value="Invisible" />
+        <DoodadFlags index="FootprintOnly" value="1" />
+        <EditorModel value="PathingBlocker2x2" />
+        <Footprint value="Footprint3x3Creep" />
+        <RandomScaleRange value="0.850000,0.850000" />
     </CActorDoodad>
     <CActorDoodad id="PathingBlocker2x2Doodad22">
-        <EditorCategories value="DoodadType:Blocker"/>
-        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker2x2Doodad"/>
-        <Model value="Invisible"/>
-        <DoodadFlags index="FootprintOnly" value="1"/>
-        <EditorModel value="PathingBlocker2x2"/>
-        <Footprint value="Footprint8x8PathingBlocker"/>
-        <RandomScaleRange value="0.850000,0.850000"/>
-    </CActorDoodad>
-    <CActorDoodad id="PathingBlocker2x2Doodad3">
-        <EditorCategories value="DoodadType:Blocker"/>
-        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker2x2Doodad"/>
-        <Model value="Invisible"/>
-        <DoodadFlags index="FootprintOnly" value="1"/>
-        <EditorModel value="PathingBlocker2x2"/>
-        <Footprint value="Footprint2x2Creep"/>
-        <RandomScaleRange value="0.850000,0.850000"/>
+        <EditorCategories value="DoodadType:Blocker" />
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingBlocker2x2Doodad" />
+        <Model value="Invisible" />
+        <DoodadFlags index="FootprintOnly" value="1" />
+        <EditorModel value="PathingBlocker2x2" />
+        <Footprint value="Footprint8x8PathingBlocker" />
+        <RandomScaleRange value="0.850000,0.850000" />
     </CActorDoodad>
     <CActorDoodad id="PathingandSightBlocker3x3Doodad">
-        <EditorCategories value="DoodadType:Blocker"/>
-        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingandSightBlocker2x2Doodad"/>
-        <Model value="Invisible"/>
-        <DoodadFlags index="FootprintOnly" value="1"/>
-        <EditorFlags index="NoAutoRotate" value="1"/>
-        <EditorModel value="PathingandSightBlocker2x2Doodad"/>
-        <Footprint value="FootprintDoodad3x3"/>
-        <RandomScaleRange value="0.850000,0.850000"/>
+        <EditorCategories value="DoodadType:Blocker" />
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingandSightBlocker2x2Doodad" />
+        <Model value="Invisible" />
+        <DoodadFlags index="FootprintOnly" value="1" />
+        <EditorFlags index="NoAutoRotate" value="1" />
+        <EditorModel value="PathingandSightBlocker2x2Doodad" />
+        <Footprint value="FootprintDoodad3x3" />
+        <RandomScaleRange value="0.850000,0.850000" />
     </CActorDoodad>
     <CActorDoodad id="PathingandSightBlocker3x3Doodad2">
-        <EditorCategories value="DoodadType:Blocker"/>
-        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingandSightBlocker2x2Doodad"/>
-        <Model value="Invisible"/>
-        <DoodadFlags index="FootprintOnly" value="1"/>
-        <EditorFlags index="NoAutoRotate" value="1"/>
-        <EditorModel value="PathingandSightBlocker2x2Doodad"/>
-        <Footprint value="FootprintDoodad6x6"/>
-        <RandomScaleRange value="0.850000,0.850000"/>
+        <EditorCategories value="DoodadType:Blocker" />
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PathingandSightBlocker2x2Doodad" />
+        <Model value="Invisible" />
+        <DoodadFlags index="FootprintOnly" value="1" />
+        <EditorFlags index="NoAutoRotate" value="1" />
+        <EditorModel value="PathingandSightBlocker2x2Doodad" />
+        <Footprint value="FootprintDoodad6x6" />
+        <RandomScaleRange value="0.850000,0.850000" />
     </CActorDoodad>
-    <!--                                                                                         -->
-    <!-- Infested Civilian ..................................................................... -->
-    <!--                                                                                         -->
     <CActorUnit id="Zombie" parent="GenericBurrowerStandard" unitName="Zombie">
-        <On Terms="Behavior.Lightenating.On" Send="SetTintColor 255,255,0"/>
-        <On Terms="Behavior.TNTApplyDamage.On" Send="SetTintColor 253,165,0"/>
-        <On Terms="Behavior.ZombieFlaming2.On" Send="SetTintColor 255,150,81"/>
-        <On Terms="Behavior.ZombieFlaming.On" Send="SetTintColor 255,150,81"/>
-        <On Terms="Behavior.ZombieToxinsAura.On" Send="SetTintColor 0,255,0"/>
-        <On Terms="Behavior.ZombieBlueDegenAura.On" Send="SetTintColor 0,0,255"/>
-        <On Terms="ActorCreation" Send="TextureSelectBySlot main {RequireAll diffuse}"/>
-        <On Terms="ActorCreation" Send="TextureSelectByMatch main.specular main"/>
-        <On Terms="ActorCreation" Send="Create InfestedCivilian_Moan"/>
-        <On Terms="AbilMorph.MorphToInfestedCivilian.Finish; MorphTo InfestedCivilian" Send="Create"/>
-        <On Terms="AbilMorph.MorphToInfestedCivilian.Finish; MorphTo InfestedCivilian" Send="$Birth 0 0.000000"/>
-        <On Terms="Behavior.Lightenating.On" Send="SetTintColor 255,255,0"/>
-        <On Terms="Behavior.TNTApplyDamage.On" Send="SetTintColor 253,165,0"/>
-        <On Terms="Behavior.ZombieFlaming2.On" Send="SetTintColor 255,150,81"/>
-        <On Terms="Behavior.ZombieFlaming.On" Send="SetTintColor 255,150,81"/>
-        <On Terms="Behavior.ZombieToxinsAura.On" Send="SetTintColor 0,255,0"/>
-        <On Terms="Behavior.ZombieBlueDegenAura.On" Send="SetTintColor 0,0,255"/>
-        <Macros value="ZergBurrowStandardAnimMacro"/>
-        <Macros value="ZergSmallBurrowEffects"/>
-        <Model value="InfestedCivilian"/>
-        <BuildModel value="InfestedCivilian"/>
-        <DeathArray index="Normal" ModelLink="InfestedCivilianDeath" SoundLink="InfestedCivilian_Explode"/>
-        <DeathArray index="Fire" ModelLink="InfestedCivilianDeathFire" SoundLink="Uni_DeathFXFire"/>
-        <DeathActorModel value="InfestedCivilianDeath"/>
-        <PlacementModel value="InfestedCivilian"/>
-        <PortraitModel value="InfestedColonistPortrait"/>
-        <WalkAnimMoveSpeed value="2.25"/>
-        <BarOffset value="45"/>
-        <BarWidth value="36"/>
+        <On Terms="Behavior.Lightenating.On" Send="SetTintColor 255,255,0" />
+        <On Terms="Behavior.TNTApplyDamage.On" Send="SetTintColor 253,165,0" />
+        <On Terms="Behavior.ZombieFlaming2.On" Send="SetTintColor 255,150,81" />
+        <On Terms="Behavior.ZombieFlaming.On" Send="SetTintColor 255,150,81" />
+        <On Terms="Behavior.ZombieToxinsAura.On" Send="SetTintColor 0,255,0" />
+        <On Terms="Behavior.ZombieBlueDegenAura.On" Send="SetTintColor 0,0,255" />
+        <On Terms="ActorCreation" Send="TextureSelectBySlot main {RequireAll diffuse}" />
+        <On Terms="ActorCreation" Send="TextureSelectByMatch main.specular main" />
+        <On Terms="ActorCreation" Send="Create InfestedCivilian_Moan" />
+        <On Terms="AbilMorph.MorphToInfestedCivilian.Finish; MorphTo InfestedCivilian" Send="Create" />
+        <On Terms="AbilMorph.MorphToInfestedCivilian.Finish; MorphTo InfestedCivilian" Send="$Birth 0 0.000000" />
+        <On Terms="Behavior.Lightenating.On" Send="SetTintColor 255,255,0" />
+        <On Terms="Behavior.TNTApplyDamage.On" Send="SetTintColor 253,165,0" />
+        <On Terms="Behavior.ZombieFlaming2.On" Send="SetTintColor 255,150,81" />
+        <On Terms="Behavior.ZombieFlaming.On" Send="SetTintColor 255,150,81" />
+        <On Terms="Behavior.ZombieToxinsAura.On" Send="SetTintColor 0,255,0" />
+        <On Terms="Behavior.ZombieBlueDegenAura.On" Send="SetTintColor 0,0,255" />
+        <Macros value="ZergBurrowStandardAnimMacro" />
+        <Macros value="ZergSmallBurrowEffects" />
+        <Model value="InfestedCivilian" />
+        <BuildModel value="InfestedCivilian" />
+        <DeathArray index="Normal" ModelLink="InfestedCivilianDeath" SoundLink="InfestedCivilian_Explode" />
+        <DeathArray index="Fire" ModelLink="InfestedCivilianDeathFire" SoundLink="Uni_DeathFXFire" />
+        <DeathActorModel value="InfestedCivilianDeath" />
+        <PlacementModel value="InfestedCivilian" />
+        <PortraitModel value="InfestedColonistPortrait" />
+        <WalkAnimMoveSpeed value="2.25" />
+        <BarOffset value="45" />
+        <BarWidth value="36" />
         <GroupIcon>
-            <Image value="Assets\Textures\Wireframe-Zerg-Infestedcolonist.dds"/>
+            <Image value="Assets\Textures\Wireframe-Zerg-Infestedcolonist.dds" />
         </GroupIcon>
-        <GroupSoundArray index="Birth" value="InfestedTerranBirth"/>
-        <GroupSoundArray index="Ready" value="InfestedTerranReady"/>
-        <GroupSoundArray index="Help" value="InfestedTerranHelp"/>
-        <GroupSoundArray index="What" value="InfestedTerranWhat"/>
-        <GroupSoundArray index="Yes" value="InfestedTerranYes"/>
-        <GroupSoundArray index="Attack" value="InfestedTerranYes"/>
-        <GroupSoundArray index="Pissed" value="InfestedTerranPissed"/>
-        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
-        <SoundArray index="Birth" value="InfestedTerranBirth"/>
-        <SoundArray index="Ready" value="InfestedTerranReady"/>
-        <SoundArray index="Help" value="InfestedTerranHelp"/>
-        <SoundArray index="What" value="InfestedTerranWhat"/>
-        <SoundArray index="Yes" value="InfestedTerranYes"/>
-        <SoundArray index="Attack" value="InfestedTerranYes"/>
-        <SoundArray index="Pissed" value="InfestedTerranPissed"/>
-        <SoundArray index="Movement" value="InfestedTerranMovement"/>
-        <SoundArray index="Turning" value="InfestedTerranCampaignTurning"/>
-        <SoundArray index="Board" value="InfestedTerranCampaignBoard"/>
-        <SoundArray index="Click" value="InfestedTerranCampaignClick"/>
-        <SoundArray index="ClickError" value="InfestedTerranCampaignClickError"/>
-        <SoundArray index="Highlight" value="InfestedTerranCampaignHighlight"/>
-        <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
+        <GroupSoundArray index="Birth" value="InfestedTerranBirth" />
+        <GroupSoundArray index="Ready" value="InfestedTerranReady" />
+        <GroupSoundArray index="Help" value="InfestedTerranHelp" />
+        <GroupSoundArray index="What" value="InfestedTerranWhat" />
+        <GroupSoundArray index="Yes" value="InfestedTerranYes" />
+        <GroupSoundArray index="Attack" value="InfestedTerranYes" />
+        <GroupSoundArray index="Pissed" value="InfestedTerranPissed" />
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds" />
+        <SoundArray index="Birth" value="InfestedTerranBirth" />
+        <SoundArray index="Ready" value="InfestedTerranReady" />
+        <SoundArray index="Help" value="InfestedTerranHelp" />
+        <SoundArray index="What" value="InfestedTerranWhat" />
+        <SoundArray index="Yes" value="InfestedTerranYes" />
+        <SoundArray index="Attack" value="InfestedTerranYes" />
+        <SoundArray index="Pissed" value="InfestedTerranPissed" />
+        <SoundArray index="Movement" value="InfestedTerranMovement" />
+        <SoundArray index="Turning" value="InfestedTerranCampaignTurning" />
+        <SoundArray index="Board" value="InfestedTerranCampaignBoard" />
+        <SoundArray index="Click" value="InfestedTerranCampaignClick" />
+        <SoundArray index="ClickError" value="InfestedTerranCampaignClickError" />
+        <SoundArray index="Highlight" value="InfestedTerranCampaignHighlight" />
+        <UnitIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds" />
         <Wireframe>
-            <Image value="Assets\Textures\Wireframe-Zerg-Infestedcolonist.dds"/>
+            <Image value="Assets\Textures\Wireframe-Zerg-Infestedcolonist.dds" />
         </Wireframe>
     </CActorUnit>
     <CActorBeamSimple id="TorEnergyBeam" parent="BeamSimpleAnimationStyleOneShot">
-        <Flags index="SuppressSaveLoad" value="0"/>
-        <Inherits index="Visibility" value="1"/>
-        <EditorCategories value=""/>
-        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death"/>
-        <On Terms="Effect.TorEnergyDrainPersistent" Send="Create"/>
-        <On Terms="Effect.TorEnergyDrainPersistent.Stop" Send="Destroy"/>
-        <HostForProps Subject="_Unit" Scope="Caster" Actor="Find"/>
-        <Model value="ColossusAttackBeam"/>
-        <HostLaunch Subject="_Unit" Scope="Target" Actor="Find"/>
-        <HostLaunchSiteOps Ops="SOpAttachCenter"/>
-        <HostImpact Subject="_Unit" Scope="Caster" Actor="Find"/>
-        <HostImpactSiteOps Ops="SOpAttachCenter"/>
+        <Flags index="SuppressSaveLoad" value="0" />
+        <Inherits index="Visibility" value="1" />
+        <EditorCategories value="" />
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death" />
+        <On Terms="Effect.TorEnergyDrainPersistent" Send="Create" />
+        <On Terms="Effect.TorEnergyDrainPersistent.Stop" Send="Destroy" />
+        <HostForProps Subject="_Unit" Scope="Caster" Actor="Find" />
+        <Model value="ColossusAttackBeam" />
+        <HostLaunch Subject="_Unit" Scope="Target" Actor="Find" />
+        <HostLaunchSiteOps Ops="SOpAttachCenter" />
+        <HostImpact Subject="_Unit" Scope="Caster" Actor="Find" />
+        <HostImpactSiteOps Ops="SOpAttachCenter" />
     </CActorBeamSimple>
     <CActorModel id="TorFeedbackStun" parent="ModelAnimationStyleContinuous">
-        <EditorCategories value=""/>
-        <On Terms="ActorCreation" Send="AnimBracketStart GL_BSD GLbirth GLstand GLdeath"/>
-        <On Terms="Behavior.TorFeedbackStun.On" Send="Create"/>
-        <On Terms="ActorCreation" Send="AnimBracketStart $BSD"/>
-        <On Terms="Behavior.TorFeedbackStun.Off" Send="AnimBracketStop BSD"/>
-        <Host Subject="_Selectable"/>
-        <HostSiteOps Ops="SOpAttachOverhead"/>
-        <Model value="MindBlastStun"/>
+        <EditorCategories value="" />
+        <On Terms="ActorCreation" Send="AnimBracketStart GL_BSD GLbirth GLstand GLdeath" />
+        <On Terms="Behavior.TorFeedbackStun.On" Send="Create" />
+        <On Terms="ActorCreation" Send="AnimBracketStart $BSD" />
+        <On Terms="Behavior.TorFeedbackStun.Off" Send="AnimBracketStop BSD" />
+        <Host Subject="_Selectable" />
+        <HostSiteOps Ops="SOpAttachOverhead" />
+        <Model value="MindBlastStun" />
     </CActorModel>
     <CActorModel id="ZombieBurninating" parent="ModelAddition">
-        <On Terms="Behavior.ZombieFlaming2.On" Send="Create"/>
-        <On Terms="Behavior.ZombieFlaming.On" Send="Create"/>
-        <On Terms="UnitDeath" Send="Destroy"/>
-        <On Terms="Behavior.ZombieFlaming.On" Send="SetTintColor 255,150,81"/>
-        <On Terms="Behavior.ZombieFlaming2.On" Send="SetTintColor 255,150,81"/>
-        <HostSiteOps Ops="SOpAttachWeapon" HoldRotation="1"/>
-        <Model value="FireMedium"/>
-        <Scale value="0.400000"/>
+        <On Terms="Behavior.ZombieFlaming2.On" Send="Create" />
+        <On Terms="Behavior.ZombieFlaming.On" Send="Create" />
+        <On Terms="UnitDeath" Send="Destroy" />
+        <On Terms="Behavior.ZombieFlaming.On" Send="SetTintColor 255,150,81" />
+        <On Terms="Behavior.ZombieFlaming2.On" Send="SetTintColor 255,150,81" />
+        <HostSiteOps Ops="SOpAttachWeapon" HoldRotation="1" />
+        <Model value="FireMedium" />
+        <Scale value="0.400000" />
     </CActorModel>
     <CActorModel id="ZombieLightenating" parent="ModelAddition">
-        <On Terms="Behavior.Lightenating.On" Send="Create"/>
-        <On Terms="UnitDeath" Send="Destroy"/>
-        <On Terms="Behavior.Lightenating.On; AnimPlaying" Send="SetTintColor 255,255,0"/>
-        <HostSiteOps Ops="SOpAttachOrigin"/>
+        <On Terms="Behavior.Lightenating.On" Send="Create" />
+        <On Terms="UnitDeath" Send="Destroy" />
+        <On Terms="Behavior.Lightenating.On; AnimPlaying" Send="SetTintColor 255,255,0" />
+        <HostSiteOps Ops="SOpAttachOrigin" />
     </CActorModel>
     <CActorModel id="ZombieTNTBarrel" parent="ModelAddition">
-        <On Terms="Behavior.TNTApplyDamage.On" Send="Create"/>
-        <HostSiteOps Ops="SOpAttachWeaponLeft"/>
-        <Model value="ExplosiveBarrel"/>
-        <Scale value="0.600000"/>
+        <On Terms="Behavior.TNTApplyDamage.On" Send="Create" />
+        <HostSiteOps Ops="SOpAttachWeaponLeft" />
+        <Model value="ExplosiveBarrel" />
+        <Scale value="0.600000" />
     </CActorModel>
     <CActorModel id="ZombieTNTBarrel2" parent="ModelAddition">
-        <On Terms="Behavior.TNTApplyDamage2.On" Send="Create"/>
-        <HostSiteOps Ops="SOpAttachWeaponRight"/>
-        <Model value="ExplosiveBarrel"/>
-        <Scale value="0.600000"/>
+        <On Terms="Behavior.TNTApplyDamage2.On" Send="Create" />
+        <HostSiteOps Ops="SOpAttachWeaponRight" />
+        <Model value="ExplosiveBarrel" />
+        <Scale value="0.600000" />
     </CActorModel>
     <CActorModel id="ZombieTNTSmoke" parent="ModelAddition">
-        <On Terms="Behavior.TNTApplyDamage.On" Send="Create"/>
-        <HostSiteOps Ops="SOpAttachHead"/>
-        <Model value="SmokeMedium"/>
+        <On Terms="Behavior.TNTApplyDamage.On" Send="Create" />
+        <HostSiteOps Ops="SOpAttachHead" />
+        <Model value="SmokeMedium" />
     </CActorModel>
     <CActorModel id="ZombieToxins" parent="ModelAnimationStyleContinuous">
-        <On Terms="Behavior.ZombieToxinsAura.On" Send="Create"/>
-        <On Terms="UnitDeath" Send="AnimBracketStop BSD"/>
-        <Model value="GasBarrelExplodeModel"/>
-        <Scale value="0.200000"/>
+        <On Terms="Behavior.ZombieToxinsAura.On" Send="Create" />
+        <On Terms="UnitDeath" Send="AnimBracketStop BSD" />
+        <Model value="GasBarrelExplodeModel" />
+        <Scale value="0.200000" />
     </CActorModel>
     <CActorModel id="ZombieToxinsLiving" parent="ModelAnimationStyleContinuous">
-        <On Terms="Behavior.ZombieToxins.On" Send="Create"/>
-        <On Terms="Behavior.ZombieToxins.Off" Send="AnimBracketStop BSD"/>
-        <HostSiteOps Ops="SOpAttachHead"/>
-        <Model value="GasBarrelExplodeModel"/>
-        <Scale value="0.150000"/>
+        <On Terms="Behavior.ZombieToxins.On" Send="Create" />
+        <On Terms="Behavior.ZombieToxins.Off" Send="AnimBracketStop BSD" />
+        <HostSiteOps Ops="SOpAttachHead" />
+        <Model value="GasBarrelExplodeModel" />
+        <Scale value="0.150000" />
     </CActorModel>
+    <CActorUnit id="AntidoteItem" parent="PolygonBase" unitName="AntidoteItem">
+        <Model value="ShapeCube" />
+        <Scale value="0.300000" />
+        <BuildModel value="ShapeCube" />
+        <DeathArray index="Normal" SoundLink="Mule_Explode" />
+        <PlacementModel value="ShapeCube" />
+        <PortraitModel value="ShapeCube" />
+    </CActorUnit>
 </Catalog>
